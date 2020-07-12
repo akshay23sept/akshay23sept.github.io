@@ -1,302 +1,3986 @@
-((typeof self !== 'undefined' ? self : this)["webpackJsonp_wix_ui_santa"] = (typeof self !== 'undefined' ? self : this)["webpackJsonp_wix_ui_santa"] || []).push([[58],{
+((typeof self !== 'undefined' ? self : this)["webpackJsonp_wix_ui_santa"] = (typeof self !== 'undefined' ? self : this)["webpackJsonp_wix_ui_santa"] || []).push([[67],{
 
 /***/ 10:
+/*!******************************************!*\
+  !*** ../node_modules/tslib/tslib.es6.js ***!
+  \******************************************/
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
+/*! all exports used */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__createBinding", function() { return __createBinding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldGet", function() { return __classPrivateFieldGet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldSet", function() { return __classPrivateFieldSet; });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+function __createBinding(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}
+
+function __exportStar(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result.default = mod;
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+function __classPrivateFieldGet(receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+}
+
+
+/***/ }),
+
+/***/ 102:
 /*!**********************************************!*\
-  !*** ../node_modules/object-assign/index.js ***!
+  !*** ../node_modules/eventemitter3/index.js ***!
   \**********************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/
 
 
-/* eslint-disable no-unused-vars */
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+var has = Object.prototype.hasOwnProperty
+  , prefix = '~';
 
-function toObject(val) {
-	if (val === null || val === undefined) {
-		throw new TypeError('Object.assign cannot be called with null or undefined');
-	}
+/**
+ * Constructor to create a storage for our `EE` objects.
+ * An `Events` instance is a plain object whose properties are event names.
+ *
+ * @constructor
+ * @private
+ */
+function Events() {}
 
-	return Object(val);
+//
+// We try to not inherit from `Object.prototype`. In some engines creating an
+// instance in this way is faster than calling `Object.create(null)` directly.
+// If `Object.create(null)` is not supported we prefix the event names with a
+// character to make sure that the built-in object properties are not
+// overridden or used as an attack vector.
+//
+if (Object.create) {
+  Events.prototype = Object.create(null);
+
+  //
+  // This hack is needed because the `__proto__` property is still inherited in
+  // some old browsers like Android 4, iPhone 5.1, Opera 11 and Safari 5.
+  //
+  if (!new Events().__proto__) prefix = false;
 }
 
-function shouldUseNative() {
-	try {
-		if (!Object.assign) {
-			return false;
-		}
-
-		// Detect buggy property enumeration order in older V8 versions.
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
-		test1[5] = 'de';
-		if (Object.getOwnPropertyNames(test1)[0] === '5') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test2 = {};
-		for (var i = 0; i < 10; i++) {
-			test2['_' + String.fromCharCode(i)] = i;
-		}
-		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
-			return test2[n];
-		});
-		if (order2.join('') !== '0123456789') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test3 = {};
-		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
-			test3[letter] = letter;
-		});
-		if (Object.keys(Object.assign({}, test3)).join('') !==
-				'abcdefghijklmnopqrst') {
-			return false;
-		}
-
-		return true;
-	} catch (err) {
-		// We don't expect any of the above to throw, but better to be safe.
-		return false;
-	}
+/**
+ * Representation of a single event listener.
+ *
+ * @param {Function} fn The listener function.
+ * @param {*} context The context to invoke the listener with.
+ * @param {Boolean} [once=false] Specify if the listener is a one-time listener.
+ * @constructor
+ * @private
+ */
+function EE(fn, context, once) {
+  this.fn = fn;
+  this.context = context;
+  this.once = once || false;
 }
 
-module.exports = shouldUseNative() ? Object.assign : function (target, source) {
-	var from;
-	var to = toObject(target);
-	var symbols;
+/**
+ * Add a listener for a given event.
+ *
+ * @param {EventEmitter} emitter Reference to the `EventEmitter` instance.
+ * @param {(String|Symbol)} event The event name.
+ * @param {Function} fn The listener function.
+ * @param {*} context The context to invoke the listener with.
+ * @param {Boolean} once Specify if the listener is a one-time listener.
+ * @returns {EventEmitter}
+ * @private
+ */
+function addListener(emitter, event, fn, context, once) {
+  if (typeof fn !== 'function') {
+    throw new TypeError('The listener must be a function');
+  }
 
-	for (var s = 1; s < arguments.length; s++) {
-		from = Object(arguments[s]);
+  var listener = new EE(fn, context || emitter, once)
+    , evt = prefix ? prefix + event : event;
 
-		for (var key in from) {
-			if (hasOwnProperty.call(from, key)) {
-				to[key] = from[key];
-			}
-		}
+  if (!emitter._events[evt]) emitter._events[evt] = listener, emitter._eventsCount++;
+  else if (!emitter._events[evt].fn) emitter._events[evt].push(listener);
+  else emitter._events[evt] = [emitter._events[evt], listener];
 
-		if (getOwnPropertySymbols) {
-			symbols = getOwnPropertySymbols(from);
-			for (var i = 0; i < symbols.length; i++) {
-				if (propIsEnumerable.call(from, symbols[i])) {
-					to[symbols[i]] = from[symbols[i]];
-				}
-			}
-		}
-	}
+  return emitter;
+}
 
-	return to;
+/**
+ * Clear event by name.
+ *
+ * @param {EventEmitter} emitter Reference to the `EventEmitter` instance.
+ * @param {(String|Symbol)} evt The Event name.
+ * @private
+ */
+function clearEvent(emitter, evt) {
+  if (--emitter._eventsCount === 0) emitter._events = new Events();
+  else delete emitter._events[evt];
+}
+
+/**
+ * Minimal `EventEmitter` interface that is molded against the Node.js
+ * `EventEmitter` interface.
+ *
+ * @constructor
+ * @public
+ */
+function EventEmitter() {
+  this._events = new Events();
+  this._eventsCount = 0;
+}
+
+/**
+ * Return an array listing the events for which the emitter has registered
+ * listeners.
+ *
+ * @returns {Array}
+ * @public
+ */
+EventEmitter.prototype.eventNames = function eventNames() {
+  var names = []
+    , events
+    , name;
+
+  if (this._eventsCount === 0) return names;
+
+  for (name in (events = this._events)) {
+    if (has.call(events, name)) names.push(prefix ? name.slice(1) : name);
+  }
+
+  if (Object.getOwnPropertySymbols) {
+    return names.concat(Object.getOwnPropertySymbols(events));
+  }
+
+  return names;
 };
+
+/**
+ * Return the listeners registered for a given event.
+ *
+ * @param {(String|Symbol)} event The event name.
+ * @returns {Array} The registered listeners.
+ * @public
+ */
+EventEmitter.prototype.listeners = function listeners(event) {
+  var evt = prefix ? prefix + event : event
+    , handlers = this._events[evt];
+
+  if (!handlers) return [];
+  if (handlers.fn) return [handlers.fn];
+
+  for (var i = 0, l = handlers.length, ee = new Array(l); i < l; i++) {
+    ee[i] = handlers[i].fn;
+  }
+
+  return ee;
+};
+
+/**
+ * Return the number of listeners listening to a given event.
+ *
+ * @param {(String|Symbol)} event The event name.
+ * @returns {Number} The number of listeners.
+ * @public
+ */
+EventEmitter.prototype.listenerCount = function listenerCount(event) {
+  var evt = prefix ? prefix + event : event
+    , listeners = this._events[evt];
+
+  if (!listeners) return 0;
+  if (listeners.fn) return 1;
+  return listeners.length;
+};
+
+/**
+ * Calls each of the listeners registered for a given event.
+ *
+ * @param {(String|Symbol)} event The event name.
+ * @returns {Boolean} `true` if the event had listeners, else `false`.
+ * @public
+ */
+EventEmitter.prototype.emit = function emit(event, a1, a2, a3, a4, a5) {
+  var evt = prefix ? prefix + event : event;
+
+  if (!this._events[evt]) return false;
+
+  var listeners = this._events[evt]
+    , len = arguments.length
+    , args
+    , i;
+
+  if (listeners.fn) {
+    if (listeners.once) this.removeListener(event, listeners.fn, undefined, true);
+
+    switch (len) {
+      case 1: return listeners.fn.call(listeners.context), true;
+      case 2: return listeners.fn.call(listeners.context, a1), true;
+      case 3: return listeners.fn.call(listeners.context, a1, a2), true;
+      case 4: return listeners.fn.call(listeners.context, a1, a2, a3), true;
+      case 5: return listeners.fn.call(listeners.context, a1, a2, a3, a4), true;
+      case 6: return listeners.fn.call(listeners.context, a1, a2, a3, a4, a5), true;
+    }
+
+    for (i = 1, args = new Array(len -1); i < len; i++) {
+      args[i - 1] = arguments[i];
+    }
+
+    listeners.fn.apply(listeners.context, args);
+  } else {
+    var length = listeners.length
+      , j;
+
+    for (i = 0; i < length; i++) {
+      if (listeners[i].once) this.removeListener(event, listeners[i].fn, undefined, true);
+
+      switch (len) {
+        case 1: listeners[i].fn.call(listeners[i].context); break;
+        case 2: listeners[i].fn.call(listeners[i].context, a1); break;
+        case 3: listeners[i].fn.call(listeners[i].context, a1, a2); break;
+        case 4: listeners[i].fn.call(listeners[i].context, a1, a2, a3); break;
+        default:
+          if (!args) for (j = 1, args = new Array(len -1); j < len; j++) {
+            args[j - 1] = arguments[j];
+          }
+
+          listeners[i].fn.apply(listeners[i].context, args);
+      }
+    }
+  }
+
+  return true;
+};
+
+/**
+ * Add a listener for a given event.
+ *
+ * @param {(String|Symbol)} event The event name.
+ * @param {Function} fn The listener function.
+ * @param {*} [context=this] The context to invoke the listener with.
+ * @returns {EventEmitter} `this`.
+ * @public
+ */
+EventEmitter.prototype.on = function on(event, fn, context) {
+  return addListener(this, event, fn, context, false);
+};
+
+/**
+ * Add a one-time listener for a given event.
+ *
+ * @param {(String|Symbol)} event The event name.
+ * @param {Function} fn The listener function.
+ * @param {*} [context=this] The context to invoke the listener with.
+ * @returns {EventEmitter} `this`.
+ * @public
+ */
+EventEmitter.prototype.once = function once(event, fn, context) {
+  return addListener(this, event, fn, context, true);
+};
+
+/**
+ * Remove the listeners of a given event.
+ *
+ * @param {(String|Symbol)} event The event name.
+ * @param {Function} fn Only remove the listeners that match this function.
+ * @param {*} context Only remove the listeners that have this context.
+ * @param {Boolean} once Only remove one-time listeners.
+ * @returns {EventEmitter} `this`.
+ * @public
+ */
+EventEmitter.prototype.removeListener = function removeListener(event, fn, context, once) {
+  var evt = prefix ? prefix + event : event;
+
+  if (!this._events[evt]) return this;
+  if (!fn) {
+    clearEvent(this, evt);
+    return this;
+  }
+
+  var listeners = this._events[evt];
+
+  if (listeners.fn) {
+    if (
+      listeners.fn === fn &&
+      (!once || listeners.once) &&
+      (!context || listeners.context === context)
+    ) {
+      clearEvent(this, evt);
+    }
+  } else {
+    for (var i = 0, events = [], length = listeners.length; i < length; i++) {
+      if (
+        listeners[i].fn !== fn ||
+        (once && !listeners[i].once) ||
+        (context && listeners[i].context !== context)
+      ) {
+        events.push(listeners[i]);
+      }
+    }
+
+    //
+    // Reset the array, or remove it completely if we have no more listeners.
+    //
+    if (events.length) this._events[evt] = events.length === 1 ? events[0] : events;
+    else clearEvent(this, evt);
+  }
+
+  return this;
+};
+
+/**
+ * Remove all listeners, or those of the specified event.
+ *
+ * @param {(String|Symbol)} [event] The event name.
+ * @returns {EventEmitter} `this`.
+ * @public
+ */
+EventEmitter.prototype.removeAllListeners = function removeAllListeners(event) {
+  var evt;
+
+  if (event) {
+    evt = prefix ? prefix + event : event;
+    if (this._events[evt]) clearEvent(this, evt);
+  } else {
+    this._events = new Events();
+    this._eventsCount = 0;
+  }
+
+  return this;
+};
+
+//
+// Alias methods names because people roll like that.
+//
+EventEmitter.prototype.off = EventEmitter.prototype.removeListener;
+EventEmitter.prototype.addListener = EventEmitter.prototype.on;
+
+//
+// Expose the prefix.
+//
+EventEmitter.prefixed = prefix;
+
+//
+// Allow `EventEmitter` to be imported as module namespace.
+//
+EventEmitter.EventEmitter = EventEmitter;
+
+//
+// Expose the module.
+//
+if (true) {
+  module.exports = EventEmitter;
+}
 
 
 /***/ }),
 
-/***/ 100:
+/***/ 103:
 /*!******************************************!*\
-  !*** ../node_modules/lodash/isString.js ***!
+  !*** ../node_modules/lodash/uniqueId.js ***!
   \******************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! lodash */ 2).isString
+module.exports = __webpack_require__(/*! lodash */ 3).uniqueId
 
 /***/ }),
 
-/***/ 101:
-/*!**********************************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/playerHOC.js ***!
-  \**********************************************************************************/
+/***/ 1157:
+/*!******************************************************************************!*\
+  !*** ../node_modules/@wix/playback-bi-module/dist/src/playback-bi-module.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PlaybackBIModule = void 0;
+var playable_1 = __webpack_require__(/*! playable */ 578);
+var web_bi_logger_1 = __importDefault(__webpack_require__(/*! @wix/web-bi-logger */ 1159));
+var bi_logger_video_platform_1 = __importDefault(__webpack_require__(/*! @wix/bi-logger-video-platform */ 1172));
+var DEFAULT_INTERVAL_FOR_PROGRESS = 5000;
+var UNKNOWN_TYPE = 'unknown_type';
+var REPORT_REASONS = {
+    LONG_INITIAL_VIDEO_PARTS_LOADING: 'long-initial-video-parts-loading',
+    LONG_METADATA_LOADING: 'long-metadata-loading',
+    LONG_SEEK_PROCESSING: 'long-seek-processing',
+    BUFFER_EMPTY_FOR_CURRENT_SEGMENT: 'buffer-empty-for-current-segment',
+    LONG_PLAY_REQUESTED_PROCESSING: 'long-play-requested-processing',
+};
+var DELAYED_REPORT_TYPES = {
+    INITIAL_VIDEO_PARTS_LOADING: {
+        id: '_initialVideoPartsLoading',
+        timeoutTime: 5000,
+    },
+    METADATA_LOADING: {
+        id: '_metadataLoading',
+        timeoutTime: 5000,
+    },
+    RUNTIME_LOADING: {
+        id: '_runtimeLoading',
+        timeoutTime: 5000,
+    },
+};
+var convertMSToInt = function (time) { return Math.round(time * 1000); };
+var PlaybackBIModule = /** @class */ (function () {
+    function PlaybackBIModule(_a) {
+        var eventEmitter = _a.eventEmitter, engine = _a.engine;
+        this._customData = JSON.stringify({});
+        this._intervalID = null;
+        this._intervalDelta = DEFAULT_INTERVAL_FOR_PROGRESS;
+        this._isOngoingPlayback = false;
+        this._isVideoPlaying = false;
+        this._eventEmitter = eventEmitter;
+        this._engine = engine;
+        this._videoTag = this._engine.getElement();
+        this._logger = bi_logger_video_platform_1.default(web_bi_logger_1.default)();
+        this._timeoutMap = Object.create(null);
+        this._bindCallbacks();
+        this._bindEvents();
+        this._generateNewViewID();
+    }
+    PlaybackBIModule.prototype.setWixBIVideoID = function (id) {
+        this._videoID = id;
+    };
+    PlaybackBIModule.prototype.setWixBIProduct = function (product) {
+        this._product = product;
+    };
+    PlaybackBIModule.prototype.setWixBICustomDataJSON = function (customDataJSON) {
+        if (customDataJSON === void 0) { customDataJSON = {}; }
+        this._customData = JSON.stringify(customDataJSON);
+    };
+    PlaybackBIModule.prototype.setWixBIProgressInterval = function (delta) {
+        this._intervalDelta = delta;
+    };
+    PlaybackBIModule.prototype.setWixVisitorID = function (visitorID) {
+        this._visitorID = visitorID;
+        this._logger.util.updateDefaults({
+            _visitorId: visitorID,
+        });
+    };
+    PlaybackBIModule.prototype.setWixMSID = function (msID) {
+        this._msID = msID;
+        this._logger.util.updateDefaults({
+            _msid: msID,
+        });
+    };
+    Object.defineProperty(PlaybackBIModule.prototype, "_isAllMandatoryDataSet", {
+        get: function () {
+            return this._visitorID && this._msID;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(PlaybackBIModule.prototype, "_collerationID", {
+        get: function () {
+            return this._videoID + "_" + this._viewID + "_" + this._randomSalt;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    PlaybackBIModule.prototype._generateNewViewID = function () {
+        this._viewID = Date.now().toString();
+        this._randomSalt = Math.floor(Math.random() * 1000);
+    };
+    PlaybackBIModule.prototype.getPlayedRange = function () {
+        var played = this._videoTag.played;
+        var playedRanges = [];
+        for (var i = 0; i < played.length; i++) {
+            playedRanges.push([
+                convertMSToInt(played.start(i)),
+                convertMSToInt(played.end(i)),
+            ]);
+        }
+        return playedRanges;
+    };
+    PlaybackBIModule.prototype._resetState = function () {
+        this._isOngoingPlayback = false;
+        this._isVideoPlaying = false;
+        this._stopIntervalSendForProgress();
+    };
+    PlaybackBIModule.prototype._bindCallbacks = function () {
+        this._sendProgress = this._sendProgress.bind(this);
+    };
+    PlaybackBIModule.prototype._bindEvents = function () {
+        this._unbindEvents = this._eventEmitter.bindEvents([
+            [playable_1.VIDEO_EVENTS.PLAY_ABORTED, this._sendPlayAborted],
+            [playable_1.VIDEO_EVENTS.STATE_CHANGED, this._processStateChange],
+            [playable_1.VIDEO_EVENTS.ERROR, this._sendError],
+        ], this);
+    };
+    PlaybackBIModule.prototype._processStateChange = function (_a) {
+        var prevState = _a.prevState, nextState = _a.nextState;
+        if (!this._isAllMandatoryDataSet) {
+            return;
+        }
+        switch (nextState) {
+            case playable_1.ENGINE_STATES.PLAY_REQUESTED:
+                this._sendPlayRequest();
+                break;
+            case playable_1.ENGINE_STATES.LOAD_STARTED:
+                if (this._engine.isAutoPlayActive || this._engine.isPreloadActive) {
+                    this.startDelayedReport(DELAYED_REPORT_TYPES.METADATA_LOADING, REPORT_REASONS.LONG_METADATA_LOADING);
+                }
+                break;
+            case playable_1.ENGINE_STATES.METADATA_LOADED:
+                if (this.isDelayedReportExist(DELAYED_REPORT_TYPES.METADATA_LOADING)) {
+                    this.stopDelayedReport(DELAYED_REPORT_TYPES.METADATA_LOADING);
+                    if (this._engine.getPreload() !== 'metadata') {
+                        this.startDelayedReport(DELAYED_REPORT_TYPES.INITIAL_VIDEO_PARTS_LOADING, REPORT_REASONS.LONG_INITIAL_VIDEO_PARTS_LOADING);
+                    }
+                }
+                break;
+            case playable_1.ENGINE_STATES.READY_TO_PLAY:
+                if (this.isDelayedReportExist(DELAYED_REPORT_TYPES.INITIAL_VIDEO_PARTS_LOADING)) {
+                    this.stopDelayedReport(DELAYED_REPORT_TYPES.INITIAL_VIDEO_PARTS_LOADING);
+                }
+                if (this.isDelayedReportExist(DELAYED_REPORT_TYPES.RUNTIME_LOADING)) {
+                    this.stopDelayedReport(DELAYED_REPORT_TYPES.RUNTIME_LOADING);
+                }
+                break;
+            case playable_1.ENGINE_STATES.SEEK_IN_PROGRESS:
+                if (prevState === playable_1.ENGINE_STATES.PAUSED) {
+                    this.startDelayedReport(DELAYED_REPORT_TYPES.RUNTIME_LOADING, REPORT_REASONS.LONG_SEEK_PROCESSING);
+                }
+                break;
+            case playable_1.ENGINE_STATES.WAITING:
+                switch (prevState) {
+                    case playable_1.ENGINE_STATES.PLAYING: {
+                        this._sendAnomalyBiEvent(REPORT_REASONS.BUFFER_EMPTY_FOR_CURRENT_SEGMENT);
+                        break;
+                    }
+                    case playable_1.ENGINE_STATES.PLAY_REQUESTED:
+                        if (!this.isDelayedReportExist(DELAYED_REPORT_TYPES.RUNTIME_LOADING)) {
+                            this.startDelayedReport(DELAYED_REPORT_TYPES.RUNTIME_LOADING, REPORT_REASONS.LONG_PLAY_REQUESTED_PROCESSING);
+                        }
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case playable_1.ENGINE_STATES.SRC_SET:
+                this._resetState();
+                break;
+            case playable_1.ENGINE_STATES.PLAYING:
+                if (this.isDelayedReportExist(DELAYED_REPORT_TYPES.RUNTIME_LOADING)) {
+                    this.stopDelayedReport(DELAYED_REPORT_TYPES.RUNTIME_LOADING);
+                }
+                if (this._isOngoingPlayback) {
+                    this._sendResumed();
+                }
+                else {
+                    this._sendPlaying();
+                }
+                break;
+            case playable_1.ENGINE_STATES.PAUSED:
+                this._sendPause();
+                break;
+            case playable_1.ENGINE_STATES.ENDED:
+                this._sendFinish();
+                break;
+            default:
+                break;
+        }
+    };
+    PlaybackBIModule.prototype.stopAllDelayedReports = function () {
+        var _this = this;
+        Object.keys(this._timeoutMap).forEach(function (key) {
+            window.clearTimeout(_this._timeoutMap[key]);
+            delete _this._timeoutMap[key];
+        });
+    };
+    PlaybackBIModule.prototype.stopDelayedReport = function (type) {
+        window.clearTimeout(this._timeoutMap[type.id]);
+        delete this._timeoutMap[type.id];
+    };
+    PlaybackBIModule.prototype.isDelayedReportExist = function (type) {
+        return Boolean(this._timeoutMap[type.id]);
+    };
+    PlaybackBIModule.prototype.startDelayedReport = function (type, reason) {
+        var _this = this;
+        if (this.isDelayedReportExist(type)) {
+            this.stopDelayedReport(type);
+        }
+        this._timeoutMap[type.id] = window.setTimeout(function () {
+            delete _this._timeoutMap;
+            _this._sendAnomalyBiEvent(reason);
+        }, type.timeoutTime);
+    };
+    PlaybackBIModule.prototype._startIntervalSendForProgress = function () {
+        if (this._intervalID) {
+            return;
+        }
+        this._intervalID = window.setInterval(this._sendProgress, this._intervalDelta);
+    };
+    PlaybackBIModule.prototype._stopIntervalSendForProgress = function () {
+        window.clearInterval(this._intervalID);
+        this._intervalID = null;
+    };
+    PlaybackBIModule.prototype._sendPlayRequest = function () {
+        if (!this._isAllMandatoryDataSet || this._isOngoingPlayback) {
+            return;
+        }
+        var _a = this._engine.getDebugInfo(), _b = _a.bitrates, bitrates = _b === void 0 ? [] : _b, _c = _a.type, type = _c === void 0 ? UNKNOWN_TYPE : _c;
+        this._generateNewViewID();
+        this._logger.playablePlayRequested({
+            customDataJson: this._customData,
+            correlationId: this._collerationID,
+            product: this._product,
+            videoId: this._videoID,
+            videoDuration: convertMSToInt(this._engine.getDuration()),
+            videoType: type,
+            bitrateJson: JSON.stringify(bitrates),
+        });
+    };
+    PlaybackBIModule.prototype._sendPlayAborted = function (event) {
+        if (!this._isAllMandatoryDataSet) {
+            return;
+        }
+        this._logger.playablePlayAborted({
+            correlationId: this._collerationID,
+            videoId: this._videoID,
+            reasonMessage: event.message,
+        });
+        this._generateNewViewID();
+    };
+    PlaybackBIModule.prototype._sendPlaying = function () {
+        if (!this._isVideoPlaying) {
+            this._logger.playablePlayStarted({
+                correlationId: this._collerationID,
+                videoId: this._videoID,
+            });
+            this._isOngoingPlayback = true;
+            this._isVideoPlaying = true;
+            this._startIntervalSendForProgress();
+        }
+    };
+    PlaybackBIModule.prototype._sendAnomalyBiEvent = function (reason) {
+        this._logger.playablePlayAnomalies({
+            anomalyName: reason,
+            videoId: this._videoID,
+            correlationId: this._collerationID,
+        });
+    };
+    PlaybackBIModule.prototype._sendError = function (errorData) {
+        var _a = this._engine.getDebugInfo().type, type = _a === void 0 ? UNKNOWN_TYPE : _a;
+        var errorType = errorData.errorType;
+        this._logger.playableError({
+            correlationId: this._collerationID,
+            currentTimeFrame: this._getCurrentTimeOfVideo(),
+            product: this._product,
+            videoId: this._videoID,
+            errorType: errorType,
+            errorMessage: errorType,
+            videoType: type,
+        });
+    };
+    PlaybackBIModule.prototype._getCurrentTimeOfVideo = function () {
+        return convertMSToInt(this._engine.getCurrentTime());
+    };
+    PlaybackBIModule.prototype._sendResumed = function () {
+        if (!this._isVideoPlaying) {
+            this._logger.playablePlayResumed({
+                correlationId: this._collerationID,
+                videoId: this._videoID,
+                currentTimeFrame: this._getCurrentTimeOfVideo(),
+            });
+            this._isVideoPlaying = true;
+            this._startIntervalSendForProgress();
+        }
+    };
+    PlaybackBIModule.prototype._sendProgress = function () {
+        var _a = this._engine.getDebugInfo(), type = _a.type, currentBitrate = _a.currentBitrate;
+        this._logger.playableProgressInfo({
+            correlationId: this._collerationID,
+            currentBitrate: currentBitrate,
+            currentTimeFrame: this._getCurrentTimeOfVideo(),
+            deliveryType: type,
+            playedRange: JSON.stringify(this.getPlayedRange()),
+            videoId: this._videoID,
+        });
+    };
+    PlaybackBIModule.prototype._sendPause = function () {
+        if (this._isVideoPlaying) {
+            this._logger.playablePlayPaused({
+                correlationId: this._collerationID,
+                currentTimeFrame: this._getCurrentTimeOfVideo(),
+                playedRange: JSON.stringify(this.getPlayedRange()),
+                videoId: this._videoID,
+            });
+            this._stopIntervalSendForProgress();
+            this._isVideoPlaying = false;
+        }
+    };
+    PlaybackBIModule.prototype._sendFinish = function () {
+        this._logger.playablePlayFinished({
+            correlationId: this._collerationID,
+            playedRange: JSON.stringify(this.getPlayedRange()),
+            videoId: this._videoID,
+        });
+        this._stopIntervalSendForProgress();
+        this._isOngoingPlayback = false;
+        this._isVideoPlaying = false;
+    };
+    PlaybackBIModule.prototype.destroy = function () {
+        this._stopIntervalSendForProgress();
+        this.stopAllDelayedReports();
+        this._unbindEvents();
+        this._eventEmitter = null;
+        this._engine = null;
+        this._videoTag = null;
+        this._logger = null;
+    };
+    PlaybackBIModule.moduleName = 'wix-playback-bi-module';
+    PlaybackBIModule.dependencies = ['eventEmitter', 'engine'];
+    __decorate([
+        playable_1.playerAPIDecorator()
+    ], PlaybackBIModule.prototype, "setWixBIVideoID", null);
+    __decorate([
+        playable_1.playerAPIDecorator()
+    ], PlaybackBIModule.prototype, "setWixBIProduct", null);
+    __decorate([
+        playable_1.playerAPIDecorator()
+    ], PlaybackBIModule.prototype, "setWixBICustomDataJSON", null);
+    __decorate([
+        playable_1.playerAPIDecorator()
+    ], PlaybackBIModule.prototype, "setWixBIProgressInterval", null);
+    __decorate([
+        playable_1.playerAPIDecorator()
+    ], PlaybackBIModule.prototype, "setWixVisitorID", null);
+    __decorate([
+        playable_1.playerAPIDecorator()
+    ], PlaybackBIModule.prototype, "setWixMSID", null);
+    return PlaybackBIModule;
+}());
+exports.PlaybackBIModule = PlaybackBIModule;
+//# sourceMappingURL=playback-bi-module.js.map
+
+/***/ }),
+
+/***/ 1158:
+/*!*************************************************!*\
+  !*** ../node_modules/timers-browserify/main.js ***!
+  \*************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
+            (typeof self !== "undefined" && self) ||
+            window;
+var apply = Function.prototype.apply;
+
+// DOM APIs, for completeness
+
+exports.setTimeout = function() {
+  return new Timeout(apply.call(setTimeout, scope, arguments), clearTimeout);
+};
+exports.setInterval = function() {
+  return new Timeout(apply.call(setInterval, scope, arguments), clearInterval);
+};
+exports.clearTimeout =
+exports.clearInterval = function(timeout) {
+  if (timeout) {
+    timeout.close();
+  }
+};
+
+function Timeout(id, clearFn) {
+  this._id = id;
+  this._clearFn = clearFn;
+}
+Timeout.prototype.unref = Timeout.prototype.ref = function() {};
+Timeout.prototype.close = function() {
+  this._clearFn.call(scope, this._id);
+};
+
+// Does not start the time, just sets up the members needed.
+exports.enroll = function(item, msecs) {
+  clearTimeout(item._idleTimeoutId);
+  item._idleTimeout = msecs;
+};
+
+exports.unenroll = function(item) {
+  clearTimeout(item._idleTimeoutId);
+  item._idleTimeout = -1;
+};
+
+exports._unrefActive = exports.active = function(item) {
+  clearTimeout(item._idleTimeoutId);
+
+  var msecs = item._idleTimeout;
+  if (msecs >= 0) {
+    item._idleTimeoutId = setTimeout(function onTimeout() {
+      if (item._onTimeout)
+        item._onTimeout();
+    }, msecs);
+  }
+};
+
+// setimmediate attaches itself to the global object
+__webpack_require__(/*! setimmediate */ 358);
+// On some exotic environments, it's not clear which object `setimmediate` was
+// able to install onto.  Search each possibility in the same order as the
+// `setimmediate` library.
+exports.setImmediate = (typeof self !== "undefined" && self.setImmediate) ||
+                       (typeof global !== "undefined" && global.setImmediate) ||
+                       (this && this.setImmediate);
+exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
+                         (typeof global !== "undefined" && global.clearImmediate) ||
+                         (this && this.clearImmediate);
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../yoshi-flow-legacy/node_modules/webpack/buildin/global.js */ 44)))
+
+/***/ }),
+
+/***/ 1159:
+/*!**********************************************************************!*\
+  !*** ../node_modules/@wix/web-bi-logger/dist/src/tracking-logger.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.setHost = exports.factory = undefined;
+
+var _tracker = __webpack_require__(/*! ./lib/tracker */ 1160);
+
+var tracker = _interopRequireWildcard(_tracker);
+
+var _logger = __webpack_require__(/*! ./logger */ 1162);
+
+var logger = _interopRequireWildcard(_logger);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+var factory = exports.factory = function factory() {
+  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  var trackSession = options.trackSession || typeof options.trackSession === 'undefined';
+
+  if (trackSession) {
+    tracker.track(logger.factory);
+  }
+
+  return logger.factory(options);
+};
+
+var setHost = exports.setHost = logger.setHost;
+
+exports.default = {
+  factory: factory,
+  setHost: logger.setHost
+};
+
+/***/ }),
+
+/***/ 1160:
+/*!******************************************************************!*\
+  !*** ../node_modules/@wix/web-bi-logger/dist/src/lib/tracker.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.track = track;
+
+var _utils = __webpack_require__(/*! ./utils */ 579);
+
+var _navigator = __webpack_require__(/*! ./navigator */ 1161);
+
+var _env = __webpack_require__(/*! ./env */ 188);
+
+var _browser = __webpack_require__(/*! ./browser */ 362);
+
+var IS_TRACKING = '__isTrackingBiBrowsingSession__';
+var ENDPOINT = 'p';
+var SOURCE = 19;
+var EVID = 3;
+
+function shouldTrack() {
+  return !(0, _env.isWebWorker)() && (0, _env.requestWindow)(function (window) {
+    return !window[IS_TRACKING];
+  });
+}
+
+function setIsTracking() {
+  return (0, _env.requestWindow)(function (window) {
+    return window[IS_TRACKING] = true;
+  });
+}
+
+function getLogger(loggerFactory) {
+  return loggerFactory({ endpoint: ENDPOINT, useBeacon: true }).setDefaults({ src: SOURCE, evid: EVID, vsi: (0, _utils.guid)() }).logger();
+}
+
+function trackBrowsingSession(loggerFactory) {
+  var logger = getLogger(loggerFactory);
+  var firstInSession = 1;
+
+  (0, _navigator.listen)(function (fromUrl, toUrl) {
+    var _requestWindow = (0, _env.requestWindow)(function (window) {
+      return { sr: (0, _browser.getDesktopSize)(window), wr: (0, _browser.getWindowSize)(window) };
+    }),
+        sr = _requestWindow.sr,
+        wr = _requestWindow.wr;
+
+    logger.log({ from: fromUrl, to: toUrl, fis: firstInSession, sr: sr, wr: wr });
+    firstInSession = 0;
+  });
+}
+
+/**
+ * Sends a page view event on initial load and on every page switch
+ * BI event definition: http://bo.wix.com/bi-catalog-webapp/#/sources/19/events/3
+ */
+function track(loggerFactory) {
+  if (shouldTrack()) {
+    setIsTracking();
+    trackBrowsingSession(loggerFactory);
+  }
+}
+
+/***/ }),
+
+/***/ 1161:
+/*!********************************************************************!*\
+  !*** ../node_modules/@wix/web-bi-logger/dist/src/lib/navigator.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.listen = listen;
+
+var _env = __webpack_require__(/*! ./env */ 188);
+
+function hook(obj, fnName, hook) {
+  if (!obj || !obj[fnName]) {
+    return;
+  }
+
+  var original = obj[fnName];
+  obj[fnName] = function () {
+    hook.apply(null, arguments);
+    return original.apply(obj, arguments);
+  };
+}
+
+function onLoad(cb) {
+  setTimeout(function () {
+    return (0, _env.requestWindow)(function (window) {
+      return cb(window.location.href);
+    });
+  });
+}
+
+function onPushState(cb) {
+  (0, _env.requestWindow)(function (_ref) {
+    var history = _ref.history;
+    return ['pushState', 'replaceState'].forEach(function (fnName) {
+      hook(history, fnName, function (_, __, url) {
+        return cb(url);
+      });
+    });
+  });
+}
+
+function onPopState(cb) {
+  (0, _env.requestWindow)(function (window) {
+    return window.addEventListener('popstate', function () {
+      return cb(window.location.href);
+    });
+  });
+}
+
+function listen(cb) {
+  (0, _env.requestWindow)(function (window) {
+    var fromUrl = window.document.referrer;
+
+    [onLoad, onPushState, onPopState].forEach(function (event) {
+      return event(function (toUrl) {
+        cb(fromUrl, toUrl);
+        fromUrl = toUrl;
+      });
+    });
+  });
+}
+
+/***/ }),
+
+/***/ 1162:
+/*!*************************************************************!*\
+  !*** ../node_modules/@wix/web-bi-logger/dist/src/logger.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.setHost = exports.factory = undefined;
+
+var _wixBiLoggerClient = __webpack_require__(/*! @wix/wix-bi-logger-client */ 1163);
+
+var _env = __webpack_require__(/*! ./lib/env */ 188);
+
+var env = _interopRequireWildcard(_env);
+
+var _publishers = __webpack_require__(/*! ./lib/publishers */ 1170);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+var factory = exports.factory = function factory(options) {
+  return new _wixBiLoggerClient.BiLoggerFactory().addPublisher((0, _publishers.resolvePublisher)(options));
+};
+var setHost = exports.setHost = env.setHost;
+
+/***/ }),
+
+/***/ 1163:
+/*!***************************************************************!*\
+  !*** ../node_modules/@wix/wix-bi-logger-client/dist/index.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var BiLoggerClientFactory = __webpack_require__(/*! ./bi-logger-factory */ 1164);
+var BiLogger = __webpack_require__(/*! ./bi-logger */ 580);
+var biLoggerManager = __webpack_require__(/*! ./bi-logger-manager */ 581);
+
+module.exports.BiLoggerFactory = BiLoggerClientFactory;
+module.exports.BiLogger = BiLogger;
+module.exports.BiLoggerManager = biLoggerManager.BiLoggerManager;
+
+module.exports.factory = function () {
+  return new BiLoggerClientFactory();
+};
+module.exports.manager = biLoggerManager.manager;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 1164:
+/*!***************************************************************************!*\
+  !*** ../node_modules/@wix/wix-bi-logger-client/dist/bi-logger-factory.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var assert = __webpack_require__(/*! ./assert */ 363);
+var BiLogger = __webpack_require__(/*! ./bi-logger */ 580);
+var biLoggerManager = __webpack_require__(/*! ./bi-logger-manager */ 581);
+
+var BiLoggerFactory = function () {
+  function BiLoggerFactory() {
+    _classCallCheck(this, BiLoggerFactory);
+
+    this._publishers = [];
+    this._validators = [];
+    this._defaults = {};
+    this._events = {};
+  }
+
+  _createClass(BiLoggerFactory, [{
+    key: 'addPublisher',
+    value: function addPublisher(publisher) {
+      assert.defined(publisher, 'Publisher must be provided');
+      assert.ok(typeof publisher === 'function', 'Expected a publisher function');
+      this._publishers.push(publisher);
+      return this;
+    }
+  }, {
+    key: 'addValidator',
+    value: function addValidator(validator) {
+      assert.defined(validator, 'Validator must be provided');
+      assert.ok((typeof validator === 'undefined' ? 'undefined' : _typeof(validator)) === 'object' && validator, 'Expected a validator object');
+      assert.ok(validator.execute && validator.match, 'Provided validator does not match the interface');
+      this._validators.push(validator);
+      return this;
+    }
+  }, {
+    key: 'setDefaults',
+    value: function setDefaults(defaults) {
+      assert.defined(defaults, 'Defaults must be provided');
+      assert.object(defaults, 'Defaults must be an object');
+      this._defaults = defaults;
+      return this;
+    }
+  }, {
+    key: 'updateDefaults',
+    value: function updateDefaults(defaults) {
+      assert.defined(defaults, 'Defaults must be provided');
+      assert.object(defaults, 'Defaults must be an object');
+      Object.assign(this._defaults, defaults);
+      return this;
+    }
+  }, {
+    key: 'setEvents',
+    value: function setEvents(events) {
+      assert.defined(events, 'Events must be provided');
+      assert.object(events, 'Events must be an object');
+      this._events = events;
+      return this;
+    }
+  }, {
+    key: 'setDefaultValueTimeout',
+    value: function setDefaultValueTimeout(defaultValueTimeout) {
+      assert.defined(defaultValueTimeout, 'Default Value Timeout must be provided');
+      this._defaultValueTimeout = defaultValueTimeout;
+      return this;
+    }
+  }, {
+    key: 'setDefaultContinueOnFail',
+    value: function setDefaultContinueOnFail(defaultContinueOnFail) {
+      assert.defined(defaultContinueOnFail, 'Default Continue On Fail must be provided');
+      this._defaultContinueOnFail = defaultContinueOnFail;
+      return this;
+    }
+  }, {
+    key: 'setPublisherFailHandler',
+    value: function setPublisherFailHandler(onPublisherFailHandler) {
+      assert.defined(onPublisherFailHandler, 'Publisher Fail Handler must be provided');
+      this._onPublisherFailHandler = onPublisherFailHandler;
+      return this;
+    }
+  }, {
+    key: 'logger',
+    value: function logger(context) {
+      var logger = new BiLogger({
+        publishers: this._publishers,
+        validators: this._validators,
+        defaults: this._defaults,
+        events: this._events,
+        defaultValueTimeout: this._defaultValueTimeout,
+        defaultContinueOnFail: this._defaultContinueOnFail,
+        onPublisherFailHandler: this._onPublisherFailHandler
+      }, context);
+
+      biLoggerManager.manager.notifyLoggerCreated(logger);
+
+      return logger;
+    }
+  }]);
+
+  return BiLoggerFactory;
+}();
+
+module.exports = BiLoggerFactory;
+//# sourceMappingURL=bi-logger-factory.js.map
+
+/***/ }),
+
+/***/ 1165:
+/*!***************************************************************************!*\
+  !*** ../node_modules/@wix/wix-bi-logger-client/dist/utils/collections.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * This callback type is called `requestCallback` and is displayed as a global symbol.
+ *
+ * @callback iterateeCallback
+ * @param {*} Value
+ * @param {string} Key
+ * @param {object} Original object
+ */
+/**
+ * Iterates over object values
+ * @param {Object} collection
+ * @param {iterateeCallback} iteratee
+ * @return {Object} iterated object
+ */
+module.exports.mapValues = function (collection, iteratee) {
+  if (!collection) {
+    return {};
+  }
+
+  return Object.keys(collection).reduce(function (acc, key) {
+    acc[key] = iteratee(collection[key], key, collection);
+    return acc;
+  }, {});
+};
+
+module.exports.filterValues = function (collection, iteratee) {
+  if (!collection) {
+    return {};
+  }
+
+  return Object.keys(collection).reduce(function (acc, key) {
+    var keep = iteratee(collection[key], key, collection);
+
+    if (keep) {
+      acc[key] = collection[key];
+    }
+
+    return acc;
+  }, {});
+};
+//# sourceMappingURL=collections.js.map
+
+/***/ }),
+
+/***/ 1166:
+/*!***********************************************************************!*\
+  !*** ../node_modules/@wix/wix-bi-logger-client/dist/utils/promise.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * rejects original promise after specified timeout
+ * @param {Promise<R>} promise Original promise
+ * @param {string} [message] Additional message for timeout reject
+ * @param {number} timeout Time for reject
+ * @return {Promise<R>}
+ */
+module.exports.timedPromise = function (promise, _ref) {
+  var message = _ref.message,
+      timeout = _ref.timeout;
+
+  var timeoutPromise = new Promise(function (resolve, reject) {
+    setTimeout(reject, timeout, message ? 'Timeout: ' + message : 'Timeout');
+  });
+  return Promise.race([promise, timeoutPromise]);
+};
+
+/**
+ * Works like Promise.all expect uses object insetead of array.
+ * @param {Object} promiseObject
+ * @return {Promise} Promise wiht original keys and resolved values
+ */
+module.exports.allAsObject = function (promiseObject) {
+  var keys = Object.keys(promiseObject);
+  return Promise.all(keys.map(function (key) {
+    return promiseObject[key];
+  })).then(function (resolved) {
+    return resolved.reduce(function (acc, value, i) {
+      acc[keys[i]] = value;
+      return acc;
+    }, {});
+  });
+};
+//# sourceMappingURL=promise.js.map
+
+/***/ }),
+
+/***/ 1167:
+/*!*******************************************************************!*\
+  !*** ../node_modules/@wix/wix-bi-logger-client/dist/utils/log.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = {
+  error: function error() {
+    if (console && console.error) {
+      var _console;
+
+      (_console = console).error.apply(_console, arguments);
+    }
+  }
+};
+//# sourceMappingURL=log.js.map
+
+/***/ }),
+
+/***/ 1168:
+/*!****************************************************************************!*\
+  !*** ../node_modules/@wix/wix-bi-logger-client/dist/utils/event-buffer.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var debounce = __webpack_require__(/*! ./debounce */ 1169);
+
+var createEvent = function createEvent(event, context, startTime) {
+  return {
+    dt: Date.now() - startTime,
+    f: event,
+    context: context
+  };
+};
+
+var createBatch = function createBatch(events, startTime) {
+  return {
+    dt: Date.now() - startTime,
+    e: events
+  };
+};
+
+var EventBuffer = function () {
+  function EventBuffer(debounceMs) {
+    var _this = this;
+
+    _classCallCheck(this, EventBuffer);
+
+    this._flushHandler = function (x) {
+      return x;
+    };
+    this._flushDebounced = debounce(function () {
+      return _this.flush();
+    }, debounceMs);
+
+    this._init();
+  }
+
+  _createClass(EventBuffer, [{
+    key: '_init',
+    value: function _init() {
+      var _this2 = this;
+
+      this._startTime = Date.now();
+      this._events = [];
+      this._resolve = null;
+      this._promise = new Promise(function (resolve) {
+        return _this2._resolve = resolve;
+      });
+    }
+  }, {
+    key: 'flush',
+    value: function flush() {
+      if (!this._events.length) {
+        return Promise.resolve();
+      }
+
+      var events = this._events;
+      var resolve = this._resolve;
+      var startTime = this._startTime;
+
+      this._init();
+
+      return this._flushHandler(createBatch(events, startTime)).then(resolve);
+    }
+  }, {
+    key: 'onFlush',
+    value: function onFlush(handler) {
+      this._flushHandler = handler;
+
+      return this;
+    }
+  }, {
+    key: 'feed',
+    value: function feed(event, context) {
+      this._events.push(createEvent(event, context, this._startTime));
+
+      this._flushDebounced();
+
+      return this._promise;
+    }
+  }]);
+
+  return EventBuffer;
+}();
+
+module.exports = EventBuffer;
+//# sourceMappingURL=event-buffer.js.map
+
+/***/ }),
+
+/***/ 1169:
+/*!************************************************************************!*\
+  !*** ../node_modules/@wix/wix-bi-logger-client/dist/utils/debounce.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// Returns a function, that, as long as it continues to be invoked, will not
+// be triggered. The function will be called after it stops being called for
+// N milliseconds. If `immediate` is passed, trigger the function on the
+// leading edge, instead of the trailing.
+function debounce(func, wait, immediate) {
+  var timeout = void 0;
+
+  // This is the function that is actually executed when
+  // the DOM event is triggered.
+  return function () {
+    // Store the context of this and any parameters passed to executedFunction
+    var context = this;
+    var args = arguments;
+
+    // The function to be called after
+    // the debounce time has elapsed
+    var later = function later() {
+      // null timeout to indicate the debounce ended
+      timeout = null;
+
+      // Call function now if you did not on the leading end
+      if (!immediate) {
+        func.apply(context, args);
+      }
+    };
+
+    // Determine if you should call the function
+    // on the leading or trail end
+    var callNow = immediate && !timeout;
+
+    // This will reset the waiting every function execution.
+    // This is the step that prevents the function from
+    // being executed because it will never reach the
+    // inside of the previous setTimeout
+    clearTimeout(timeout);
+
+    // Restart the debounce waiting period.
+    // setTimeout returns a truthy value (it differs in web vs node)
+    timeout = setTimeout(later, wait);
+
+    // Call immediately if you're dong a leading
+    // end execution
+    if (callNow) {
+      func.apply(context, args);
+    }
+  };
+}
+
+module.exports = debounce;
+//# sourceMappingURL=debounce.js.map
+
+/***/ }),
+
+/***/ 1170:
+/*!*********************************************************************!*\
+  !*** ../node_modules/@wix/web-bi-logger/dist/src/lib/publishers.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.imagePublisher = imagePublisher;
+exports.beaconPublisher = beaconPublisher;
+exports.fetchPublisher = fetchPublisher;
+exports.resolvePublisher = resolvePublisher;
+
+var _utils = __webpack_require__(/*! ./utils */ 579);
+
+var _env = __webpack_require__(/*! ./env */ 188);
+
+var _transport = __webpack_require__(/*! ./transport */ 1171);
+
+function imagePublisher() {
+  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return function imagePublisher(params) {
+    var context = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    // eslint-disable-line func-names
+    var url = (0, _utils.buildUrl)(options, params, context);
+    return (0, _transport.pixelTransport)(url, context.image);
+  };
+}
+
+function beaconPublisher() {
+  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return function beaconPublisher(params) {
+    var context = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    // eslint-disable-line func-names
+    var url = (0, _utils.buildUrl)(options, params, context);
+    return (0, _transport.beaconTransport)(url).catch(function () {
+      return (0, _transport.pixelTransport)(url, context.image);
+    });
+  };
+}
+
+function fetchPublisher() {
+  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return function fetchPublisher(params) {
+    var context = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    // eslint-disable-line func-names
+    var url = (0, _utils.buildUrl)(options, params, context);
+    return (0, _transport.fetchTransport)(url);
+  };
+}
+
+function resolvePublisher() {
+  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  var publisher = void 0;
+
+  if ((0, _env.isWebWorker)()) {
+    publisher = fetchPublisher;
+  } else if (typeof options.useBeacon === 'undefined' || options.useBeacon) {
+    publisher = beaconPublisher;
+  } else {
+    publisher = imagePublisher;
+  }
+
+  publisher = publisher(options);
+
+  /* eslint-disable camelcase */
+  return function (params, context) {
+    return publisher(_extends({}, params, (0, _utils.getCookieParams)({
+      _client_id: { name: '_wixCIDX' },
+      _uuid: { name: '_wixUIDX', transform: function transform(value) {
+          return typeof value === 'string' && value.split('|')[1];
+        } }
+    })), context);
+  };
+}
+
+/***/ }),
+
+/***/ 1171:
+/*!********************************************************************!*\
+  !*** ../node_modules/@wix/web-bi-logger/dist/src/lib/transport.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.beaconTransport = beaconTransport;
+exports.pixelTransport = pixelTransport;
+exports.fetchTransport = fetchTransport;
+
+var _browser = __webpack_require__(/*! ./browser */ 362);
+
+function beaconTransport(url) {
+  return new Promise(function (resolve, reject) {
+    return (0, _browser.sendBeacon)(url) ? resolve() : reject(new Error('Transport Error: Cannot send bi using beacons'));
+  });
+}
+
+function pixelTransport(url, image) {
+  return new Promise(function (resolve, reject) {
+    var biImage = image || new window.Image(0, 0);
+    biImage.onload = function () {
+      return resolve();
+    };
+    biImage.onerror = function () {
+      return reject(new Error('Transport Error: Cannot send bi using pixelTransport'));
+    };
+    biImage.src = url;
+  });
+}
+
+function fetchTransport(url) {
+  return fetch(url, { credentials: 'include' }).then(function (response) {
+    if (!response.ok) {
+      throw Error('Transport Error: Cannot send bi using fetch. Status: ' + response.status);
+    }
+  });
+}
+
+/***/ }),
+
+/***/ 1172:
+/*!***********************************************************************!*\
+  !*** ../node_modules/@wix/bi-logger-video-platform/dist/src/index.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) if (e.indexOf(p[i]) < 0)
+            t[p[i]] = s[p[i]];
+    return t;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+/* tslint:disable */
+/* eslint:disable */
+/**
+* @typedef {string} Url
+*/
+/**
+* @typedef {string} GUID
+*/
+/**
+* @typedef {number} DateTime
+*/
+var dummy;
+var defaultConfig = { endpoint: 'video-platform' };
+var init = function (webOrMobileLogger) { return function (userConfig) {
+    if (userConfig === void 0) { userConfig = {}; }
+    var defaults = userConfig.defaults, restOfConfig = __rest(userConfig, ["defaults"]);
+    var config = __assign({}, defaultConfig, restOfConfig);
+    var factoryInstance = typeof webOrMobileLogger.factory === 'function' ? webOrMobileLogger.factory(config) : webOrMobileLogger;
+    var logger = getLogger(factoryInstance);
+    return defaults ? logger.util.updateDefaults(defaults) : logger;
+}; };
+exports.initCustomLogger = function (factoryInstance) { return getLogger(factoryInstance); };
+var getLogger = function (biLoggerClientFactoryInstance) {
+    return new Logger(biLoggerClientFactoryInstance);
+};
+var Logger = /** @class */ (function () {
+    function Logger(biLoggerClientFactoryInstance) {
+        var _this = this;
+        this.biLoggerClientFactoryInstance = biLoggerClientFactoryInstance;
+        this.util = {
+            updateDefaults: function (defaults) {
+                _this.biLoggerClientFactoryInstance.updateDefaults(defaults);
+                return _this;
+            },
+            log: function (logParams, context) {
+                return _this.bi.log(logParams, context);
+            }
+        };
+        biLoggerClientFactoryInstance
+            .updateDefaults({ src: 71 });
+        this.bi = biLoggerClientFactoryInstance.logger({ endpoint: 'video-platform' });
+    }
+    ;
+    /**
+    * @typedef {Object} playableProgressInfoParams
+    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
+    * @property {number} currentBitrate - current_bitrate
+    * @property {number} currentTimeFrame - ms
+    * @property {string} deliveryType - delivery_type
+    * @property {string} playedRange - [[0, 15], [33, 55], [100, 140]]
+    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
+    **/
+    /**
+     * Name: playable.progress.info. Evid: 904.
+     * Event description: playable.progress.info (every 5 sec event).
+    
+     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
+     *
+     * currentBitrate - Type: numeric. Desc: current_bitrate
+     *
+     * currentTimeFrame - Type: numeric. Desc: ms
+     *
+     * deliveryType - Type: string. Desc: delivery_type
+     *
+     * playedRange - Type: string. Desc: [[0, 15], [33, 55], [100, 140]]
+     *
+     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
+     * @param {playableProgressInfoParams} params The parameters for this event.
+     * @return {Promise}
+    **/
+    Logger.prototype.playableProgressInfo = function (params) {
+        return this.bi.log(__assign({ evid: 904 }, params));
+    };
+    /**
+    * @typedef {Object} playablePlayStartedParams
+    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
+    * @property {string} product - (wix_video, wix_video_embed, wix_video_live, editor_player)
+    * @property {number} videoDuration - ms
+    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
+    * @property {string} videoSource - youtube / vimeo etc
+    **/
+    /**
+     * Name: playable.play.started. Evid: 903.
+     * Event description: playable.play.started.
+    
+     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
+     *
+     * product - Type: string. Desc: (wix_video, wix_video_embed, wix_video_live, editor_player)
+     *
+     * videoDuration - Type: numeric. Desc: ms
+     *
+     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
+     *
+     * videoSource - Type: string. Desc: youtube / vimeo etc
+     * @param {playablePlayStartedParams} params The parameters for this event.
+     * @return {Promise}
+    **/
+    Logger.prototype.playablePlayStarted = function (params) {
+        return this.bi.log(__assign({ evid: 903 }, params));
+    };
+    /*event 900 on project 'com.wixpress.video-platform has no function name set, please set one in BI Catalog.*/
+    /**
+    * @typedef {Object} playablePlayResumedParams
+    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
+    * @property {number} currentTimeFrame - ms
+    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
+    **/
+    /**
+     * Name: playable.play.resumed. Evid: 906.
+     * Event description: playable.play.resumed.
+    
+     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
+     *
+     * currentTimeFrame - Type: numeric. Desc: ms
+     *
+     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
+     * @param {playablePlayResumedParams} params The parameters for this event.
+     * @return {Promise}
+    **/
+    Logger.prototype.playablePlayResumed = function (params) {
+        return this.bi.log(__assign({ evid: 906 }, params));
+    };
+    /**
+    * @typedef {Object} playablePlayRequestedParams
+    * @property {string} bitrateJson - json of all bitrades ([800,1000,10000])
+    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
+    * @property {string} customDataJson - custom data from different products
+    * @property {boolean} isAutoplay - is_autoplay
+    * @property {boolean} isTriggeredByUser - is_triggered_by_user
+    * @property {string} product - (wix_video, wix_video_embed, wix_video_live, editor_player)
+    * @property {boolean} replay - is replayed
+    * @property {number} videoDuration - ms
+    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
+    * @property {string} videoType - HLS, MP4 etc
+    **/
+    /**
+     * Name: playable.play.requested. Evid: 901.
+     * Event description: Play request.
+    
+     * bitrateJson - Type: string. Desc: json of all bitrades ([800,1000,10000])
+     *
+     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
+     *
+     * customDataJson - Type: string. Desc: custom data from different products
+     *
+     * isAutoplay - Type: bool. Desc: is_autoplay
+     *
+     * isTriggeredByUser - Type: bool. Desc: is_triggered_by_user
+     *
+     * product - Type: string. Desc: (wix_video, wix_video_embed, wix_video_live, editor_player)
+     *
+     * replay - Type: bool. Desc: is replayed
+     *
+     * videoDuration - Type: numeric. Desc: ms
+     *
+     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
+     *
+     * videoType - Type: string. Desc: HLS, MP4 etc
+     * @param {playablePlayRequestedParams} params The parameters for this event.
+     * @return {Promise}
+    **/
+    Logger.prototype.playablePlayRequested = function (params) {
+        return this.bi.log(__assign({ evid: 901 }, params));
+    };
+    /**
+    * @typedef {Object} playablePlayFinishedParams
+    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
+    * @property {string} playedRange - [[0, 15], [33, 55], [100, 140]]
+    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
+    **/
+    /**
+     * Name: playable.play.finished. Evid: 907.
+     * Event description: playable.play.finished.
+    
+     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
+     *
+     * playedRange - Type: string. Desc: [[0, 15], [33, 55], [100, 140]]
+     *
+     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
+     * @param {playablePlayFinishedParams} params The parameters for this event.
+     * @return {Promise}
+    **/
+    Logger.prototype.playablePlayFinished = function (params) {
+        return this.bi.log(__assign({ evid: 907 }, params));
+    };
+    /**
+    * @typedef {Object} playablePlayPausedParams
+    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
+    * @property {number} currentTimeFrame - ms
+    * @property {string} playedRange - [[0, 15], [33, 55], [100, 140]]
+    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
+    **/
+    /**
+     * Name: playable.play.paused. Evid: 905.
+     * Event description: playable.play.paused.
+    
+     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
+     *
+     * currentTimeFrame - Type: numeric. Desc: ms
+     *
+     * playedRange - Type: string. Desc: [[0, 15], [33, 55], [100, 140]]
+     *
+     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
+     * @param {playablePlayPausedParams} params The parameters for this event.
+     * @return {Promise}
+    **/
+    Logger.prototype.playablePlayPaused = function (params) {
+        return this.bi.log(__assign({ evid: 905 }, params));
+    };
+    /**
+    * @typedef {Object} playablePlayAnomaliesParams
+    * @property {string} anomalyName - [[0, 15], [33, 55], [100, 140]]
+    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
+    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
+    **/
+    /**
+     * Name: playable.play.anomalies. Evid: 908.
+     * Event description: playable.play.anomalies.
+    
+     * anomalyName - Type: string. Desc: [[0, 15], [33, 55], [100, 140]]
+     *
+     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
+     *
+     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
+     * @param {playablePlayAnomaliesParams} params The parameters for this event.
+     * @return {Promise}
+    **/
+    Logger.prototype.playablePlayAnomalies = function (params) {
+        return this.bi.log(__assign({ evid: 908 }, params));
+    };
+    /**
+    * @typedef {Object} playableErrorParams
+    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
+    * @property {number} currentTimeFrame - current_time_frame
+    * @property {string} errorMessage - msg
+    * @property {string} errorType - error
+    * @property {string} product - product
+    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
+    * @property {string} videoType - HLS, MP4 etc
+    **/
+    /**
+     * Name: playable.error. Evid: 909.
+     * Event description: error event.
+    
+     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
+     *
+     * currentTimeFrame - Type: numeric. Desc: current_time_frame
+     *
+     * errorMessage - Type: string. Desc: msg
+     *
+     * errorType - Type: string. Desc: error
+     *
+     * product - Type: string. Desc: product
+     *
+     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
+     *
+     * videoType - Type: string. Desc: HLS, MP4 etc
+     * @param {playableErrorParams} params The parameters for this event.
+     * @return {Promise}
+    **/
+    Logger.prototype.playableError = function (params) {
+        return this.bi.log(__assign({ evid: 909 }, params));
+    };
+    /**
+    * @typedef {Object} playablePlayAbortedParams
+    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
+    * @property {string} reasonMessage - reason
+    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
+    **/
+    /**
+     * Name: playable.play.aborted. Evid: 902.
+     * Event description: Playable.play.aborted (after aborted you should change the correlation id).
+    
+     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
+     *
+     * reasonMessage - Type: string. Desc: reason
+     *
+     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
+     * @param {playablePlayAbortedParams} params The parameters for this event.
+     * @return {Promise}
+    **/
+    Logger.prototype.playablePlayAborted = function (params) {
+        return this.bi.log(__assign({ evid: 902 }, params));
+    };
+    return Logger;
+}());
+exports.Logger = Logger;
+exports.default = init;
+function getLoggerConf() {
+    return {
+        src: 71,
+        endpoint: 'video-platform'
+    };
+}
+exports.getLoggerConf = getLoggerConf;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 1173:
+/*!**********************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/index.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var tslib_1 = __webpack_require__(/*! tslib */ 5);
-var React = __webpack_require__(/*! react */ 0);
-var uniqueId = __webpack_require__(/*! lodash/uniqueId */ 65);
-var constants_1 = __webpack_require__(/*! ../constants */ 62);
-function playerHOC(Player, mapPropsToPlayer, mapMethodsToPlayer) {
-    var _a;
-    return _a = /** @class */ (function (_super) {
-            tslib_1.__extends(class_1, _super);
-            function class_1() {
-                var _this = _super !== null && _super.apply(this, arguments) || this;
-                _this.isPlayingNow = false;
-                _this.state = {
-                    playerKey: uniqueId('player-'),
-                };
-                _this._playerRef = function (instance) {
-                    _this.ref = instance;
-                };
-                return _this;
-            }
-            class_1.prototype.componentDidMount = function () {
-                this._broadcastEvents();
-            };
-            class_1.prototype.componentDidUpdate = function (prevProps, prevState) {
-                if (this.state.playerKey !== prevState.playerKey) {
-                    this._broadcastEvents();
-                }
-            };
-            class_1.prototype.componentWillReceiveProps = function (nextProps) {
-                var currentProps = this.props;
-                for (var propKey in nextProps) {
-                    var method = mapPropsToPlayer[propKey];
-                    var isPropChanged = nextProps[propKey] !== currentProps[propKey];
-                    if (method && isPropChanged) {
-                        this._callPlayer(method, nextProps[propKey]);
-                    }
-                }
-            };
-            class_1.prototype._callPlayer = function (method) {
-                var args = [];
-                for (var _i = 1; _i < arguments.length; _i++) {
-                    args[_i - 1] = arguments[_i];
-                }
-                var player = this.ref.player;
-                try {
-                    if (typeof method === 'string') {
-                        return player[method].apply(player, args);
-                    }
-                    if (typeof method === 'function') {
-                        return method.apply(void 0, [this, player].concat(args));
-                    }
-                }
-                catch (error) {
-                    this.props.onError(error);
-                }
-            };
-            class_1.prototype._broadcastEvents = function () {
-                var _this = this;
-                this.ref.eventEmitter.once(constants_1.EVENTS.PLAYING, function () {
-                    _this.props.onFirstPlay();
-                });
-                this.ref.eventEmitter.once(constants_1.EVENTS.ENDED, function () {
-                    _this.props.onFirstEnded();
-                });
-                this.ref.eventEmitter.on(constants_1.EVENTS.PLAYING, function () {
-                    _this.isPlayingNow = true;
-                    _this.props.onPlay();
-                });
-                this.ref.eventEmitter.on(constants_1.EVENTS.PAUSED, function () {
-                    _this.isPlayingNow = false;
-                    _this.props.onPause();
-                });
-                this.ref.eventEmitter.on(constants_1.EVENTS.ENDED, function () {
-                    _this.isPlayingNow = false;
-                    _this.props.onEnded();
-                });
-            };
-            class_1.prototype.reload = function () {
-                this.setState({
-                    playerKey: uniqueId('player-'),
-                });
-            };
-            class_1.prototype.getPlayerAPI = function () {
-                return this.ref.player;
-            };
-            class_1.prototype.play = function () {
-                var _this = this;
-                var result = this._callPlayer(mapMethodsToPlayer.play);
-                return result instanceof Promise
-                    ? result
-                    : new Promise(function (resolve) {
-                        _this.ref.eventEmitter.once(constants_1.EVENTS.PLAYING, function () { return resolve(); });
-                    });
-            };
-            class_1.prototype.pause = function () {
-                var _this = this;
-                var result = this._callPlayer(mapMethodsToPlayer.pause);
-                return result instanceof Promise
-                    ? result
-                    : new Promise(function (resolve) {
-                        _this.ref.eventEmitter.once(constants_1.EVENTS.PAUSED, function () { return resolve(); });
-                    });
-            };
-            class_1.prototype.togglePlay = function () {
-                var _this = this;
-                var method = this.isPlayingNow ? 'pause' : 'play';
-                var event = this.isPlayingNow ? constants_1.EVENTS.PAUSED : constants_1.EVENTS.PLAYING;
-                var result = this._callPlayer(mapMethodsToPlayer[method]);
-                return result instanceof Promise
-                    ? result
-                    : new Promise(function (resolve) {
-                        _this.ref.eventEmitter.once(event, function () { return resolve(); });
-                    });
-            };
-            class_1.prototype.stop = function () {
-                this._callPlayer(mapMethodsToPlayer.stop);
-                return Promise.resolve();
-            };
-            class_1.prototype.getDuration = function () {
-                return this._callPlayer(mapMethodsToPlayer.getDuration) || 0;
-            };
-            class_1.prototype.getCurrentTime = function () {
-                return this._callPlayer(mapMethodsToPlayer.getCurrentTime) || 0;
-            };
-            class_1.prototype.seekTo = function (amount) {
-                this._callPlayer(mapMethodsToPlayer.seekTo, amount);
-                return Promise.resolve();
-            };
-            class_1.prototype.getVolume = function () {
-                return this._callPlayer(mapMethodsToPlayer.getVolume) || 0;
-            };
-            class_1.prototype.setVolume = function (fraction) {
-                return this._callPlayer(mapMethodsToPlayer.setVolume, fraction);
-            };
-            class_1.prototype.isMuted = function () {
-                return this._callPlayer(mapMethodsToPlayer.isMuted);
-            };
-            class_1.prototype.isPlaying = function () {
-                return this.isPlayingNow;
-            };
-            class_1.prototype.mute = function () {
-                this._callPlayer(mapMethodsToPlayer.mute);
-                return Promise.resolve();
-            };
-            class_1.prototype.unMute = function () {
-                this._callPlayer(mapMethodsToPlayer.unMute);
-                return Promise.resolve();
-            };
-            class_1.prototype.render = function () {
-                return (React.createElement(Player, tslib_1.__assign({ key: this.state.playerKey, ref: this._playerRef }, this.props)));
-            };
-            return class_1;
-        }(React.Component)),
-        _a.propTypes = Player.propTypes,
-        _a.displayName = Player.displayName,
-        _a;
-}
-exports.default = playerHOC;
-//# sourceMappingURL=playerHOC.js.map
+var Video_1 = __webpack_require__(/*! ./Video */ 1174);
+exports.Video = Video_1.Video;
+//# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ 104:
+/***/ 1174:
+/*!**********************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/Video.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(/*! tslib */ 10);
+var React = __webpack_require__(/*! react */ 0);
+var players_1 = __webpack_require__(/*! ./players */ 1175);
+var Video_st_css_1 = __webpack_require__(/*! ./Video.st.css */ 135);
+var filter_data_props_1 = __webpack_require__(/*! ../../utils/filter-data-props */ 36);
+var noop = function () { return null; };
+var DEFAULT_PLAYER = 'playable';
+var getPlayerName = function (url) {
+    for (var key in players_1.playerVerifiers) {
+        var name_1 = key;
+        if (players_1.playerVerifiers[name_1](url)) {
+            return name_1;
+        }
+    }
+    return DEFAULT_PLAYER;
+};
+var Video = /** @class */ (function (_super) {
+    tslib_1.__extends(Video, _super);
+    function Video(props) {
+        var _this = _super.call(this, props) || this;
+        _this.state = {
+            playerName: null,
+        };
+        _this.state.playerName = getPlayerName(_this.props.src);
+        return _this;
+    }
+    Video.prototype.UNSAFE_componentWillReceiveProps = function (nextProps) {
+        if (this.props.src !== nextProps.src) {
+            this.setState({
+                playerName: getPlayerName(nextProps.src),
+            });
+        }
+    };
+    Video.prototype.render = function () {
+        var playerName = this.state.playerName;
+        if (!playerName) {
+            return null;
+        }
+        var Player = players_1.playerComponents[playerName];
+        var playerProps = tslib_1.__assign(tslib_1.__assign({}, this.props), this.props.config[playerName]);
+        var _a = this.props, id = _a.id, fillAllSpace = _a.fillAllSpace, playerRef = _a.playerRef, className = _a.className;
+        var _b = this.props, width = _b.width, height = _b.height;
+        if (fillAllSpace) {
+            width = '100%';
+            height = '100%';
+        }
+        return (React.createElement("div", tslib_1.__assign({ id: id, style: { width: width, height: height }, className: Video_st_css_1.st(Video_st_css_1.classes.root, className) }, filter_data_props_1.filterDataProps(this.props)),
+            React.createElement(Player, tslib_1.__assign({}, playerProps, { ref: playerRef }))));
+    };
+    Video.displayName = 'Video';
+    Video.defaultProps = {
+        controls: true,
+        loop: false,
+        muted: false,
+        showTitle: true,
+        fillAllSpace: false,
+        volume: 100,
+        onInit: noop,
+        onReady: noop,
+        onDuration: noop,
+        onPlay: noop,
+        onPause: noop,
+        onEnded: noop,
+        onProgress: noop,
+        onError: noop,
+        onFirstPlay: noop,
+        onFirstEnded: noop,
+        config: {},
+    };
+    return Video;
+}(React.Component));
+exports.Video = Video;
+//# sourceMappingURL=Video.js.map
+
+/***/ }),
+
+/***/ 1175:
+/*!******************************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/index.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var Playable_1 = __webpack_require__(/*! ./Playable */ 1176);
+var YouTube_1 = __webpack_require__(/*! ./YouTube */ 1177);
+var Facebook_1 = __webpack_require__(/*! ./Facebook */ 1180);
+var Vimeo_1 = __webpack_require__(/*! ./Vimeo */ 1182);
+var Twitch_1 = __webpack_require__(/*! ./Twitch */ 1183);
+var DailyMotion_1 = __webpack_require__(/*! ./DailyMotion */ 1184);
+// @TODO enum ?
+exports.playerVerifiers = {
+    dailymotion: DailyMotion_1.verifier,
+    facebook: Facebook_1.verifier,
+    playable: Playable_1.verifier,
+    twitch: Twitch_1.verifier,
+    vimeo: Vimeo_1.verifier,
+    youtube: YouTube_1.verifier,
+};
+exports.playerComponents = {
+    dailymotion: DailyMotion_1.Player,
+    facebook: Facebook_1.Player,
+    playable: Playable_1.Player,
+    twitch: Twitch_1.Player,
+    vimeo: Vimeo_1.Player,
+    youtube: YouTube_1.Player,
+};
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 1176:
+/*!*********************************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/Playable.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(/*! tslib */ 10);
+var React = __webpack_require__(/*! react */ 0);
+var eventemitter3_1 = __webpack_require__(/*! eventemitter3 */ 102);
+var classnames_1 = __webpack_require__(/*! classnames */ 8);
+var isString = __webpack_require__(/*! lodash/isString */ 163);
+var isArray = __webpack_require__(/*! lodash/isArray */ 364);
+var playable_1 = __webpack_require__(/*! playable */ 578);
+var constants_1 = __webpack_require__(/*! ../constants */ 134);
+var playerHOC_1 = __webpack_require__(/*! ./playerHOC */ 164);
+var Video_st_css_1 = __webpack_require__(/*! ../Video.st.css */ 135);
+var URL_REGEX = /\.(mp4|og[gv]|webm|mov|m4v)($|\?)/i;
+exports.verifier = function (url) {
+    if (isString(url)) {
+        return URL_REGEX.test(url);
+    }
+    if (isArray(url)) {
+        return url.some(function (item) { return URL_REGEX.test(item); });
+    }
+    return false;
+};
+var mapPropsToPlayer = {
+    src: function (instance) { return instance.reload(); },
+    playing: function (instance, player, nextPlaying) {
+        if (nextPlaying) {
+            player.play();
+        }
+        else {
+            player.pause();
+        }
+    },
+    muted: function (instance, player, nextMuted) {
+        if (nextMuted) {
+            player.mute();
+        }
+        else {
+            player.unmute();
+        }
+    },
+    volume: 'setVolume',
+    title: 'setTitle',
+    loop: 'setLoop',
+    logoUrl: 'setLogo',
+    alwaysShowLogo: 'setAlwaysShowLogo',
+    onLogoClick: 'setLogoClickCallback',
+    preload: 'setPreload',
+    showTitle: function (instance, player, isShowTitle) {
+        if (isShowTitle) {
+            player.showTitle();
+        }
+        else {
+            player.hideTitle();
+        }
+    },
+    controls: function (instance, player, isShowControls) {
+        if (isShowControls) {
+            player.showPlayControl();
+            player.showVolumeControl();
+            player.showTimeControl();
+            player.showFullScreenControl();
+            player.showProgressControl();
+        }
+        else {
+            player.hidePlayControl();
+            player.hideVolumeControl();
+            player.hideTimeControl();
+            player.hideFullScreenControl();
+            player.hideProgressControl();
+        }
+    },
+};
+var mapMethodsToPlayer = {
+    play: 'play',
+    pause: 'pause',
+    stop: 'reset',
+    getDuration: 'getDuration',
+    getCurrentTime: 'getCurrentTime',
+    seekTo: 'seekTo',
+    getVolume: 'getVolume',
+    setVolume: 'setVolume',
+    isMuted: function (instance, player) { return player.isMuted; },
+    mute: 'mute',
+    unMute: 'unmute',
+};
+var PlayablePlayer = /** @class */ (function (_super) {
+    tslib_1.__extends(PlayablePlayer, _super);
+    function PlayablePlayer(props) {
+        var _this = _super.call(this, props) || this;
+        _this.state = {
+            hasBeenPlayed: false,
+        };
+        _this.onPlayClick = function () {
+            _this.player.play();
+        };
+        _this._handleRightClick = function (event) { return event.preventDefault(); };
+        _this.containerRef = React.createRef();
+        _this.eventEmitter = new eventemitter3_1.EventEmitter();
+        return _this;
+    }
+    PlayablePlayer.prototype.componentDidMount = function () {
+        this.initPlayer();
+    };
+    PlayablePlayer.prototype.componentWillUnmount = function () {
+        if (this.player) {
+            this.player
+                .getElement()
+                .removeEventListener('contextmenu', this._handleRightClick);
+            this.player.destroy();
+        }
+        this.eventEmitter.removeAllListeners();
+    };
+    PlayablePlayer.prototype.initPlayer = function () {
+        var _this = this;
+        var _a = this.props, src = _a.src, playing = _a.playing, poster = _a.poster, muted = _a.muted, title = _a.title, texts = _a.texts, showTitle = _a.showTitle, loop = _a.loop, volume = _a.volume, controls = _a.controls, onInit = _a.onInit, onReady = _a.onReady, onDuration = _a.onDuration, onProgress = _a.onProgress, logoUrl = _a.logoUrl, onLogoClick = _a.onLogoClick, alwaysShowLogo = _a.alwaysShowLogo, modules = _a.modules, hideMainUI = _a.hideMainUI;
+        var preload = (!poster ? 'metadata' : this.props.preload);
+        this.registerModules(modules);
+        this.player = playable_1.create({
+            src: src,
+            autoplay: !!playing,
+            playsinline: true,
+            muted: muted,
+            fillAllSpace: true,
+            title: title,
+            preload: preload,
+            loop: loop,
+            volume: volume,
+            texts: texts,
+            hideOverlay: true,
+            hideMainUI: hideMainUI,
+        });
+        this.player
+            .getElement()
+            .addEventListener('contextmenu', this._handleRightClick);
+        this._hidePlayableUI();
+        if (!showTitle) {
+            this.player.hideTitle();
+        }
+        if (logoUrl || onLogoClick || alwaysShowLogo) {
+            this.player.setLogo(logoUrl);
+            this.player.setAlwaysShowLogo(alwaysShowLogo);
+            this.player.setLogoClickCallback(onLogoClick);
+        }
+        this.player.attachToElement(this.containerRef.current);
+        this.player.on(playable_1.ENGINE_STATES.PLAY_REQUESTED, function () {
+            if (controls) {
+                _this._showPlayableUI();
+            }
+            _this.setState({ hasBeenPlayed: true });
+        });
+        this.player.on(playable_1.ENGINE_STATES.METADATA_LOADED, function () {
+            onReady();
+            onDuration(_this.player.getDuration());
+        });
+        this.player.on(playable_1.ENGINE_STATES.PLAYING, function () {
+            _this.setState({ hasBeenPlayed: true });
+            _this.eventEmitter.emit(constants_1.EVENTS.PLAYING);
+        });
+        this.player.on(playable_1.ENGINE_STATES.PAUSED, function () {
+            _this.eventEmitter.emit(constants_1.EVENTS.PAUSED);
+        });
+        this.player.on(playable_1.ENGINE_STATES.ENDED, function () {
+            _this.setState({ hasBeenPlayed: false });
+            _this.eventEmitter.emit(constants_1.EVENTS.ENDED);
+        });
+        this.player.on(playable_1.VIDEO_EVENTS.CURRENT_TIME_UPDATED, function (currentTime) {
+            onProgress(currentTime);
+        });
+        onInit(this.player, PlayablePlayer.playerName);
+    };
+    PlayablePlayer.prototype._showPlayableUI = function () {
+        this.player.showPlayControl();
+        this.player.showVolumeControl();
+        this.player.showTimeControl();
+        this.player.showFullScreenControl();
+        this.player.showProgressControl();
+        this.player.showPictureInPictureControl();
+    };
+    PlayablePlayer.prototype._hidePlayableUI = function () {
+        this.player.hidePlayControl();
+        this.player.hideVolumeControl();
+        this.player.hideTimeControl();
+        this.player.hideFullScreenControl();
+        this.player.hideProgressControl();
+        this.player.hidePictureInPictureControl();
+    };
+    PlayablePlayer.prototype._renderCover = function () {
+        var _a;
+        var _b = this.props, showTitle = _b.showTitle, title = _b.title, poster = _b.poster, hideOverlay = _b.hideOverlay, playButton = _b.playButton, playing = _b.playing, description = _b.description;
+        var hasBeenPlayed = this.state.hasBeenPlayed;
+        if (hideOverlay || playing || hasBeenPlayed) {
+            return null;
+        }
+        return (React.createElement("div", { className: classnames_1.default(Video_st_css_1.classes.cover, (_a = {},
+                _a[Video_st_css_1.classes.transparentOverlay] = !poster,
+                _a)), onClick: this.onPlayClick, onContextMenu: this._handleRightClick, "data-hook": "cover" },
+            poster && (React.createElement("img", { src: poster, alt: description, className: Video_st_css_1.classes.poster })),
+            React.createElement("div", { className: Video_st_css_1.classes.overlay },
+                showTitle && title && (React.createElement("div", { "data-hook": "title", title: title, className: Video_st_css_1.classes.title }, title)),
+                playButton)));
+    };
+    PlayablePlayer.prototype.registerModules = function (modules) {
+        if (modules === void 0) { modules = {}; }
+        Object.keys(modules).forEach(function (moduleName) {
+            return playable_1.registerModule(moduleName, modules[moduleName]);
+        });
+    };
+    PlayablePlayer.prototype.render = function () {
+        return (React.createElement(React.Fragment, null,
+            React.createElement("div", { ref: this.containerRef, className: Video_st_css_1.classes.playerContainer, "data-player-name": "Playable" }),
+            this._renderCover()));
+    };
+    PlayablePlayer.displayName = 'Playable';
+    PlayablePlayer.playerName = 'playable';
+    PlayablePlayer.defaultProps = {
+        poster: '',
+        playButton: null,
+    };
+    return PlayablePlayer;
+}(React.PureComponent));
+exports.Player = playerHOC_1.default(PlayablePlayer, mapPropsToPlayer, mapMethodsToPlayer);
+//# sourceMappingURL=Playable.js.map
+
+/***/ }),
+
+/***/ 1177:
+/*!********************************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/YouTube.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(/*! tslib */ 10);
+var React = __webpack_require__(/*! react */ 0);
+var eventemitter3_1 = __webpack_require__(/*! eventemitter3 */ 102);
+var isString = __webpack_require__(/*! lodash/isString */ 163);
+var utils_1 = __webpack_require__(/*! ../utils */ 189);
+var constants_1 = __webpack_require__(/*! ../constants */ 134);
+var playerHOC_1 = __webpack_require__(/*! ./playerHOC */ 164);
+var Video_st_css_1 = __webpack_require__(/*! ../Video.st.css */ 135);
+var URL_REGEX = /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})/;
+exports.verifier = function (url) {
+    return isString(url) && URL_REGEX.test(url);
+};
+var SDKConfig = {
+    name: 'YT',
+    url: 'https://www.youtube.com/iframe_api',
+    onReady: 'onYouTubeIframeAPIReady',
+    isLoaded: function (YT) { return !!YT.loaded; },
+    isRequireAllow: false,
+};
+var mapPropsToPlayer = {
+    src: function (instance) { return instance.reload(); },
+    playing: function (instance, player, nextPlaying) {
+        if (nextPlaying) {
+            player.playVideo();
+        }
+        else {
+            player.pauseVideo();
+        }
+    },
+    muted: function (instance, player, nextMuted) {
+        if (nextMuted) {
+            player.mute();
+        }
+        else {
+            player.unMute();
+        }
+    },
+    volume: 'setVolume',
+    loop: function (instance) {
+        // We reinit player to set(based on 'loop' prop) playlist, which is needed to play video in loop.
+        instance.reload();
+    },
+};
+var mapMethodsToPlayer = {
+    play: 'playVideo',
+    pause: 'pauseVideo',
+    stop: 'stopVideo',
+    getDuration: 'getDuration',
+    getCurrentTime: 'getCurrentTime',
+    seekTo: 'seekTo',
+    getVolume: 'getVolume',
+    setVolume: 'setVolume',
+    isMuted: 'isMuted',
+    mute: 'mute',
+    unMute: 'unMute',
+};
+var YouTubePlayer = /** @class */ (function (_super) {
+    tslib_1.__extends(YouTubePlayer, _super);
+    function YouTubePlayer(props) {
+        var _this = _super.call(this, props) || this;
+        _this.initPlayer = function (YT) {
+            var _a = _this.props, playing = _a.playing, muted = _a.muted, controls = _a.controls, loop = _a.loop, playerOptions = _a.playerOptions, onInit = _a.onInit, onReady = _a.onReady, onDuration = _a.onDuration, onError = _a.onError;
+            var src = _this.props.src;
+            var videoId = src.match(URL_REGEX)[1];
+            _this.player = new YT.Player(_this.containerRef.current, {
+                width: '100%',
+                height: '100%',
+                videoId: videoId,
+                playerVars: tslib_1.__assign(tslib_1.__assign({ autoplay: playing ? 1 : 0, mute: muted ? 1 : 0, controls: controls ? 1 : 0, loop: loop ? 1 : 0, origin: window.location.origin, playsinline: 1 }, (loop && { playlist: videoId })), playerOptions),
+                events: {
+                    onReady: function () {
+                        onReady();
+                        onDuration(_this.player.getDuration());
+                    },
+                    onStateChange: _this.onStateChange(YT.PlayerState),
+                    onError: onError,
+                },
+            });
+            onInit(_this.player, YouTubePlayer.playerName);
+        };
+        _this.onStateChange = function (PlayerState) { return function (_a) {
+            var data = _a.data;
+            var PLAYING = PlayerState.PLAYING, PAUSED = PlayerState.PAUSED, ENDED = PlayerState.ENDED;
+            switch (data) {
+                case PLAYING:
+                    _this.eventEmitter.emit(constants_1.EVENTS.PLAYING);
+                    _this.progress();
+                    break;
+                case PAUSED:
+                    _this.eventEmitter.emit(constants_1.EVENTS.PAUSED);
+                    _this.stopProgress();
+                    break;
+                case ENDED:
+                    _this.eventEmitter.emit(constants_1.EVENTS.ENDED);
+                    _this.stopProgress();
+                    break;
+                default:
+            }
+        }; };
+        _this.progress = function () {
+            _this.stopProgress();
+            _this.props.onProgress(_this.player.getCurrentTime() || 0);
+            _this.progressTimeout = window.setTimeout(_this.progress, constants_1.PROGRESS_INTERVAL);
+        };
+        _this.containerRef = React.createRef();
+        _this.eventEmitter = new eventemitter3_1.EventEmitter();
+        return _this;
+    }
+    YouTubePlayer.prototype.componentDidMount = function () {
+        var _this = this;
+        utils_1.getSDK(SDKConfig)
+            .then(this.initPlayer)
+            .catch(function (error) {
+            _this.props.onError(error);
+        });
+    };
+    YouTubePlayer.prototype.componentWillUnmount = function () {
+        if (this.player) {
+            this.player.destroy();
+        }
+        this.eventEmitter.removeAllListeners();
+        this.stopProgress();
+    };
+    YouTubePlayer.prototype.stopProgress = function () {
+        window.clearTimeout(this.progressTimeout);
+    };
+    YouTubePlayer.prototype.render = function () {
+        return (React.createElement("div", { ref: this.containerRef, className: Video_st_css_1.classes.playerContainer, "data-player-name": "YouTube" }));
+    };
+    YouTubePlayer.displayName = 'YouTube';
+    YouTubePlayer.playerName = 'youtube';
+    return YouTubePlayer;
+}(React.PureComponent));
+exports.Player = playerHOC_1.default(YouTubePlayer, mapPropsToPlayer, mapMethodsToPlayer);
+//# sourceMappingURL=YouTube.js.map
+
+/***/ }),
+
+/***/ 1178:
+/*!*****************************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/utils/getSDK.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var originalLoadjs = __webpack_require__(/*! loadjs */ 1179);
+var loadjs = originalLoadjs;
+function mockLoadjs(mockedLoadjs) {
+    loadjs = mockedLoadjs || originalLoadjs;
+}
+exports.mockLoadjs = mockLoadjs;
+var stack = {};
+var loadSDK = function (name, url, onLoaded, onError, onReady) {
+    loadjs(url, {
+        success: function () {
+            if (onReady) {
+                var previousOnReady_1 = window[onReady];
+                window[onReady] = function () {
+                    if (previousOnReady_1) {
+                        previousOnReady_1();
+                    }
+                    onLoaded(window[name]);
+                };
+            }
+            else {
+                onLoaded(window[name]);
+            }
+        },
+        error: function (err) {
+            onError(err);
+        },
+    });
+};
+var requireSDK = function (name, url, onLoaded, onError, resolveRequire) {
+    window.require([url], function (sdk) {
+        window[name] = resolveRequire(sdk);
+        onLoaded(window[name]);
+    }, function (err) {
+        onError(err);
+    });
+};
+function getSDK(_a) {
+    var name = _a.name, url = _a.url, onReady = _a.onReady, _b = _a.isLoaded, isLoaded = _b === void 0 ? function () { return true; } : _b, _c = _a.resolveRequire, resolveRequire = _c === void 0 ? function (sdk) { return sdk; } : _c, isRequireAllow = _a.isRequireAllow;
+    if (window[name] && isLoaded(window[name])) {
+        return Promise.resolve(window[name]);
+    }
+    return new Promise(function (resolve, reject) {
+        if (stack[url]) {
+            stack[url].push(resolve);
+            return;
+        }
+        stack[url] = [resolve];
+        var onLoaded = function (sdk) {
+            stack[url].forEach(function (resolveItem) { return resolveItem(sdk); });
+        };
+        if (isRequireAllow &&
+            typeof window.require === 'function' &&
+            typeof window.define === 'function' &&
+            window.define.amd) {
+            requireSDK(name, url, onLoaded, reject, resolveRequire);
+        }
+        else {
+            loadSDK(name, url, onLoaded, reject, onReady);
+        }
+    });
+}
+exports.getSDK = getSDK;
+//# sourceMappingURL=getSDK.js.map
+
+/***/ }),
+
+/***/ 1179:
+/*!*************************************************!*\
+  !*** ../node_modules/loadjs/dist/loadjs.umd.js ***!
+  \*************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(root, factory) {
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else {}
+}(this, function() {
+/**
+ * Global dependencies.
+ * @global {Object} document - DOM
+ */
+
+var devnull = function() {},
+    bundleIdCache = {},
+    bundleResultCache = {},
+    bundleCallbackQueue = {};
+
+
+/**
+ * Subscribe to bundle load event.
+ * @param {string[]} bundleIds - Bundle ids
+ * @param {Function} callbackFn - The callback function
+ */
+function subscribe(bundleIds, callbackFn) {
+  // listify
+  bundleIds = bundleIds.push ? bundleIds : [bundleIds];
+
+  var depsNotFound = [],
+      i = bundleIds.length,
+      numWaiting = i,
+      fn,
+      bundleId,
+      r,
+      q;
+
+  // define callback function
+  fn = function (bundleId, pathsNotFound) {
+    if (pathsNotFound.length) depsNotFound.push(bundleId);
+
+    numWaiting--;
+    if (!numWaiting) callbackFn(depsNotFound);
+  };
+
+  // register callback
+  while (i--) {
+    bundleId = bundleIds[i];
+
+    // execute callback if in result cache
+    r = bundleResultCache[bundleId];
+    if (r) {
+      fn(bundleId, r);
+      continue;
+    }
+
+    // add to callback queue
+    q = bundleCallbackQueue[bundleId] = bundleCallbackQueue[bundleId] || [];
+    q.push(fn);
+  }
+}
+
+
+/**
+ * Publish bundle load event.
+ * @param {string} bundleId - Bundle id
+ * @param {string[]} pathsNotFound - List of files not found
+ */
+function publish(bundleId, pathsNotFound) {
+  // exit if id isn't defined
+  if (!bundleId) return;
+
+  var q = bundleCallbackQueue[bundleId];
+
+  // cache result
+  bundleResultCache[bundleId] = pathsNotFound;
+
+  // exit if queue is empty
+  if (!q) return;
+
+  // empty callback queue
+  while (q.length) {
+    q[0](bundleId, pathsNotFound);
+    q.splice(0, 1);
+  }
+}
+
+
+/**
+ * Execute callbacks.
+ * @param {Object or Function} args - The callback args
+ * @param {string[]} depsNotFound - List of dependencies not found
+ */
+function executeCallbacks(args, depsNotFound) {
+  // accept function as argument
+  if (args.call) args = {success: args};
+
+  // success and error callbacks
+  if (depsNotFound.length) (args.error || devnull)(depsNotFound);
+  else (args.success || devnull)(args);
+}
+
+
+/**
+ * Load individual file.
+ * @param {string} path - The file path
+ * @param {Function} callbackFn - The callback function
+ */
+function loadFile(path, callbackFn, args, numTries) {
+  var doc = document,
+      async = args.async,
+      maxTries = (args.numRetries || 0) + 1,
+      beforeCallbackFn = args.before || devnull,
+      pathStripped = path.replace(/^(css|img)!/, ''),
+      isLegacyIECss,
+      e;
+
+  numTries = numTries || 0;
+
+  if (/(^css!|\.css$)/.test(path)) {
+    // css
+    e = doc.createElement('link');
+    e.rel = 'stylesheet';
+    e.href = pathStripped;
+
+    // tag IE9+
+    isLegacyIECss = 'hideFocus' in e;
+
+    // use preload in IE Edge (to detect load errors)
+    if (isLegacyIECss && e.relList) {
+      isLegacyIECss = 0;
+      e.rel = 'preload';
+      e.as = 'style';
+    }
+  } else if (/(^img!|\.(png|gif|jpg|svg)$)/.test(path)) {
+    // image
+    e = doc.createElement('img');
+    e.src = pathStripped;    
+  } else {
+    // javascript
+    e = doc.createElement('script');
+    e.src = path;
+    e.async = async === undefined ? true : async;
+  }
+
+  e.onload = e.onerror = e.onbeforeload = function (ev) {
+    var result = ev.type[0];
+
+    // treat empty stylesheets as failures to get around lack of onerror
+    // support in IE9-11
+    if (isLegacyIECss) {
+      try {
+        if (!e.sheet.cssText.length) result = 'e';
+      } catch (x) {
+        // sheets objects created from load errors don't allow access to
+        // `cssText` (unless error is Code:18 SecurityError)
+        if (x.code != 18) result = 'e';
+      }
+    }
+
+    // handle retries in case of load failure
+    if (result == 'e') {
+      // increment counter
+      numTries += 1;
+
+      // exit function and try again
+      if (numTries < maxTries) {
+        return loadFile(path, callbackFn, args, numTries);
+      }
+    } else if (e.rel == 'preload' && e.as == 'style') {
+      // activate preloaded stylesheets
+      return e.rel = 'stylesheet'; // jshint ignore:line
+    }
+    
+    // execute callback
+    callbackFn(path, result, ev.defaultPrevented);
+  };
+
+  // add to document (unless callback returns `false`)
+  if (beforeCallbackFn(path, e) !== false) doc.head.appendChild(e);
+}
+
+
+/**
+ * Load multiple files.
+ * @param {string[]} paths - The file paths
+ * @param {Function} callbackFn - The callback function
+ */
+function loadFiles(paths, callbackFn, args) {
+  // listify paths
+  paths = paths.push ? paths : [paths];
+
+  var numWaiting = paths.length,
+      x = numWaiting,
+      pathsNotFound = [],
+      fn,
+      i;
+
+  // define callback function
+  fn = function(path, result, defaultPrevented) {
+    // handle error
+    if (result == 'e') pathsNotFound.push(path);
+
+    // handle beforeload event. If defaultPrevented then that means the load
+    // will be blocked (ex. Ghostery/ABP on Safari)
+    if (result == 'b') {
+      if (defaultPrevented) pathsNotFound.push(path);
+      else return;
+    }
+
+    numWaiting--;
+    if (!numWaiting) callbackFn(pathsNotFound);
+  };
+
+  // load scripts
+  for (i=0; i < x; i++) loadFile(paths[i], fn, args);
+}
+
+
+/**
+ * Initiate script load and register bundle.
+ * @param {(string|string[])} paths - The file paths
+ * @param {(string|Function|Object)} [arg1] - The (1) bundleId or (2) success
+ *   callback or (3) object literal with success/error arguments, numRetries,
+ *   etc.
+ * @param {(Function|Object)} [arg2] - The (1) success callback or (2) object
+ *   literal with success/error arguments, numRetries, etc.
+ */
+function loadjs(paths, arg1, arg2) {
+  var bundleId,
+      args;
+
+  // bundleId (if string)
+  if (arg1 && arg1.trim) bundleId = arg1;
+
+  // args (default is {})
+  args = (bundleId ? arg2 : arg1) || {};
+
+  // throw error if bundle is already defined
+  if (bundleId) {
+    if (bundleId in bundleIdCache) {
+      throw "LoadJS";
+    } else {
+      bundleIdCache[bundleId] = true;
+    }
+  }
+
+  function loadFn(resolve, reject) {
+    loadFiles(paths, function (pathsNotFound) {
+      // execute callbacks
+      executeCallbacks(args, pathsNotFound);
+      
+      // resolve Promise
+      if (resolve) {
+        executeCallbacks({success: resolve, error: reject}, pathsNotFound);
+      }
+
+      // publish bundle load event
+      publish(bundleId, pathsNotFound);
+    }, args);
+  }
+  
+  if (args.returnPromise) return new Promise(loadFn);
+  else loadFn();
+}
+
+
+/**
+ * Execute callbacks when dependencies have been satisfied.
+ * @param {(string|string[])} deps - List of bundle ids
+ * @param {Object} args - success/error arguments
+ */
+loadjs.ready = function ready(deps, args) {
+  // subscribe to bundle load event
+  subscribe(deps, function (depsNotFound) {
+    // execute callbacks
+    executeCallbacks(args, depsNotFound);
+  });
+
+  return loadjs;
+};
+
+
+/**
+ * Manually satisfy bundle dependencies.
+ * @param {string} bundleId - The bundle id
+ */
+loadjs.done = function done(bundleId) {
+  publish(bundleId, []);
+};
+
+
+/**
+ * Reset loadjs dependencies statuses
+ */
+loadjs.reset = function reset() {
+  bundleIdCache = {};
+  bundleResultCache = {};
+  bundleCallbackQueue = {};
+};
+
+
+/**
+ * Determine if bundle has already been defined
+ * @param String} bundleId - The bundle id
+ */
+loadjs.isDefined = function isDefined(bundleId) {
+  return bundleId in bundleIdCache;
+};
+
+
+// export
+return loadjs;
+
+}));
+
+
+/***/ }),
+
+/***/ 1180:
+/*!*********************************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/Facebook.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(/*! tslib */ 10);
+var React = __webpack_require__(/*! react */ 0);
+var eventemitter3_1 = __webpack_require__(/*! eventemitter3 */ 102);
+var safeAreaInsets = __webpack_require__(/*! safe-area-insets */ 1181);
+var isString = __webpack_require__(/*! lodash/isString */ 163);
+var utils_1 = __webpack_require__(/*! ../utils */ 189);
+var playerHOC_1 = __webpack_require__(/*! ./playerHOC */ 164);
+var constants_1 = __webpack_require__(/*! ../constants */ 134);
+var Video_st_css_1 = __webpack_require__(/*! ../Video.st.css */ 135);
+var classnames_1 = __webpack_require__(/*! classnames */ 8);
+var URL_REGEX = /facebook\.com\/([^/?].+\/)?video(s|\.php)[/?].*$/;
+exports.verifier = function (url) {
+    return isString(url) && URL_REGEX.test(url);
+};
+var SDKConfig = {
+    name: 'FB',
+    url: '//connect.facebook.net/en_US/sdk.js',
+    onReady: 'fbAsyncInit',
+    isRequireAllow: false,
+};
+var mapPropsToPlayer = {
+    src: function (instance) { return instance.reload(); },
+    playing: function (instance, player, nextPlaying) {
+        if (nextPlaying) {
+            player.play();
+        }
+        else {
+            player.pause();
+        }
+    },
+    muted: function (instance, player, nextMuted) {
+        if (nextMuted) {
+            player.mute();
+        }
+        else {
+            player.unmute();
+        }
+    },
+    volume: function (instance, player, nextVolume) { return player.setVolume(nextVolume / 100); },
+};
+var mapMethodsToPlayer = {
+    play: 'play',
+    pause: 'pause',
+    stop: function (instance) { return instance.reload(); },
+    getDuration: 'getDuration',
+    getCurrentTime: 'getCurrentPosition',
+    seekTo: 'seek',
+    getVolume: function (instance, player) { return 100 * player.getVolume(); },
+    setVolume: function (instance, player, fraction) { return player.setVolume(fraction / 100); },
+    isMuted: 'isMuted',
+    mute: 'mute',
+    unMute: 'unmute',
+};
+var parseSize = function (value) { return Math.ceil(value) || 'auto'; };
+var FacebookPlayer = /** @class */ (function (_super) {
+    tslib_1.__extends(FacebookPlayer, _super);
+    function FacebookPlayer(props) {
+        var _this = _super.call(this, props) || this;
+        _this.isDurationReady = false;
+        _this.unsubscribeFBEvents = function () { return null; };
+        _this.initPlayer = function (FB) {
+            var appId = _this.props.appId;
+            FB.init({
+                appId: appId,
+                xfbml: true,
+                version: 'v2.5',
+            });
+            FB.Event.subscribe('xfbml.ready', _this.handleReady);
+            FB.Event.subscribe('iframeplugin:create', _this.setAllowAttribute);
+            _this.unsubscribeFBEvents = function () {
+                FB.Event.unsubscribe('xfbml.ready', _this.handleReady);
+                FB.Event.unsubscribe('iframeplugin:create', _this.setAllowAttribute);
+            };
+            _this.parser = FB.XFBML.parse;
+        };
+        _this.handleReady = function (msg) {
+            var _a = _this.props, muted = _a.muted, onInit = _a.onInit, onReady = _a.onReady, onError = _a.onError;
+            if (msg.type === 'video' && msg.id === _this.playerId) {
+                _this.player = msg.instance;
+                _this.fitPlayer();
+                safeAreaInsets.onChange(_this.fitPlayer);
+                _this.player.subscribe('startedPlaying', function () {
+                    _this.eventEmitter.emit(constants_1.EVENTS.PLAYING);
+                    _this.progress();
+                });
+                _this.player.subscribe('paused', function () {
+                    _this.eventEmitter.emit(constants_1.EVENTS.PAUSED);
+                    _this.stopProgress();
+                });
+                _this.player.subscribe('finishedPlaying', function () {
+                    _this.eventEmitter.emit(constants_1.EVENTS.ENDED);
+                    _this.stopProgress();
+                });
+                _this.player.subscribe('error', onError);
+                if (!muted) {
+                    _this.player.unmute();
+                }
+                _this.awaitDuration();
+                onInit(_this.player, FacebookPlayer.playerName);
+                onReady();
+            }
+        };
+        _this.awaitDuration = function () {
+            if (!_this.isDurationReady) {
+                var duration = _this.player.getDuration();
+                if (duration) {
+                    _this.isDurationReady = true;
+                    _this.props.onDuration(duration);
+                }
+            }
+            _this.durationTimeout = window.setTimeout(_this.awaitDuration, constants_1.PROGRESS_INTERVAL);
+        };
+        _this.progress = function () {
+            _this.stopProgress();
+            _this.props.onProgress(_this.player.getCurrentPosition() || 0);
+            _this.progressTimeout = window.setTimeout(_this.progress, constants_1.PROGRESS_INTERVAL);
+        };
+        _this.setAllowAttribute = function () {
+            if (!_this.containerRef.current) {
+                return;
+            }
+            var iframe = _this.containerRef.current.querySelector('iframe');
+            if (!iframe) {
+                return;
+            }
+            iframe.setAttribute('allow', 'autoplay; encrypted-media');
+        };
+        _this.fitPlayer = function (insets) {
+            var rootElement = _this.containerRef.current.firstChild;
+            if (rootElement) {
+                var _a = _this.props, height = _a.height, width = _a.width;
+                var rect = rootElement.getBoundingClientRect();
+                var scale = 1;
+                if (rect.height) {
+                    if (!_this.videoSize) {
+                        _this.videoSize = {
+                            height: rect.height,
+                            width: rect.width,
+                        };
+                    }
+                    if (insets) {
+                        var videoTagWidth = _this.videoSize.width - insets.left - insets.right;
+                        scale = width / videoTagWidth;
+                    }
+                    if (_this.videoSize.height > height) {
+                        scale *= height / _this.videoSize.height;
+                        rootElement.style.transformOrigin = 'top center';
+                        rootElement.style.transform = "scale(" + scale + ")";
+                    }
+                }
+            }
+        };
+        _this.containerRef = React.createRef();
+        _this.eventEmitter = new eventemitter3_1.EventEmitter();
+        _this.playerId = "facebook-" + props.id;
+        _this.videoSize = null;
+        return _this;
+    }
+    FacebookPlayer.prototype.componentDidMount = function () {
+        var _this = this;
+        utils_1.getSDK(SDKConfig)
+            .then(this.initPlayer)
+            .catch(function (error) {
+            _this.props.onError(error);
+        });
+    };
+    FacebookPlayer.prototype.componentWillUnmount = function () {
+        this.eventEmitter.removeAllListeners();
+        this.unsubscribeFBEvents();
+        this.stopAwaitDuration();
+        this.stopProgress();
+        this.parser = null;
+    };
+    FacebookPlayer.prototype.componentDidUpdate = function (prevProps) {
+        if ((this.props.width !== prevProps.width ||
+            this.props.height !== prevProps.height) &&
+            this.parser) {
+            this.parser(this.containerRef.current.parentElement);
+        }
+    };
+    FacebookPlayer.prototype.stopAwaitDuration = function () {
+        window.clearTimeout(this.durationTimeout);
+    };
+    FacebookPlayer.prototype.stopProgress = function () {
+        window.clearTimeout(this.progressTimeout);
+    };
+    FacebookPlayer.prototype.render = function () {
+        var _a;
+        var _b = this.props, src = _b.src, playing = _b.playing, controls = _b.controls, width = _b.width, height = _b.height, isResponsiveMode = _b.isResponsiveMode;
+        return (React.createElement("div", { ref: this.containerRef, id: this.playerId, className: classnames_1.default('fb-video', Video_st_css_1.classes.playerContainer, (_a = {},
+                _a[Video_st_css_1.classes.responsiveMode] = isResponsiveMode,
+                _a)), "data-href": src, "data-width": parseSize(width), "data-height": parseSize(height), "data-autoplay": playing ? 'true' : 'false', "data-allowfullscreen": "true", "data-controls": controls ? 'true' : 'false', "data-player-name": "Facebook", "data-hook": "player-container" }));
+    };
+    FacebookPlayer.displayName = 'Facebook';
+    FacebookPlayer.playerName = 'facebook';
+    return FacebookPlayer;
+}(React.PureComponent));
+exports.Player = playerHOC_1.default(FacebookPlayer, mapPropsToPlayer, mapMethodsToPlayer);
+//# sourceMappingURL=Facebook.js.map
+
+/***/ }),
+
+/***/ 1181:
+/*!*****************************************************!*\
+  !*** ../node_modules/safe-area-insets/out/index.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var attrs = ['top', 'left', 'right', 'bottom'];
+var inited;
+var elementComputedStyle = {};
+var support;
+function getSupport() {
+    if (!('CSS' in window) || typeof CSS.supports != 'function') {
+        support = '';
+    }
+    else if (CSS.supports('top: env(safe-area-inset-top)')) {
+        support = 'env';
+    }
+    else if (CSS.supports('top: constant(safe-area-inset-top)')) {
+        support = 'constant';
+    }
+    else {
+        support = '';
+    }
+    return support;
+}
+function init() {
+    support = typeof support === 'string' ? support : getSupport();
+    if (!support) {
+        attrs.forEach(function (attr) {
+            elementComputedStyle[attr] = 0;
+        });
+        return;
+    }
+    function setStyle(el, style) {
+        var elStyle = el.style;
+        Object.keys(style).forEach(function (key) {
+            var val = style[key];
+            elStyle[key] = val;
+        });
+    }
+    var cbs = [];
+    function parentReady(callback) {
+        if (callback) {
+            cbs.push(callback);
+        }
+        else {
+            cbs.forEach(function (cb) {
+                cb();
+            });
+        }
+    }
+    var passiveEvents = false;
+    try {
+        var opts = Object.defineProperty({}, 'passive', {
+            get: function () {
+                passiveEvents = { passive: true };
+            }
+        });
+        window.addEventListener('test', null, opts);
+    }
+    catch (e) {
+    }
+    function addChild(parent, attr) {
+        var a1 = document.createElement('div');
+        var a2 = document.createElement('div');
+        var a1Children = document.createElement('div');
+        var a2Children = document.createElement('div');
+        var W = 100;
+        var MAX = 10000;
+        var aStyle = {
+            position: 'absolute',
+            width: W + 'px',
+            height: '200px',
+            boxSizing: 'border-box',
+            overflow: 'hidden',
+            paddingBottom: support + "(safe-area-inset-" + attr + ")"
+        };
+        setStyle(a1, aStyle);
+        setStyle(a2, aStyle);
+        setStyle(a1Children, {
+            transition: '0s',
+            animation: 'none',
+            width: '400px',
+            height: '400px'
+        });
+        setStyle(a2Children, {
+            transition: '0s',
+            animation: 'none',
+            width: '250%',
+            height: '250%'
+        });
+        a1.appendChild(a1Children);
+        a2.appendChild(a2Children);
+        parent.appendChild(a1);
+        parent.appendChild(a2);
+        parentReady(function () {
+            a1.scrollTop = a2.scrollTop = MAX;
+            var a1LastScrollTop = a1.scrollTop;
+            var a2LastScrollTop = a2.scrollTop;
+            function onScroll() {
+                if (this.scrollTop === (this === a1 ? a1LastScrollTop : a2LastScrollTop)) {
+                    return;
+                }
+                a1.scrollTop = a2.scrollTop = MAX;
+                a1LastScrollTop = a1.scrollTop;
+                a2LastScrollTop = a2.scrollTop;
+                attrChange(attr);
+            }
+            a1.addEventListener('scroll', onScroll, passiveEvents);
+            a2.addEventListener('scroll', onScroll, passiveEvents);
+        });
+        var computedStyle = getComputedStyle(a1);
+        Object.defineProperty(elementComputedStyle, attr, {
+            configurable: true,
+            get: function () {
+                return parseFloat(computedStyle.paddingBottom);
+            }
+        });
+    }
+    var parentDiv = document.createElement('div');
+    setStyle(parentDiv, {
+        position: 'absolute',
+        left: '0',
+        top: '0',
+        width: '0',
+        height: '0',
+        zIndex: '-1',
+        overflow: 'hidden',
+        visibility: 'hidden',
+    });
+    attrs.forEach(function (key) {
+        addChild(parentDiv, key);
+    });
+    document.body.appendChild(parentDiv);
+    parentReady();
+    inited = true;
+}
+function getAttr(attr) {
+    if (!inited) {
+        init();
+    }
+    return elementComputedStyle[attr];
+}
+var changeAttrs = [];
+function attrChange(attr) {
+    if (!changeAttrs.length) {
+        setTimeout(function () {
+            var style = {};
+            changeAttrs.forEach(function (attr) {
+                style[attr] = elementComputedStyle[attr];
+            });
+            changeAttrs.length = 0;
+            callbacks.forEach(function (callback) {
+                callback(style);
+            });
+        }, 0);
+    }
+    changeAttrs.push(attr);
+}
+var callbacks = [];
+function onChange(callback) {
+    if (!getSupport()) {
+        return;
+    }
+    if (!inited) {
+        init();
+    }
+    if (typeof callback === 'function') {
+        callbacks.push(callback);
+    }
+}
+function offChange(callback) {
+    var index = callbacks.indexOf(callback);
+    if (index >= 0) {
+        callbacks.splice(index, 1);
+    }
+}
+var safeAreaInsets = {
+    get support() {
+        return (typeof support === 'string' ? support : getSupport()).length != 0;
+    },
+    get top() {
+        return getAttr('top');
+    },
+    get left() {
+        return getAttr('left');
+    },
+    get right() {
+        return getAttr('right');
+    },
+    get bottom() {
+        return getAttr('bottom');
+    },
+    onChange: onChange,
+    offChange: offChange
+};
+module.exports = safeAreaInsets;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 1182:
+/*!******************************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/Vimeo.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(/*! tslib */ 10);
+var React = __webpack_require__(/*! react */ 0);
+var eventemitter3_1 = __webpack_require__(/*! eventemitter3 */ 102);
+var isString = __webpack_require__(/*! lodash/isString */ 163);
+var utils_1 = __webpack_require__(/*! ../utils */ 189);
+var constants_1 = __webpack_require__(/*! ../constants */ 134);
+var playerHOC_1 = __webpack_require__(/*! ./playerHOC */ 164);
+var Video_st_css_1 = __webpack_require__(/*! ../Video.st.css */ 135);
+var URL_REGEX = /vimeo\.com\/.+/;
+exports.verifier = function (url) {
+    return isString(url) && URL_REGEX.test(url);
+};
+var SDKConfig = {
+    name: 'Vimeo',
+    url: 'https://player.vimeo.com/api/player.js',
+    isRequireAllow: true,
+    resolveRequire: function (sdk) { return ({ Player: sdk }); },
+};
+var mapPropsToPlayer = {
+    src: function (instance) { return instance.reload(); },
+    playing: function (instance, player, nextPlaying) {
+        if (nextPlaying) {
+            player.play();
+        }
+        else {
+            player.pause();
+        }
+    },
+    muted: function (instance, player, nextMuted) {
+        if (nextMuted) {
+            player.setVolume(0);
+        }
+        else {
+            player.setVolume(instance.props.volume / 100);
+        }
+    },
+    volume: function (instance, player, nextVolume) { return player.setVolume(nextVolume / 100); },
+};
+var mapMethodsToPlayer = {
+    play: 'play',
+    pause: 'pause',
+    stop: 'unload',
+    getDuration: function (instance) { return instance.ref.duration; },
+    getCurrentTime: function (instance) { return instance.ref.currentTime; },
+    seekTo: 'setCurrentTime',
+    getVolume: function (instance) { return instance.ref.volume; },
+    setVolume: function (instance, player, fraction) { return player.setVolume(fraction / 100); },
+    isMuted: function (instance) { return instance.ref.volume === 0; },
+    mute: function (instance, player) { return player.setVolume(0); },
+    unMute: function (instance, player) { return player.setVolume(1); },
+};
+var VimeoPlayer = /** @class */ (function (_super) {
+    tslib_1.__extends(VimeoPlayer, _super);
+    function VimeoPlayer(props) {
+        var _this = _super.call(this, props) || this;
+        _this.duration = 0;
+        _this.currentTime = 0;
+        _this.initPlayer = function (Vimeo) {
+            var _a = _this.props, src = _a.src, playing = _a.playing, muted = _a.muted, loop = _a.loop, showTitle = _a.showTitle, playerOptions = _a.playerOptions, onInit = _a.onInit, onReady = _a.onReady, onDuration = _a.onDuration, onProgress = _a.onProgress, onError = _a.onError;
+            _this.player = new Vimeo.Player(_this.containerRef.current, tslib_1.__assign({ url: src, autoplay: playing, muted: muted,
+                loop: loop, title: showTitle }, playerOptions));
+            _this.player.ready().then(function () {
+                onReady();
+                _this.player.getDuration().then(function (duration) {
+                    _this.duration = duration;
+                    onDuration(duration);
+                });
+            });
+            _this.player.on('play', function () {
+                _this.eventEmitter.emit(constants_1.EVENTS.PLAYING);
+            });
+            _this.player.on('pause', function () {
+                _this.eventEmitter.emit(constants_1.EVENTS.PAUSED);
+            });
+            _this.player.on('ended', function () {
+                _this.eventEmitter.emit(constants_1.EVENTS.ENDED);
+            });
+            _this.player.on('volumechange', function (_a) {
+                var volume = _a.volume;
+                _this.volume = volume * 100;
+            });
+            _this.player.on('timeupdate', function (_a) {
+                var seconds = _a.seconds;
+                _this.currentTime = seconds;
+                onProgress(seconds);
+            });
+            _this.player.on('error', onError);
+            onInit(_this.player, VimeoPlayer.playerName);
+        };
+        _this.containerRef = React.createRef();
+        _this.eventEmitter = new eventemitter3_1.EventEmitter();
+        _this.volume = props.volume;
+        return _this;
+    }
+    VimeoPlayer.prototype.componentDidMount = function () {
+        var _this = this;
+        utils_1.getSDK(SDKConfig)
+            .then(this.initPlayer)
+            .catch(function (error) {
+            _this.props.onError(error);
+        });
+    };
+    VimeoPlayer.prototype.componentWillUnmount = function () {
+        if (this.player) {
+            this.player.destroy();
+        }
+        this.eventEmitter.removeAllListeners();
+    };
+    VimeoPlayer.prototype.render = function () {
+        return (React.createElement("div", { ref: this.containerRef, className: Video_st_css_1.classes.playerContainer, "data-player-name": "Vimeo" }));
+    };
+    VimeoPlayer.displayName = 'Vimeo';
+    VimeoPlayer.playerName = 'vimeo';
+    return VimeoPlayer;
+}(React.PureComponent));
+exports.Player = playerHOC_1.default(VimeoPlayer, mapPropsToPlayer, mapMethodsToPlayer);
+//# sourceMappingURL=Vimeo.js.map
+
+/***/ }),
+
+/***/ 1183:
+/*!*******************************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/Twitch.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(/*! tslib */ 10);
+var React = __webpack_require__(/*! react */ 0);
+var eventemitter3_1 = __webpack_require__(/*! eventemitter3 */ 102);
+var isString = __webpack_require__(/*! lodash/isString */ 163);
+var utils_1 = __webpack_require__(/*! ../utils */ 189);
+var constants_1 = __webpack_require__(/*! ../constants */ 134);
+var playerHOC_1 = __webpack_require__(/*! ./playerHOC */ 164);
+var Video_st_css_1 = __webpack_require__(/*! ../Video.st.css */ 135);
+var VIDEO_URL_REGEX = /(?:www\.|go\.)?twitch\.tv\/videos\/(\d+)($|\?)/;
+var CHANNEL_URL_REGEX = /(?:www\.|go\.)?twitch\.tv\/([a-z0-9_]+)($|\?)/;
+exports.verifier = function (url) {
+    return isString(url) &&
+        (VIDEO_URL_REGEX.test(url) ||
+            CHANNEL_URL_REGEX.test(url));
+};
+var SDKConfig = {
+    name: 'Twitch',
+    url: 'https://player.twitch.tv/js/embed/v1.js',
+    isRequireAllow: true,
+};
+var getParentDomains = function () {
+    var result = [window.location.hostname];
+    if (window.location !== window.parent.location) {
+        var parentReferrer = document.referrer;
+        var parentUrl = void 0;
+        if (typeof URL === 'function') {
+            parentUrl = new URL(parentReferrer);
+        }
+        else {
+            parentUrl = document.createElement('a');
+            parentUrl.href = parentReferrer;
+        }
+        result.push(parentUrl.hostname);
+    }
+    return result;
+};
+var mapPropsToPlayer = {
+    src: function (instance) { return instance.reload(); },
+    playing: function (instance, player, nextPlaying) {
+        if (nextPlaying) {
+            player.play();
+        }
+        else {
+            player.pause();
+        }
+    },
+    muted: 'setMuted',
+    volume: function (instance, player, nextVolume) { return player.setVolume(nextVolume / 100); },
+};
+var mapMethodsToPlayer = {
+    play: 'play',
+    pause: 'pause',
+    stop: function (instance) { return instance.reload(); },
+    getDuration: 'getDuration',
+    getCurrentTime: 'getCurrentTime',
+    seekTo: 'seek',
+    getVolume: function (instance, player) { return 100 * player.getVolume(); },
+    setVolume: function (instance, player, fraction) { return player.setVolume(fraction / 100); },
+    isMuted: 'getMuted',
+    mute: function (instance, player) { return player.setMuted(true); },
+    unMute: function (instance, player) { return player.setMuted(false); },
+};
+var TwitchPlayer = /** @class */ (function (_super) {
+    tslib_1.__extends(TwitchPlayer, _super);
+    function TwitchPlayer(props) {
+        var _this = _super.call(this, props) || this;
+        _this.isDurationReady = false;
+        _this.initPlayer = function (Twitch) {
+            var _a = _this.props, playing = _a.playing, muted = _a.muted, playerOptions = _a.playerOptions, onInit = _a.onInit, onReady = _a.onReady;
+            var src = _this.props.src;
+            var isChannel = CHANNEL_URL_REGEX.test(src);
+            var id = isChannel
+                ? src.match(CHANNEL_URL_REGEX)[1]
+                : src.match(VIDEO_URL_REGEX)[1];
+            var _b = Twitch.Player, READY = _b.READY, PLAY = _b.PLAY, PAUSE = _b.PAUSE, ENDED = _b.ENDED;
+            _this.player = new Twitch.Player(_this.playerId, tslib_1.__assign({ video: isChannel ? '' : id, channel: isChannel ? id : '', height: '100%', width: '100%', playsinline: true, autoplay: playing, muted: muted, 
+                // add parent domains due to API updates https://discuss.dev.twitch.tv/t/twitch-embedded-player-updates-in-2020/23956
+                parent: getParentDomains() }, playerOptions));
+            _this.player.addEventListener(READY, function () {
+                _this.awaitDuration();
+                onReady();
+            });
+            _this.player.addEventListener(PLAY, function () {
+                _this.eventEmitter.emit(constants_1.EVENTS.PLAYING);
+                _this.progress();
+            });
+            _this.player.addEventListener(PAUSE, function () {
+                _this.eventEmitter.emit(constants_1.EVENTS.PAUSED);
+                _this.stopProgress();
+            });
+            _this.player.addEventListener(ENDED, function () {
+                _this.eventEmitter.emit(constants_1.EVENTS.ENDED);
+                _this.stopProgress();
+            });
+            onInit(_this.player, TwitchPlayer.playerName);
+        };
+        _this.awaitDuration = function () {
+            if (!_this.isDurationReady) {
+                var duration = _this.player.getDuration();
+                if (duration) {
+                    _this.isDurationReady = true;
+                    _this.props.onDuration(duration);
+                }
+            }
+            _this.durationTimeout = window.setTimeout(_this.awaitDuration, constants_1.PROGRESS_INTERVAL);
+        };
+        _this.progress = function () {
+            _this.stopProgress();
+            _this.props.onProgress(_this.player.getCurrentTime() || 0);
+            _this.progressTimeout = window.setTimeout(_this.progress, constants_1.PROGRESS_INTERVAL);
+        };
+        _this.eventEmitter = new eventemitter3_1.EventEmitter();
+        _this.playerId = "twitch-" + props.id;
+        return _this;
+    }
+    TwitchPlayer.prototype.componentDidMount = function () {
+        var _this = this;
+        utils_1.getSDK(SDKConfig)
+            .then(this.initPlayer)
+            .catch(function (error) {
+            _this.props.onError(error);
+        });
+    };
+    TwitchPlayer.prototype.componentWillUnmount = function () {
+        if (this.player) {
+            this.player.destroy();
+        }
+        this.eventEmitter.removeAllListeners();
+        this.stopProgress();
+        this.stopAwaitDuration();
+    };
+    TwitchPlayer.prototype.stopAwaitDuration = function () {
+        window.clearTimeout(this.durationTimeout);
+    };
+    TwitchPlayer.prototype.stopProgress = function () {
+        window.clearTimeout(this.progressTimeout);
+    };
+    TwitchPlayer.prototype.render = function () {
+        return (React.createElement("div", { id: this.playerId, className: Video_st_css_1.classes.playerContainer, "data-player-name": "Twitch" }));
+    };
+    TwitchPlayer.displayName = 'Twitch';
+    TwitchPlayer.playerName = 'twitch';
+    return TwitchPlayer;
+}(React.PureComponent));
+exports.Player = playerHOC_1.default(TwitchPlayer, mapPropsToPlayer, mapMethodsToPlayer);
+//# sourceMappingURL=Twitch.js.map
+
+/***/ }),
+
+/***/ 1184:
+/*!************************************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/DailyMotion.js ***!
+  \************************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(/*! tslib */ 10);
+var React = __webpack_require__(/*! react */ 0);
+var eventemitter3_1 = __webpack_require__(/*! eventemitter3 */ 102);
+var isString = __webpack_require__(/*! lodash/isString */ 163);
+var utils_1 = __webpack_require__(/*! ../utils */ 189);
+var constants_1 = __webpack_require__(/*! ../constants */ 134);
+var playerHOC_1 = __webpack_require__(/*! ./playerHOC */ 164);
+var Video_st_css_1 = __webpack_require__(/*! ../Video.st.css */ 135);
+var URL_REGEX = /^(?:(?:https?):)?(?:\/\/)?(?:www\.)?(?:(?:dailymotion\.com(?:\/embed)?\/video)|dai\.ly)\/([a-zA-Z0-9]+)(?:_[\w_-]+)?$/;
+exports.verifier = function (url) {
+    return isString(url) && URL_REGEX.test(url);
+};
+var SDKConfig = {
+    name: 'DM',
+    url: 'https://api.dmcdn.net/all.js',
+    onReady: 'dmAsyncInit',
+    isLoaded: function (DM) { return !!DM.player; },
+    isRequireAllow: false,
+};
+var mapPropsToPlayer = {
+    src: function (instance) { return instance.reload(); },
+    playing: function (instance, player, nextPlaying) {
+        if (nextPlaying) {
+            player.play();
+        }
+        else {
+            player.pause();
+        }
+    },
+    muted: 'setMuted',
+    volume: function (instance, player, nextVolume) { return player.setVolume(nextVolume / 100); },
+    controls: 'setControls',
+};
+var mapMethodsToPlayer = {
+    play: 'play',
+    pause: 'pause',
+    stop: function (instance) { return instance.reload(); },
+    getDuration: function (instance, player) { return player.duration || 0; },
+    getCurrentTime: function (instance, player) { return player.currentTime || 0; },
+    seekTo: 'setCurrentTime',
+    getVolume: function (instance, player) { return 100 * player.volume; },
+    setVolume: function (instance, player, fraction) { return player.setVolume(fraction / 100); },
+    isMuted: function (instance, player) { return player.muted; },
+    mute: function (instance, player) { return player.setMuted(true); },
+    unMute: function (instance, player) { return player.setMuted(false); },
+};
+var DailyMotionPlayer = /** @class */ (function (_super) {
+    tslib_1.__extends(DailyMotionPlayer, _super);
+    function DailyMotionPlayer(props) {
+        var _this = _super.call(this, props) || this;
+        _this.initPlayer = function (DM) {
+            var _a = _this.props, playing = _a.playing, muted = _a.muted, controls = _a.controls, showTitle = _a.showTitle, playerOptions = _a.playerOptions, onInit = _a.onInit, onReady = _a.onReady, onDuration = _a.onDuration, onError = _a.onError;
+            var src = _this.props.src;
+            var _b = src.match(URL_REGEX), id = _b[1];
+            _this.player = new DM.player(_this.containerRef.current, {
+                width: '100%',
+                height: '100%',
+                video: id,
+                params: tslib_1.__assign({ controls: controls, autoplay: playing, mute: muted, 'ui-start-screen-info': showTitle, origin: window.location.origin }, playerOptions),
+                events: {
+                    apiready: function () {
+                        onReady();
+                    },
+                    durationchange: function () {
+                        onDuration(_this.player.duration);
+                    },
+                    playing: function () {
+                        _this.eventEmitter.emit(constants_1.EVENTS.PLAYING);
+                        _this.progress();
+                    },
+                    pause: function () {
+                        _this.eventEmitter.emit(constants_1.EVENTS.PAUSED);
+                        _this.stopProgress();
+                    },
+                    video_end: function () {
+                        _this.eventEmitter.emit(constants_1.EVENTS.ENDED);
+                        _this.stopProgress();
+                    },
+                    error: function (event) { return onError(event); },
+                },
+            });
+            onInit(_this.player, DailyMotionPlayer.playerName);
+        };
+        _this.progress = function () {
+            _this.stopProgress();
+            _this.props.onProgress(_this.player.currentTime || 0);
+            _this.progressTimeout = window.setTimeout(_this.progress, constants_1.PROGRESS_INTERVAL);
+        };
+        _this.containerRef = React.createRef();
+        _this.eventEmitter = new eventemitter3_1.EventEmitter();
+        return _this;
+    }
+    DailyMotionPlayer.prototype.componentDidMount = function () {
+        var _this = this;
+        utils_1.getSDK(SDKConfig)
+            .then(this.initPlayer)
+            .catch(function (error) {
+            _this.props.onError(error);
+        });
+    };
+    DailyMotionPlayer.prototype.componentWillUnmount = function () {
+        this.eventEmitter.removeAllListeners();
+        this.stopProgress();
+    };
+    DailyMotionPlayer.prototype.stopProgress = function () {
+        window.clearTimeout(this.progressTimeout);
+    };
+    DailyMotionPlayer.prototype.render = function () {
+        return (React.createElement("div", { className: Video_st_css_1.classes.playerContainer, "data-player-name": "DailyMotion" },
+            React.createElement("div", { ref: this.containerRef })));
+    };
+    DailyMotionPlayer.displayName = 'DailyMotion';
+    DailyMotionPlayer.playerName = 'dailymotion';
+    return DailyMotionPlayer;
+}(React.PureComponent));
+exports.Player = playerHOC_1.default(DailyMotionPlayer, mapPropsToPlayer, mapMethodsToPlayer);
+//# sourceMappingURL=DailyMotion.js.map
+
+/***/ }),
+
+/***/ 120:
 /*!******************************************!*\
   !*** ../node_modules/process/browser.js ***!
   \******************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -487,31 +4171,269 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
-/***/ 132:
-/*!****************************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/utils/index.js ***!
-  \****************************************************************************/
+/***/ 134:
+/*!**************************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/constants.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var getSDK_1 = __webpack_require__(/*! ./getSDK */ 673);
-exports.getSDK = getSDK_1.getSDK;
-//# sourceMappingURL=index.js.map
+exports.EVENTS = {
+    PLAYING: 'playing',
+    PAUSED: 'paused',
+    ENDED: 'ended',
+};
+exports.PROGRESS_INTERVAL = 1000;
+//# sourceMappingURL=constants.js.map
 
 /***/ }),
 
-/***/ 133:
+/***/ 135:
+/*!**************************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/Video.st.css ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+
+module.exports = __webpack_require__.stylable.create(
+    "video2026910800",
+    {"classes":{"root":"video2026910800__root","playerContainer":"video2026910800__playerContainer","responsiveMode":"video2026910800__responsiveMode","cover":"video2026910800__cover","transparentOverlay":"video2026910800__transparentOverlay","overlay":"video2026910800__overlay","title":"video2026910800__title","poster":"video2026910800__poster"},"vars":{},"stVars":{},"keyframes":{}},
+    "",
+    1,
+    /*! ../node_modules/wix-ui-core/dist/src/components/video/Video.st.css */ 135,
+    null
+);
+
+
+
+/***/ }),
+
+/***/ 155:
+/*!***************************************************!*\
+  !*** ./components/VideoPlayer/VideoPlayer.st.css ***!
+  \***************************************************/
+/*! exports provided: default */
+/*! exports used: $skin, classes, st */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+
+module.exports = __webpack_require__.stylable.create(
+    "videoplayer2725432193",
+    {"classes":{"root":"videoplayer2725432193__root","playButton":"videoplayer2725432193__playButton"},"vars":{},"stVars":{"skins":"'wixui.skins.VideoPlayer'","backgroundColor":"color_10","font":"font_8","fontColor":"color_2","borderColor":"color_2","borderSize":"0","boxShadow":"none","textSizeScale":"1px","playButtonSize":"50px","playButtonMobileSize":"30px"},"keyframes":{}},
+    "",
+    7,
+    /*! ./components/VideoPlayer/VideoPlayer.st.css */ 155,
+    null
+);
+
+module.exports.$skin = {"params":{"skins":"SKINS","backgroundColor":"COLOR_ALPHA","font":"FONT","fontColor":"COLOR","borderColor":"BORDER_COLOR_ALPHA","borderSize":"BORDER_SIZE","boxShadow":"BOX_SHADOW","textSizeScale":"TEXT_SIZE","playButtonSize":"BORDER_SIZE","playButtonMobileSize":"BORDER_SIZE"},"paramsDefaults":{"skins":"'wixui.skins.VideoPlayer'","backgroundColor":"color_10","font":"font_8","fontColor":"color_2","borderColor":"color_2","borderSize":"0","boxShadow":"none","textSizeScale":"1px","playButtonSize":"50px","playButtonMobileSize":"30px"}};
+module.exports.$skin.$render = function render_css($id, $params, $functions) {
+  return "\n" + $id + ".video2026910800__root{position: relative}\n" + $id + " .video2026910800__playerContainer{position: relative;height: 100%;width: 100%;background-color: #000}\n" + $id + " .video2026910800__responsiveMode{display: flex;align-items: center;overflow: hidden}\n" + $id + " .video2026910800__playerContainer iframe{height: 100%;width: 100%;visibility: visible}\n" + $id + " .video2026910800__cover{position: absolute;top: 0;left: 0;height: 100%;width: 100%;background: #000 50% 50% no-repeat;background-size: cover;cursor: pointer}\n" + $id + " .video2026910800__cover.video2026910800__transparentOverlay{background: transparent}\n" + $id + " .video2026910800__overlay{display: flex;position: absolute;top: 0;width: 100%;height: 100%;justify-content: center;flex-direction: column;align-items: center}\n" + $id + " .video2026910800__title{margin: 0 15px 15px;text-align: center}\n" + $id + " .video2026910800__poster{height: 100%;width: 100%;object-fit: cover}\n" + $id + ".videoplayer2725432193__root{box-shadow: " + $params["boxShadow"] + ";border: " + $params["borderSize"] + " solid " + $params["borderColor"] + ";margin-top: calc(-1 * " + $params["borderSize"] + ");margin-left: calc(-1 * " + $params["borderSize"] + ");position: absolute;top: 0}\n" + $id + ".videoplayer2725432193__root .video2026910800__title{font: " + $params["font"] + ";color: " + $params["fontColor"] + ";margin: 0 0 15px;padding: 0 10%;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;max-height: 2.8em}\n" + $id + ".videoplayer2725432193__root.videoplayer2725432193--isMobileView .video2026910800__title{font-size: calc(18 * " + $params["textSizeScale"] + ");margin: 0 0 10px}\n" + $id + ".videoplayer2725432193__root .video2026910800__overlay{background-color: " + $params["backgroundColor"] + ";transition: background-color .2s ease}\n" + $id + ".videoplayer2725432193__root .video2026910800__overlay:hover{background-color: " + $functions["increaseAlphaChannel"]($params["backgroundColor"], "10") + "}\n" + $id + ".videoplayer2725432193__root .videoplayer2725432193__playButton{display: block;width: " + $params["playButtonSize"] + ";height: " + $params["playButtonSize"] + ";padding: 0;border: 0;background: transparent;box-sizing: border-box;cursor: pointer;transition: opacity .2s ease}\n" + $id + ".videoplayer2725432193__root .videoplayer2725432193__playButton:hover{opacity: .8}\n" + $id + ".videoplayer2725432193__root.videoplayer2725432193--isMobileView .videoplayer2725432193__playButton{width: " + $params["playButtonMobileSize"] + ";height: " + $params["playButtonMobileSize"] + "}\n" + $id + " .videoplayer2725432193__playButton circle{stroke: " + $params["fontColor"] + "}\n" + $id + " .videoplayer2725432193__playButton path{fill: " + $params["fontColor"] + "}\n";
+};
+
+/***/ }),
+
+/***/ 163:
+/*!******************************************!*\
+  !*** ../node_modules/lodash/isString.js ***!
+  \******************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! lodash */ 3).isString
+
+/***/ }),
+
+/***/ 164:
+/*!**********************************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/playerHOC.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(/*! tslib */ 10);
+var React = __webpack_require__(/*! react */ 0);
+var uniqueId = __webpack_require__(/*! lodash/uniqueId */ 103);
+var constants_1 = __webpack_require__(/*! ../constants */ 134);
+function playerHOC(Player, mapPropsToPlayer, mapMethodsToPlayer) {
+    var _a;
+    return _a = /** @class */ (function (_super) {
+            tslib_1.__extends(class_1, _super);
+            function class_1() {
+                var _this = _super !== null && _super.apply(this, arguments) || this;
+                _this.isPlayingNow = false;
+                _this.state = {
+                    playerKey: uniqueId('player-'),
+                };
+                _this._playerRef = function (instance) {
+                    _this.ref = instance;
+                };
+                return _this;
+            }
+            class_1.prototype.componentDidMount = function () {
+                this._broadcastEvents();
+            };
+            class_1.prototype.componentDidUpdate = function (prevProps, prevState) {
+                if (this.state.playerKey !== prevState.playerKey) {
+                    this._broadcastEvents();
+                }
+            };
+            class_1.prototype.UNSAFE_componentWillReceiveProps = function (nextProps) {
+                var currentProps = this.props;
+                for (var propKey in nextProps) {
+                    var method = mapPropsToPlayer[propKey];
+                    var isPropChanged = nextProps[propKey] !== currentProps[propKey];
+                    if (method && isPropChanged) {
+                        this._callPlayer(method, nextProps[propKey]);
+                    }
+                }
+            };
+            class_1.prototype._callPlayer = function (method) {
+                var args = [];
+                for (var _i = 1; _i < arguments.length; _i++) {
+                    args[_i - 1] = arguments[_i];
+                }
+                if (!this.ref || !this.ref.player) {
+                    return;
+                }
+                try {
+                    var player = this.ref.player;
+                    if (typeof method === 'string') {
+                        return player[method].apply(player, args);
+                    }
+                    if (typeof method === 'function') {
+                        return method.apply(void 0, tslib_1.__spreadArrays([this, player], args));
+                    }
+                }
+                catch (error) {
+                    this.props.onError(error);
+                }
+            };
+            class_1.prototype._broadcastEvents = function () {
+                var _this = this;
+                this.ref.eventEmitter.once(constants_1.EVENTS.PLAYING, function () {
+                    _this.props.onFirstPlay();
+                });
+                this.ref.eventEmitter.once(constants_1.EVENTS.ENDED, function () {
+                    _this.props.onFirstEnded();
+                });
+                this.ref.eventEmitter.on(constants_1.EVENTS.PLAYING, function () {
+                    _this.isPlayingNow = true;
+                    _this.props.onPlay();
+                });
+                this.ref.eventEmitter.on(constants_1.EVENTS.PAUSED, function () {
+                    _this.isPlayingNow = false;
+                    _this.props.onPause();
+                });
+                this.ref.eventEmitter.on(constants_1.EVENTS.ENDED, function () {
+                    _this.isPlayingNow = false;
+                    _this.props.onEnded();
+                });
+            };
+            class_1.prototype.reload = function () {
+                this.setState({
+                    playerKey: uniqueId('player-'),
+                });
+            };
+            class_1.prototype.getPlayerAPI = function () {
+                return this.ref.player;
+            };
+            class_1.prototype.play = function () {
+                var _this = this;
+                var result = this._callPlayer(mapMethodsToPlayer.play);
+                return result instanceof Promise
+                    ? result
+                    : new Promise(function (resolve) {
+                        _this.ref.eventEmitter.once(constants_1.EVENTS.PLAYING, function () { return resolve(); });
+                    });
+            };
+            class_1.prototype.pause = function () {
+                var _this = this;
+                var result = this._callPlayer(mapMethodsToPlayer.pause);
+                return result instanceof Promise
+                    ? result
+                    : new Promise(function (resolve) {
+                        _this.ref.eventEmitter.once(constants_1.EVENTS.PAUSED, function () { return resolve(); });
+                    });
+            };
+            class_1.prototype.togglePlay = function () {
+                var _this = this;
+                var method = this.isPlayingNow ? 'pause' : 'play';
+                var event = this.isPlayingNow ? constants_1.EVENTS.PAUSED : constants_1.EVENTS.PLAYING;
+                var result = this._callPlayer(mapMethodsToPlayer[method]);
+                return result instanceof Promise
+                    ? result
+                    : new Promise(function (resolve) {
+                        _this.ref.eventEmitter.once(event, function () { return resolve(); });
+                    });
+            };
+            class_1.prototype.stop = function () {
+                this._callPlayer(mapMethodsToPlayer.stop);
+                return Promise.resolve();
+            };
+            class_1.prototype.getDuration = function () {
+                return this._callPlayer(mapMethodsToPlayer.getDuration) || 0;
+            };
+            class_1.prototype.getCurrentTime = function () {
+                return this._callPlayer(mapMethodsToPlayer.getCurrentTime) || 0;
+            };
+            class_1.prototype.seekTo = function (amount) {
+                this._callPlayer(mapMethodsToPlayer.seekTo, amount);
+                return Promise.resolve();
+            };
+            class_1.prototype.getVolume = function () {
+                return this._callPlayer(mapMethodsToPlayer.getVolume) || 0;
+            };
+            class_1.prototype.setVolume = function (fraction) {
+                return this._callPlayer(mapMethodsToPlayer.setVolume, fraction);
+            };
+            class_1.prototype.isMuted = function () {
+                return this._callPlayer(mapMethodsToPlayer.isMuted);
+            };
+            class_1.prototype.isPlaying = function () {
+                return this.isPlayingNow;
+            };
+            class_1.prototype.mute = function () {
+                this._callPlayer(mapMethodsToPlayer.mute);
+                return Promise.resolve();
+            };
+            class_1.prototype.unMute = function () {
+                this._callPlayer(mapMethodsToPlayer.unMute);
+                return Promise.resolve();
+            };
+            class_1.prototype.render = function () {
+                return (React.createElement(Player, tslib_1.__assign({ key: this.state.playerKey, ref: this._playerRef }, this.props)));
+            };
+            return class_1;
+        }(React.Component)),
+        _a.propTypes = Player.propTypes,
+        _a.displayName = Player.displayName,
+        _a;
+}
+exports.default = playerHOC;
+//# sourceMappingURL=playerHOC.js.map
+
+/***/ }),
+
+/***/ 188:
 /*!**************************************************************!*\
   !*** ../node_modules/@wix/web-bi-logger/dist/src/lib/env.js ***!
   \**************************************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -560,13 +4482,29 @@ function requestWindow(cb) {
 
 /***/ }),
 
-/***/ 17:
+/***/ 189:
+/*!****************************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/components/video/utils/index.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var getSDK_1 = __webpack_require__(/*! ./getSDK */ 1178);
+exports.getSDK = getSDK_1.getSDK;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 23:
 /*!***************************************************!*\
   !*** ../node_modules/create-react-class/index.js ***!
   \***************************************************/
 /*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+/*! exports used: default */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -581,7 +4519,7 @@ function requestWindow(cb) {
 
 
 var React = __webpack_require__(/*! react */ 0);
-var factory = __webpack_require__(/*! ./factory */ 18);
+var factory = __webpack_require__(/*! ./factory */ 32);
 
 if (typeof React === 'undefined') {
   throw Error(
@@ -602,13 +4540,170 @@ module.exports = factory(
 
 /***/ }),
 
-/***/ 18:
+/***/ 24:
+/*!**********************************************!*\
+  !*** ../node_modules/object-assign/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+
+/* eslint-disable no-unused-vars */
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+
+function toObject(val) {
+	if (val === null || val === undefined) {
+		throw new TypeError('Object.assign cannot be called with null or undefined');
+	}
+
+	return Object(val);
+}
+
+function shouldUseNative() {
+	try {
+		if (!Object.assign) {
+			return false;
+		}
+
+		// Detect buggy property enumeration order in older V8 versions.
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
+		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
+		test1[5] = 'de';
+		if (Object.getOwnPropertyNames(test1)[0] === '5') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test2 = {};
+		for (var i = 0; i < 10; i++) {
+			test2['_' + String.fromCharCode(i)] = i;
+		}
+		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
+			return test2[n];
+		});
+		if (order2.join('') !== '0123456789') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test3 = {};
+		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
+			test3[letter] = letter;
+		});
+		if (Object.keys(Object.assign({}, test3)).join('') !==
+				'abcdefghijklmnopqrst') {
+			return false;
+		}
+
+		return true;
+	} catch (err) {
+		// We don't expect any of the above to throw, but better to be safe.
+		return false;
+	}
+}
+
+module.exports = shouldUseNative() ? Object.assign : function (target, source) {
+	var from;
+	var to = toObject(target);
+	var symbols;
+
+	for (var s = 1; s < arguments.length; s++) {
+		from = Object(arguments[s]);
+
+		for (var key in from) {
+			if (hasOwnProperty.call(from, key)) {
+				to[key] = from[key];
+			}
+		}
+
+		if (getOwnPropertySymbols) {
+			symbols = getOwnPropertySymbols(from);
+			for (var i = 0; i < symbols.length; i++) {
+				if (propIsEnumerable.call(from, symbols[i])) {
+					to[symbols[i]] = from[symbols[i]];
+				}
+			}
+		}
+	}
+
+	return to;
+};
+
+
+/***/ }),
+
+/***/ 304:
+/*!*********************************************!*\
+  !*** ./components/VideoPlayer/bi/events.js ***!
+  \*********************************************/
+/*! exports provided: biEvents */
+/*! exports used: biEvents */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return biEvents; });
+var biEvents = {
+  PLAY_REQUESTED: {
+    eventId: 397,
+    adapter: 'ugc-viewer',
+    params: {
+      playSource: 'playSource',
+      videoId: 'videoId',
+      videoSource: 'videoSource',
+      site_id: 'site_id'
+    }
+  },
+  PLAY_START: {
+    eventId: 398,
+    adapter: 'ugc-viewer',
+    params: {
+      playSource: 'playSource',
+      videoId: 'videoId',
+      videoSource: 'videoSource',
+      site_id: 'site_id'
+    }
+  },
+  PLAY_DONE: {
+    eventId: 399,
+    adapter: 'ugc-viewer',
+    params: {
+      videoId: 'videoId',
+      videoSource: 'videoSource',
+      site_id: 'site_id'
+    }
+  },
+  ERROR: {
+    eventId: 420,
+    adapter: 'ugc-viewer',
+    params: {
+      errorMessage: 'errorMessage',
+      playSource: 'playSource',
+      videoId: 'videoId',
+      videoSource: 'videoSource',
+      site_id: 'site_id'
+    }
+  }
+};
+
+/***/ }),
+
+/***/ 32:
 /*!*****************************************************!*\
   !*** ../node_modules/create-react-class/factory.js ***!
   \*****************************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -622,10 +4717,10 @@ module.exports = factory(
 
 
 
-var _assign = __webpack_require__(/*! object-assign */ 10);
+var _assign = __webpack_require__(/*! object-assign */ 24);
 
-var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 19);
-var _invariant = __webpack_require__(/*! fbjs/lib/invariant */ 8);
+var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 33);
+var _invariant = __webpack_require__(/*! fbjs/lib/invariant */ 34);
 
 if (false) { var warning; }
 
@@ -1392,13 +5487,12 @@ module.exports = factory;
 
 /***/ }),
 
-/***/ 19:
+/***/ 33:
 /*!***********************************************!*\
   !*** ../node_modules/fbjs/lib/emptyObject.js ***!
   \***********************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1420,46 +5514,145 @@ module.exports = emptyObject;
 
 /***/ }),
 
-/***/ 22:
-/*!*************************************************!*\
-  !*** ../node_modules/webpack/buildin/global.js ***!
-  \*************************************************/
+/***/ 34:
+/*!*********************************************!*\
+  !*** ../node_modules/fbjs/lib/invariant.js ***!
+  \*********************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-var g;
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ */
 
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
 
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
+
+/**
+ * Use invariant() to assert state which your program assumes to be true.
+ *
+ * Provide sprintf-style format (only %s is supported) and arguments
+ * to provide information about what broke and what you were
+ * expecting.
+ *
+ * The invariant message will be stripped in production, but the invariant
+ * will remain to ensure logic does not differ in production.
+ */
+
+var validateFormat = function validateFormat(format) {};
+
+if (false) {}
+
+function invariant(condition, format, a, b, c, d, e, f) {
+  validateFormat(format);
+
+  if (!condition) {
+    var error;
+    if (format === undefined) {
+      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+    } else {
+      var args = [a, b, c, d, e, f];
+      var argIndex = 0;
+      error = new Error(format.replace(/%s/g, function () {
+        return args[argIndex++];
+      }));
+      error.name = 'Invariant Violation';
+    }
+
+    error.framesToPop = 1; // we don't care about invariant's own frame
+    throw error;
+  }
 }
 
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
+module.exports = invariant;
 
 /***/ }),
 
-/***/ 255:
+/***/ 346:
+/*!*********************************************!*\
+  !*** ./components/VideoPlayer/intersect.js ***!
+  \*********************************************/
+/*! exports provided: intersect */
+/*! exports used: intersect */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return intersect; });
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ 3);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
+
+var intersect;
+
+if (typeof window === 'undefined' || !window.IntersectionObserver) {
+  intersect = {
+    has: false,
+    add: function add(target) {
+      return Promise.resolve(target);
+    },
+    remove: lodash__WEBPACK_IMPORTED_MODULE_0___default.a.noop
+  };
+} else {
+  var map;
+  var observer;
+  intersect = {
+    has: true,
+    add: function add(target) {
+      if (!target) {
+        return Promise.resolve(target);
+      }
+
+      if (!observer) {
+        map = new Map();
+        observer = new window.IntersectionObserver(function (entries) {
+          lodash__WEBPACK_IMPORTED_MODULE_0___default()(entries).filter(function (_ref) {
+            var isIntersecting = _ref.isIntersecting;
+            return isIntersecting;
+          }).forEach(function (_ref2) {
+            var target = _ref2.target;
+            var resolve = map.get(target);
+
+            if (resolve) {
+              intersect.remove(target);
+              resolve(target);
+            }
+          });
+        }, {
+          rootMargin: '50% 0px'
+        });
+      }
+
+      return new Promise(function (resolve) {
+        map.set(target, resolve);
+        observer.observe(target);
+      });
+    },
+    remove: function remove(target) {
+      if (target && map) {
+        map["delete"](target);
+
+        if (map.size === 0) {
+          observer.disconnect();
+          observer = null;
+          map = null;
+        }
+      }
+    }
+  };
+}
+
+/***/ }),
+
+/***/ 358:
 /*!****************************************************!*\
   !*** ../node_modules/setimmediate/setImmediate.js ***!
   \****************************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -1649,30 +5842,43 @@ module.exports = g;
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ 22), __webpack_require__(/*! ./../process/browser.js */ 104)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../yoshi-flow-legacy/node_modules/webpack/buildin/global.js */ 44), __webpack_require__(/*! ./../process/browser.js */ 120)))
 
 /***/ }),
 
-/***/ 258:
-/*!*****************************************!*\
-  !*** ../node_modules/lodash/isArray.js ***!
-  \*****************************************/
+/***/ 36:
+/*!***********************************************************************!*\
+  !*** ../node_modules/wix-ui-core/dist/src/utils/filter-data-props.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! lodash */ 2).isArray
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var acceptedPropsStart = 'data-';
+exports.filterDataProps = function (props) {
+    var output = {};
+    for (var key in props) {
+        if (props.hasOwnProperty(key) &&
+            key.length > acceptedPropsStart.length &&
+            key.startsWith(acceptedPropsStart)) {
+            output[key] = props[key];
+        }
+    }
+    return output;
+};
+//# sourceMappingURL=filter-data-props.js.map
 
 /***/ }),
 
-/***/ 259:
+/***/ 362:
 /*!******************************************************************!*\
   !*** ../node_modules/@wix/web-bi-logger/dist/src/lib/browser.js ***!
   \******************************************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1755,13 +5961,814 @@ function readCookie(cookieName) {
 
 /***/ }),
 
-/***/ 373:
+/***/ 363:
+/*!****************************************************************!*\
+  !*** ../node_modules/@wix/wix-bi-logger-client/dist/assert.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AssertionError = function (_Error) {
+  _inherits(AssertionError, _Error);
+
+  function AssertionError(message) {
+    _classCallCheck(this, AssertionError);
+
+    var _this = _possibleConstructorReturn(this, (AssertionError.__proto__ || Object.getPrototypeOf(AssertionError)).call(this, message));
+
+    _this.name = _this.constructor.name;
+    return _this;
+  }
+
+  return AssertionError;
+}(Error);
+
+function assertDefined(target, message) {
+  if (target === undefined) {
+    throw new AssertionError(message);
+  }
+}
+
+function assertObject(target, message) {
+  if (target !== undefined && ((typeof target === 'undefined' ? 'undefined' : _typeof(target)) !== 'object' || Array.isArray(target) || target === null)) {
+    throw new AssertionError(message);
+  }
+}
+
+function assertOk(target, message) {
+  if (!target) {
+    throw new AssertionError(message);
+  }
+}
+
+function assertFunc(target, message) {
+  if (target !== undefined && typeof target !== 'function') {
+    throw new AssertionError(message);
+  }
+}
+
+module.exports.defined = assertDefined;
+module.exports.object = assertObject;
+module.exports.ok = assertOk;
+module.exports.func = assertFunc;
+module.exports.AssertionError = AssertionError;
+//# sourceMappingURL=assert.js.map
+
+/***/ }),
+
+/***/ 364:
+/*!*****************************************!*\
+  !*** ../node_modules/lodash/isArray.js ***!
+  \*****************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! lodash */ 3).isArray
+
+/***/ }),
+
+/***/ 44:
+/*!********************************************************************************!*\
+  !*** ../node_modules/yoshi-flow-legacy/node_modules/webpack/buildin/global.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ 478:
+/*!***********************************************!*\
+  !*** ./components/VideoPlayer/VideoPlayer.js ***!
+  \***********************************************/
+/*! exports provided: VideoPlayer, santaVideoPlayer */
+/*! exports used: VideoPlayer, santaVideoPlayer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VideoPlayer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return santaVideoPlayer; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ 3);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var create_react_class__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! create-react-class */ 23);
+/* harmony import */ var create_react_class__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(create_react_class__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ 1);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var santa_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! santa-components */ 4);
+/* harmony import */ var santa_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(santa_components__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var wix_ui_core_video__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! wix-ui-core/video */ 706);
+/* harmony import */ var wix_ui_core_video__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(wix_ui_core_video__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _wix_playback_bi_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wix/playback-bi-module */ 479);
+/* harmony import */ var _wix_playback_bi_module__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wix_playback_bi_module__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _bi_events__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./bi/events */ 304);
+/* harmony import */ var _behaviors_videoPlayerBehaviors__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./behaviors/videoPlayerBehaviors */ 704);
+/* harmony import */ var _VideoPlayer_st_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./VideoPlayer.st.css */ 155);
+/* harmony import */ var _VideoPlayer_st_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_VideoPlayer_st_css__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _playButtonIcon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./playButtonIcon */ 705);
+/* harmony import */ var _intersect__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./intersect */ 346);
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+var skinBasedComp = santa_components__WEBPACK_IMPORTED_MODULE_4__["mixins"].skinBasedComp,
+    runTimeCompData = santa_components__WEBPACK_IMPORTED_MODULE_4__["mixins"].runTimeCompData,
+    compStateMixin = santa_components__WEBPACK_IMPORTED_MODULE_4__["mixins"].compStateMixin;
+var imageClientApi = santa_components__WEBPACK_IMPORTED_MODULE_4__["utils"].imageClientApi;
+var playbackTypes = santa_components__WEBPACK_IMPORTED_MODULE_4__["constants"].MEDIA.playbackTypes;
+var ACTION_TYPES = santa_components__WEBPACK_IMPORTED_MODULE_4__["constants"].SITE.ACTION_TYPES;
+var VIDEO_TYPE_FILE = 'file';
+var MAX_LOGO_WIDTH = 126;
+var LOGO_TRANSFORM_TYPE = {
+  transformType: 'fit'
+};
+var FITTING_SCALE_TO_FILL = imageClientApi.fittingTypes.SCALE_TO_FILL;
+
+var getComponentSkins = function getComponentSkins() {
+  return {
+    'wixui.skins.VideoPlayer': _VideoPlayer_st_css__WEBPACK_IMPORTED_MODULE_9__["$skin"]
+  };
+};
+
+function getPublicState(state) {
+  // Handle null state argument (default value):
+  var _ref = state || {},
+      isPlaying = _ref.isPlaying,
+      currentTime = _ref.currentTime,
+      duration = _ref.duration,
+      volume = _ref.volume,
+      isMuted = _ref.isMuted;
+
+  return {
+    isPlaying: isPlaying,
+    currentTime: currentTime,
+    duration: duration,
+    volume: volume,
+    isMuted: isMuted
+  };
+}
+
+var listenToEventOnce = function listenToEventOnce(eventEmitter, eventName, callback) {
+  if (callback === void 0) {
+    callback = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.noop;
+  }
+
+  var handler = function handler() {
+    eventEmitter.off(eventName, handler);
+    callback();
+  };
+
+  eventEmitter.on(eventName, handler);
+};
+
+var VideoPlayer = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose(VideoPlayer, _React$Component);
+
+  function VideoPlayer(props) {
+    var _this;
+
+    _this = _React$Component.call(this, props) || this;
+    _this.state = {
+      hasBeenInViewport: !_intersect__WEBPACK_IMPORTED_MODULE_11__[/* intersect */ "a"].has
+    };
+    _this.placeholderRef = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();
+    return _this;
+  }
+
+  var _proto = VideoPlayer.prototype;
+
+  _proto.componentDidMount = function componentDidMount() {
+    var _this2 = this;
+
+    _intersect__WEBPACK_IMPORTED_MODULE_11__[/* intersect */ "a"].add(this.placeholderRef.current).then(function (current) {
+      if (current) {
+        _this2.setState({
+          hasBeenInViewport: true
+        });
+      }
+    });
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    _intersect__WEBPACK_IMPORTED_MODULE_11__[/* intersect */ "a"].remove(this.placeholderRef.current);
+  };
+
+  _proto.render = function render() {
+    var _modules;
+
+    var _this$props = this.props,
+        videoId = _this$props.videoId,
+        playerRef = _this$props.playerRef,
+        style = _this$props.style,
+        className = _this$props.className,
+        lazyLoading = _this$props.lazyLoading,
+        src = _this$props.src,
+        autoplay = _this$props.autoplay,
+        loop = _this$props.loop,
+        controls = _this$props.controls,
+        showTitle = _this$props.showTitle,
+        title = _this$props.title,
+        description = _this$props.description,
+        logoUrl = _this$props.logoUrl,
+        poster = _this$props.poster,
+        onInit = _this$props.onInit,
+        onReady = _this$props.onReady,
+        onDuration = _this$props.onDuration,
+        onProgress = _this$props.onProgress,
+        onPlay = _this$props.onPlay,
+        onPause = _this$props.onPause,
+        onEnded = _this$props.onEnded,
+        onFirstPlay = _this$props.onFirstPlay,
+        onFirstEnded = _this$props.onFirstEnded,
+        onError = _this$props.onError,
+        isResponsiveMode = _this$props.isResponsiveMode,
+        isMobileView = _this$props.isMobileView;
+
+    if (lazyLoading && !this.state.hasBeenInViewport && !autoplay) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        ref: this.placeholderRef
+      });
+    }
+
+    var adapterProps = {
+      playable: {
+        title: title,
+        description: description,
+        logoUrl: logoUrl,
+        poster: poster,
+        playButton: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          type: "button",
+          className: _VideoPlayer_st_css__WEBPACK_IMPORTED_MODULE_9__["classes"].playButton
+        }, _playButtonIcon__WEBPACK_IMPORTED_MODULE_10__[/* playButtonIcon */ "a"]),
+        preload: 'none',
+        modules: (_modules = {}, _modules[_wix_playback_bi_module__WEBPACK_IMPORTED_MODULE_6__["PlaybackBIModule"].moduleName] = _wix_playback_bi_module__WEBPACK_IMPORTED_MODULE_6__["PlaybackBIModule"], _modules)
+      }
+    };
+    var playerProps = {
+      id: "video-player-" + videoId,
+      playerRef: playerRef,
+      fillAllSpace: true,
+      width: style.width,
+      height: style.height,
+      src: src,
+      playing: autoplay,
+      muted: autoplay,
+      loop: loop,
+      controls: controls,
+      showTitle: showTitle,
+      onInit: onInit,
+      onReady: onReady,
+      onDuration: onDuration,
+      onProgress: onProgress,
+      onPlay: onPlay,
+      onPause: onPause,
+      onEnded: onEnded,
+      onFirstPlay: onFirstPlay,
+      onFirstEnded: onFirstEnded,
+      onError: onError,
+      config: adapterProps,
+      isResponsiveMode: isResponsiveMode
+    };
+    var styleState = {
+      isMobileView: isMobileView,
+      isDesktopView: !isMobileView,
+      isTitleExists: Boolean(showTitle && title)
+    }; // reset key prop when controls or showTitle are changed in order to reload player
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(wix_ui_core_video__WEBPACK_IMPORTED_MODULE_5__["Video"], _extends({
+      key: "video" + controls + showTitle,
+      className: Object(_VideoPlayer_st_css__WEBPACK_IMPORTED_MODULE_9__["st"])(_VideoPlayer_st_css__WEBPACK_IMPORTED_MODULE_9__["classes"].root, styleState, className)
+    }, playerProps));
+  };
+
+  return VideoPlayer;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+VideoPlayer.propTypes = {
+  videoId: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+  playerRef: prop_types__WEBPACK_IMPORTED_MODULE_3__["func"].isRequired,
+  className: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+  style: prop_types__WEBPACK_IMPORTED_MODULE_3__["object"].isRequired,
+  src: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+  autoplay: prop_types__WEBPACK_IMPORTED_MODULE_3__["bool"].isRequired,
+  loop: prop_types__WEBPACK_IMPORTED_MODULE_3__["bool"].isRequired,
+  controls: prop_types__WEBPACK_IMPORTED_MODULE_3__["bool"].isRequired,
+  showTitle: prop_types__WEBPACK_IMPORTED_MODULE_3__["bool"].isRequired,
+  title: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+  description: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+  logoUrl: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+  poster: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+  isMobileView: prop_types__WEBPACK_IMPORTED_MODULE_3__["bool"].isRequired,
+  isResponsiveMode: prop_types__WEBPACK_IMPORTED_MODULE_3__["bool"].isRequired,
+  onInit: prop_types__WEBPACK_IMPORTED_MODULE_3__["func"].isRequired,
+  onReady: prop_types__WEBPACK_IMPORTED_MODULE_3__["func"].isRequired,
+  onDuration: prop_types__WEBPACK_IMPORTED_MODULE_3__["func"].isRequired,
+  onProgress: prop_types__WEBPACK_IMPORTED_MODULE_3__["func"].isRequired,
+  onPlay: prop_types__WEBPACK_IMPORTED_MODULE_3__["func"].isRequired,
+  onPause: prop_types__WEBPACK_IMPORTED_MODULE_3__["func"].isRequired,
+  onEnded: prop_types__WEBPACK_IMPORTED_MODULE_3__["func"].isRequired,
+  onFirstPlay: prop_types__WEBPACK_IMPORTED_MODULE_3__["func"].isRequired,
+  onFirstEnded: prop_types__WEBPACK_IMPORTED_MODULE_3__["func"].isRequired,
+  onError: prop_types__WEBPACK_IMPORTED_MODULE_3__["func"].isRequired,
+  lazyLoading: prop_types__WEBPACK_IMPORTED_MODULE_3__["bool"].isRequired
+};
+VideoPlayer.displayName = 'VideoPlayer';
+var santaVideoPlayer = create_react_class__WEBPACK_IMPORTED_MODULE_2___default()({
+  displayName: 'VideoPlayerSanta',
+  mixins: [skinBasedComp(getComponentSkins()), runTimeCompData, compStateMixin(getPublicState)],
+  propTypes: {
+    styleId: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].Component.styleId,
+    style: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].Component.style,
+    isMobileView: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].isMobileView,
+    id: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].Component.id,
+    compProp: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].Component.compProp,
+    compData: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].Component.compData,
+    reportBI: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].reportBI,
+    biVisitorId: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].biVisitorId,
+    metaSiteId: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].RendererModel.metaSiteId,
+    isPlayingAllowed: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].RenderFlags.isPlayingAllowed,
+    staticMediaUrl: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].ServiceTopology.staticMediaUrl,
+    staticVideoUrl: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].ServiceTopology.staticVideoUrl,
+    registerPlayer: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].Media.registerPlayer,
+    unregisterPlayer: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].Media.unregisterPlayer,
+    updatePlayerState: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].Media.updatePlayerState,
+    lazyLoad: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].Media.lazyLoad,
+    isResponsiveMode: santa_components__WEBPACK_IMPORTED_MODULE_4__["santaTypesDefinitions"].RendererModel.isResponsive
+  },
+  statics: {
+    behaviors: _behaviors_videoPlayerBehaviors__WEBPACK_IMPORTED_MODULE_8__[/* videoPlayerBehaviors */ "a"],
+    getComponentSkins: getComponentSkins
+  },
+  getInitialState: function getInitialState() {
+    var _this3 = this;
+
+    var props = this.props;
+
+    var duration = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.get(props, 'compData.videoRef.duration');
+
+    var volume = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.get(props, 'compProp.autoplay') ? 0 : 100;
+    var isMuted = volume === 0;
+    this.delayedActions = new Promise(function (resolve) {
+      _this3.resolveDelayedActions = resolve;
+    });
+    return {
+      isReady: false,
+      isPlaying: false,
+      currentTime: 0,
+      duration: duration,
+      volume: volume,
+      isMuted: isMuted,
+      lazyLoading: props.lazyLoad
+    };
+  },
+  componentDidMount: function componentDidMount() {
+    this.props.registerPlayer(this.props.id);
+  },
+  componentWillUnmount: function componentWillUnmount() {
+    this.stop();
+    this.props.unregisterPlayer(this.props.id);
+  },
+  delayActionUntilLoaded: function delayActionUntilLoaded(action) {
+    return this.delayedActions.then(action);
+  },
+  loadAndDelayAction: function loadAndDelayAction(action) {
+    this.setState({
+      lazyLoading: false
+    });
+    return this.delayActionUntilLoaded(action);
+  },
+  UNSAFE_componentWillReceiveProps: function UNSAFE_componentWillReceiveProps(nextProps) {
+    var _this4 = this;
+
+    if (!nextProps.isPlayingAllowed && this.props.isPlayingAllowed) {
+      this.delayActionUntilLoaded(function () {
+        return _this4.playerRef.stop();
+      });
+    }
+  },
+  play: function play(callback) {
+    var _this5 = this;
+
+    if (callback === void 0) {
+      callback = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.noop;
+    }
+
+    this.loadAndDelayAction(function () {
+      return _this5.playerRef.play();
+    }).then(function () {
+      return callback();
+    });
+  },
+  pause: function pause(callback) {
+    var _this6 = this;
+
+    if (callback === void 0) {
+      callback = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.noop;
+    }
+
+    this.delayActionUntilLoaded(function () {
+      return _this6.playerRef.pause();
+    }).then(function () {
+      return callback();
+    });
+  },
+  stop: function stop(callback) {
+    var _this7 = this;
+
+    if (callback === void 0) {
+      callback = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.noop;
+    }
+
+    this.delayActionUntilLoaded(function () {
+      return _this7.playerRef.stop();
+    }).then(function () {
+      return callback();
+    });
+  },
+  togglePlay: function togglePlay(callback) {
+    var _this8 = this;
+
+    if (callback === void 0) {
+      callback = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.noop;
+    }
+
+    this.loadAndDelayAction(function () {
+      return _this8.playerRef.togglePlay();
+    }).then(function () {
+      return callback();
+    });
+  },
+  mute: function mute(callback) {
+    var _this9 = this;
+
+    if (callback === void 0) {
+      callback = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.noop;
+    }
+
+    this.setState({
+      isMuted: true
+    });
+    this.delayActionUntilLoaded(function () {
+      return _this9.playerRef.mute();
+    }).then(function () {
+      return callback();
+    });
+  },
+  unmute: function unmute(callback) {
+    var _this10 = this;
+
+    if (callback === void 0) {
+      callback = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.noop;
+    }
+
+    this.setState({
+      isMuted: false
+    });
+    this.delayActionUntilLoaded(function () {
+      return _this10.playerRef.unMute();
+    }).then(function () {
+      return callback();
+    });
+  },
+  seek: function seek(value, callback) {
+    var _this11 = this;
+
+    if (callback === void 0) {
+      callback = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.noop;
+    }
+
+    var timePoint = Number(value);
+
+    if (lodash__WEBPACK_IMPORTED_MODULE_1___default.a.isFinite(timePoint)) {
+      this.delayActionUntilLoaded(function () {
+        return _this11.playerRef.seekTo(timePoint);
+      }).then(function () {
+        return callback();
+      });
+    }
+  },
+  setVolume: function setVolume(value) {
+    var _this12 = this;
+
+    var volume = Number(value);
+    this.setState({
+      volume: volume
+    });
+    this.delayActionUntilLoaded(function () {
+      return _this12.playerRef.setVolume(volume);
+    });
+  },
+  updatePlaybackState: function updatePlaybackState(playbackState) {
+    var isPlaying = playbackState === playbackTypes.PLAYING;
+    this.setState({
+      isPlaying: isPlaying
+    });
+    this.props.updatePlayerState(this.props.id, {
+      playbackState: playbackState
+    });
+  },
+  handleFirstPlayRequested: function handleFirstPlayRequested() {
+    this.props.reportBI(_bi_events__WEBPACK_IMPORTED_MODULE_7__[/* biEvents */ "a"].PLAY_REQUESTED, {
+      videoId: this.getVideoId(),
+      videoSource: this.getVideoType(),
+      playSource: this.getPlaySource()
+    });
+  },
+  handleFirstPlay: function handleFirstPlay() {
+    this.props.reportBI(_bi_events__WEBPACK_IMPORTED_MODULE_7__[/* biEvents */ "a"].PLAY_START, {
+      videoId: this.getVideoId(),
+      videoSource: this.getVideoType(),
+      playSource: this.getPlaySource()
+    });
+  },
+  handleFirstEnded: function handleFirstEnded() {
+    this.props.reportBI(_bi_events__WEBPACK_IMPORTED_MODULE_7__[/* biEvents */ "a"].PLAY_DONE, {
+      videoId: this.getVideoId(),
+      videoSource: this.getVideoType()
+    });
+  },
+  handleInit: function handleInit(playerAPI) {
+    this.resolveDelayedActions();
+
+    if (this.getVideoType() === VIDEO_TYPE_FILE) {
+      playerAPI.setWixBIVideoID(this.getVideoId());
+      playerAPI.setWixVisitorID(this.props.biVisitorId);
+      playerAPI.setWixMSID(this.props.metaSiteId);
+      playerAPI.setWixBIProduct('editor_player');
+      listenToEventOnce(playerAPI, 'engine-state/play-requested', this.handleFirstPlayRequested);
+    }
+  },
+  handleVideoReady: function handleVideoReady() {
+    this.setState({
+      isReady: true,
+      volume: this.playerRef.getVolume(),
+      isMuted: this.playerRef.isMuted()
+    });
+    this.handleAction(ACTION_TYPES.ITEM_READY);
+  },
+  handleDuration: function handleDuration(duration) {
+    this.setState({
+      duration: duration
+    });
+  },
+  handlePlay: function handlePlay() {
+    this.updatePlaybackState(playbackTypes.PLAYING);
+    this.handleAction(ACTION_TYPES.ON_PLAY);
+  },
+  handlePause: function handlePause() {
+    this.updatePlaybackState(playbackTypes.PAUSED);
+    this.handleAction(ACTION_TYPES.ON_PAUSE);
+  },
+  handleProgress: function handleProgress(currentTime) {
+    this.setState({
+      currentTime: currentTime,
+      volume: this.playerRef.getVolume(),
+      isMuted: this.playerRef.isMuted()
+    });
+    this.handleAction(ACTION_TYPES.ON_PROGRESS, currentTime);
+  },
+  handleEnded: function handleEnded() {
+    this.updatePlaybackState(playbackTypes.PLAY_ENDED);
+    this.handleAction(ACTION_TYPES.ON_ENDED);
+  },
+  handleError: function handleError(err) {
+    this.props.reportBI(_bi_events__WEBPACK_IMPORTED_MODULE_7__[/* biEvents */ "a"].ERROR, {
+      errorMessage: err && err.name && err.message ? err.name + " : " + err.message : err,
+      videoId: this.getVideoId(),
+      videoSource: this.getVideoType(),
+      playSource: this.getPlaySource()
+    });
+  },
+  handleMouseIn: function handleMouseIn(e) {
+    this.handleAction(ACTION_TYPES.MOUSE_IN, e);
+  },
+  handleMouseOut: function handleMouseOut(e) {
+    this.handleAction(ACTION_TYPES.MOUSE_OUT, e);
+  },
+  getPlaySource: function getPlaySource() {
+    return this.props.compProp.autoplay ? 'autoplay' : 'click';
+  },
+  getVideoType: function getVideoType() {
+    return lodash__WEBPACK_IMPORTED_MODULE_1___default.a.get(this.props, 'compData.videoType', VIDEO_TYPE_FILE);
+  },
+  getVideoId: function getVideoId() {
+    return this.props.id;
+  },
+  getPosterUrl: function getPosterUrl() {
+    var _this$props2 = this.props,
+        compData = _this$props2.compData,
+        style = _this$props2.style,
+        staticMediaUrl = _this$props2.staticMediaUrl;
+    var posterUrl = compData.posterUrl;
+
+    if (posterUrl) {
+      return posterUrl;
+    }
+
+    var posterImageRef = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.get(compData, 'videoRef.posterImageRef');
+
+    if (!posterImageRef) {
+      return;
+    }
+
+    var width = posterImageRef.width,
+        height = posterImageRef.height,
+        uri = posterImageRef.uri;
+    var src = {
+      id: uri,
+      width: width,
+      height: height
+    };
+    var target = {
+      width: style.width,
+      height: style.height
+    };
+
+    if (!target.width || !target.height) {
+      target.width = width;
+      target.height = height;
+    }
+
+    var previewData = imageClientApi.getData(FITTING_SCALE_TO_FILL, src, target);
+    return staticMediaUrl + "/" + previewData.uri;
+  },
+  getVideoUrl: function getVideoUrl() {
+    var _this$props3 = this.props,
+        compData = _this$props3.compData,
+        staticVideoUrl = _this$props3.staticVideoUrl;
+    var videoUrl = compData.videoUrl;
+
+    if (videoUrl) {
+      return videoUrl;
+    }
+
+    var qualities = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.get(compData, 'videoRef.qualities');
+
+    if (!qualities) {
+      return;
+    }
+
+    var _$maxBy = lodash__WEBPACK_IMPORTED_MODULE_1___default.a.maxBy(qualities, 'width'),
+        url = _$maxBy.url;
+
+    return "" + staticVideoUrl + url;
+  },
+  getLogoUrl: function getLogoUrl() {
+    var _this$props4 = this.props,
+        compData = _this$props4.compData,
+        staticMediaUrl = _this$props4.staticMediaUrl;
+
+    if (!lodash__WEBPACK_IMPORTED_MODULE_1___default.a.isObject(compData.logoRef)) {
+      return;
+    }
+
+    var _compData$logoRef = compData.logoRef,
+        width = _compData$logoRef.width,
+        height = _compData$logoRef.height,
+        uri = _compData$logoRef.uri;
+    var src = {
+      id: uri,
+      width: width,
+      height: height
+    };
+    var target = {
+      width: MAX_LOGO_WIDTH,
+      height: Math.ceil(MAX_LOGO_WIDTH / width * height)
+    };
+    var previewData = imageClientApi.getData(FITTING_SCALE_TO_FILL, src, target, LOGO_TRANSFORM_TYPE);
+    return staticMediaUrl + "/" + previewData.uri;
+  },
+  setPlayerRef: function setPlayerRef(playerRef) {
+    if (playerRef !== null) {
+      this.playerRef = playerRef;
+    }
+  },
+  getSkinProperties: function getSkinProperties() {
+    var props = this.props;
+    var compProp = props.compProp,
+        compData = props.compData,
+        isResponsiveMode = props.isResponsiveMode;
+    var controls = compProp.controlsVisibility === 'hover';
+    var autoplay = props.isPlayingAllowed && compProp.autoplay;
+    var playerProps = {
+      className: props.styleId,
+      videoId: props.id,
+      style: props.style,
+      isMobileView: props.isMobileView,
+      src: this.getVideoUrl(),
+      autoplay: autoplay,
+      loop: compProp.loop,
+      controls: controls,
+      showTitle: compProp.showVideoTitle,
+      title: compData.videoTitle,
+      description: compData.description,
+      logoUrl: this.getLogoUrl(),
+      poster: this.getPosterUrl(),
+      onMouseIn: this.handleMouseIn,
+      onMouseOut: this.handleMouseOut,
+      onInit: this.handleInit,
+      onReady: this.handleVideoReady,
+      onDuration: this.handleDuration,
+      onProgress: this.handleProgress,
+      onPlay: this.handlePlay,
+      onPause: this.handlePause,
+      onEnded: this.handleEnded,
+      onFirstPlay: this.handleFirstPlay,
+      onFirstEnded: this.handleFirstEnded,
+      onError: this.handleError,
+      playerRef: this.setPlayerRef,
+      lazyLoading: this.state.lazyLoading,
+      isResponsiveMode: isResponsiveMode
+    };
+    return {
+      '': {
+        children: [santa_components__WEBPACK_IMPORTED_MODULE_4__["utils"].createReactElement(VideoPlayer, playerProps)]
+      }
+    };
+  }
+});
+
+/***/ }),
+
+/***/ 479:
+/*!*****************************************************************!*\
+  !*** ../node_modules/@wix/playback-bi-module/dist/src/index.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/*! exports used: PlaybackBIModule */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+__exportStar(__webpack_require__(/*! ./playback-bi-module */ 1157), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 578:
 /*!****************************************************************!*\
   !*** ../node_modules/playable/dist/statics/playable.bundle.js ***!
   \****************************************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, setImmediate) {(function (global, factory) {
@@ -1814,6 +6821,14 @@ function readCookie(cookieName) {
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
         else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
         return c > 3 && r && Object.defineProperty(target, key, r), r;
+    }
+
+    function __spreadArrays() {
+        for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+        for (var r = Array(s), k = 0, i = 0; i < il; i++)
+            for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+                r[k] = a[j];
+        return r;
     }
 
     var ExtendableError = /** @class */ (function (_super) {
@@ -1901,7 +6916,7 @@ function readCookie(cookieName) {
             for (var _i = 0; _i < arguments.length; _i++) {
                 args[_i] = arguments[_i];
             }
-            return new (Type.bind.apply(Type, [void 0].concat(args)))();
+            return new (Type.bind.apply(Type, __spreadArrays([void 0], args)))();
         };
         var resolve = generateResolve(newClass, Type);
         var result = {
@@ -2113,8 +7128,8 @@ function readCookie(cookieName) {
     var isAndroid = function () { return ANDROID_PATTERN.test(getUserAgent()); };
     var isSafari = function () { return SAFARI_PATTERN.test(getUserAgent()); };
 
-    var convertUIConfigForIOS = function (params) { return (__assign({}, params, { disableControlWithClickOnPlayer: true, disableControlWithKeyboard: true, hideMainUI: true, nativeBrowserControls: true })); };
-    var convertUIConfigForAndroid = function (params) { return (__assign({}, params, { disableControlWithClickOnPlayer: true, disableControlWithKeyboard: true })); };
+    var convertUIConfigForIOS = function (params) { return (__assign(__assign({}, params), { disableControlWithClickOnPlayer: true, disableControlWithKeyboard: true, hideMainUI: true, nativeBrowserControls: true })); };
+    var convertUIConfigForAndroid = function (params) { return (__assign(__assign({}, params), { disableControlWithClickOnPlayer: true, disableControlWithKeyboard: true })); };
     var convertToDeviceRelatedConfig = function (params) {
         if (isIOS()) {
             return convertUIConfigForIOS(params);
@@ -3394,6 +8409,11 @@ function readCookie(cookieName) {
     }
     var focusSource = { engage: engage$1, disengage: disengage$1 };
 
+    // Unspecified error on Internet Explorer with document.activeElement
+    // https://github.com/reactjs/react-tabs/issues/193
+    var canUseActiveElement = typeof window !== 'undefined' &&
+        window.document &&
+        typeof window.document.activeElement !== 'unknown';
     // inspired by https://gist.github.com/aFarkas/a7e0d85450f323d5e164
     var FOCUS_WITHIN_CLASSNAME = 'focus-within';
     var clearFocusWithinClass = function (element) {
@@ -3403,9 +8423,12 @@ function readCookie(cookieName) {
             elem.classList.remove(FOCUS_WITHIN_CLASSNAME);
         });
     };
+    function isElementNode(node) {
+        return typeof node.classList !== 'undefined';
+    }
     var addFocusWithinClass = function (boundaryElement, activeElement) {
         var currentNode = activeElement;
-        while (currentNode !== boundaryElement && currentNode.classList) {
+        while (currentNode !== boundaryElement && isElementNode(currentNode)) {
             currentNode.classList.add(FOCUS_WITHIN_CLASSNAME);
             currentNode = currentNode.parentNode;
         }
@@ -3416,7 +8439,7 @@ function readCookie(cookieName) {
             var last;
             var isFocused;
             var action = function () {
-                var activeElement = document.activeElement;
+                var activeElement = canUseActiveElement ? document.activeElement : null;
                 running = false;
                 if (last !== activeElement) {
                     last = activeElement;
@@ -3635,7 +8658,7 @@ function readCookie(cookieName) {
 
     function dot_tpl_src_modules_rootContainer_templates_container_dot(props
     ) {
-    var out='<div data-playable-hook="player-container" tabindex="0" class="'+(props.styles.container)+'"></div>';return out;
+    var out='<div data-playable-hook="player-container" dir="ltr" data-playable-dir="'+(props.direction)+'" tabindex="0" class="'+(props.styles.container)+'"></div>';return out;
     }
 
     function createCommonjsModule(fn, module) {
@@ -3773,7 +8796,7 @@ function readCookie(cookieName) {
       }
     }
 
-    var css = ".root-container__controlButton___3nLjS {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .root-container__controlButton___3nLjS:hover {\n    opacity: .7; }\n  .root-container__hidden___10ZXK {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .root-container__container____RXkJ {\n  font-family: HelveticaNeueW01-45Ligh, HelveticaNeueW02-45Ligh, HelveticaNeueW10-45Ligh, Helvetica Neue, Helvetica, Arial, \\\\30e1\\30a4\\30ea\\30aa, meiryo, \\\\30d2\\30e9\\30ae\\30ce\\89d2\\30b4 pro w3, hiragino kaku gothic pro;\n  position: relative;\n  z-index: 0;\n  display: block;\n  overflow: hidden;\n  height: inherit;\n  outline: none;\n  /**\n * 1. Change the font styles in all browsers.\n * 2. Show the overflow in IE.\n * 3. Remove the margin in Firefox and Safari.\n * 4. Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 5. Correct the inability to style clickable types in iOS and Safari.\n */\n  /**\n * Remove the inner border and padding in Firefox.\n */\n  /**\n * Restore the focus styles unset by the previous rule.\n */ }\n  .root-container__container____RXkJ button {\n    font-family: inherit;\n    /* 1 */\n    font-size: 100%;\n    /* 1 */\n    line-height: 1.15;\n    /* 1 */\n    overflow: visible;\n    /* 2 */\n    margin: 0;\n    /* 3 */\n    text-transform: none;\n    /* 4 */\n    -webkit-appearance: button;\n    /* 5 */ }\n  .root-container__container____RXkJ button::-moz-focus-inner {\n    padding: 0;\n    border-style: none; }\n  .root-container__container____RXkJ button:-moz-focusring {\n    outline: 1px dotted ButtonText; }\n  [data-playable-hook='player-container'].root-container__container____RXkJ [data-playable-component],\n[data-playable-hook='player-container'].root-container__container____RXkJ [data-playable-component] *,\n[data-playable-hook='player-container'].root-container__container____RXkJ [data-playable-component] *:before,\n[data-playable-hook='player-container'].root-container__container____RXkJ [data-playable-component] *:after {\n  -webkit-box-sizing: content-box !important;\n          box-sizing: content-box !important;\n  outline: none !important; }\n  .root-container__fillAllSpace___33wu6,\n.root-container__fullScreen___3oMwD {\n  width: 100% !important;\n  min-width: 100% !important;\n  height: 100% !important;\n  min-height: 100% !important; }\n  [data-playable-focus-source='key'] [data-playable-hook='player-container'] button.focus-within,\n[data-playable-focus-source='key'] [data-playable-hook='player-container'] input.focus-within,\n[data-playable-focus-source='key'] [data-playable-hook='player-container'] img.focus-within,\n[data-playable-focus-source='script']\n[data-playable-hook='player-container'] button.focus-within,\n[data-playable-focus-source='script']\n[data-playable-hook='player-container'] input.focus-within,\n[data-playable-focus-source='script']\n[data-playable-hook='player-container'] img.focus-within {\n  -webkit-box-shadow: 0 0 0 2px rgba(56, 153, 236, 0.8);\n          box-shadow: 0 0 0 2px rgba(56, 153, 236, 0.8); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJvb3QtY29udGFpbmVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLFlBQVksRUFBRTtFQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtFQUUxQjtFQUNFLDBOQUEwTjtFQUMxTixtQkFBbUI7RUFDbkIsV0FBVztFQUNYLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLGNBQWM7RUFDZDs7Ozs7O0dBTUM7RUFDRDs7R0FFQztFQUNEOztHQUVDLEVBQUU7RUFDSDtJQUNFLHFCQUFxQjtJQUNyQixPQUFPO0lBQ1AsZ0JBQWdCO0lBQ2hCLE9BQU87SUFDUCxrQkFBa0I7SUFDbEIsT0FBTztJQUNQLGtCQUFrQjtJQUNsQixPQUFPO0lBQ1AsVUFBVTtJQUNWLE9BQU87SUFDUCxxQkFBcUI7SUFDckIsT0FBTztJQUNQLDJCQUEyQjtJQUMzQixPQUFPLEVBQUU7RUFDWDtJQUNFLFdBQVc7SUFDWCxtQkFBbUIsRUFBRTtFQUN2QjtJQUNFLCtCQUErQixFQUFFO0VBRXJDOzs7O0VBSUUsMkNBQW1DO1VBQW5DLG1DQUFtQztFQUNuQyx5QkFBeUIsRUFBRTtFQUU3Qjs7RUFFRSx1QkFBdUI7RUFDdkIsMkJBQTJCO0VBQzNCLHdCQUF3QjtFQUN4Qiw0QkFBNEIsRUFBRTtFQUVoQzs7Ozs7Ozs7O0VBU0Usc0RBQThDO1VBQTlDLDhDQUE4QyxFQUFFIiwiZmlsZSI6InJvb3QtY29udGFpbmVyLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udHJvbEJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmc6IDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogLjJzO1xuICB0cmFuc2l0aW9uLXByb3BlcnR5OiBvcGFjaXR5O1xuICBvcGFjaXR5OiAxO1xuICBib3JkZXI6IDA7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAuY29udHJvbEJ1dHRvbjpob3ZlciB7XG4gICAgb3BhY2l0eTogLjc7IH1cblxuLmhpZGRlbiB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbiAhaW1wb3J0YW50O1xuICB3aWR0aDogMCAhaW1wb3J0YW50O1xuICBtaW4td2lkdGg6IDAgIWltcG9ydGFudDtcbiAgaGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1pbi1oZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWFyZ2luOiAwICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmc6IDAgIWltcG9ydGFudDtcbiAgb3BhY2l0eTogMCAhaW1wb3J0YW50OyB9XG5cbi5jb250YWluZXIge1xuICBmb250LWZhbWlseTogSGVsdmV0aWNhTmV1ZVcwMS00NUxpZ2gsIEhlbHZldGljYU5ldWVXMDItNDVMaWdoLCBIZWx2ZXRpY2FOZXVlVzEwLTQ1TGlnaCwgSGVsdmV0aWNhIE5ldWUsIEhlbHZldGljYSwgQXJpYWwsIFxcXFwzMGUxXFwzMGE0XFwzMGVhXFwzMGFhLCBtZWlyeW8sIFxcXFwzMGQyXFwzMGU5XFwzMGFlXFwzMGNlXFw4OWQyXFwzMGI0IHBybyB3MywgaGlyYWdpbm8ga2FrdSBnb3RoaWMgcHJvO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHotaW5kZXg6IDA7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBoZWlnaHQ6IGluaGVyaXQ7XG4gIG91dGxpbmU6IG5vbmU7XG4gIC8qKlxuICogMS4gQ2hhbmdlIHRoZSBmb250IHN0eWxlcyBpbiBhbGwgYnJvd3NlcnMuXG4gKiAyLiBTaG93IHRoZSBvdmVyZmxvdyBpbiBJRS5cbiAqIDMuIFJlbW92ZSB0aGUgbWFyZ2luIGluIEZpcmVmb3ggYW5kIFNhZmFyaS5cbiAqIDQuIFJlbW92ZSB0aGUgaW5oZXJpdGFuY2Ugb2YgdGV4dCB0cmFuc2Zvcm0gaW4gRWRnZSwgRmlyZWZveCwgYW5kIElFLlxuICogNS4gQ29ycmVjdCB0aGUgaW5hYmlsaXR5IHRvIHN0eWxlIGNsaWNrYWJsZSB0eXBlcyBpbiBpT1MgYW5kIFNhZmFyaS5cbiAqL1xuICAvKipcbiAqIFJlbW92ZSB0aGUgaW5uZXIgYm9yZGVyIGFuZCBwYWRkaW5nIGluIEZpcmVmb3guXG4gKi9cbiAgLyoqXG4gKiBSZXN0b3JlIHRoZSBmb2N1cyBzdHlsZXMgdW5zZXQgYnkgdGhlIHByZXZpb3VzIHJ1bGUuXG4gKi8gfVxuICAuY29udGFpbmVyIGJ1dHRvbiB7XG4gICAgZm9udC1mYW1pbHk6IGluaGVyaXQ7XG4gICAgLyogMSAqL1xuICAgIGZvbnQtc2l6ZTogMTAwJTtcbiAgICAvKiAxICovXG4gICAgbGluZS1oZWlnaHQ6IDEuMTU7XG4gICAgLyogMSAqL1xuICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgIC8qIDIgKi9cbiAgICBtYXJnaW46IDA7XG4gICAgLyogMyAqL1xuICAgIHRleHQtdHJhbnNmb3JtOiBub25lO1xuICAgIC8qIDQgKi9cbiAgICAtd2Via2l0LWFwcGVhcmFuY2U6IGJ1dHRvbjtcbiAgICAvKiA1ICovIH1cbiAgLmNvbnRhaW5lciBidXR0b246Oi1tb3otZm9jdXMtaW5uZXIge1xuICAgIHBhZGRpbmc6IDA7XG4gICAgYm9yZGVyLXN0eWxlOiBub25lOyB9XG4gIC5jb250YWluZXIgYnV0dG9uOi1tb3otZm9jdXNyaW5nIHtcbiAgICBvdXRsaW5lOiAxcHggZG90dGVkIEJ1dHRvblRleHQ7IH1cblxuW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddLmNvbnRhaW5lciBbZGF0YS1wbGF5YWJsZS1jb21wb25lbnRdLFxuW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddLmNvbnRhaW5lciBbZGF0YS1wbGF5YWJsZS1jb21wb25lbnRdICosXG5bZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ10uY29udGFpbmVyIFtkYXRhLXBsYXlhYmxlLWNvbXBvbmVudF0gKjpiZWZvcmUsXG5bZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ10uY29udGFpbmVyIFtkYXRhLXBsYXlhYmxlLWNvbXBvbmVudF0gKjphZnRlciB7XG4gIGJveC1zaXppbmc6IGNvbnRlbnQtYm94ICFpbXBvcnRhbnQ7XG4gIG91dGxpbmU6IG5vbmUgIWltcG9ydGFudDsgfVxuXG4uZmlsbEFsbFNwYWNlLFxuLmZ1bGxTY3JlZW4ge1xuICB3aWR0aDogMTAwJSAhaW1wb3J0YW50O1xuICBtaW4td2lkdGg6IDEwMCUgIWltcG9ydGFudDtcbiAgaGVpZ2h0OiAxMDAlICFpbXBvcnRhbnQ7XG4gIG1pbi1oZWlnaHQ6IDEwMCUgIWltcG9ydGFudDsgfVxuXG46Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0na2V5J10gW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddIGJ1dHRvbi5mb2N1cy13aXRoaW4sXG46Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0na2V5J10gW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddIGlucHV0LmZvY3VzLXdpdGhpbixcbjpnbG9iYWwgW2RhdGEtcGxheWFibGUtZm9jdXMtc291cmNlPSdrZXknXSBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ10gaW1nLmZvY3VzLXdpdGhpbixcbjpnbG9iYWwgW2RhdGEtcGxheWFibGUtZm9jdXMtc291cmNlPSdzY3JpcHQnXVxuW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddIGJ1dHRvbi5mb2N1cy13aXRoaW4sXG46Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0nc2NyaXB0J11cbltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXSBpbnB1dC5mb2N1cy13aXRoaW4sXG46Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0nc2NyaXB0J11cbltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXSBpbWcuZm9jdXMtd2l0aGluIHtcbiAgYm94LXNoYWRvdzogMCAwIDAgMnB4IHJnYmEoNTYsIDE1MywgMjM2LCAwLjgpOyB9XG4iXX0= */";
+    var css = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.root-container__controlButton___3nLjS {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.root-container__controlButton___3nLjS:hover {\n    opacity: .7; }\n.root-container__hidden___10ZXK {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.root-container__container____RXkJ {\n  font-family: HelveticaNeueW01-45Ligh, HelveticaNeueW02-45Ligh, HelveticaNeueW10-45Ligh, Helvetica Neue, Helvetica, Arial, \\\\30e1\\30a4\\30ea\\30aa, meiryo, \\\\30d2\\30e9\\30ae\\30ce\\89d2\\30b4 pro w3, hiragino kaku gothic pro;\n  position: relative;\n  z-index: 0;\n  display: block;\n  overflow: hidden;\n  height: inherit;\n  outline: none;\n  /**\n * 1. Change the font styles in all browsers.\n * 2. Show the overflow in IE.\n * 3. Remove the margin in Firefox and Safari.\n * 4. Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 5. Correct the inability to style clickable types in iOS and Safari.\n */\n  /**\n * Remove the inner border and padding in Firefox.\n */\n  /**\n * Restore the focus styles unset by the previous rule.\n */ }\n.root-container__container____RXkJ button {\n    font-family: inherit;\n    /* 1 */\n    font-size: 100%;\n    /* 1 */\n    line-height: 1.15;\n    /* 1 */\n    overflow: visible;\n    /* 2 */\n    margin: 0;\n    /* 3 */\n    text-transform: none;\n    /* 4 */\n    -webkit-appearance: button;\n    /* 5 */ }\n.root-container__container____RXkJ button::-moz-focus-inner {\n    padding: 0;\n    border-style: none; }\n.root-container__container____RXkJ button:-moz-focusring {\n    outline: 1px dotted ButtonText; }\n[data-playable-hook='player-container'].root-container__container____RXkJ [data-playable-component],\n[data-playable-hook='player-container'].root-container__container____RXkJ [data-playable-component] *,\n[data-playable-hook='player-container'].root-container__container____RXkJ [data-playable-component] *:before,\n[data-playable-hook='player-container'].root-container__container____RXkJ [data-playable-component] *:after {\n  -webkit-box-sizing: content-box !important;\n          box-sizing: content-box !important;\n  outline: none !important; }\n.root-container__fillAllSpace___33wu6,\n.root-container__fullScreen___3oMwD {\n  width: 100% !important;\n  min-width: 100% !important;\n  height: 100% !important;\n  min-height: 100% !important; }\n[data-playable-focus-source='key'] [data-playable-hook='player-container'] button.focus-within,\n[data-playable-focus-source='key'] [data-playable-hook='player-container'] input.focus-within,\n[data-playable-focus-source='key'] [data-playable-hook='player-container'] img.focus-within,\n[data-playable-focus-source='script']\n[data-playable-hook='player-container'] button.focus-within,\n[data-playable-focus-source='script']\n[data-playable-hook='player-container'] input.focus-within,\n[data-playable-focus-source='script']\n[data-playable-hook='player-container'] img.focus-within {\n  -webkit-box-shadow: 0 0 0 2px rgba(56, 153, 236, 0.8);\n          box-shadow: 0 0 0 2px rgba(56, 153, 236, 0.8); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJvb3QtY29udGFpbmVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0dBS0c7QUFDSDtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0FBQ3RCO0lBQ0UsWUFBWSxFQUFFO0FBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0FBRTFCO0VBQ0UsME5BQTBOO0VBQzFOLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixnQkFBZ0I7RUFDaEIsY0FBYztFQUNkOzs7Ozs7R0FNQztFQUNEOztHQUVDO0VBQ0Q7O0dBRUMsRUFBRTtBQUNIO0lBQ0UscUJBQXFCO0lBQ3JCLE9BQU87SUFDUCxnQkFBZ0I7SUFDaEIsT0FBTztJQUNQLGtCQUFrQjtJQUNsQixPQUFPO0lBQ1Asa0JBQWtCO0lBQ2xCLE9BQU87SUFDUCxVQUFVO0lBQ1YsT0FBTztJQUNQLHFCQUFxQjtJQUNyQixPQUFPO0lBQ1AsMkJBQTJCO0lBQzNCLE9BQU8sRUFBRTtBQUNYO0lBQ0UsV0FBVztJQUNYLG1CQUFtQixFQUFFO0FBQ3ZCO0lBQ0UsK0JBQStCLEVBQUU7QUFFckM7Ozs7RUFJRSwyQ0FBbUM7VUFBbkMsbUNBQW1DO0VBQ25DLHlCQUF5QixFQUFFO0FBRTdCOztFQUVFLHVCQUF1QjtFQUN2QiwyQkFBMkI7RUFDM0Isd0JBQXdCO0VBQ3hCLDRCQUE0QixFQUFFO0FBRWhDOzs7Ozs7Ozs7RUFTRSxzREFBOEM7VUFBOUMsOENBQThDLEVBQUUiLCJmaWxlIjoicm9vdC1jb250YWluZXIuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIGNoYWxsZW5nZSBoZXJlIHRvIHN1cHBvcnQgXCJwbGF5YWJsZSBxdWVyaWVzXCIgYW5kIFwiZGlyZWN0aW9uXCIgYXQgdGhlIHNhbWUgdGltZSBhbmQgYWxsb3cgbWl4aW5zIGxpa2U6XG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBsdHIoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBydGwoKSlcbiAqL1xuLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4uY29udGFpbmVyIHtcbiAgZm9udC1mYW1pbHk6IEhlbHZldGljYU5ldWVXMDEtNDVMaWdoLCBIZWx2ZXRpY2FOZXVlVzAyLTQ1TGlnaCwgSGVsdmV0aWNhTmV1ZVcxMC00NUxpZ2gsIEhlbHZldGljYSBOZXVlLCBIZWx2ZXRpY2EsIEFyaWFsLCBcXFxcMzBlMVxcMzBhNFxcMzBlYVxcMzBhYSwgbWVpcnlvLCBcXFxcMzBkMlxcMzBlOVxcMzBhZVxcMzBjZVxcODlkMlxcMzBiNCBwcm8gdzMsIGhpcmFnaW5vIGtha3UgZ290aGljIHBybztcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiAwO1xuICBkaXNwbGF5OiBibG9jaztcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgaGVpZ2h0OiBpbmhlcml0O1xuICBvdXRsaW5lOiBub25lO1xuICAvKipcbiAqIDEuIENoYW5nZSB0aGUgZm9udCBzdHlsZXMgaW4gYWxsIGJyb3dzZXJzLlxuICogMi4gU2hvdyB0aGUgb3ZlcmZsb3cgaW4gSUUuXG4gKiAzLiBSZW1vdmUgdGhlIG1hcmdpbiBpbiBGaXJlZm94IGFuZCBTYWZhcmkuXG4gKiA0LiBSZW1vdmUgdGhlIGluaGVyaXRhbmNlIG9mIHRleHQgdHJhbnNmb3JtIGluIEVkZ2UsIEZpcmVmb3gsIGFuZCBJRS5cbiAqIDUuIENvcnJlY3QgdGhlIGluYWJpbGl0eSB0byBzdHlsZSBjbGlja2FibGUgdHlwZXMgaW4gaU9TIGFuZCBTYWZhcmkuXG4gKi9cbiAgLyoqXG4gKiBSZW1vdmUgdGhlIGlubmVyIGJvcmRlciBhbmQgcGFkZGluZyBpbiBGaXJlZm94LlxuICovXG4gIC8qKlxuICogUmVzdG9yZSB0aGUgZm9jdXMgc3R5bGVzIHVuc2V0IGJ5IHRoZSBwcmV2aW91cyBydWxlLlxuICovIH1cbiAgLmNvbnRhaW5lciBidXR0b24ge1xuICAgIGZvbnQtZmFtaWx5OiBpbmhlcml0O1xuICAgIC8qIDEgKi9cbiAgICBmb250LXNpemU6IDEwMCU7XG4gICAgLyogMSAqL1xuICAgIGxpbmUtaGVpZ2h0OiAxLjE1O1xuICAgIC8qIDEgKi9cbiAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAvKiAyICovXG4gICAgbWFyZ2luOiAwO1xuICAgIC8qIDMgKi9cbiAgICB0ZXh0LXRyYW5zZm9ybTogbm9uZTtcbiAgICAvKiA0ICovXG4gICAgLXdlYmtpdC1hcHBlYXJhbmNlOiBidXR0b247XG4gICAgLyogNSAqLyB9XG4gIC5jb250YWluZXIgYnV0dG9uOjotbW96LWZvY3VzLWlubmVyIHtcbiAgICBwYWRkaW5nOiAwO1xuICAgIGJvcmRlci1zdHlsZTogbm9uZTsgfVxuICAuY29udGFpbmVyIGJ1dHRvbjotbW96LWZvY3VzcmluZyB7XG4gICAgb3V0bGluZTogMXB4IGRvdHRlZCBCdXR0b25UZXh0OyB9XG5cbltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXS5jb250YWluZXIgW2RhdGEtcGxheWFibGUtY29tcG9uZW50XSxcbltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXS5jb250YWluZXIgW2RhdGEtcGxheWFibGUtY29tcG9uZW50XSAqLFxuW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddLmNvbnRhaW5lciBbZGF0YS1wbGF5YWJsZS1jb21wb25lbnRdICo6YmVmb3JlLFxuW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddLmNvbnRhaW5lciBbZGF0YS1wbGF5YWJsZS1jb21wb25lbnRdICo6YWZ0ZXIge1xuICBib3gtc2l6aW5nOiBjb250ZW50LWJveCAhaW1wb3J0YW50O1xuICBvdXRsaW5lOiBub25lICFpbXBvcnRhbnQ7IH1cblxuLmZpbGxBbGxTcGFjZSxcbi5mdWxsU2NyZWVuIHtcbiAgd2lkdGg6IDEwMCUgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAxMDAlICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMTAwJSAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAxMDAlICFpbXBvcnRhbnQ7IH1cblxuOmdsb2JhbCBbZGF0YS1wbGF5YWJsZS1mb2N1cy1zb3VyY2U9J2tleSddIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXSBidXR0b24uZm9jdXMtd2l0aGluLFxuOmdsb2JhbCBbZGF0YS1wbGF5YWJsZS1mb2N1cy1zb3VyY2U9J2tleSddIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXSBpbnB1dC5mb2N1cy13aXRoaW4sXG46Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0na2V5J10gW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddIGltZy5mb2N1cy13aXRoaW4sXG46Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0nc2NyaXB0J11cbltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXSBidXR0b24uZm9jdXMtd2l0aGluLFxuOmdsb2JhbCBbZGF0YS1wbGF5YWJsZS1mb2N1cy1zb3VyY2U9J3NjcmlwdCddXG5bZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ10gaW5wdXQuZm9jdXMtd2l0aGluLFxuOmdsb2JhbCBbZGF0YS1wbGF5YWJsZS1mb2N1cy1zb3VyY2U9J3NjcmlwdCddXG5bZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ10gaW1nLmZvY3VzLXdpdGhpbiB7XG4gIGJveC1zaGFkb3c6IDAgMCAwIDJweCByZ2JhKDU2LCAxNTMsIDIzNiwgMC44KTsgfVxuIl19 */";
     var styles = {"controlButton":"root-container__controlButton___3nLjS","hidden":"root-container__hidden___10ZXK","container":"root-container__container____RXkJ","fillAllSpace":"root-container__fillAllSpace___33wu6","fullScreen":"root-container__fullScreen___3oMwD"};
     styleInject(css);
 
@@ -3781,10 +8804,11 @@ function readCookie(cookieName) {
         __extends(RootContainerView, _super);
         function RootContainerView(config) {
             var _this = _super.call(this) || this;
-            var width = config.width, height = config.height, fillAllSpace = config.fillAllSpace, callbacks = config.callbacks;
+            var width = config.width, height = config.height, fillAllSpace = config.fillAllSpace, callbacks = config.callbacks, rtl = config.rtl;
             _this._callbacks = callbacks;
             _this._$rootElement = htmlToElement(dot_tpl_src_modules_rootContainer_templates_container_dot({ styles: _this.styleNames }));
             _this.setFillAllSpaceFlag(fillAllSpace);
+            _this.setRtl(rtl);
             _this.setWidth(width);
             _this.setHeight(height);
             _this._bindEvents();
@@ -3823,10 +8847,10 @@ function readCookie(cookieName) {
             return this._$rootElement.offsetHeight;
         };
         RootContainerView.prototype.show = function () {
-            this._$rootElement.classList.add(this.styleNames.hidden);
+            this._$rootElement.classList.remove(this.styleNames.hidden);
         };
         RootContainerView.prototype.hide = function () {
-            this._$rootElement.classList.remove(this.styleNames.hidden);
+            this._$rootElement.classList.add(this.styleNames.hidden);
         };
         RootContainerView.prototype.appendComponentElement = function (element) {
             this._$rootElement.appendChild(element);
@@ -3852,6 +8876,9 @@ function readCookie(cookieName) {
             else {
                 this._$rootElement.classList.remove(this.styleNames.fillAllSpace);
             }
+        };
+        RootContainerView.prototype.setRtl = function (rtl) {
+            this._$rootElement.setAttribute('data-playable-dir', rtl ? 'rtl' : 'ltr');
         };
         RootContainerView.prototype.destroy = function () {
             this._unbindEvents();
@@ -3980,7 +9007,7 @@ function readCookie(cookieName) {
             var _b = (_a === void 0 ? {} : _a).prefix, prefix = _b === void 0 ? DEFAULT_QUERY_PREFIX : _b;
             this._element = element;
             this._queryPrefix = prefix;
-            this._queries = getQueriesForElement(element, prefix);
+            this._queries = [];
         }
         ElementQueries.prototype._getQueryAttributeValue = function (mode, elementWidth) {
             return this._queries
@@ -4004,6 +9031,9 @@ function readCookie(cookieName) {
                 this._element.removeAttribute(attributeName);
             }
         };
+        ElementQueries.prototype.getQueries = function () {
+            this._queries = getQueriesForElement(this._element, this._queryPrefix);
+        };
         ElementQueries.prototype.setWidth = function (width) {
             this._setQueryAttribute('min', width);
             this._setQueryAttribute('max', width);
@@ -4016,6 +9046,7 @@ function readCookie(cookieName) {
 
     var DEFAULT_CONFIG = {
         fillAllSpace: false,
+        rtl: false,
     };
     var RootContainer = /** @class */ (function () {
         function RootContainer(_a) {
@@ -4060,6 +9091,7 @@ function readCookie(cookieName) {
                 width: config.width || null,
                 height: config.height || null,
                 fillAllSpace: config.fillAllSpace || DEFAULT_CONFIG.fillAllSpace,
+                rtl: config.rtl || DEFAULT_CONFIG.rtl,
             });
             this._elementQueries = new ElementQueries(this.getElement());
             this._resizeObserver = new index(this._onResized);
@@ -4122,6 +9154,7 @@ function readCookie(cookieName) {
         RootContainer.prototype.attachToElement = function (element) {
             this._enableFocusInterceptors();
             element.appendChild(this.getElement());
+            this._elementQueries.getQueries();
         };
         /**
          * Method for setting width of player
@@ -4165,6 +9198,15 @@ function readCookie(cookieName) {
          */
         RootContainer.prototype.setFillAllSpace = function (flag) {
             this.view.setFillAllSpaceFlag(flag);
+        };
+        /**
+         * Method for allowing player rtl direction
+         * @param rtl - `true` for allowing
+         * @example
+         * player.setRtl(boolean);
+         */
+        RootContainer.prototype.setRtl = function (rtl) {
+            this.view.setRtl(rtl);
         };
         /**
          * Hide whole ui
@@ -4214,6 +9256,9 @@ function readCookie(cookieName) {
         __decorate([
             playerAPI()
         ], RootContainer.prototype, "setFillAllSpace", null);
+        __decorate([
+            playerAPI()
+        ], RootContainer.prototype, "setRtl", null);
         __decorate([
             playerAPI()
         ], RootContainer.prototype, "hide", null);
@@ -4698,14 +9743,14 @@ function readCookie(cookieName) {
             //Handle IE11
             if (!isPromiseAvailable) {
                 if (setImmediate) {
-                    setImmediate(function () { return _super.prototype.emit.apply(_this, [event].concat(args)); });
+                    setImmediate(function () { return _super.prototype.emit.apply(_this, __spreadArrays([event], args)); });
                 }
                 else {
-                    setTimeout(function () { return _super.prototype.emit.apply(_this, [event].concat(args)); });
+                    setTimeout(function () { return _super.prototype.emit.apply(_this, __spreadArrays([event], args)); });
                 }
             }
             else {
-                return Promise.resolve().then(function () { return _super.prototype.emit.apply(_this, [event].concat(args)); });
+                return Promise.resolve().then(function () { return _super.prototype.emit.apply(_this, __spreadArrays([event], args)); });
             }
         };
         EventEmitterModule.prototype.destroy = function () {
@@ -5126,9 +10171,9 @@ function readCookie(cookieName) {
             this._output.setInline(isPlaysinline);
         };
         /**
-         * Get playInline flag
+         * Get playsinline flag
          * @example
-         * player.getPlayInline(); // true
+         * player.getPlaysinline(); // true
          */
         Engine.prototype.getPlaysinline = function () {
             return this._output.isInline;
@@ -5383,7 +10428,7 @@ function readCookie(cookieName) {
     function generateClassNames(rules) {
         return Object.keys(rules).reduce(function (acc, classImportName) {
             var _a;
-            return (__assign({}, acc, (_a = {}, _a[classImportName] = getUniqueClassName(classImportName), _a)));
+            return (__assign(__assign({}, acc), (_a = {}, _a[classImportName] = getUniqueClassName(classImportName), _a)));
         }, {});
     }
 
@@ -5404,7 +10449,7 @@ function readCookie(cookieName) {
             document.getElementsByTagName('head')[0].appendChild(this._styleNode);
         };
         StyleSheet.prototype.update = function (data) {
-            this._data = __assign({}, this._data, data);
+            this._data = __assign(__assign({}, this._data), data);
             if (this._styleNode) {
                 this.attach();
             }
@@ -5476,7 +10521,7 @@ function readCookie(cookieName) {
             var _this = this;
             var themeConfig = _a.themeConfig;
             this._styleSheet = new StyleSheet();
-            this._styleSheet.update(__assign({}, DEFAULT_THEME_CONFIG, themeConfig));
+            this._styleSheet.update(__assign(__assign({}, DEFAULT_THEME_CONFIG), themeConfig));
             // setTimeout here is for calling `attach` after all modules resolved.
             window.setTimeout(function () {
                 _this._styleSheet && _this._styleSheet.attach();
@@ -5526,12 +10571,12 @@ function readCookie(cookieName) {
         }, _a[TextLabel$1.MUTE_CONTROL_LABEL] = 'Mute', _a[TextLabel$1.MUTE_CONTROL_TOOLTIP] = 'Mute', _a[TextLabel$1.UNMUTE_CONTROL_LABEL] = 'Unmute', _a[TextLabel$1.UNMUTE_CONTROL_TOOLTIP] = 'Unmute', _a[TextLabel$1.VOLUME_CONTROL_LABEL] = 'Volume control', _a[TextLabel$1.VOLUME_CONTROL_VALUE] = function (_a) {
             var volume = _a.volume;
             return "Volume is " + volume + "%";
-        }, _a[TextLabel$1.ENTER_FULL_SCREEN_LABEL] = 'Enter full screen', _a[TextLabel$1.ENTER_FULL_SCREEN_TOOLTIP] = 'Enter Full Screen', _a[TextLabel$1.EXIT_FULL_SCREEN_LABEL] = 'Exit full screen', _a[TextLabel$1.EXIT_FULL_SCREEN_TOOLTIP] = 'Exit Full Screen', _a[TextLabel$1.ENTER_PICTURE_IN_PICTURE_LABEL] = 'Enter picture-in-picture', _a[TextLabel$1.ENTER_PICTURE_IN_PICTURE_TOOLTIP] = 'Enter picture-in-picture', _a[TextLabel$1.EXIT_PICTURE_IN_PICTURE_LABEL] = 'Exit picture-in-picture', _a[TextLabel$1.EXIT_PICTURE_IN_PICTURE_TOOLTIP] = 'Exit picture-in-picture', _a[TextLabel$1.DOWNLOAD_BUTTON_LABEL] = 'Download video', _a[TextLabel$1.DOWNLOAD_BUTTON_TOOLTIP] = 'Download Video', _a);
+        }, _a[TextLabel$1.ENTER_FULL_SCREEN_LABEL] = 'Enter full screen', _a[TextLabel$1.ENTER_FULL_SCREEN_TOOLTIP] = 'Enter Full Screen', _a[TextLabel$1.EXIT_FULL_SCREEN_LABEL] = 'Exit full screen', _a[TextLabel$1.EXIT_FULL_SCREEN_TOOLTIP] = 'Exit Full Screen', _a[TextLabel$1.ENTER_PICTURE_IN_PICTURE_LABEL] = 'Play Picture-in-Picture', _a[TextLabel$1.ENTER_PICTURE_IN_PICTURE_TOOLTIP] = 'Play Picture-in-Picture', _a[TextLabel$1.EXIT_PICTURE_IN_PICTURE_LABEL] = 'Exit Picture-in-Picture', _a[TextLabel$1.EXIT_PICTURE_IN_PICTURE_TOOLTIP] = 'Exit Picture-in-Picture', _a[TextLabel$1.DOWNLOAD_BUTTON_LABEL] = 'Download video', _a[TextLabel$1.DOWNLOAD_BUTTON_TOOLTIP] = 'Download Video', _a);
 
     var TextMap = /** @class */ (function () {
         function TextMap(_a) {
             var config = _a.config;
-            this._textMap = __assign({}, map, config.texts);
+            this._textMap = __assign(__assign({}, map), config.texts);
         }
         TextMap.prototype.get = function (id, args, defaultText) {
             if (!this._textMap) {
@@ -5729,7 +10774,7 @@ function readCookie(cookieName) {
         };
         IOSFullScreen.prototype.request = function () {
             if (!this.isEnabled || this.isInFullScreen || isFullScreenRequested) {
-                return false;
+                return;
             }
             try {
                 this._$elem.webkitEnterFullscreen();
@@ -5743,7 +10788,7 @@ function readCookie(cookieName) {
         };
         IOSFullScreen.prototype.exit = function () {
             if (!this.isEnabled || !this.isInFullScreen) {
-                return false;
+                return;
             }
             this._$elem.webkitExitFullscreen();
         };
@@ -5782,14 +10827,19 @@ function readCookie(cookieName) {
             }
             this._onChange = this._onChange.bind(this);
             if (isIOS()) {
+                this._element = this._engine.getElement();
                 this._helper = new IOSFullScreen(this._engine.getElement(), this._onChange);
             }
             else {
+                this._element = rootContainer.getElement();
                 this._helper = new DesktopFullScreen(rootContainer.getElement(), this._onChange);
             }
             this._bindEvents();
         }
-        FullScreenManager.prototype._onChange = function () {
+        FullScreenManager.prototype._onChange = function (event) {
+            if (event.target !== this._element) {
+                return;
+            }
             if (!this._helper.isInFullScreen && this._pauseVideoOnFullScreenExit) {
                 this._engine.pause();
             }
@@ -6042,9 +11092,9 @@ function readCookie(cookieName) {
         });
         LiveStateEngine.prototype._bindEvents = function () {
             var _this = this;
-            this._unbindEvents = this._eventEmitter.bindEvents([
+            this._unbindEvents = this._eventEmitter.bindEvents(__spreadArrays([
                 [VideoEvent$1.STATE_CHANGED, this._processStateChange]
-            ].concat(SEEK_BY_UI_EVENTS.map(function (eventName) { return [eventName, _this._processSeekByUI]; }), [
+            ], SEEK_BY_UI_EVENTS.map(function (eventName) { return [eventName, _this._processSeekByUI]; }), [
                 [VideoEvent$1.DYNAMIC_CONTENT_ENDED, this._onDynamicContentEnded],
             ]), this);
         };
@@ -6121,7 +11171,7 @@ function readCookie(cookieName) {
             for (var _i = 1; _i < arguments.length; _i++) {
                 optionalParams[_i - 1] = arguments[_i];
             }
-            (_a = window.console).info.apply(_a, [message].concat(optionalParams));
+            (_a = window.console).info.apply(_a, __spreadArrays([message], optionalParams));
         },
         warn: function (message) {
             var _a;
@@ -6129,7 +11179,7 @@ function readCookie(cookieName) {
             for (var _i = 1; _i < arguments.length; _i++) {
                 optionalParams[_i - 1] = arguments[_i];
             }
-            (_a = window.console).warn.apply(_a, [message].concat(optionalParams));
+            (_a = window.console).warn.apply(_a, __spreadArrays([message], optionalParams));
         },
         error: function (name) {
             var _a;
@@ -6137,7 +11187,7 @@ function readCookie(cookieName) {
             for (var _i = 1; _i < arguments.length; _i++) {
                 optionalParams[_i - 1] = arguments[_i];
             }
-            (_a = window.console).error.apply(_a, [name].concat(optionalParams));
+            (_a = window.console).error.apply(_a, __spreadArrays([name], optionalParams));
         },
     };
 
@@ -6334,7 +11384,7 @@ function readCookie(cookieName) {
         }
     }
 
-    var css$1 = ".debug-panel__controlButton___pG-WY {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .debug-panel__controlButton___pG-WY:hover {\n    opacity: .7; }\n  .debug-panel__hidden___1TRHR {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .debug-panel__debugPanel___116IW {\n  position: absolute;\n  z-index: 10000;\n  top: 10px;\n  left: 10px;\n  overflow: scroll;\n  width: 400px;\n  height: 250px;\n  border-radius: 3px;\n  background-color: rgba(0, 0, 0, 0.95); }\n  .debug-panel__debugPanel___116IW .debug-panel__closeButton___claHV {\n    position: absolute;\n    top: 10px;\n    right: 5px;\n    cursor: pointer;\n    color: white; }\n  .debug-panel__debugPanel___116IW .debug-panel__closeButton___claHV:hover {\n      opacity: .8; }\n  .debug-panel__debugPanel___116IW .debug-panel__infoContainer___-AZH_ {\n    font-size: 8px;\n    line-height: 8px;\n    margin: 5px;\n    padding: 5px;\n    color: white; }\n  .debug-panel__debugPanel___116IW .debug-panel__infoContainer___-AZH_ .debug-panel__string___1Jfzp {\n      color: green; }\n  .debug-panel__debugPanel___116IW .debug-panel__infoContainer___-AZH_ .debug-panel__number___2WdLF {\n      color: darkorange; }\n  .debug-panel__debugPanel___116IW .debug-panel__infoContainer___-AZH_ .debug-panel__boolean___CpohN {\n      color: blue; }\n  .debug-panel__debugPanel___116IW .debug-panel__infoContainer___-AZH_ .debug-panel__null___2ZOuz {\n      color: magenta; }\n  .debug-panel__debugPanel___116IW .debug-panel__infoContainer___-AZH_ .debug-panel__key___4avak {\n      color: white; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlYnVnLXBhbmVsLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLFlBQVksRUFBRTtFQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtFQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixlQUFlO0VBQ2YsVUFBVTtFQUNWLFdBQVc7RUFDWCxpQkFBaUI7RUFDakIsYUFBYTtFQUNiLGNBQWM7RUFDZCxtQkFBbUI7RUFDbkIsc0NBQXNDLEVBQUU7RUFDeEM7SUFDRSxtQkFBbUI7SUFDbkIsVUFBVTtJQUNWLFdBQVc7SUFDWCxnQkFBZ0I7SUFDaEIsYUFBYSxFQUFFO0VBQ2Y7TUFDRSxZQUFZLEVBQUU7RUFDbEI7SUFDRSxlQUFlO0lBQ2YsaUJBQWlCO0lBQ2pCLFlBQVk7SUFDWixhQUFhO0lBQ2IsYUFBYSxFQUFFO0VBQ2Y7TUFDRSxhQUFhLEVBQUU7RUFDakI7TUFDRSxrQkFBa0IsRUFBRTtFQUN0QjtNQUNFLFlBQVksRUFBRTtFQUNoQjtNQUNFLGVBQWUsRUFBRTtFQUNuQjtNQUNFLGFBQWEsRUFBRSIsImZpbGUiOiJkZWJ1Zy1wYW5lbC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4uZGVidWdQYW5lbCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogMTAwMDA7XG4gIHRvcDogMTBweDtcbiAgbGVmdDogMTBweDtcbiAgb3ZlcmZsb3c6IHNjcm9sbDtcbiAgd2lkdGg6IDQwMHB4O1xuICBoZWlnaHQ6IDI1MHB4O1xuICBib3JkZXItcmFkaXVzOiAzcHg7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC45NSk7IH1cbiAgLmRlYnVnUGFuZWwgLmNsb3NlQnV0dG9uIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAxMHB4O1xuICAgIHJpZ2h0OiA1cHg7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGNvbG9yOiB3aGl0ZTsgfVxuICAgIC5kZWJ1Z1BhbmVsIC5jbG9zZUJ1dHRvbjpob3ZlciB7XG4gICAgICBvcGFjaXR5OiAuODsgfVxuICAuZGVidWdQYW5lbCAuaW5mb0NvbnRhaW5lciB7XG4gICAgZm9udC1zaXplOiA4cHg7XG4gICAgbGluZS1oZWlnaHQ6IDhweDtcbiAgICBtYXJnaW46IDVweDtcbiAgICBwYWRkaW5nOiA1cHg7XG4gICAgY29sb3I6IHdoaXRlOyB9XG4gICAgLmRlYnVnUGFuZWwgLmluZm9Db250YWluZXIgLnN0cmluZyB7XG4gICAgICBjb2xvcjogZ3JlZW47IH1cbiAgICAuZGVidWdQYW5lbCAuaW5mb0NvbnRhaW5lciAubnVtYmVyIHtcbiAgICAgIGNvbG9yOiBkYXJrb3JhbmdlOyB9XG4gICAgLmRlYnVnUGFuZWwgLmluZm9Db250YWluZXIgLmJvb2xlYW4ge1xuICAgICAgY29sb3I6IGJsdWU7IH1cbiAgICAuZGVidWdQYW5lbCAuaW5mb0NvbnRhaW5lciAubnVsbCB7XG4gICAgICBjb2xvcjogbWFnZW50YTsgfVxuICAgIC5kZWJ1Z1BhbmVsIC5pbmZvQ29udGFpbmVyIC5rZXkge1xuICAgICAgY29sb3I6IHdoaXRlOyB9XG4iXX0= */";
+    var css$1 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.debug-panel__controlButton___pG-WY {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.debug-panel__controlButton___pG-WY:hover {\n    opacity: .7; }\n.debug-panel__hidden___1TRHR {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.debug-panel__debugPanel___116IW {\n  position: absolute;\n  z-index: 10000;\n  top: 10px;\n  left: 10px;\n  overflow: scroll;\n  width: 400px;\n  height: 250px;\n  border-radius: 3px;\n  background-color: rgba(0, 0, 0, 0.95); }\n.debug-panel__debugPanel___116IW .debug-panel__closeButton___claHV {\n    position: absolute;\n    top: 10px;\n    right: 5px;\n    cursor: pointer;\n    color: white; }\n.debug-panel__debugPanel___116IW .debug-panel__closeButton___claHV:hover {\n      opacity: .8; }\n.debug-panel__debugPanel___116IW .debug-panel__infoContainer___-AZH_ {\n    font-size: 8px;\n    line-height: 8px;\n    margin: 5px;\n    padding: 5px;\n    color: white; }\n.debug-panel__debugPanel___116IW .debug-panel__infoContainer___-AZH_ .debug-panel__string___1Jfzp {\n      color: green; }\n.debug-panel__debugPanel___116IW .debug-panel__infoContainer___-AZH_ .debug-panel__number___2WdLF {\n      color: darkorange; }\n.debug-panel__debugPanel___116IW .debug-panel__infoContainer___-AZH_ .debug-panel__boolean___CpohN {\n      color: blue; }\n.debug-panel__debugPanel___116IW .debug-panel__infoContainer___-AZH_ .debug-panel__null___2ZOuz {\n      color: magenta; }\n.debug-panel__debugPanel___116IW .debug-panel__infoContainer___-AZH_ .debug-panel__key___4avak {\n      color: white; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlYnVnLXBhbmVsLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0dBS0c7QUFDSDtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0FBQ3RCO0lBQ0UsWUFBWSxFQUFFO0FBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0FBRTFCO0VBQ0UsbUJBQW1CO0VBQ25CLGVBQWU7RUFDZixVQUFVO0VBQ1YsV0FBVztFQUNYLGlCQUFpQjtFQUNqQixhQUFhO0VBQ2IsY0FBYztFQUNkLG1CQUFtQjtFQUNuQixzQ0FBc0MsRUFBRTtBQUN4QztJQUNFLG1CQUFtQjtJQUNuQixVQUFVO0lBQ1YsV0FBVztJQUNYLGdCQUFnQjtJQUNoQixhQUFhLEVBQUU7QUFDZjtNQUNFLFlBQVksRUFBRTtBQUNsQjtJQUNFLGVBQWU7SUFDZixpQkFBaUI7SUFDakIsWUFBWTtJQUNaLGFBQWE7SUFDYixhQUFhLEVBQUU7QUFDZjtNQUNFLGFBQWEsRUFBRTtBQUNqQjtNQUNFLGtCQUFrQixFQUFFO0FBQ3RCO01BQ0UsWUFBWSxFQUFFO0FBQ2hCO01BQ0UsZUFBZSxFQUFFO0FBQ25CO01BQ0UsYUFBYSxFQUFFIiwiZmlsZSI6ImRlYnVnLXBhbmVsLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFRoZSBjaGFsbGVuZ2UgaGVyZSB0byBzdXBwb3J0IFwicGxheWFibGUgcXVlcmllc1wiIGFuZCBcImRpcmVjdGlvblwiIGF0IHRoZSBzYW1lIHRpbWUgYW5kIGFsbG93IG1peGlucyBsaWtlOlxuICogICBAaW5jbHVkZSBxdWVyeShtYXgtd2lkdGgtNTUwKCkpXG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSwgbHRyKCkpXG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSwgcnRsKCkpXG4gKi9cbi5jb250cm9sQnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgcGFkZGluZzogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAuMnM7XG4gIHRyYW5zaXRpb24tcHJvcGVydHk6IG9wYWNpdHk7XG4gIG9wYWNpdHk6IDE7XG4gIGJvcmRlcjogMDtcbiAgYm9yZGVyLXJhZGl1czogMDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5jb250cm9sQnV0dG9uOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAuNzsgfVxuXG4uaGlkZGVuIHtcbiAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XG4gIHdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIG1pbi13aWR0aDogMCAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWluLWhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtYXJnaW46IDAgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCAhaW1wb3J0YW50O1xuICBvcGFjaXR5OiAwICFpbXBvcnRhbnQ7IH1cblxuLmRlYnVnUGFuZWwge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IDEwMDAwO1xuICB0b3A6IDEwcHg7XG4gIGxlZnQ6IDEwcHg7XG4gIG92ZXJmbG93OiBzY3JvbGw7XG4gIHdpZHRoOiA0MDBweDtcbiAgaGVpZ2h0OiAyNTBweDtcbiAgYm9yZGVyLXJhZGl1czogM3B4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuOTUpOyB9XG4gIC5kZWJ1Z1BhbmVsIC5jbG9zZUJ1dHRvbiB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMTBweDtcbiAgICByaWdodDogNXB4O1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBjb2xvcjogd2hpdGU7IH1cbiAgICAuZGVidWdQYW5lbCAuY2xvc2VCdXR0b246aG92ZXIge1xuICAgICAgb3BhY2l0eTogLjg7IH1cbiAgLmRlYnVnUGFuZWwgLmluZm9Db250YWluZXIge1xuICAgIGZvbnQtc2l6ZTogOHB4O1xuICAgIGxpbmUtaGVpZ2h0OiA4cHg7XG4gICAgbWFyZ2luOiA1cHg7XG4gICAgcGFkZGluZzogNXB4O1xuICAgIGNvbG9yOiB3aGl0ZTsgfVxuICAgIC5kZWJ1Z1BhbmVsIC5pbmZvQ29udGFpbmVyIC5zdHJpbmcge1xuICAgICAgY29sb3I6IGdyZWVuOyB9XG4gICAgLmRlYnVnUGFuZWwgLmluZm9Db250YWluZXIgLm51bWJlciB7XG4gICAgICBjb2xvcjogZGFya29yYW5nZTsgfVxuICAgIC5kZWJ1Z1BhbmVsIC5pbmZvQ29udGFpbmVyIC5ib29sZWFuIHtcbiAgICAgIGNvbG9yOiBibHVlOyB9XG4gICAgLmRlYnVnUGFuZWwgLmluZm9Db250YWluZXIgLm51bGwge1xuICAgICAgY29sb3I6IG1hZ2VudGE7IH1cbiAgICAuZGVidWdQYW5lbCAuaW5mb0NvbnRhaW5lciAua2V5IHtcbiAgICAgIGNvbG9yOiB3aGl0ZTsgfVxuIl19 */";
     var styles$1 = {"controlButton":"debug-panel__controlButton___pG-WY","hidden":"debug-panel__hidden___1TRHR","debugPanel":"debug-panel__debugPanel___116IW","closeButton":"debug-panel__closeButton___claHV","infoContainer":"debug-panel__infoContainer___-AZH_","string":"debug-panel__string___1Jfzp","number":"debug-panel__number___2WdLF","boolean":"debug-panel__boolean___CpohN","null":"debug-panel__null___2ZOuz","key":"debug-panel__key___4avak"};
     styleInject(css$1);
 
@@ -6485,8 +11535,8 @@ function readCookie(cookieName) {
         VideoViewMode["FILL"] = "FILL";
     })(exports.VIDEO_VIEW_MODES || (exports.VIDEO_VIEW_MODES = {}));
 
-    var css$2 = ".screen__screen___3BN2N {\n  position: absolute;\n  z-index: 50;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  height: 100%;\n  background-color: black;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .screen__screen___3BN2N.screen__regularMode___1Bv69 video, .screen__screen___3BN2N.screen__blurMode___Zianj video {\n    width: 100%;\n    height: 100%; }\n  .screen__screen___3BN2N.screen__verticalStripes___1tr7O.screen__fillMode___rToyv video {\n    width: 100%; }\n  .screen__screen___3BN2N.screen__horizontalStripes___1yh9M.screen__fillMode___rToyv video {\n    height: 100%; }\n  .screen__screen___3BN2N video {\n    position: relative;\n    z-index: 1;\n    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);\n            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }\n  .screen__screen___3BN2N.screen__hiddenCursor___3-TwW {\n    cursor: none; }\n  .screen__backgroundCanvas___1PHZh {\n  position: absolute;\n  z-index: 0;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  -webkit-filter: blur(14px);\n          filter: blur(14px); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjcmVlbi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsbUJBQW1CO0VBQ25CLFlBQVk7RUFDWixPQUFPO0VBQ1AsU0FBUztFQUNULFVBQVU7RUFDVixRQUFRO0VBQ1IscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCw2QkFBdUI7RUFBdkIsOEJBQXVCO01BQXZCLDJCQUF1QjtVQUF2Qix1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLGFBQWE7RUFDYix3QkFBd0I7RUFDeEIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLFlBQVk7SUFDWixhQUFhLEVBQUU7RUFDakI7SUFDRSxZQUFZLEVBQUU7RUFDaEI7SUFDRSxhQUFhLEVBQUU7RUFDakI7SUFDRSxtQkFBbUI7SUFDbkIsV0FBVztJQUNYLGdEQUF3QztZQUF4Qyx3Q0FBd0MsRUFBRTtFQUM1QztJQUNFLGFBQWEsRUFBRTtFQUVuQjtFQUNFLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsT0FBTztFQUNQLFNBQVM7RUFDVCxVQUFVO0VBQ1YsUUFBUTtFQUNSLDJCQUFtQjtVQUFuQixtQkFBbUIsRUFBRSIsImZpbGUiOiJzY3JlZW4uc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zY3JlZW4ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IDUwO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAuc2NyZWVuLnJlZ3VsYXJNb2RlIHZpZGVvLCAuc2NyZWVuLmJsdXJNb2RlIHZpZGVvIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7IH1cbiAgLnNjcmVlbi52ZXJ0aWNhbFN0cmlwZXMuZmlsbE1vZGUgdmlkZW8ge1xuICAgIHdpZHRoOiAxMDAlOyB9XG4gIC5zY3JlZW4uaG9yaXpvbnRhbFN0cmlwZXMuZmlsbE1vZGUgdmlkZW8ge1xuICAgIGhlaWdodDogMTAwJTsgfVxuICAuc2NyZWVuIHZpZGVvIHtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgei1pbmRleDogMTtcbiAgICBib3gtc2hhZG93OiAwIDAgMjBweCByZ2JhKDAsIDAsIDAsIDAuMik7IH1cbiAgLnNjcmVlbi5oaWRkZW5DdXJzb3Ige1xuICAgIGN1cnNvcjogbm9uZTsgfVxuXG4uYmFja2dyb3VuZENhbnZhcyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogMDtcbiAgdG9wOiAwO1xuICByaWdodDogMDtcbiAgYm90dG9tOiAwO1xuICBsZWZ0OiAwO1xuICBmaWx0ZXI6IGJsdXIoMTRweCk7IH1cbiJdfQ== */";
-    var styles$2 = {"screen":"screen__screen___3BN2N","regularMode":"screen__regularMode___1Bv69","blurMode":"screen__blurMode___Zianj","verticalStripes":"screen__verticalStripes___1tr7O","fillMode":"screen__fillMode___rToyv","horizontalStripes":"screen__horizontalStripes___1yh9M","hiddenCursor":"screen__hiddenCursor___3-TwW","backgroundCanvas":"screen__backgroundCanvas___1PHZh"};
+    var css$2 = ".screen__screen___3BN2N {\n  position: absolute;\n  z-index: 50;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  height: 100%;\n  background-color: black;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .screen__screen___3BN2N.screen__regularMode___1Bv69 video, .screen__screen___3BN2N.screen__blurMode___Zianj video {\n    width: 100%;\n    height: 100%; }\n  .screen__screen___3BN2N.screen__fillMode___rToyv video {\n    position: absolute; }\n  .screen__screen___3BN2N.screen__verticalStripes___1tr7O.screen__fillMode___rToyv video {\n    width: 100%;\n    height: auto !important; }\n  .screen__screen___3BN2N.screen__horizontalStripes___1yh9M.screen__fillMode___rToyv video {\n    height: 100%; }\n  .screen__screen___3BN2N video {\n    position: relative;\n    z-index: 1;\n    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);\n            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }\n  .screen__screen___3BN2N.screen__hiddenCursor___3-TwW {\n    cursor: none; }\n  .screen__backgroundCanvas___1PHZh {\n  position: absolute;\n  z-index: 0;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  -webkit-filter: blur(14px);\n          filter: blur(14px); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjcmVlbi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsbUJBQW1CO0VBQ25CLFlBQVk7RUFDWixPQUFPO0VBQ1AsU0FBUztFQUNULFVBQVU7RUFDVixRQUFRO0VBQ1IscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCw2QkFBdUI7RUFBdkIsOEJBQXVCO01BQXZCLDJCQUF1QjtVQUF2Qix1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLGFBQWE7RUFDYix3QkFBd0I7RUFDeEIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLFlBQVk7SUFDWixhQUFhLEVBQUU7RUFDakI7SUFDRSxtQkFBbUIsRUFBRTtFQUN2QjtJQUNFLFlBQVk7SUFDWix3QkFBd0IsRUFBRTtFQUM1QjtJQUNFLGFBQWEsRUFBRTtFQUNqQjtJQUNFLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsZ0RBQXdDO1lBQXhDLHdDQUF3QyxFQUFFO0VBQzVDO0lBQ0UsYUFBYSxFQUFFO0VBRW5CO0VBQ0UsbUJBQW1CO0VBQ25CLFdBQVc7RUFDWCxPQUFPO0VBQ1AsU0FBUztFQUNULFVBQVU7RUFDVixRQUFRO0VBQ1IsMkJBQW1CO1VBQW5CLG1CQUFtQixFQUFFIiwiZmlsZSI6InNjcmVlbi5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNjcmVlbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogNTA7XG4gIHRvcDogMDtcbiAgcmlnaHQ6IDA7XG4gIGJvdHRvbTogMDtcbiAgbGVmdDogMDtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5zY3JlZW4ucmVndWxhck1vZGUgdmlkZW8sIC5zY3JlZW4uYmx1ck1vZGUgdmlkZW8ge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwJTsgfVxuICAuc2NyZWVuLmZpbGxNb2RlIHZpZGVvIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7IH1cbiAgLnNjcmVlbi52ZXJ0aWNhbFN0cmlwZXMuZmlsbE1vZGUgdmlkZW8ge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogYXV0byAhaW1wb3J0YW50OyB9XG4gIC5zY3JlZW4uaG9yaXpvbnRhbFN0cmlwZXMuZmlsbE1vZGUgdmlkZW8ge1xuICAgIGhlaWdodDogMTAwJTsgfVxuICAuc2NyZWVuIHZpZGVvIHtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgei1pbmRleDogMTtcbiAgICBib3gtc2hhZG93OiAwIDAgMjBweCByZ2JhKDAsIDAsIDAsIDAuMik7IH1cbiAgLnNjcmVlbi5oaWRkZW5DdXJzb3Ige1xuICAgIGN1cnNvcjogbm9uZTsgfVxuXG4uYmFja2dyb3VuZENhbnZhcyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogMDtcbiAgdG9wOiAwO1xuICByaWdodDogMDtcbiAgYm90dG9tOiAwO1xuICBsZWZ0OiAwO1xuICBmaWx0ZXI6IGJsdXIoMTRweCk7IH1cbiJdfQ== */";
+    var styles$2 = {"screen":"screen__screen___3BN2N","regularMode":"screen__regularMode___1Bv69","blurMode":"screen__blurMode___Zianj","fillMode":"screen__fillMode___rToyv","verticalStripes":"screen__verticalStripes___1tr7O","horizontalStripes":"screen__horizontalStripes___1yh9M","hiddenCursor":"screen__hiddenCursor___3-TwW","backgroundCanvas":"screen__backgroundCanvas___1PHZh"};
     styleInject(css$2);
 
     var ScreenView = /** @class */ (function (_super) {
@@ -6855,7 +11905,7 @@ function readCookie(cookieName) {
     var out='<div class="'+(props.styles.icon)+'"> <svg class="'+(props.styles.animatedIcon)+'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14"> <g fill="#FFF" fill-rule="evenodd"> <path fill="#FFF" d="M0 3.919h2.993v5.97H0V3.92zm2.995-.015L7 .924v12L2.995 9.882v-5.98z"/> <path stroke="#FFF" d="M13 6.257l-2.05-2.05-.743.743L12.257 7l-2.05 2.05.743.743L13 7.743l2.05 2.05.743-.743L13.743 7l2.05-2.05-.743-.743L13 6.257z"/> </g> </svg></div>';return out;
     }
 
-    var css$3 = ".interaction-indicator__controlButton___2Y9N6 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .interaction-indicator__controlButton___2Y9N6:hover {\n    opacity: .7; }\n  .interaction-indicator__hidden___2uTS- {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .interaction-indicator__iconContainer___2r3Wb {\n  position: absolute;\n  z-index: 100;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  pointer-events: none;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .interaction-indicator__iconContainer___2r3Wb .interaction-indicator__icon___1pjM4 {\n    font-size: 9px;\n    line-height: 9px;\n    position: relative;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-animation-name: interaction-indicator__fadeOut___P6kY6;\n            animation-name: interaction-indicator__fadeOut___P6kY6;\n    -webkit-animation-duration: .5s;\n            animation-duration: .5s;\n    opacity: 0;\n    border-radius: 100px;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n  .interaction-indicator__iconContainer___2r3Wb .interaction-indicator__animatedIcon___3cK8N {\n    -webkit-animation-name: interaction-indicator__iconSize___IYB2z;\n            animation-name: interaction-indicator__iconSize___IYB2z;\n    -webkit-animation-duration: .5s;\n            animation-duration: .5s; }\n  .interaction-indicator__iconContainer___2r3Wb .interaction-indicator__playIcon___1XtXN {\n    position: relative;\n    left: 3px; }\n  .interaction-indicator__iconContainer___2r3Wb .interaction-indicator__pauseIcon___qH2VX {\n    margin: 5px 0; }\n  .interaction-indicator__iconContainer___2r3Wb .interaction-indicator__seconds___2TlaJ {\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    min-width: 5px;\n    min-height: 8px;\n    color: white;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n  .interaction-indicator__iconContainer___2r3Wb .interaction-indicator__seconds___2TlaJ span {\n      display: block; }\n  @-webkit-keyframes interaction-indicator__iconSize___IYB2z {\n  from {\n    width: 22px;\n    height: 22px; }\n  to {\n    width: 30px;\n    height: 30px; } }\n  @keyframes interaction-indicator__iconSize___IYB2z {\n  from {\n    width: 22px;\n    height: 22px; }\n  to {\n    width: 30px;\n    height: 30px; } }\n  @-webkit-keyframes interaction-indicator__fadeOut___P6kY6 {\n  from {\n    width: 22px;\n    height: 22px;\n    padding: 19px;\n    opacity: .9; }\n  to {\n    font-size: 14px;\n    line-height: 14px;\n    width: 30px;\n    height: 30px;\n    padding: 25px;\n    opacity: 0; } }\n  @keyframes interaction-indicator__fadeOut___P6kY6 {\n  from {\n    width: 22px;\n    height: 22px;\n    padding: 19px;\n    opacity: .9; }\n  to {\n    font-size: 14px;\n    line-height: 14px;\n    width: 30px;\n    height: 30px;\n    padding: 25px;\n    opacity: 0; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImludGVyYWN0aW9uLWluZGljYXRvci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGlDQUF5QjtVQUF6Qix5QkFBeUI7RUFDekIscUNBQTZCO0VBQTdCLDZCQUE2QjtFQUM3QixXQUFXO0VBQ1gsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsOEJBQThCO0VBQzlCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7RUFDdEI7SUFDRSxZQUFZLEVBQUU7RUFFbEI7RUFDRSw4QkFBOEI7RUFDOUIsb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4QixxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixzQkFBc0I7RUFDdEIsc0JBQXNCLEVBQUU7RUFFMUI7RUFDRSxtQkFBbUI7RUFDbkIsYUFBYTtFQUNiLE9BQU87RUFDUCxTQUFTO0VBQ1QsVUFBVTtFQUNWLFFBQVE7RUFDUixxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLHFCQUFxQjtFQUNyQix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0VBQ3RCO0lBQ0UsZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIscUJBQWM7SUFBZCxxQkFBYztJQUFkLGNBQWM7SUFDZCwrREFBd0I7WUFBeEIsdURBQXdCO0lBQ3hCLGdDQUF3QjtZQUF4Qix3QkFBd0I7SUFDeEIsV0FBVztJQUNYLHFCQUFxQjtJQUNyQixxQ0FBcUM7SUFDckMseUJBQXdCO1FBQXhCLHNCQUF3QjtZQUF4Qix3QkFBd0I7SUFDeEIsMEJBQW9CO1FBQXBCLHVCQUFvQjtZQUFwQixvQkFBb0IsRUFBRTtFQUN4QjtJQUNFLGdFQUF5QjtZQUF6Qix3REFBeUI7SUFDekIsZ0NBQXdCO1lBQXhCLHdCQUF3QixFQUFFO0VBQzVCO0lBQ0UsbUJBQW1CO0lBQ25CLFVBQVUsRUFBRTtFQUNkO0lBQ0UsY0FBYyxFQUFFO0VBQ2xCO0lBQ0UsbUJBQW1CO0lBQ25CLE9BQU87SUFDUCxTQUFTO0lBQ1QsVUFBVTtJQUNWLFFBQVE7SUFDUixxQkFBYztJQUFkLHFCQUFjO0lBQWQsY0FBYztJQUNkLGVBQWU7SUFDZixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLHlCQUF3QjtRQUF4QixzQkFBd0I7WUFBeEIsd0JBQXdCO0lBQ3hCLDBCQUFvQjtRQUFwQix1QkFBb0I7WUFBcEIsb0JBQW9CLEVBQUU7RUFDdEI7TUFDRSxlQUFlLEVBQUU7RUFFdkI7RUFDRTtJQUNFLFlBQVk7SUFDWixhQUFhLEVBQUU7RUFDakI7SUFDRSxZQUFZO0lBQ1osYUFBYSxFQUFFLEVBQUU7RUFOckI7RUFDRTtJQUNFLFlBQVk7SUFDWixhQUFhLEVBQUU7RUFDakI7SUFDRSxZQUFZO0lBQ1osYUFBYSxFQUFFLEVBQUU7RUFFckI7RUFDRTtJQUNFLFlBQVk7SUFDWixhQUFhO0lBQ2IsY0FBYztJQUNkLFlBQVksRUFBRTtFQUNoQjtJQUNFLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLGFBQWE7SUFDYixjQUFjO0lBQ2QsV0FBVyxFQUFFLEVBQUU7RUFabkI7RUFDRTtJQUNFLFlBQVk7SUFDWixhQUFhO0lBQ2IsY0FBYztJQUNkLFlBQVksRUFBRTtFQUNoQjtJQUNFLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLGFBQWE7SUFDYixjQUFjO0lBQ2QsV0FBVyxFQUFFLEVBQUUiLCJmaWxlIjoiaW50ZXJhY3Rpb24taW5kaWNhdG9yLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udHJvbEJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmc6IDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogLjJzO1xuICB0cmFuc2l0aW9uLXByb3BlcnR5OiBvcGFjaXR5O1xuICBvcGFjaXR5OiAxO1xuICBib3JkZXI6IDA7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAuY29udHJvbEJ1dHRvbjpob3ZlciB7XG4gICAgb3BhY2l0eTogLjc7IH1cblxuLmhpZGRlbiB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbiAhaW1wb3J0YW50O1xuICB3aWR0aDogMCAhaW1wb3J0YW50O1xuICBtaW4td2lkdGg6IDAgIWltcG9ydGFudDtcbiAgaGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1pbi1oZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWFyZ2luOiAwICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmc6IDAgIWltcG9ydGFudDtcbiAgb3BhY2l0eTogMCAhaW1wb3J0YW50OyB9XG5cbi5pY29uQ29udGFpbmVyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiAxMDA7XG4gIHRvcDogMDtcbiAgcmlnaHQ6IDA7XG4gIGJvdHRvbTogMDtcbiAgbGVmdDogMDtcbiAgZGlzcGxheTogZmxleDtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5pY29uQ29udGFpbmVyIC5pY29uIHtcbiAgICBmb250LXNpemU6IDlweDtcbiAgICBsaW5lLWhlaWdodDogOXB4O1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFuaW1hdGlvbi1uYW1lOiBmYWRlT3V0O1xuICAgIGFuaW1hdGlvbi1kdXJhdGlvbjogLjVzO1xuICAgIG9wYWNpdHk6IDA7XG4gICAgYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjUpO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmljb25Db250YWluZXIgLmFuaW1hdGVkSWNvbiB7XG4gICAgYW5pbWF0aW9uLW5hbWU6IGljb25TaXplO1xuICAgIGFuaW1hdGlvbi1kdXJhdGlvbjogLjVzOyB9XG4gIC5pY29uQ29udGFpbmVyIC5wbGF5SWNvbiB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGxlZnQ6IDNweDsgfVxuICAuaWNvbkNvbnRhaW5lciAucGF1c2VJY29uIHtcbiAgICBtYXJnaW46IDVweCAwOyB9XG4gIC5pY29uQ29udGFpbmVyIC5zZWNvbmRzIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAwO1xuICAgIHJpZ2h0OiAwO1xuICAgIGJvdHRvbTogMDtcbiAgICBsZWZ0OiAwO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgbWluLXdpZHRoOiA1cHg7XG4gICAgbWluLWhlaWdodDogOHB4O1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gICAgLmljb25Db250YWluZXIgLnNlY29uZHMgc3BhbiB7XG4gICAgICBkaXNwbGF5OiBibG9jazsgfVxuXG5Aa2V5ZnJhbWVzIGljb25TaXplIHtcbiAgZnJvbSB7XG4gICAgd2lkdGg6IDIycHg7XG4gICAgaGVpZ2h0OiAyMnB4OyB9XG4gIHRvIHtcbiAgICB3aWR0aDogMzBweDtcbiAgICBoZWlnaHQ6IDMwcHg7IH0gfVxuXG5Aa2V5ZnJhbWVzIGZhZGVPdXQge1xuICBmcm9tIHtcbiAgICB3aWR0aDogMjJweDtcbiAgICBoZWlnaHQ6IDIycHg7XG4gICAgcGFkZGluZzogMTlweDtcbiAgICBvcGFjaXR5OiAuOTsgfVxuICB0byB7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICAgIGxpbmUtaGVpZ2h0OiAxNHB4O1xuICAgIHdpZHRoOiAzMHB4O1xuICAgIGhlaWdodDogMzBweDtcbiAgICBwYWRkaW5nOiAyNXB4O1xuICAgIG9wYWNpdHk6IDA7IH0gfVxuIl19 */";
+    var css$3 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.interaction-indicator__controlButton___2Y9N6 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.interaction-indicator__controlButton___2Y9N6:hover {\n    opacity: .7; }\n.interaction-indicator__hidden___2uTS- {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.interaction-indicator__iconContainer___2r3Wb {\n  position: absolute;\n  z-index: 100;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  pointer-events: none;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.interaction-indicator__iconContainer___2r3Wb .interaction-indicator__icon___1pjM4 {\n    font-size: 9px;\n    line-height: 9px;\n    position: relative;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-animation-name: interaction-indicator__fadeOut___P6kY6;\n            animation-name: interaction-indicator__fadeOut___P6kY6;\n    -webkit-animation-duration: .5s;\n            animation-duration: .5s;\n    opacity: 0;\n    border-radius: 100px;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n.interaction-indicator__iconContainer___2r3Wb .interaction-indicator__animatedIcon___3cK8N {\n    -webkit-animation-name: interaction-indicator__iconSize___IYB2z;\n            animation-name: interaction-indicator__iconSize___IYB2z;\n    -webkit-animation-duration: .5s;\n            animation-duration: .5s; }\n.interaction-indicator__iconContainer___2r3Wb .interaction-indicator__playIcon___1XtXN {\n    position: relative;\n    left: 3px; }\n.interaction-indicator__iconContainer___2r3Wb .interaction-indicator__pauseIcon___qH2VX {\n    margin: 5px 0; }\n.interaction-indicator__iconContainer___2r3Wb .interaction-indicator__seconds___2TlaJ {\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    min-width: 5px;\n    min-height: 8px;\n    color: white;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n.interaction-indicator__iconContainer___2r3Wb .interaction-indicator__seconds___2TlaJ span {\n      display: block; }\n@-webkit-keyframes interaction-indicator__iconSize___IYB2z {\n  from {\n    width: 22px;\n    height: 22px; }\n  to {\n    width: 30px;\n    height: 30px; } }\n@keyframes interaction-indicator__iconSize___IYB2z {\n  from {\n    width: 22px;\n    height: 22px; }\n  to {\n    width: 30px;\n    height: 30px; } }\n@-webkit-keyframes interaction-indicator__fadeOut___P6kY6 {\n  from {\n    width: 22px;\n    height: 22px;\n    padding: 19px;\n    opacity: .9; }\n  to {\n    font-size: 14px;\n    line-height: 14px;\n    width: 30px;\n    height: 30px;\n    padding: 25px;\n    opacity: 0; } }\n@keyframes interaction-indicator__fadeOut___P6kY6 {\n  from {\n    width: 22px;\n    height: 22px;\n    padding: 19px;\n    opacity: .9; }\n  to {\n    font-size: 14px;\n    line-height: 14px;\n    width: 30px;\n    height: 30px;\n    padding: 25px;\n    opacity: 0; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImludGVyYWN0aW9uLWluZGljYXRvci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7OztHQUtHO0FBQ0g7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtBQUN0QjtJQUNFLFlBQVksRUFBRTtBQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtBQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2IsT0FBTztFQUNQLFNBQVM7RUFDVCxVQUFVO0VBQ1YsUUFBUTtFQUNSLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QscUJBQXFCO0VBQ3JCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7QUFDdEI7SUFDRSxlQUFlO0lBQ2YsaUJBQWlCO0lBQ2pCLG1CQUFtQjtJQUNuQixxQkFBYztJQUFkLHFCQUFjO0lBQWQsY0FBYztJQUNkLCtEQUF3QjtZQUF4Qix1REFBd0I7SUFDeEIsZ0NBQXdCO1lBQXhCLHdCQUF3QjtJQUN4QixXQUFXO0lBQ1gscUJBQXFCO0lBQ3JCLHFDQUFxQztJQUNyQyx5QkFBd0I7UUFBeEIsc0JBQXdCO1lBQXhCLHdCQUF3QjtJQUN4QiwwQkFBb0I7UUFBcEIsdUJBQW9CO1lBQXBCLG9CQUFvQixFQUFFO0FBQ3hCO0lBQ0UsZ0VBQXlCO1lBQXpCLHdEQUF5QjtJQUN6QixnQ0FBd0I7WUFBeEIsd0JBQXdCLEVBQUU7QUFDNUI7SUFDRSxtQkFBbUI7SUFDbkIsVUFBVSxFQUFFO0FBQ2Q7SUFDRSxjQUFjLEVBQUU7QUFDbEI7SUFDRSxtQkFBbUI7SUFDbkIsT0FBTztJQUNQLFNBQVM7SUFDVCxVQUFVO0lBQ1YsUUFBUTtJQUNSLHFCQUFjO0lBQWQscUJBQWM7SUFBZCxjQUFjO0lBQ2QsZUFBZTtJQUNmLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IseUJBQXdCO1FBQXhCLHNCQUF3QjtZQUF4Qix3QkFBd0I7SUFDeEIsMEJBQW9CO1FBQXBCLHVCQUFvQjtZQUFwQixvQkFBb0IsRUFBRTtBQUN0QjtNQUNFLGVBQWUsRUFBRTtBQUV2QjtFQUNFO0lBQ0UsWUFBWTtJQUNaLGFBQWEsRUFBRTtFQUNqQjtJQUNFLFlBQVk7SUFDWixhQUFhLEVBQUUsRUFBRTtBQU5yQjtFQUNFO0lBQ0UsWUFBWTtJQUNaLGFBQWEsRUFBRTtFQUNqQjtJQUNFLFlBQVk7SUFDWixhQUFhLEVBQUUsRUFBRTtBQUVyQjtFQUNFO0lBQ0UsWUFBWTtJQUNaLGFBQWE7SUFDYixjQUFjO0lBQ2QsWUFBWSxFQUFFO0VBQ2hCO0lBQ0UsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osYUFBYTtJQUNiLGNBQWM7SUFDZCxXQUFXLEVBQUUsRUFBRTtBQVpuQjtFQUNFO0lBQ0UsWUFBWTtJQUNaLGFBQWE7SUFDYixjQUFjO0lBQ2QsWUFBWSxFQUFFO0VBQ2hCO0lBQ0UsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osYUFBYTtJQUNiLGNBQWM7SUFDZCxXQUFXLEVBQUUsRUFBRSIsImZpbGUiOiJpbnRlcmFjdGlvbi1pbmRpY2F0b3Iuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIGNoYWxsZW5nZSBoZXJlIHRvIHN1cHBvcnQgXCJwbGF5YWJsZSBxdWVyaWVzXCIgYW5kIFwiZGlyZWN0aW9uXCIgYXQgdGhlIHNhbWUgdGltZSBhbmQgYWxsb3cgbWl4aW5zIGxpa2U6XG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBsdHIoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBydGwoKSlcbiAqL1xuLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4uaWNvbkNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogMTAwO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAuaWNvbkNvbnRhaW5lciAuaWNvbiB7XG4gICAgZm9udC1zaXplOiA5cHg7XG4gICAgbGluZS1oZWlnaHQ6IDlweDtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbmltYXRpb24tbmFtZTogZmFkZU91dDtcbiAgICBhbmltYXRpb24tZHVyYXRpb246IC41cztcbiAgICBvcGFjaXR5OiAwO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwMHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5pY29uQ29udGFpbmVyIC5hbmltYXRlZEljb24ge1xuICAgIGFuaW1hdGlvbi1uYW1lOiBpY29uU2l6ZTtcbiAgICBhbmltYXRpb24tZHVyYXRpb246IC41czsgfVxuICAuaWNvbkNvbnRhaW5lciAucGxheUljb24ge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBsZWZ0OiAzcHg7IH1cbiAgLmljb25Db250YWluZXIgLnBhdXNlSWNvbiB7XG4gICAgbWFyZ2luOiA1cHggMDsgfVxuICAuaWNvbkNvbnRhaW5lciAuc2Vjb25kcyB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMDtcbiAgICByaWdodDogMDtcbiAgICBib3R0b206IDA7XG4gICAgbGVmdDogMDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIG1pbi13aWR0aDogNXB4O1xuICAgIG1pbi1oZWlnaHQ6IDhweDtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAgIC5pY29uQ29udGFpbmVyIC5zZWNvbmRzIHNwYW4ge1xuICAgICAgZGlzcGxheTogYmxvY2s7IH1cblxuQGtleWZyYW1lcyBpY29uU2l6ZSB7XG4gIGZyb20ge1xuICAgIHdpZHRoOiAyMnB4O1xuICAgIGhlaWdodDogMjJweDsgfVxuICB0byB7XG4gICAgd2lkdGg6IDMwcHg7XG4gICAgaGVpZ2h0OiAzMHB4OyB9IH1cblxuQGtleWZyYW1lcyBmYWRlT3V0IHtcbiAgZnJvbSB7XG4gICAgd2lkdGg6IDIycHg7XG4gICAgaGVpZ2h0OiAyMnB4O1xuICAgIHBhZGRpbmc6IDE5cHg7XG4gICAgb3BhY2l0eTogLjk7IH1cbiAgdG8ge1xuICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICBsaW5lLWhlaWdodDogMTRweDtcbiAgICB3aWR0aDogMzBweDtcbiAgICBoZWlnaHQ6IDMwcHg7XG4gICAgcGFkZGluZzogMjVweDtcbiAgICBvcGFjaXR5OiAwOyB9IH1cbiJdfQ== */";
     var styles$3 = {"controlButton":"interaction-indicator__controlButton___2Y9N6","hidden":"interaction-indicator__hidden___2uTS-","iconContainer":"interaction-indicator__iconContainer___2r3Wb","icon":"interaction-indicator__icon___1pjM4","fadeOut":"interaction-indicator__fadeOut___P6kY6","animatedIcon":"interaction-indicator__animatedIcon___3cK8N","iconSize":"interaction-indicator__iconSize___IYB2z","playIcon":"interaction-indicator__playIcon___1XtXN","pauseIcon":"interaction-indicator__pauseIcon___qH2VX","seconds":"interaction-indicator__seconds___2TlaJ"};
     styleInject(css$3);
 
@@ -7035,8 +12085,8 @@ function readCookie(cookieName) {
         },
     };
 
-    var css$4 = ".overlay__controlButton___1ASmF {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .overlay__controlButton___1ASmF:hover {\n    opacity: .7; }\n  .overlay__hidden___1Vt3d {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .overlay__overlay___3RC8o {\n  position: absolute;\n  z-index: 100;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: none; }\n  .overlay__overlay___3RC8o.overlay__active___3k0Mi {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n  .overlay__poster___1mX3C {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: black no-repeat center;\n  background-size: cover;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .overlay__poster___1mX3C:before {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  content: '';\n  background-color: rgba(0, 0, 0, 0.35); }\n  .overlay__icon___3zDVy {\n  position: relative;\n  width: 71px;\n  height: 71px;\n  cursor: pointer;\n  opacity: 1; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .overlay__icon___3zDVy {\n    width: 54px;\n    height: 54px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"400px\"] .overlay__icon___3zDVy {\n    width: 36px;\n    height: 36px; }\n  .overlay__icon___3zDVy:hover {\n    opacity: .8; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm92ZXJsYXkuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0VBQ3RCO0lBQ0UsWUFBWSxFQUFFO0VBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0VBRTFCO0VBQ0UsbUJBQW1CO0VBQ25CLGFBQWE7RUFDYixPQUFPO0VBQ1AsU0FBUztFQUNULFVBQVU7RUFDVixRQUFRO0VBQ1IsY0FBYyxFQUFFO0VBQ2hCO0lBQ0UscUJBQWM7SUFBZCxxQkFBYztJQUFkLGNBQWM7SUFDZCx5QkFBd0I7UUFBeEIsc0JBQXdCO1lBQXhCLHdCQUF3QjtJQUN4QiwwQkFBb0I7UUFBcEIsdUJBQW9CO1lBQXBCLG9CQUFvQixFQUFFO0VBRTFCO0VBQ0UsbUJBQW1CO0VBQ25CLE9BQU87RUFDUCxTQUFTO0VBQ1QsVUFBVTtFQUNWLFFBQVE7RUFDUixZQUFZO0VBQ1osYUFBYTtFQUNiLG1DQUFtQztFQUNuQyx1QkFBdUI7RUFDdkIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUV4QjtFQUNFLG1CQUFtQjtFQUNuQixPQUFPO0VBQ1AsUUFBUTtFQUNSLFlBQVk7RUFDWixhQUFhO0VBQ2IsWUFBWTtFQUNaLHNDQUFzQyxFQUFFO0VBRTFDO0VBQ0UsbUJBQW1CO0VBQ25CLFlBQVk7RUFDWixhQUFhO0VBQ2IsZ0JBQWdCO0VBQ2hCLFdBQVcsRUFBRTtFQUNiO0lBQ0UsWUFBWTtJQUNaLGFBQWEsRUFBRTtFQUNqQjtJQUNFLFlBQVk7SUFDWixhQUFhLEVBQUU7RUFDakI7SUFDRSxZQUFZLEVBQUUiLCJmaWxlIjoib3ZlcmxheS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4ub3ZlcmxheSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogMTAwO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIGRpc3BsYXk6IG5vbmU7IH1cbiAgLm92ZXJsYXkuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cblxuLnBvc3RlciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICByaWdodDogMDtcbiAgYm90dG9tOiAwO1xuICBsZWZ0OiAwO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBiYWNrZ3JvdW5kOiBibGFjayBuby1yZXBlYXQgY2VudGVyO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuXG4ucG9zdGVyOmJlZm9yZSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBjb250ZW50OiAnJztcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjM1KTsgfVxuXG4uaWNvbiB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgd2lkdGg6IDcxcHg7XG4gIGhlaWdodDogNzFweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBvcGFjaXR5OiAxOyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI1NTBweFwiXSAuaWNvbiB7XG4gICAgd2lkdGg6IDU0cHg7XG4gICAgaGVpZ2h0OiA1NHB4OyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI0MDBweFwiXSAuaWNvbiB7XG4gICAgd2lkdGg6IDM2cHg7XG4gICAgaGVpZ2h0OiAzNnB4OyB9XG4gIC5pY29uOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAuODsgfVxuIl19 */";
-    var styles$4 = {"controlButton":"overlay__controlButton___1ASmF","hidden":"overlay__hidden___1Vt3d","overlay":"overlay__overlay___3RC8o","active":"overlay__active___3k0Mi","poster":"overlay__poster___1mX3C","icon":"overlay__icon___3zDVy"};
+    var css$4 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.overlay__controlButton___1ASmF {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.overlay__controlButton___1ASmF:hover {\n    opacity: .7; }\n.overlay__hidden___1Vt3d {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.overlay__overlay___3RC8o {\n  position: absolute;\n  z-index: 100;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: none; }\n.overlay__overlay___3RC8o.overlay__active___3k0Mi {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n.overlay__poster___1mX3C {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: black no-repeat center;\n  background-size: cover;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.overlay__poster___1mX3C:before {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  content: '';\n  background-color: rgba(0, 0, 0, 0.35); }\n.overlay__icon___3zDVy {\n  position: relative;\n  width: 71px;\n  height: 71px;\n  cursor: pointer;\n  opacity: 1; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .overlay__icon___3zDVy {\n    width: 54px;\n    height: 54px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"400px\"] .overlay__icon___3zDVy {\n    width: 36px;\n    height: 36px; }\n.overlay__icon___3zDVy:hover {\n    opacity: .8; }\n.overlay__transparency___2CfdP {\n  background: transparent; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm92ZXJsYXkuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7R0FLRztBQUNIO0VBQ0UscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGlDQUF5QjtVQUF6Qix5QkFBeUI7RUFDekIscUNBQTZCO0VBQTdCLDZCQUE2QjtFQUM3QixXQUFXO0VBQ1gsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsOEJBQThCO0VBQzlCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7QUFDdEI7SUFDRSxZQUFZLEVBQUU7QUFFbEI7RUFDRSw4QkFBOEI7RUFDOUIsb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4QixxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixzQkFBc0I7RUFDdEIsc0JBQXNCLEVBQUU7QUFFMUI7RUFDRSxtQkFBbUI7RUFDbkIsYUFBYTtFQUNiLE9BQU87RUFDUCxTQUFTO0VBQ1QsVUFBVTtFQUNWLFFBQVE7RUFDUixjQUFjLEVBQUU7QUFDaEI7SUFDRSxxQkFBYztJQUFkLHFCQUFjO0lBQWQsY0FBYztJQUNkLHlCQUF3QjtRQUF4QixzQkFBd0I7WUFBeEIsd0JBQXdCO0lBQ3hCLDBCQUFvQjtRQUFwQix1QkFBb0I7WUFBcEIsb0JBQW9CLEVBQUU7QUFFMUI7RUFDRSxtQkFBbUI7RUFDbkIsT0FBTztFQUNQLFNBQVM7RUFDVCxVQUFVO0VBQ1YsUUFBUTtFQUNSLFlBQVk7RUFDWixhQUFhO0VBQ2IsbUNBQW1DO0VBQ25DLHVCQUF1QjtFQUN2Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0FBRXhCO0VBQ0UsbUJBQW1CO0VBQ25CLE9BQU87RUFDUCxRQUFRO0VBQ1IsWUFBWTtFQUNaLGFBQWE7RUFDYixZQUFZO0VBQ1osc0NBQXNDLEVBQUU7QUFFMUM7RUFDRSxtQkFBbUI7RUFDbkIsWUFBWTtFQUNaLGFBQWE7RUFDYixnQkFBZ0I7RUFDaEIsV0FBVyxFQUFFO0FBQ2I7SUFDRSxZQUFZO0lBQ1osYUFBYSxFQUFFO0FBQ2pCO0lBQ0UsWUFBWTtJQUNaLGFBQWEsRUFBRTtBQUNqQjtJQUNFLFlBQVksRUFBRTtBQUVsQjtFQUNFLHdCQUF3QixFQUFFIiwiZmlsZSI6Im92ZXJsYXkuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIGNoYWxsZW5nZSBoZXJlIHRvIHN1cHBvcnQgXCJwbGF5YWJsZSBxdWVyaWVzXCIgYW5kIFwiZGlyZWN0aW9uXCIgYXQgdGhlIHNhbWUgdGltZSBhbmQgYWxsb3cgbWl4aW5zIGxpa2U6XG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBsdHIoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBydGwoKSlcbiAqL1xuLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4ub3ZlcmxheSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogMTAwO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIGRpc3BsYXk6IG5vbmU7IH1cbiAgLm92ZXJsYXkuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cblxuLnBvc3RlciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICByaWdodDogMDtcbiAgYm90dG9tOiAwO1xuICBsZWZ0OiAwO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBiYWNrZ3JvdW5kOiBibGFjayBuby1yZXBlYXQgY2VudGVyO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuXG4ucG9zdGVyOmJlZm9yZSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBjb250ZW50OiAnJztcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjM1KTsgfVxuXG4uaWNvbiB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgd2lkdGg6IDcxcHg7XG4gIGhlaWdodDogNzFweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBvcGFjaXR5OiAxOyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI1NTBweFwiXSAuaWNvbiB7XG4gICAgd2lkdGg6IDU0cHg7XG4gICAgaGVpZ2h0OiA1NHB4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI0MDBweFwiXSAuaWNvbiB7XG4gICAgd2lkdGg6IDM2cHg7XG4gICAgaGVpZ2h0OiAzNnB4OyB9XG4gIC5pY29uOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAuODsgfVxuXG4udHJhbnNwYXJlbmN5IHtcbiAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7IH1cbiJdfQ== */";
+    var styles$4 = {"controlButton":"overlay__controlButton___1ASmF","hidden":"overlay__hidden___1Vt3d","overlay":"overlay__overlay___3RC8o","active":"overlay__active___3k0Mi","poster":"overlay__poster___1mX3C","icon":"overlay__icon___3zDVy","transparency":"overlay__transparency___2CfdP"};
     styleInject(css$4);
 
     var OverlayView = /** @class */ (function (_super) {
@@ -7081,6 +12131,12 @@ function readCookie(cookieName) {
         OverlayView.prototype.setPoster = function (src) {
             this._$content.style.backgroundImage = src ? "url('" + src + "')" : 'none';
         };
+        OverlayView.prototype.turnOnOverlayTransparency = function () {
+            this._$content.classList.add(this.styleNames.transparency);
+        };
+        OverlayView.prototype.turnOffOverlayTransparency = function () {
+            this._$content.classList.remove(this.styleNames.transparency);
+        };
         OverlayView.prototype.destroy = function () {
             this._unbindEvents();
             if (this._$rootElement.parentNode) {
@@ -7097,11 +12153,13 @@ function readCookie(cookieName) {
 
     var Overlay = /** @class */ (function () {
         function Overlay(_a) {
-            var eventEmitter = _a.eventEmitter, engine = _a.engine, rootContainer = _a.rootContainer, theme = _a.theme, config = _a.config;
+            var eventEmitter = _a.eventEmitter, engine = _a.engine, rootContainer = _a.rootContainer, theme = _a.theme, config = _a.config, mainUIBlock = _a.mainUIBlock, loader = _a.loader;
             this.isHidden = false;
             this._eventEmitter = eventEmitter;
             this._engine = engine;
             this._theme = theme;
+            this._mainUIBlock = mainUIBlock;
+            this._loader = loader;
             this._bindEvents();
             this._initUI();
             this.setPoster(config.poster);
@@ -7131,7 +12189,7 @@ function readCookie(cookieName) {
         Overlay.prototype._updatePlayingState = function (_a) {
             var nextState = _a.nextState;
             if (nextState === EngineState$1.PLAY_REQUESTED) {
-                this._hideContent();
+                this._tryHideContent();
             }
             else if (nextState === EngineState$1.ENDED ||
                 nextState === EngineState$1.SRC_SET) {
@@ -7143,15 +12201,28 @@ function readCookie(cookieName) {
             this._eventEmitter.emitAsync(UIEvent$1.PLAY_OVERLAY_CLICK);
         };
         Overlay.prototype._tryShowContent = function () {
+            if (this.isHidden) {
+                return;
+            }
             if (this._engine.isPaused) {
                 this._showContent();
             }
         };
+        Overlay.prototype._tryHideContent = function () {
+            if (this.isHidden) {
+                return;
+            }
+            this._hideContent();
+        };
         Overlay.prototype._hideContent = function () {
             this.view.hideContent();
+            this._loader.show();
+            this._mainUIBlock.enableShowingContent();
         };
         Overlay.prototype._showContent = function () {
             this.view.showContent();
+            this._loader.hide();
+            this._mainUIBlock.disableShowingContent();
         };
         /**
          * Method for completely hiding player overlay. It's not gonna appear on initial state of player and when video is ended.
@@ -7181,6 +12252,28 @@ function readCookie(cookieName) {
         Overlay.prototype.setPoster = function (src) {
             this.view.setPoster(src);
         };
+        /**
+         * After initialisation player has by default an overlay that is black;
+         *
+         * The `.turnOnOverlayTransparency()` method makes this overlay transparent.
+         * @example
+         * player.turnOnOverlayTransparency();
+         *
+         */
+        Overlay.prototype.turnOnOverlayTransparency = function () {
+            this.view.turnOnOverlayTransparency();
+        };
+        /**
+         * The `.turnOffOverlayTransparency()` method returns player's overlay to default settings.
+         * It becomes black again.
+         *
+         * @example
+         * player.turnOffOverlayTransparency();
+         *
+         */
+        Overlay.prototype.turnOffOverlayTransparency = function () {
+            this.view.turnOffOverlayTransparency();
+        };
         Overlay.prototype.destroy = function () {
             this._unbindEvents();
             this.view.destroy();
@@ -7193,6 +12286,8 @@ function readCookie(cookieName) {
             'rootContainer',
             'theme',
             'config',
+            'mainUIBlock',
+            'loader',
         ];
         __decorate([
             playerAPI('hideOverlay')
@@ -7203,6 +12298,12 @@ function readCookie(cookieName) {
         __decorate([
             playerAPI()
         ], Overlay.prototype, "setPoster", null);
+        __decorate([
+            playerAPI()
+        ], Overlay.prototype, "turnOnOverlayTransparency", null);
+        __decorate([
+            playerAPI()
+        ], Overlay.prototype, "turnOffOverlayTransparency", null);
         return Overlay;
     }());
 
@@ -7211,7 +12312,7 @@ function readCookie(cookieName) {
     var out='<div class="'+(props.styles.loader)+' '+(props.styles.active)+'" data-playable-component data-playable-hook="loader" ></div>';return out;
     }
 
-    var css$5 = ".loader__controlButton___1YHb4 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .loader__controlButton___1YHb4:hover {\n    opacity: .7; }\n  .loader__hidden___3MeyV {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .loader__loader___1J20N {\n  position: absolute;\n  z-index: 90;\n  top: 50%;\n  left: 50%;\n  display: none;\n  clip: rect(0, 48px, 48px, 24px);\n  width: 42px;\n  height: 42px;\n  margin-top: -21px;\n  margin-left: -21px;\n  -webkit-animation: loader__rotate___3K3Iv 1s linear infinite;\n          animation: loader__rotate___3K3Iv 1s linear infinite;\n  color: white; }\n  .loader__loader___1J20N.loader__active___29tvY {\n    display: block; }\n  .loader__loader___1J20N::after {\n    clip: rect(4px, 48px, 48px, 24px);\n    -webkit-animation: loader__clip___1RIdi 1s linear infinite;\n            animation: loader__clip___1RIdi 1s linear infinite;\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    content: '';\n    border: 3px solid currentColor;\n    border-radius: 50%; }\n  .loader__loader___1J20N::before {\n    clip: rect(0, 48px, 48px, 24px);\n    -webkit-animation: loader__clip-reverse___20o6x 1s linear infinite;\n            animation: loader__clip-reverse___20o6x 1s linear infinite;\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    content: '';\n    border: 3px solid currentColor;\n    border-radius: 50%; }\n  @-webkit-keyframes loader__clip___1RIdi {\n  50% {\n    clip: rect(42px, 48px, 48px, 24px);\n    -webkit-animation-timing-function: ease-in-out;\n            animation-timing-function: ease-in-out; } }\n  @keyframes loader__clip___1RIdi {\n  50% {\n    clip: rect(42px, 48px, 48px, 24px);\n    -webkit-animation-timing-function: ease-in-out;\n            animation-timing-function: ease-in-out; } }\n  @-webkit-keyframes loader__clip-reverse___20o6x {\n  50% {\n    clip: rect(0, 48px, 9px, 24px);\n    -webkit-transform: rotate(135deg);\n            transform: rotate(135deg);\n    -webkit-animation-timing-function: ease-in-out;\n            animation-timing-function: ease-in-out; } }\n  @keyframes loader__clip-reverse___20o6x {\n  50% {\n    clip: rect(0, 48px, 9px, 24px);\n    -webkit-transform: rotate(135deg);\n            transform: rotate(135deg);\n    -webkit-animation-timing-function: ease-in-out;\n            animation-timing-function: ease-in-out; } }\n  @-webkit-keyframes loader__rotate___3K3Iv {\n  from {\n    -webkit-transform: rotate(0);\n            transform: rotate(0);\n    -webkit-animation-timing-function: ease-out;\n            animation-timing-function: ease-out; }\n  45% {\n    -webkit-transform: rotate(18deg);\n            transform: rotate(18deg);\n    color: white; }\n  55% {\n    -webkit-transform: rotate(54deg);\n            transform: rotate(54deg); }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n  @keyframes loader__rotate___3K3Iv {\n  from {\n    -webkit-transform: rotate(0);\n            transform: rotate(0);\n    -webkit-animation-timing-function: ease-out;\n            animation-timing-function: ease-out; }\n  45% {\n    -webkit-transform: rotate(18deg);\n            transform: rotate(18deg);\n    color: white; }\n  55% {\n    -webkit-transform: rotate(54deg);\n            transform: rotate(54deg); }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxvYWRlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGlDQUF5QjtVQUF6Qix5QkFBeUI7RUFDekIscUNBQTZCO0VBQTdCLDZCQUE2QjtFQUM3QixXQUFXO0VBQ1gsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsOEJBQThCO0VBQzlCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7RUFDdEI7SUFDRSxZQUFZLEVBQUU7RUFFbEI7RUFDRSw4QkFBOEI7RUFDOUIsb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4QixxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixzQkFBc0I7RUFDdEIsc0JBQXNCLEVBQUU7RUFFMUI7RUFDRSxtQkFBbUI7RUFDbkIsWUFBWTtFQUNaLFNBQVM7RUFDVCxVQUFVO0VBQ1YsY0FBYztFQUNkLGdDQUFnQztFQUNoQyxZQUFZO0VBQ1osYUFBYTtFQUNiLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsNkRBQXFDO1VBQXJDLHFEQUFxQztFQUNyQyxhQUFhLEVBQUU7RUFDZjtJQUNFLGVBQWUsRUFBRTtFQUNuQjtJQUNFLGtDQUFrQztJQUNsQywyREFBbUM7WUFBbkMsbURBQW1DO0lBQ25DLG1CQUFtQjtJQUNuQixPQUFPO0lBQ1AsU0FBUztJQUNULFVBQVU7SUFDVixRQUFRO0lBQ1IsWUFBWTtJQUNaLCtCQUErQjtJQUMvQixtQkFBbUIsRUFBRTtFQUN2QjtJQUNFLGdDQUFnQztJQUNoQyxtRUFBMkM7WUFBM0MsMkRBQTJDO0lBQzNDLG1CQUFtQjtJQUNuQixPQUFPO0lBQ1AsU0FBUztJQUNULFVBQVU7SUFDVixRQUFRO0lBQ1IsWUFBWTtJQUNaLCtCQUErQjtJQUMvQixtQkFBbUIsRUFBRTtFQUV6QjtFQUNFO0lBQ0UsbUNBQW1DO0lBQ25DLCtDQUF1QztZQUF2Qyx1Q0FBdUMsRUFBRSxFQUFFO0VBSC9DO0VBQ0U7SUFDRSxtQ0FBbUM7SUFDbkMsK0NBQXVDO1lBQXZDLHVDQUF1QyxFQUFFLEVBQUU7RUFFL0M7RUFDRTtJQUNFLCtCQUErQjtJQUMvQixrQ0FBMEI7WUFBMUIsMEJBQTBCO0lBQzFCLCtDQUF1QztZQUF2Qyx1Q0FBdUMsRUFBRSxFQUFFO0VBSi9DO0VBQ0U7SUFDRSwrQkFBK0I7SUFDL0Isa0NBQTBCO1lBQTFCLDBCQUEwQjtJQUMxQiwrQ0FBdUM7WUFBdkMsdUNBQXVDLEVBQUUsRUFBRTtFQUUvQztFQUNFO0lBQ0UsNkJBQXFCO1lBQXJCLHFCQUFxQjtJQUNyQiw0Q0FBb0M7WUFBcEMsb0NBQW9DLEVBQUU7RUFDeEM7SUFDRSxpQ0FBeUI7WUFBekIseUJBQXlCO0lBQ3pCLGFBQWEsRUFBRTtFQUNqQjtJQUNFLGlDQUF5QjtZQUF6Qix5QkFBeUIsRUFBRTtFQUM3QjtJQUNFLGtDQUEwQjtZQUExQiwwQkFBMEIsRUFBRSxFQUFFO0VBVmxDO0VBQ0U7SUFDRSw2QkFBcUI7WUFBckIscUJBQXFCO0lBQ3JCLDRDQUFvQztZQUFwQyxvQ0FBb0MsRUFBRTtFQUN4QztJQUNFLGlDQUF5QjtZQUF6Qix5QkFBeUI7SUFDekIsYUFBYSxFQUFFO0VBQ2pCO0lBQ0UsaUNBQXlCO1lBQXpCLHlCQUF5QixFQUFFO0VBQzdCO0lBQ0Usa0NBQTBCO1lBQTFCLDBCQUEwQixFQUFFLEVBQUUiLCJmaWxlIjoibG9hZGVyLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udHJvbEJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmc6IDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogLjJzO1xuICB0cmFuc2l0aW9uLXByb3BlcnR5OiBvcGFjaXR5O1xuICBvcGFjaXR5OiAxO1xuICBib3JkZXI6IDA7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAuY29udHJvbEJ1dHRvbjpob3ZlciB7XG4gICAgb3BhY2l0eTogLjc7IH1cblxuLmhpZGRlbiB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbiAhaW1wb3J0YW50O1xuICB3aWR0aDogMCAhaW1wb3J0YW50O1xuICBtaW4td2lkdGg6IDAgIWltcG9ydGFudDtcbiAgaGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1pbi1oZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWFyZ2luOiAwICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmc6IDAgIWltcG9ydGFudDtcbiAgb3BhY2l0eTogMCAhaW1wb3J0YW50OyB9XG5cbi5sb2FkZXIge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IDkwO1xuICB0b3A6IDUwJTtcbiAgbGVmdDogNTAlO1xuICBkaXNwbGF5OiBub25lO1xuICBjbGlwOiByZWN0KDAsIDQ4cHgsIDQ4cHgsIDI0cHgpO1xuICB3aWR0aDogNDJweDtcbiAgaGVpZ2h0OiA0MnB4O1xuICBtYXJnaW4tdG9wOiAtMjFweDtcbiAgbWFyZ2luLWxlZnQ6IC0yMXB4O1xuICBhbmltYXRpb246IHJvdGF0ZSAxcyBsaW5lYXIgaW5maW5pdGU7XG4gIGNvbG9yOiB3aGl0ZTsgfVxuICAubG9hZGVyLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogYmxvY2s7IH1cbiAgLmxvYWRlcjo6YWZ0ZXIge1xuICAgIGNsaXA6IHJlY3QoNHB4LCA0OHB4LCA0OHB4LCAyNHB4KTtcbiAgICBhbmltYXRpb246IGNsaXAgMXMgbGluZWFyIGluZmluaXRlO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDA7XG4gICAgcmlnaHQ6IDA7XG4gICAgYm90dG9tOiAwO1xuICAgIGxlZnQ6IDA7XG4gICAgY29udGVudDogJyc7XG4gICAgYm9yZGVyOiAzcHggc29saWQgY3VycmVudENvbG9yO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTsgfVxuICAubG9hZGVyOjpiZWZvcmUge1xuICAgIGNsaXA6IHJlY3QoMCwgNDhweCwgNDhweCwgMjRweCk7XG4gICAgYW5pbWF0aW9uOiBjbGlwLXJldmVyc2UgMXMgbGluZWFyIGluZmluaXRlO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDA7XG4gICAgcmlnaHQ6IDA7XG4gICAgYm90dG9tOiAwO1xuICAgIGxlZnQ6IDA7XG4gICAgY29udGVudDogJyc7XG4gICAgYm9yZGVyOiAzcHggc29saWQgY3VycmVudENvbG9yO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTsgfVxuXG5Aa2V5ZnJhbWVzIGNsaXAge1xuICA1MCUge1xuICAgIGNsaXA6IHJlY3QoNDJweCwgNDhweCwgNDhweCwgMjRweCk7XG4gICAgYW5pbWF0aW9uLXRpbWluZy1mdW5jdGlvbjogZWFzZS1pbi1vdXQ7IH0gfVxuXG5Aa2V5ZnJhbWVzIGNsaXAtcmV2ZXJzZSB7XG4gIDUwJSB7XG4gICAgY2xpcDogcmVjdCgwLCA0OHB4LCA5cHgsIDI0cHgpO1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDEzNWRlZyk7XG4gICAgYW5pbWF0aW9uLXRpbWluZy1mdW5jdGlvbjogZWFzZS1pbi1vdXQ7IH0gfVxuXG5Aa2V5ZnJhbWVzIHJvdGF0ZSB7XG4gIGZyb20ge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDApO1xuICAgIGFuaW1hdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2Utb3V0OyB9XG4gIDQ1JSB7XG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMThkZWcpO1xuICAgIGNvbG9yOiB3aGl0ZTsgfVxuICA1NSUge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDU0ZGVnKTsgfVxuICB0byB7XG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTsgfSB9XG4iXX0= */";
+    var css$5 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.loader__controlButton___1YHb4 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.loader__controlButton___1YHb4:hover {\n    opacity: .7; }\n.loader__hidden___3MeyV {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.loader__loader___1J20N {\n  position: absolute;\n  z-index: 90;\n  top: 50%;\n  left: 50%;\n  display: none;\n  clip: rect(0, 48px, 48px, 24px);\n  width: 42px;\n  height: 42px;\n  margin-top: -21px;\n  margin-left: -21px;\n  -webkit-animation: loader__rotate___3K3Iv 1s linear infinite;\n          animation: loader__rotate___3K3Iv 1s linear infinite;\n  color: white; }\n.loader__loader___1J20N.loader__active___29tvY {\n    display: block; }\n.loader__loader___1J20N::after {\n    clip: rect(4px, 48px, 48px, 24px);\n    -webkit-animation: loader__clip___1RIdi 1s linear infinite;\n            animation: loader__clip___1RIdi 1s linear infinite;\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    content: '';\n    border: 3px solid currentColor;\n    border-radius: 50%; }\n.loader__loader___1J20N::before {\n    clip: rect(0, 48px, 48px, 24px);\n    -webkit-animation: loader__clip-reverse___20o6x 1s linear infinite;\n            animation: loader__clip-reverse___20o6x 1s linear infinite;\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    content: '';\n    border: 3px solid currentColor;\n    border-radius: 50%; }\n@-webkit-keyframes loader__clip___1RIdi {\n  50% {\n    clip: rect(42px, 48px, 48px, 24px);\n    -webkit-animation-timing-function: ease-in-out;\n            animation-timing-function: ease-in-out; } }\n@keyframes loader__clip___1RIdi {\n  50% {\n    clip: rect(42px, 48px, 48px, 24px);\n    -webkit-animation-timing-function: ease-in-out;\n            animation-timing-function: ease-in-out; } }\n@-webkit-keyframes loader__clip-reverse___20o6x {\n  50% {\n    clip: rect(0, 48px, 9px, 24px);\n    -webkit-transform: rotate(135deg);\n            transform: rotate(135deg);\n    -webkit-animation-timing-function: ease-in-out;\n            animation-timing-function: ease-in-out; } }\n@keyframes loader__clip-reverse___20o6x {\n  50% {\n    clip: rect(0, 48px, 9px, 24px);\n    -webkit-transform: rotate(135deg);\n            transform: rotate(135deg);\n    -webkit-animation-timing-function: ease-in-out;\n            animation-timing-function: ease-in-out; } }\n@-webkit-keyframes loader__rotate___3K3Iv {\n  from {\n    -webkit-transform: rotate(0);\n            transform: rotate(0);\n    -webkit-animation-timing-function: ease-out;\n            animation-timing-function: ease-out; }\n  45% {\n    -webkit-transform: rotate(18deg);\n            transform: rotate(18deg);\n    color: white; }\n  55% {\n    -webkit-transform: rotate(54deg);\n            transform: rotate(54deg); }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n@keyframes loader__rotate___3K3Iv {\n  from {\n    -webkit-transform: rotate(0);\n            transform: rotate(0);\n    -webkit-animation-timing-function: ease-out;\n            animation-timing-function: ease-out; }\n  45% {\n    -webkit-transform: rotate(18deg);\n            transform: rotate(18deg);\n    color: white; }\n  55% {\n    -webkit-transform: rotate(54deg);\n            transform: rotate(54deg); }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxvYWRlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7OztHQUtHO0FBQ0g7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtBQUN0QjtJQUNFLFlBQVksRUFBRTtBQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtBQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osU0FBUztFQUNULFVBQVU7RUFDVixjQUFjO0VBQ2QsZ0NBQWdDO0VBQ2hDLFlBQVk7RUFDWixhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQiw2REFBcUM7VUFBckMscURBQXFDO0VBQ3JDLGFBQWEsRUFBRTtBQUNmO0lBQ0UsZUFBZSxFQUFFO0FBQ25CO0lBQ0Usa0NBQWtDO0lBQ2xDLDJEQUFtQztZQUFuQyxtREFBbUM7SUFDbkMsbUJBQW1CO0lBQ25CLE9BQU87SUFDUCxTQUFTO0lBQ1QsVUFBVTtJQUNWLFFBQVE7SUFDUixZQUFZO0lBQ1osK0JBQStCO0lBQy9CLG1CQUFtQixFQUFFO0FBQ3ZCO0lBQ0UsZ0NBQWdDO0lBQ2hDLG1FQUEyQztZQUEzQywyREFBMkM7SUFDM0MsbUJBQW1CO0lBQ25CLE9BQU87SUFDUCxTQUFTO0lBQ1QsVUFBVTtJQUNWLFFBQVE7SUFDUixZQUFZO0lBQ1osK0JBQStCO0lBQy9CLG1CQUFtQixFQUFFO0FBRXpCO0VBQ0U7SUFDRSxtQ0FBbUM7SUFDbkMsK0NBQXVDO1lBQXZDLHVDQUF1QyxFQUFFLEVBQUU7QUFIL0M7RUFDRTtJQUNFLG1DQUFtQztJQUNuQywrQ0FBdUM7WUFBdkMsdUNBQXVDLEVBQUUsRUFBRTtBQUUvQztFQUNFO0lBQ0UsK0JBQStCO0lBQy9CLGtDQUEwQjtZQUExQiwwQkFBMEI7SUFDMUIsK0NBQXVDO1lBQXZDLHVDQUF1QyxFQUFFLEVBQUU7QUFKL0M7RUFDRTtJQUNFLCtCQUErQjtJQUMvQixrQ0FBMEI7WUFBMUIsMEJBQTBCO0lBQzFCLCtDQUF1QztZQUF2Qyx1Q0FBdUMsRUFBRSxFQUFFO0FBRS9DO0VBQ0U7SUFDRSw2QkFBcUI7WUFBckIscUJBQXFCO0lBQ3JCLDRDQUFvQztZQUFwQyxvQ0FBb0MsRUFBRTtFQUN4QztJQUNFLGlDQUF5QjtZQUF6Qix5QkFBeUI7SUFDekIsYUFBYSxFQUFFO0VBQ2pCO0lBQ0UsaUNBQXlCO1lBQXpCLHlCQUF5QixFQUFFO0VBQzdCO0lBQ0Usa0NBQTBCO1lBQTFCLDBCQUEwQixFQUFFLEVBQUU7QUFWbEM7RUFDRTtJQUNFLDZCQUFxQjtZQUFyQixxQkFBcUI7SUFDckIsNENBQW9DO1lBQXBDLG9DQUFvQyxFQUFFO0VBQ3hDO0lBQ0UsaUNBQXlCO1lBQXpCLHlCQUF5QjtJQUN6QixhQUFhLEVBQUU7RUFDakI7SUFDRSxpQ0FBeUI7WUFBekIseUJBQXlCLEVBQUU7RUFDN0I7SUFDRSxrQ0FBMEI7WUFBMUIsMEJBQTBCLEVBQUUsRUFBRSIsImZpbGUiOiJsb2FkZXIuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIGNoYWxsZW5nZSBoZXJlIHRvIHN1cHBvcnQgXCJwbGF5YWJsZSBxdWVyaWVzXCIgYW5kIFwiZGlyZWN0aW9uXCIgYXQgdGhlIHNhbWUgdGltZSBhbmQgYWxsb3cgbWl4aW5zIGxpa2U6XG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBsdHIoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBydGwoKSlcbiAqL1xuLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4ubG9hZGVyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiA5MDtcbiAgdG9wOiA1MCU7XG4gIGxlZnQ6IDUwJTtcbiAgZGlzcGxheTogbm9uZTtcbiAgY2xpcDogcmVjdCgwLCA0OHB4LCA0OHB4LCAyNHB4KTtcbiAgd2lkdGg6IDQycHg7XG4gIGhlaWdodDogNDJweDtcbiAgbWFyZ2luLXRvcDogLTIxcHg7XG4gIG1hcmdpbi1sZWZ0OiAtMjFweDtcbiAgYW5pbWF0aW9uOiByb3RhdGUgMXMgbGluZWFyIGluZmluaXRlO1xuICBjb2xvcjogd2hpdGU7IH1cbiAgLmxvYWRlci5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGJsb2NrOyB9XG4gIC5sb2FkZXI6OmFmdGVyIHtcbiAgICBjbGlwOiByZWN0KDRweCwgNDhweCwgNDhweCwgMjRweCk7XG4gICAgYW5pbWF0aW9uOiBjbGlwIDFzIGxpbmVhciBpbmZpbml0ZTtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAwO1xuICAgIHJpZ2h0OiAwO1xuICAgIGJvdHRvbTogMDtcbiAgICBsZWZ0OiAwO1xuICAgIGNvbnRlbnQ6ICcnO1xuICAgIGJvcmRlcjogM3B4IHNvbGlkIGN1cnJlbnRDb2xvcjtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7IH1cbiAgLmxvYWRlcjo6YmVmb3JlIHtcbiAgICBjbGlwOiByZWN0KDAsIDQ4cHgsIDQ4cHgsIDI0cHgpO1xuICAgIGFuaW1hdGlvbjogY2xpcC1yZXZlcnNlIDFzIGxpbmVhciBpbmZpbml0ZTtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAwO1xuICAgIHJpZ2h0OiAwO1xuICAgIGJvdHRvbTogMDtcbiAgICBsZWZ0OiAwO1xuICAgIGNvbnRlbnQ6ICcnO1xuICAgIGJvcmRlcjogM3B4IHNvbGlkIGN1cnJlbnRDb2xvcjtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7IH1cblxuQGtleWZyYW1lcyBjbGlwIHtcbiAgNTAlIHtcbiAgICBjbGlwOiByZWN0KDQycHgsIDQ4cHgsIDQ4cHgsIDI0cHgpO1xuICAgIGFuaW1hdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2UtaW4tb3V0OyB9IH1cblxuQGtleWZyYW1lcyBjbGlwLXJldmVyc2Uge1xuICA1MCUge1xuICAgIGNsaXA6IHJlY3QoMCwgNDhweCwgOXB4LCAyNHB4KTtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgxMzVkZWcpO1xuICAgIGFuaW1hdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2UtaW4tb3V0OyB9IH1cblxuQGtleWZyYW1lcyByb3RhdGUge1xuICBmcm9tIHtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgwKTtcbiAgICBhbmltYXRpb24tdGltaW5nLWZ1bmN0aW9uOiBlYXNlLW91dDsgfVxuICA0NSUge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDE4ZGVnKTtcbiAgICBjb2xvcjogd2hpdGU7IH1cbiAgNTUlIHtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSg1NGRlZyk7IH1cbiAgdG8ge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7IH0gfVxuIl19 */";
     var styles$5 = {"controlButton":"loader__controlButton___1YHb4","hidden":"loader__hidden___3MeyV","loader":"loader__loader___1J20N","rotate":"loader__rotate___3K3Iv","active":"loader__active___29tvY","clip":"loader__clip___1RIdi","clip-reverse":"loader__clip-reverse___20o6x"};
     styleInject(css$5);
 
@@ -7602,7 +12703,7 @@ function readCookie(cookieName) {
     var out='<div data-playable-hook="top-block" class="'+(props.styles.topBlock)+'"> <div class="'+(props.styles.background)+'" data-playable-hook="screen-top-background"> </div> <div class="'+(props.styles.elementsContainer)+'"> <div class="'+(props.styles.liveIndicatorContainer)+'" data-playable-hook="live-indicator-container"> </div> <div class="'+(props.styles.titleContainer)+'" data-playable-hook="title-container"> </div> </div></div>';return out;
     }
 
-    var css$7 = ".top-block__controlButton___2Irx0 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .top-block__controlButton___2Irx0:hover {\n    opacity: .7; }\n  .top-block__hidden___JNzhk {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .top-block__topBlock___2nOmO {\n  position: relative;\n  z-index: 60; }\n  .top-block__topBlock___2nOmO::-moz-focus-inner {\n    border: 0; }\n  .top-block__topBlock___2nOmO.top-block__activated___2ThkU .top-block__titleContainer___1gKBN,\n  .top-block__topBlock___2nOmO.top-block__activated___2ThkU .top-block__background___2RYBo {\n    opacity: 1; }\n  .top-block__liveIndicatorContainer___3wTlQ {\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0; }\n  .top-block__elementsContainer___11-A7 {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  margin-top: 20px;\n  margin-left: 20px;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .top-block__elementsContainer___11-A7 {\n    margin-top: 30px;\n    margin-left: 30px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .top-block__elementsContainer___11-A7 {\n    margin-top: 15px;\n    margin-left: 15px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"] .top-block__elementsContainer___11-A7 {\n    margin-top: 12px;\n    margin-left: 12px; }\n  .top-block__titleContainer___1gKBN {\n  max-width: calc(100% - 200px);\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  opacity: 0;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1; }\n  .top-block__background___2RYBo {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  height: 181px;\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  pointer-events: none;\n  opacity: 0;\n  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(24%, rgba(0, 0, 0, 0.03)), color-stop(50%, rgba(0, 0, 0, 0.15)), color-stop(75%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4)));\n  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03) 24%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.4));\n  background-size: 100% 182px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRvcC1ibG9jay5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGlDQUF5QjtVQUF6Qix5QkFBeUI7RUFDekIscUNBQTZCO0VBQTdCLDZCQUE2QjtFQUM3QixXQUFXO0VBQ1gsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsOEJBQThCO0VBQzlCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7RUFDdEI7SUFDRSxZQUFZLEVBQUU7RUFFbEI7RUFDRSw4QkFBOEI7RUFDOUIsb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4QixxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixzQkFBc0I7RUFDdEIsc0JBQXNCLEVBQUU7RUFFMUI7RUFDRSxtQkFBbUI7RUFDbkIsWUFBWSxFQUFFO0VBQ2Q7SUFDRSxVQUFVLEVBQUU7RUFDZDs7SUFFRSxXQUFXLEVBQUU7RUFFakI7RUFDRSxvQkFBYTtNQUFiLHFCQUFhO1VBQWIsYUFBYSxFQUFFO0VBRWpCO0VBQ0UsbUJBQW1CO0VBQ25CLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsK0JBQW9CO0VBQXBCLDhCQUFvQjtNQUFwQix3QkFBb0I7VUFBcEIsb0JBQW9CO0VBQ3BCLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLGlCQUFpQjtJQUNqQixrQkFBa0IsRUFBRTtFQUN0QjtJQUNFLGlCQUFpQjtJQUNqQixrQkFBa0IsRUFBRTtFQUN0QjtJQUNFLGlCQUFpQjtJQUNqQixrQkFBa0IsRUFBRTtFQUV4QjtFQUNFLDhCQUE4QjtFQUM5QixnQ0FBd0I7RUFBeEIsd0JBQXdCO0VBQ3hCLFdBQVc7RUFDWCxvQkFBYTtNQUFiLHFCQUFhO1VBQWIsYUFBYSxFQUFFO0VBRWpCO0VBQ0UsbUJBQW1CO0VBQ25CLE9BQU87RUFDUCxTQUFTO0VBQ1QsUUFBUTtFQUNSLGNBQWM7RUFDZCxnQ0FBd0I7RUFBeEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQixXQUFXO0VBQ1gsbU9BQTBKO0VBQTFKLDBKQUEwSjtFQUMxSiw0QkFBNEIsRUFBRSIsImZpbGUiOiJ0b3AtYmxvY2suc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250cm9sQnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgcGFkZGluZzogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAuMnM7XG4gIHRyYW5zaXRpb24tcHJvcGVydHk6IG9wYWNpdHk7XG4gIG9wYWNpdHk6IDE7XG4gIGJvcmRlcjogMDtcbiAgYm9yZGVyLXJhZGl1czogMDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5jb250cm9sQnV0dG9uOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAuNzsgfVxuXG4uaGlkZGVuIHtcbiAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XG4gIHdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIG1pbi13aWR0aDogMCAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWluLWhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtYXJnaW46IDAgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCAhaW1wb3J0YW50O1xuICBvcGFjaXR5OiAwICFpbXBvcnRhbnQ7IH1cblxuLnRvcEJsb2NrIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiA2MDsgfVxuICAudG9wQmxvY2s6Oi1tb3otZm9jdXMtaW5uZXIge1xuICAgIGJvcmRlcjogMDsgfVxuICAudG9wQmxvY2suYWN0aXZhdGVkIC50aXRsZUNvbnRhaW5lcixcbiAgLnRvcEJsb2NrLmFjdGl2YXRlZCAuYmFja2dyb3VuZCB7XG4gICAgb3BhY2l0eTogMTsgfVxuXG4ubGl2ZUluZGljYXRvckNvbnRhaW5lciB7XG4gIGZsZXgtZ3JvdzogMDsgfVxuXG4uZWxlbWVudHNDb250YWluZXIge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIG1hcmdpbi10b3A6IDIwcHg7XG4gIG1hcmdpbi1sZWZ0OiAyMHB4O1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLmVsZW1lbnRzQ29udGFpbmVyIHtcbiAgICBtYXJnaW4tdG9wOiAzMHB4O1xuICAgIG1hcmdpbi1sZWZ0OiAzMHB4OyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI1NTBweFwiXSAuZWxlbWVudHNDb250YWluZXIge1xuICAgIG1hcmdpbi10b3A6IDE1cHg7XG4gICAgbWFyZ2luLWxlZnQ6IDE1cHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjI4MHB4XCJdIC5lbGVtZW50c0NvbnRhaW5lciB7XG4gICAgbWFyZ2luLXRvcDogMTJweDtcbiAgICBtYXJnaW4tbGVmdDogMTJweDsgfVxuXG4udGl0bGVDb250YWluZXIge1xuICBtYXgtd2lkdGg6IGNhbGMoMTAwJSAtIDIwMHB4KTtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSAuMnM7XG4gIG9wYWNpdHk6IDA7XG4gIGZsZXgtZ3JvdzogMTsgfVxuXG4uYmFja2dyb3VuZCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICByaWdodDogMDtcbiAgbGVmdDogMDtcbiAgaGVpZ2h0OiAxODFweDtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSAuMnM7XG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xuICBvcGFjaXR5OiAwO1xuICBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQodG8gdG9wLCByZ2JhKDAsIDAsIDAsIDApLCByZ2JhKDAsIDAsIDAsIDAuMDMpIDI0JSwgcmdiYSgwLCAwLCAwLCAwLjE1KSA1MCUsIHJnYmEoMCwgMCwgMCwgMC4zKSA3NSUsIHJnYmEoMCwgMCwgMCwgMC40KSk7XG4gIGJhY2tncm91bmQtc2l6ZTogMTAwJSAxODJweDsgfVxuIl19 */";
+    var css$7 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.top-block__controlButton___2Irx0 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.top-block__controlButton___2Irx0:hover {\n    opacity: .7; }\n.top-block__hidden___JNzhk {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.top-block__topBlock___2nOmO {\n  position: relative;\n  z-index: 60; }\n.top-block__topBlock___2nOmO::-moz-focus-inner {\n    border: 0; }\n.top-block__topBlock___2nOmO.top-block__activated___2ThkU .top-block__titleContainer___1gKBN,\n  .top-block__topBlock___2nOmO.top-block__activated___2ThkU .top-block__background___2RYBo {\n    opacity: 1; }\n.top-block__liveIndicatorContainer___3wTlQ {\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0; }\n.top-block__elementsContainer___11-A7 {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  margin-top: 20px;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n[data-playable-hook='player-container'][data-playable-dir=\"ltr\"] .top-block__elementsContainer___11-A7 {\n    margin-left: 20px; }\n[data-playable-hook='player-container'][data-playable-dir=\"rtl\"] .top-block__elementsContainer___11-A7 {\n    margin-right: 20px;\n    direction: rtl; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .top-block__elementsContainer___11-A7 {\n    margin-top: 30px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"][data-playable-dir=\"ltr\"] .top-block__elementsContainer___11-A7 {\n    margin-left: 30px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"][data-playable-dir=\"rtl\"] .top-block__elementsContainer___11-A7 {\n    margin-right: 30px;\n    direction: rtl; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .top-block__elementsContainer___11-A7 {\n    margin-top: 15px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"][data-playable-dir=\"ltr\"] .top-block__elementsContainer___11-A7 {\n    margin-left: 15px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"][data-playable-dir=\"rtl\"] .top-block__elementsContainer___11-A7 {\n    margin-right: 15px;\n    direction: rtl; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"] .top-block__elementsContainer___11-A7 {\n    margin-top: 12px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"][data-playable-dir=\"ltr\"] .top-block__elementsContainer___11-A7 {\n    margin-left: 12px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"][data-playable-dir=\"rtl\"] .top-block__elementsContainer___11-A7 {\n    margin-right: 12px;\n    direction: rtl; }\n.top-block__titleContainer___1gKBN {\n  max-width: calc(100% - 200px);\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  opacity: 0;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1; }\n.top-block__background___2RYBo {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  height: 181px;\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  pointer-events: none;\n  opacity: 0;\n  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(24%, rgba(0, 0, 0, 0.03)), color-stop(50%, rgba(0, 0, 0, 0.15)), color-stop(75%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4)));\n  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03) 24%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.4));\n  background-size: 100% 182px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRvcC1ibG9jay5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7OztHQUtHO0FBQ0g7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtBQUN0QjtJQUNFLFlBQVksRUFBRTtBQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtBQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixZQUFZLEVBQUU7QUFDZDtJQUNFLFVBQVUsRUFBRTtBQUNkOztJQUVFLFdBQVcsRUFBRTtBQUVqQjtFQUNFLG9CQUFhO01BQWIscUJBQWE7VUFBYixhQUFhLEVBQUU7QUFFakI7RUFDRSxtQkFBbUI7RUFDbkIscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCwrQkFBb0I7RUFBcEIsOEJBQW9CO01BQXBCLHdCQUFvQjtVQUFwQixvQkFBb0I7RUFDcEIsaUJBQWlCO0VBQ2pCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7QUFDdEI7SUFDRSxrQkFBa0IsRUFBRTtBQUN0QjtJQUNFLG1CQUFtQjtJQUNuQixlQUFlLEVBQUU7QUFDbkI7SUFDRSxpQkFBaUIsRUFBRTtBQUNyQjtJQUNFLGtCQUFrQixFQUFFO0FBQ3RCO0lBQ0UsbUJBQW1CO0lBQ25CLGVBQWUsRUFBRTtBQUNuQjtJQUNFLGlCQUFpQixFQUFFO0FBQ3JCO0lBQ0Usa0JBQWtCLEVBQUU7QUFDdEI7SUFDRSxtQkFBbUI7SUFDbkIsZUFBZSxFQUFFO0FBQ25CO0lBQ0UsaUJBQWlCLEVBQUU7QUFDckI7SUFDRSxrQkFBa0IsRUFBRTtBQUN0QjtJQUNFLG1CQUFtQjtJQUNuQixlQUFlLEVBQUU7QUFFckI7RUFDRSw4QkFBOEI7RUFDOUIsZ0NBQXdCO0VBQXhCLHdCQUF3QjtFQUN4QixXQUFXO0VBQ1gsb0JBQWE7TUFBYixxQkFBYTtVQUFiLGFBQWEsRUFBRTtBQUVqQjtFQUNFLG1CQUFtQjtFQUNuQixPQUFPO0VBQ1AsU0FBUztFQUNULFFBQVE7RUFDUixjQUFjO0VBQ2QsZ0NBQXdCO0VBQXhCLHdCQUF3QjtFQUN4QixxQkFBcUI7RUFDckIsV0FBVztFQUNYLG1PQUEwSjtFQUExSiwwSkFBMEo7RUFDMUosNEJBQTRCLEVBQUUiLCJmaWxlIjoidG9wLWJsb2NrLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFRoZSBjaGFsbGVuZ2UgaGVyZSB0byBzdXBwb3J0IFwicGxheWFibGUgcXVlcmllc1wiIGFuZCBcImRpcmVjdGlvblwiIGF0IHRoZSBzYW1lIHRpbWUgYW5kIGFsbG93IG1peGlucyBsaWtlOlxuICogICBAaW5jbHVkZSBxdWVyeShtYXgtd2lkdGgtNTUwKCkpXG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSwgbHRyKCkpXG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSwgcnRsKCkpXG4gKi9cbi5jb250cm9sQnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgcGFkZGluZzogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAuMnM7XG4gIHRyYW5zaXRpb24tcHJvcGVydHk6IG9wYWNpdHk7XG4gIG9wYWNpdHk6IDE7XG4gIGJvcmRlcjogMDtcbiAgYm9yZGVyLXJhZGl1czogMDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5jb250cm9sQnV0dG9uOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAuNzsgfVxuXG4uaGlkZGVuIHtcbiAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XG4gIHdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIG1pbi13aWR0aDogMCAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWluLWhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtYXJnaW46IDAgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCAhaW1wb3J0YW50O1xuICBvcGFjaXR5OiAwICFpbXBvcnRhbnQ7IH1cblxuLnRvcEJsb2NrIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiA2MDsgfVxuICAudG9wQmxvY2s6Oi1tb3otZm9jdXMtaW5uZXIge1xuICAgIGJvcmRlcjogMDsgfVxuICAudG9wQmxvY2suYWN0aXZhdGVkIC50aXRsZUNvbnRhaW5lcixcbiAgLnRvcEJsb2NrLmFjdGl2YXRlZCAuYmFja2dyb3VuZCB7XG4gICAgb3BhY2l0eTogMTsgfVxuXG4ubGl2ZUluZGljYXRvckNvbnRhaW5lciB7XG4gIGZsZXgtZ3JvdzogMDsgfVxuXG4uZWxlbWVudHNDb250YWluZXIge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIG1hcmdpbi10b3A6IDIwcHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtZGlyPVwibHRyXCJdIC5lbGVtZW50c0NvbnRhaW5lciB7XG4gICAgbWFyZ2luLWxlZnQ6IDIwcHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtZGlyPVwicnRsXCJdIC5lbGVtZW50c0NvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyMHB4O1xuICAgIGRpcmVjdGlvbjogcnRsOyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAuZWxlbWVudHNDb250YWluZXIge1xuICAgIG1hcmdpbi10b3A6IDMwcHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdW2RhdGEtcGxheWFibGUtZGlyPVwibHRyXCJdIC5lbGVtZW50c0NvbnRhaW5lciB7XG4gICAgbWFyZ2luLWxlZnQ6IDMwcHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdW2RhdGEtcGxheWFibGUtZGlyPVwicnRsXCJdIC5lbGVtZW50c0NvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAzMHB4O1xuICAgIGRpcmVjdGlvbjogcnRsOyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI1NTBweFwiXSAuZWxlbWVudHNDb250YWluZXIge1xuICAgIG1hcmdpbi10b3A6IDE1cHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjU1MHB4XCJdW2RhdGEtcGxheWFibGUtZGlyPVwibHRyXCJdIC5lbGVtZW50c0NvbnRhaW5lciB7XG4gICAgbWFyZ2luLWxlZnQ6IDE1cHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjU1MHB4XCJdW2RhdGEtcGxheWFibGUtZGlyPVwicnRsXCJdIC5lbGVtZW50c0NvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xuICAgIGRpcmVjdGlvbjogcnRsOyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCIyODBweFwiXSAuZWxlbWVudHNDb250YWluZXIge1xuICAgIG1hcmdpbi10b3A6IDEycHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjI4MHB4XCJdW2RhdGEtcGxheWFibGUtZGlyPVwibHRyXCJdIC5lbGVtZW50c0NvbnRhaW5lciB7XG4gICAgbWFyZ2luLWxlZnQ6IDEycHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjI4MHB4XCJdW2RhdGEtcGxheWFibGUtZGlyPVwicnRsXCJdIC5lbGVtZW50c0NvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxMnB4O1xuICAgIGRpcmVjdGlvbjogcnRsOyB9XG5cbi50aXRsZUNvbnRhaW5lciB7XG4gIG1heC13aWR0aDogY2FsYygxMDAlIC0gMjAwcHgpO1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4ycztcbiAgb3BhY2l0eTogMDtcbiAgZmxleC1ncm93OiAxOyB9XG5cbi5iYWNrZ3JvdW5kIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBsZWZ0OiAwO1xuICBoZWlnaHQ6IDE4MXB4O1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4ycztcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIG9wYWNpdHk6IDA7XG4gIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCh0byB0b3AsIHJnYmEoMCwgMCwgMCwgMCksIHJnYmEoMCwgMCwgMCwgMC4wMykgMjQlLCByZ2JhKDAsIDAsIDAsIDAuMTUpIDUwJSwgcmdiYSgwLCAwLCAwLCAwLjMpIDc1JSwgcmdiYSgwLCAwLCAwLCAwLjQpKTtcbiAgYmFja2dyb3VuZC1zaXplOiAxMDAlIDE4MnB4OyB9XG4iXX0= */";
     var styles$7 = {"controlButton":"top-block__controlButton___2Irx0","hidden":"top-block__hidden___JNzhk","topBlock":"top-block__topBlock___2nOmO","activated":"top-block__activated___2ThkU","titleContainer":"top-block__titleContainer___1gKBN","background":"top-block__background___2RYBo","liveIndicatorContainer":"top-block__liveIndicatorContainer___3wTlQ","elementsContainer":"top-block__elementsContainer___11-A7"};
     styleInject(css$7);
 
@@ -7778,7 +12879,7 @@ function readCookie(cookieName) {
         },
     };
 
-    var css$8 = ".title__controlButton___tyPdk {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .title__controlButton___tyPdk:hover {\n    opacity: .7; }\n  .title__hidden___3SyPm {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .title__title___324Zx {\n  font-size: 16px;\n  line-height: 17px;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .title__title___324Zx {\n    font-size: 14px;\n    line-height: 15px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"300px\"] .title__title___324Zx {\n    font-size: 12px;\n    line-height: 13px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .title__title___324Zx {\n    font-size: 20px;\n    line-height: 20px; }\n  .title__title___324Zx.title__link___2x3nu {\n    cursor: pointer; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRpdGxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLFlBQVksRUFBRTtFQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtFQUUxQjtFQUNFLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLG9CQUFvQjtFQUNwQix3QkFBd0IsRUFBRTtFQUMxQjtJQUNFLGdCQUFnQjtJQUNoQixrQkFBa0IsRUFBRTtFQUN0QjtJQUNFLGdCQUFnQjtJQUNoQixrQkFBa0IsRUFBRTtFQUN0QjtJQUNFLGdCQUFnQjtJQUNoQixrQkFBa0IsRUFBRTtFQUN0QjtJQUNFLGdCQUFnQixFQUFFIiwiZmlsZSI6InRpdGxlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udHJvbEJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmc6IDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogLjJzO1xuICB0cmFuc2l0aW9uLXByb3BlcnR5OiBvcGFjaXR5O1xuICBvcGFjaXR5OiAxO1xuICBib3JkZXI6IDA7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAuY29udHJvbEJ1dHRvbjpob3ZlciB7XG4gICAgb3BhY2l0eTogLjc7IH1cblxuLmhpZGRlbiB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbiAhaW1wb3J0YW50O1xuICB3aWR0aDogMCAhaW1wb3J0YW50O1xuICBtaW4td2lkdGg6IDAgIWltcG9ydGFudDtcbiAgaGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1pbi1oZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWFyZ2luOiAwICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmc6IDAgIWltcG9ydGFudDtcbiAgb3BhY2l0eTogMCAhaW1wb3J0YW50OyB9XG5cbi50aXRsZSB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgbGluZS1oZWlnaHQ6IDE3cHg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzOyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI1NTBweFwiXSAudGl0bGUge1xuICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICBsaW5lLWhlaWdodDogMTVweDsgfVxuICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1tYXgtd2lkdGh+PVwiMzAwcHhcIl0gLnRpdGxlIHtcbiAgICBmb250LXNpemU6IDEycHg7XG4gICAgbGluZS1oZWlnaHQ6IDEzcHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAudGl0bGUge1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBsaW5lLWhlaWdodDogMjBweDsgfVxuICAudGl0bGUubGluayB7XG4gICAgY3Vyc29yOiBwb2ludGVyOyB9XG4iXX0= */";
+    var css$8 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.title__controlButton___tyPdk {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.title__controlButton___tyPdk:hover {\n    opacity: .7; }\n.title__hidden___3SyPm {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.title__title___324Zx {\n  font-size: 16px;\n  line-height: 17px;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .title__title___324Zx {\n    font-size: 14px;\n    line-height: 15px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"300px\"] .title__title___324Zx {\n    font-size: 12px;\n    line-height: 13px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .title__title___324Zx {\n    font-size: 20px;\n    line-height: 20px; }\n.title__title___324Zx.title__link___2x3nu {\n    cursor: pointer; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRpdGxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0dBS0c7QUFDSDtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0FBQ3RCO0lBQ0UsWUFBWSxFQUFFO0FBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0FBRTFCO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsb0JBQW9CO0VBQ3BCLHdCQUF3QixFQUFFO0FBQzFCO0lBQ0UsZ0JBQWdCO0lBQ2hCLGtCQUFrQixFQUFFO0FBQ3RCO0lBQ0UsZ0JBQWdCO0lBQ2hCLGtCQUFrQixFQUFFO0FBQ3RCO0lBQ0UsZ0JBQWdCO0lBQ2hCLGtCQUFrQixFQUFFO0FBQ3RCO0lBQ0UsZ0JBQWdCLEVBQUUiLCJmaWxlIjoidGl0bGUuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIGNoYWxsZW5nZSBoZXJlIHRvIHN1cHBvcnQgXCJwbGF5YWJsZSBxdWVyaWVzXCIgYW5kIFwiZGlyZWN0aW9uXCIgYXQgdGhlIHNhbWUgdGltZSBhbmQgYWxsb3cgbWl4aW5zIGxpa2U6XG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBsdHIoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBydGwoKSlcbiAqL1xuLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4udGl0bGUge1xuICBmb250LXNpemU6IDE2cHg7XG4gIGxpbmUtaGVpZ2h0OiAxN3B4O1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpczsgfVxuICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1tYXgtd2lkdGh+PVwiNTUwcHhcIl0gLnRpdGxlIHtcbiAgICBmb250LXNpemU6IDE0cHg7XG4gICAgbGluZS1oZWlnaHQ6IDE1cHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjMwMHB4XCJdIC50aXRsZSB7XG4gICAgZm9udC1zaXplOiAxMnB4O1xuICAgIGxpbmUtaGVpZ2h0OiAxM3B4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAudGl0bGUge1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBsaW5lLWhlaWdodDogMjBweDsgfVxuICAudGl0bGUubGluayB7XG4gICAgY3Vyc29yOiBwb2ludGVyOyB9XG4iXX0= */";
     var styles$8 = {"controlButton":"title__controlButton___tyPdk","hidden":"title__hidden___3SyPm","title":"title__title___324Zx","link":"title__link___2x3nu"};
     styleInject(css$8);
 
@@ -7924,7 +13025,7 @@ function readCookie(cookieName) {
     var out='<div class="'+(props.styles.liveIndicator)+' '+(props.styles.hidden)+'"> <button tabindex="0" class="'+(props.styles.liveIndicatorButton)+'" aria-label="'+(props.texts.label || '')+'" data-playable-hook="live-indicator-button"> '+(props.texts.text || '')+' </button></div>';return out;
     }
 
-    var css$9 = ".live-indicator__controlButton___1FH60 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .live-indicator__controlButton___1FH60:hover {\n    opacity: .7; }\n  .live-indicator__hidden___1MQc0 {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .live-indicator__liveIndicator___3Vudz {\n  position: relative;\n  margin-right: 15px;\n  -webkit-transition: background-color .2s;\n  transition: background-color .2s;\n  background-color: #959595; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .live-indicator__liveIndicator___3Vudz {\n    margin-right: 20px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .live-indicator__liveIndicator___3Vudz {\n    margin-right: 10px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"] .live-indicator__liveIndicator___3Vudz {\n    margin-right: 10px;\n    padding: 2px 3px; }\n  .live-indicator__liveIndicator___3Vudz.live-indicator__ended___18KqE {\n    cursor: default; }\n  .live-indicator__liveIndicator___3Vudz:hover:not(.live-indicator__ended___18KqE), .live-indicator__liveIndicator___3Vudz.live-indicator__active___2Lobb {\n    background-color: #ea492e; }\n  .live-indicator__clickable___2efwz {\n  cursor: pointer; }\n  button.live-indicator__liveIndicatorButton___fQcZU {\n  font-size: 12px;\n  line-height: 14px;\n  padding: 5px 6px;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  text-transform: uppercase !important;\n  color: #fff;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"] button.live-indicator__liveIndicatorButton___fQcZU {\n    font-size: 10px;\n    line-height: 12px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxpdmUtaW5kaWNhdG9yLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLFlBQVksRUFBRTtFQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtFQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixtQkFBbUI7RUFDbkIseUNBQWlDO0VBQWpDLGlDQUFpQztFQUNqQywwQkFBMEIsRUFBRTtFQUM1QjtJQUNFLG1CQUFtQixFQUFFO0VBQ3ZCO0lBQ0UsbUJBQW1CLEVBQUU7RUFDdkI7SUFDRSxtQkFBbUI7SUFDbkIsaUJBQWlCLEVBQUU7RUFDckI7SUFDRSxnQkFBZ0IsRUFBRTtFQUNwQjtJQUNFLDBCQUEwQixFQUFFO0VBRWhDO0VBQ0UsZ0JBQWdCLEVBQUU7RUFFcEI7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQiwwQkFBa0I7S0FBbEIsdUJBQWtCO01BQWxCLHNCQUFrQjtVQUFsQixrQkFBa0I7RUFDbEIscUNBQXFDO0VBQ3JDLFlBQVk7RUFDWixVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEIsRUFBRTtFQUNoQztJQUNFLGdCQUFnQjtJQUNoQixrQkFBa0IsRUFBRSIsImZpbGUiOiJsaXZlLWluZGljYXRvci5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4ubGl2ZUluZGljYXRvciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xuICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWNvbG9yIC4ycztcbiAgYmFja2dyb3VuZC1jb2xvcjogIzk1OTU5NTsgfVxuICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj0ndHJ1ZSddIC5saXZlSW5kaWNhdG9yIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDIwcHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjU1MHB4XCJdIC5saXZlSW5kaWNhdG9yIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjI4MHB4XCJdIC5saXZlSW5kaWNhdG9yIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG4gICAgcGFkZGluZzogMnB4IDNweDsgfVxuICAubGl2ZUluZGljYXRvci5lbmRlZCB7XG4gICAgY3Vyc29yOiBkZWZhdWx0OyB9XG4gIC5saXZlSW5kaWNhdG9yOmhvdmVyOm5vdCguZW5kZWQpLCAubGl2ZUluZGljYXRvci5hY3RpdmUge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNlYTQ5MmU7IH1cblxuLmNsaWNrYWJsZSB7XG4gIGN1cnNvcjogcG9pbnRlcjsgfVxuXG5idXR0b24ubGl2ZUluZGljYXRvckJ1dHRvbiB7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgbGluZS1oZWlnaHQ6IDE0cHg7XG4gIHBhZGRpbmc6IDVweCA2cHg7XG4gIHVzZXItc2VsZWN0OiBub25lO1xuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlICFpbXBvcnRhbnQ7XG4gIGNvbG9yOiAjZmZmO1xuICBib3JkZXI6IDA7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50OyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCIyODBweFwiXSBidXR0b24ubGl2ZUluZGljYXRvckJ1dHRvbiB7XG4gICAgZm9udC1zaXplOiAxMHB4O1xuICAgIGxpbmUtaGVpZ2h0OiAxMnB4OyB9XG4iXX0= */";
+    var css$9 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.live-indicator__controlButton___1FH60 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.live-indicator__controlButton___1FH60:hover {\n    opacity: .7; }\n.live-indicator__hidden___1MQc0 {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.live-indicator__liveIndicator___3Vudz {\n  position: relative;\n  -webkit-transition: background-color .2s;\n  transition: background-color .2s;\n  background-color: #959595; }\n[data-playable-hook='player-container'][data-playable-dir=\"ltr\"] .live-indicator__liveIndicator___3Vudz {\n    margin-right: 15px;\n    direction: ltr; }\n[data-playable-hook='player-container'][data-playable-dir=\"rtl\"] .live-indicator__liveIndicator___3Vudz {\n    margin-left: 15px;\n    direction: rtl; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"][data-playable-dir=\"ltr\"] .live-indicator__liveIndicator___3Vudz {\n    margin-right: 20px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"][data-playable-dir=\"rtl\"] .live-indicator__liveIndicator___3Vudz {\n    margin-left: 20px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"][data-playable-dir=\"ltr\"] .live-indicator__liveIndicator___3Vudz {\n    margin-right: 10px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"][data-playable-dir=\"rtl\"] .live-indicator__liveIndicator___3Vudz {\n    margin-left: 10px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"] .live-indicator__liveIndicator___3Vudz {\n    padding: 2px 3px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"][data-playable-dir=\"ltr\"] .live-indicator__liveIndicator___3Vudz {\n    margin-right: 10px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"][data-playable-dir=\"rtl\"] .live-indicator__liveIndicator___3Vudz {\n    margin-left: 10px; }\n.live-indicator__liveIndicator___3Vudz.live-indicator__ended___18KqE {\n    cursor: default; }\n.live-indicator__liveIndicator___3Vudz:hover:not(.live-indicator__ended___18KqE), .live-indicator__liveIndicator___3Vudz.live-indicator__active___2Lobb {\n    background-color: #ea492e; }\n.live-indicator__clickable___2efwz {\n  cursor: pointer; }\nbutton.live-indicator__liveIndicatorButton___fQcZU {\n  font-size: 12px;\n  line-height: 14px;\n  padding: 5px 6px;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  text-transform: uppercase !important;\n  color: #fff;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"] button.live-indicator__liveIndicatorButton___fQcZU {\n    font-size: 10px;\n    line-height: 12px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxpdmUtaW5kaWNhdG9yLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0dBS0c7QUFDSDtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0FBQ3RCO0lBQ0UsWUFBWSxFQUFFO0FBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0FBRTFCO0VBQ0UsbUJBQW1CO0VBQ25CLHlDQUFpQztFQUFqQyxpQ0FBaUM7RUFDakMsMEJBQTBCLEVBQUU7QUFDNUI7SUFDRSxtQkFBbUI7SUFDbkIsZUFBZSxFQUFFO0FBQ25CO0lBQ0Usa0JBQWtCO0lBQ2xCLGVBQWUsRUFBRTtBQUNuQjtJQUNFLG1CQUFtQixFQUFFO0FBQ3ZCO0lBQ0Usa0JBQWtCLEVBQUU7QUFDdEI7SUFDRSxtQkFBbUIsRUFBRTtBQUN2QjtJQUNFLGtCQUFrQixFQUFFO0FBQ3RCO0lBQ0UsaUJBQWlCLEVBQUU7QUFDckI7SUFDRSxtQkFBbUIsRUFBRTtBQUN2QjtJQUNFLGtCQUFrQixFQUFFO0FBQ3RCO0lBQ0UsZ0JBQWdCLEVBQUU7QUFDcEI7SUFDRSwwQkFBMEIsRUFBRTtBQUVoQztFQUNFLGdCQUFnQixFQUFFO0FBRXBCO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsMEJBQWtCO0tBQWxCLHVCQUFrQjtNQUFsQixzQkFBa0I7VUFBbEIsa0JBQWtCO0VBQ2xCLHFDQUFxQztFQUNyQyxZQUFZO0VBQ1osVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsOEJBQThCLEVBQUU7QUFDaEM7SUFDRSxnQkFBZ0I7SUFDaEIsa0JBQWtCLEVBQUUiLCJmaWxlIjoibGl2ZS1pbmRpY2F0b3Iuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIGNoYWxsZW5nZSBoZXJlIHRvIHN1cHBvcnQgXCJwbGF5YWJsZSBxdWVyaWVzXCIgYW5kIFwiZGlyZWN0aW9uXCIgYXQgdGhlIHNhbWUgdGltZSBhbmQgYWxsb3cgbWl4aW5zIGxpa2U6XG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBsdHIoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBydGwoKSlcbiAqL1xuLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4ubGl2ZUluZGljYXRvciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMnM7XG4gIGJhY2tncm91bmQtY29sb3I6ICM5NTk1OTU7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtZGlyPVwibHRyXCJdIC5saXZlSW5kaWNhdG9yIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDE1cHg7XG4gICAgZGlyZWN0aW9uOiBsdHI7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtZGlyPVwicnRsXCJdIC5saXZlSW5kaWNhdG9yIHtcbiAgICBtYXJnaW4tbGVmdDogMTVweDtcbiAgICBkaXJlY3Rpb246IHJ0bDsgfVxuICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl1bZGF0YS1wbGF5YWJsZS1kaXI9XCJsdHJcIl0gLmxpdmVJbmRpY2F0b3Ige1xuICAgIG1hcmdpbi1yaWdodDogMjBweDsgfVxuICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl1bZGF0YS1wbGF5YWJsZS1kaXI9XCJydGxcIl0gLmxpdmVJbmRpY2F0b3Ige1xuICAgIG1hcmdpbi1sZWZ0OiAyMHB4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI1NTBweFwiXVtkYXRhLXBsYXlhYmxlLWRpcj1cImx0clwiXSAubGl2ZUluZGljYXRvciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxMHB4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI1NTBweFwiXVtkYXRhLXBsYXlhYmxlLWRpcj1cInJ0bFwiXSAubGl2ZUluZGljYXRvciB7XG4gICAgbWFyZ2luLWxlZnQ6IDEwcHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjI4MHB4XCJdIC5saXZlSW5kaWNhdG9yIHtcbiAgICBwYWRkaW5nOiAycHggM3B4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCIyODBweFwiXVtkYXRhLXBsYXlhYmxlLWRpcj1cImx0clwiXSAubGl2ZUluZGljYXRvciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxMHB4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCIyODBweFwiXVtkYXRhLXBsYXlhYmxlLWRpcj1cInJ0bFwiXSAubGl2ZUluZGljYXRvciB7XG4gICAgbWFyZ2luLWxlZnQ6IDEwcHg7IH1cbiAgLmxpdmVJbmRpY2F0b3IuZW5kZWQge1xuICAgIGN1cnNvcjogZGVmYXVsdDsgfVxuICAubGl2ZUluZGljYXRvcjpob3Zlcjpub3QoLmVuZGVkKSwgLmxpdmVJbmRpY2F0b3IuYWN0aXZlIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZWE0OTJlOyB9XG5cbi5jbGlja2FibGUge1xuICBjdXJzb3I6IHBvaW50ZXI7IH1cblxuYnV0dG9uLmxpdmVJbmRpY2F0b3JCdXR0b24ge1xuICBmb250LXNpemU6IDEycHg7XG4gIGxpbmUtaGVpZ2h0OiAxNHB4O1xuICBwYWRkaW5nOiA1cHggNnB4O1xuICB1c2VyLXNlbGVjdDogbm9uZTtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZSAhaW1wb3J0YW50O1xuICBjb2xvcjogI2ZmZjtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgfVxuICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1tYXgtd2lkdGh+PVwiMjgwcHhcIl0gYnV0dG9uLmxpdmVJbmRpY2F0b3JCdXR0b24ge1xuICAgIGZvbnQtc2l6ZTogMTBweDtcbiAgICBsaW5lLWhlaWdodDogMTJweDsgfVxuIl19 */";
     var styles$9 = {"controlButton":"live-indicator__controlButton___1FH60","hidden":"live-indicator__hidden___1MQc0","liveIndicator":"live-indicator__liveIndicator___3Vudz","ended":"live-indicator__ended___18KqE","active":"live-indicator__active___2Lobb","clickable":"live-indicator__clickable___2efwz","liveIndicatorButton":"live-indicator__liveIndicatorButton___fQcZU"};
     styleInject(css$9);
 
@@ -8152,7 +13253,7 @@ function readCookie(cookieName) {
     var out='<div data-playable-hook="bottom-block" class="'+(props.styles.bottomBlock)+'"> <div class="'+(props.styles.background)+'" data-playable-hook="screen-bottom-background"> </div> <div class="'+(props.styles.progressBarContainer)+'" data-playable-hook="progress-bar-container"> </div> <div class="'+(props.styles.elementsContainer)+'"> <div class="'+(props.styles.controlsContainerLeft)+'" data-playable-hook="controls-container-left"> <div class="'+(props.styles.playContainer)+'" data-playable-hook="play-container"> </div> <div class="'+(props.styles.volumeContainer)+'" data-playable-hook="volume-container"> </div> <div class="'+(props.styles.timeContainer)+'" data-playable-hook="time-container"> </div> </div> <div class="'+(props.styles.controlsContainerRight)+'" data-playable-hook="controls-container-right"> <div class="'+(props.styles.pictureInPictureContainer)+'" data-playable-hook="picture-in-picture-container"> </div> <div class="'+(props.styles.downloadContainer)+'" data-playable-hook="download-container"> </div> <div class="'+(props.styles.fullScreenContainer)+'" data-playable-hook="full-screen-container"> </div> </div> <div class="'+(props.styles.logoContainer)+'" data-playable-hook="logo-container"> </div> </div></div>';return out;
     }
 
-    var css$10 = ".bottom-block__controlButton___2zYHZ {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .bottom-block__controlButton___2zYHZ:hover {\n    opacity: .7; }\n  .bottom-block__hidden___361S0 {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .bottom-block__bottomBlock___3Y_rW {\n  z-index: 60;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n  .bottom-block__bottomBlock___3Y_rW::-moz-focus-inner {\n    border: 0; }\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__activated___YvJ-R .bottom-block__progressBarContainer___2CxAg,\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__activated___YvJ-R .bottom-block__controlsContainerLeft___2Ozxp,\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__activated___YvJ-R .bottom-block__controlsContainerRight___qaM9T,\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__activated___YvJ-R .bottom-block__logoContainer___1esHz,\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__activated___YvJ-R .bottom-block__background___2ZL6j {\n    opacity: 1; }\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__showLogoAlways___2bJeD .bottom-block__logoContainer___1esHz {\n    opacity: 1; }\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__logoHidden___2N6oy .bottom-block__fullScreenContainer___3q_py {\n    margin-right: 14px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .bottom-block__bottomBlock___3Y_rW.bottom-block__logoHidden___2N6oy .bottom-block__fullScreenContainer___3q_py {\n      margin-right: 7px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .bottom-block__bottomBlock___3Y_rW.bottom-block__logoHidden___2N6oy .bottom-block__fullScreenContainer___3q_py {\n      margin-right: 25px; }\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__logoHidden___2N6oy .bottom-block__logoContainer___1esHz {\n    display: none; }\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__playControlHidden___1mEi9 .bottom-block__playContainer___25g5A {\n    display: none; }\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__timeControlHidden___32pcE .bottom-block__timeContainer___2N6cy {\n    display: none; }\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__volumeControlHidden___41JXw .bottom-block__volumeContainer___1Zwk- {\n    display: none; }\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__fullScreenControlHidden___1jT2c .bottom-block__fullScreenContainer___3q_py {\n    display: none; }\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__progressControlHidden___1rhHL .bottom-block__progressBarContainer___2CxAg {\n    display: none; }\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__downloadButtonHidden___qisqf .bottom-block__downloadContainer___2Gxyu {\n    display: none; }\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__pictureInPictureButtonHidden___WY-f5 .bottom-block__pictureInPictureContainer___tOmqU {\n    display: none; }\n  .bottom-block__elementsContainer___1MGej {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 100%;\n  -webkit-box-flex: 2;\n      -ms-flex-positive: 2;\n          flex-grow: 2; }\n  .bottom-block__progressBarContainer___2CxAg {\n  position: relative;\n  top: 2px;\n  padding: 0 20px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .bottom-block__progressBarContainer___2CxAg {\n    top: 3px;\n    padding: 0 30px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .bottom-block__progressBarContainer___2CxAg {\n    padding: 0 15px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"] .bottom-block__progressBarContainer___2CxAg {\n    padding: 0 12px; }\n  .bottom-block__progressBarContainer___2CxAg,\n.bottom-block__controlsContainerLeft___2Ozxp,\n.bottom-block__controlsContainerRight___qaM9T,\n.bottom-block__logoContainer___1esHz {\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  opacity: 0; }\n  .bottom-block__controlsContainerRight___qaM9T,\n.bottom-block__controlsContainerLeft___2Ozxp {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 100%;\n  max-width: 100%;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .bottom-block__controlsContainerRight___qaM9T {\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end; }\n  .bottom-block__controlsContainerRight___qaM9T,\n.bottom-block__controlsContainerLeft___2Ozxp,\n.bottom-block__logoContainer___1esHz {\n  height: 54px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .bottom-block__controlsContainerRight___qaM9T, div[data-playable-hook='player-container'][data-playable-in-full-screen='true']\n  .bottom-block__controlsContainerLeft___2Ozxp, div[data-playable-hook='player-container'][data-playable-in-full-screen='true']\n  .bottom-block__logoContainer___1esHz {\n    height: 80px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .bottom-block__controlsContainerRight___qaM9T, div[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"]\n  .bottom-block__controlsContainerLeft___2Ozxp, div[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"]\n  .bottom-block__logoContainer___1esHz {\n    height: 42px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"350px\"] .bottom-block__controlsContainerRight___qaM9T, div[data-playable-hook='player-container'][data-playable-max-width~=\"350px\"]\n  .bottom-block__controlsContainerLeft___2Ozxp, div[data-playable-hook='player-container'][data-playable-max-width~=\"350px\"]\n  .bottom-block__logoContainer___1esHz {\n    height: 36px; }\n  .bottom-block__playContainer___25g5A {\n  margin-right: 9px;\n  margin-left: 13px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .bottom-block__playContainer___25g5A {\n    margin-right: 20px;\n    margin-left: 20px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .bottom-block__playContainer___25g5A {\n    margin-left: 7px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"] .bottom-block__playContainer___25g5A {\n    margin-left: 4px; }\n  .bottom-block__volumeContainer___1Zwk- {\n  margin-right: 15px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .bottom-block__volumeContainer___1Zwk- {\n    margin-right: 20px; }\n  .bottom-block__timeContainer___2N6cy {\n  margin-right: 18px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .bottom-block__timeContainer___2N6cy {\n    margin-right: 30px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"400px\"] .bottom-block__timeContainer___2N6cy {\n    display: none; }\n  .bottom-block__downloadContainer___2Gxyu {\n  margin-right: 8px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .bottom-block__downloadContainer___2Gxyu {\n    margin-right: 18px; }\n  .bottom-block__fullScreenContainer___3q_py {\n  margin-right: 8px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .bottom-block__fullScreenContainer___3q_py {\n    margin-right: 18px; }\n  .bottom-block__pictureInPictureContainer___tOmqU {\n  margin-right: 8px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .bottom-block__pictureInPictureContainer___tOmqU {\n    margin-right: 18px; }\n  .bottom-block__logoContainer___1esHz {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-right: 14px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .bottom-block__logoContainer___1esHz {\n    margin-right: 9px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .bottom-block__logoContainer___1esHz {\n    margin-right: 23px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"] .bottom-block__logoContainer___1esHz {\n    margin-right: 12px; }\n  .bottom-block__additionalButton___39M0e {\n  margin-right: 8px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .bottom-block__additionalButton___39M0e {\n    margin-right: 18px; }\n  .bottom-block__background___2ZL6j {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  height: 181px;\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  pointer-events: none;\n  opacity: 0;\n  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(24%, rgba(0, 0, 0, 0.03)), color-stop(50%, rgba(0, 0, 0, 0.15)), color-stop(75%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4)));\n  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03) 24%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.4));\n  background-size: 100% 182px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJvdHRvbS1ibG9jay5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGlDQUF5QjtVQUF6Qix5QkFBeUI7RUFDekIscUNBQTZCO0VBQTdCLDZCQUE2QjtFQUM3QixXQUFXO0VBQ1gsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsOEJBQThCO0VBQzlCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7RUFDdEI7SUFDRSxZQUFZLEVBQUU7RUFFbEI7RUFDRSw4QkFBOEI7RUFDOUIsb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4QixxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixzQkFBc0I7RUFDdEIsc0JBQXNCLEVBQUU7RUFFMUI7RUFDRSxZQUFZO0VBQ1oscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCw2QkFBdUI7RUFBdkIsOEJBQXVCO01BQXZCLDJCQUF1QjtVQUF2Qix1QkFBdUIsRUFBRTtFQUN6QjtJQUNFLFVBQVUsRUFBRTtFQUNkOzs7OztJQUtFLFdBQVcsRUFBRTtFQUNmO0lBQ0UsV0FBVyxFQUFFO0VBQ2Y7SUFDRSxtQkFBbUIsRUFBRTtFQUNyQjtNQUNFLGtCQUFrQixFQUFFO0VBQ3RCO01BQ0UsbUJBQW1CLEVBQUU7RUFDekI7SUFDRSxjQUFjLEVBQUU7RUFDbEI7SUFDRSxjQUFjLEVBQUU7RUFDbEI7SUFDRSxjQUFjLEVBQUU7RUFDbEI7SUFDRSxjQUFjLEVBQUU7RUFDbEI7SUFDRSxjQUFjLEVBQUU7RUFDbEI7SUFDRSxjQUFjLEVBQUU7RUFDbEI7SUFDRSxjQUFjLEVBQUU7RUFDbEI7SUFDRSxjQUFjLEVBQUU7RUFFcEI7RUFDRSxtQkFBbUI7RUFDbkIscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxZQUFZO0VBQ1osb0JBQWE7TUFBYixxQkFBYTtVQUFiLGFBQWEsRUFBRTtFQUVqQjtFQUNFLG1CQUFtQjtFQUNuQixTQUFTO0VBQ1QsZ0JBQWdCLEVBQUU7RUFDbEI7SUFDRSxTQUFTO0lBQ1QsZ0JBQWdCLEVBQUU7RUFDcEI7SUFDRSxnQkFBZ0IsRUFBRTtFQUNwQjtJQUNFLGdCQUFnQixFQUFFO0VBRXRCOzs7O0VBSUUsZ0NBQXdCO0VBQXhCLHdCQUF3QjtFQUN4QixXQUFXLEVBQUU7RUFFZjs7RUFFRSxtQkFBbUI7RUFDbkIscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxvQkFBUTtNQUFSLFlBQVE7VUFBUixRQUFRO0VBQ1IsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0VBRXhCO0VBQ0Usc0JBQTBCO01BQTFCLG1CQUEwQjtVQUExQiwwQkFBMEIsRUFBRTtFQUU5Qjs7O0VBR0UsYUFBYSxFQUFFO0VBQ2Y7OztJQUdFLGFBQWEsRUFBRTtFQUNqQjs7O0lBR0UsYUFBYSxFQUFFO0VBQ2pCOzs7SUFHRSxhQUFhLEVBQUU7RUFFbkI7RUFDRSxrQkFBa0I7RUFDbEIsa0JBQWtCLEVBQUU7RUFDcEI7SUFDRSxtQkFBbUI7SUFDbkIsa0JBQWtCLEVBQUU7RUFDdEI7SUFDRSxpQkFBaUIsRUFBRTtFQUNyQjtJQUNFLGlCQUFpQixFQUFFO0VBRXZCO0VBQ0UsbUJBQW1CLEVBQUU7RUFDckI7SUFDRSxtQkFBbUIsRUFBRTtFQUV6QjtFQUNFLG1CQUFtQixFQUFFO0VBQ3JCO0lBQ0UsbUJBQW1CLEVBQUU7RUFDdkI7SUFDRSxjQUFjLEVBQUU7RUFFcEI7RUFDRSxrQkFBa0IsRUFBRTtFQUNwQjtJQUNFLG1CQUFtQixFQUFFO0VBRXpCO0VBQ0Usa0JBQWtCLEVBQUU7RUFDcEI7SUFDRSxtQkFBbUIsRUFBRTtFQUV6QjtFQUNFLGtCQUFrQixFQUFFO0VBQ3BCO0lBQ0UsbUJBQW1CLEVBQUU7RUFFekI7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLG1CQUFtQixFQUFFO0VBQ3JCO0lBQ0Usa0JBQWtCLEVBQUU7RUFDdEI7SUFDRSxtQkFBbUIsRUFBRTtFQUN2QjtJQUNFLG1CQUFtQixFQUFFO0VBRXpCO0VBQ0Usa0JBQWtCLEVBQUU7RUFDcEI7SUFDRSxtQkFBbUIsRUFBRTtFQUV6QjtFQUNFLG1CQUFtQjtFQUNuQixTQUFTO0VBQ1QsVUFBVTtFQUNWLFFBQVE7RUFDUixjQUFjO0VBQ2QsZ0NBQXdCO0VBQXhCLHdCQUF3QjtFQUN4QixxQkFBcUI7RUFDckIsV0FBVztFQUNYLG1PQUE2SjtFQUE3Siw2SkFBNko7RUFDN0osNEJBQTRCLEVBQUUiLCJmaWxlIjoiYm90dG9tLWJsb2NrLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udHJvbEJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmc6IDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogLjJzO1xuICB0cmFuc2l0aW9uLXByb3BlcnR5OiBvcGFjaXR5O1xuICBvcGFjaXR5OiAxO1xuICBib3JkZXI6IDA7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAuY29udHJvbEJ1dHRvbjpob3ZlciB7XG4gICAgb3BhY2l0eTogLjc7IH1cblxuLmhpZGRlbiB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbiAhaW1wb3J0YW50O1xuICB3aWR0aDogMCAhaW1wb3J0YW50O1xuICBtaW4td2lkdGg6IDAgIWltcG9ydGFudDtcbiAgaGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1pbi1oZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWFyZ2luOiAwICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmc6IDAgIWltcG9ydGFudDtcbiAgb3BhY2l0eTogMCAhaW1wb3J0YW50OyB9XG5cbi5ib3R0b21CbG9jayB7XG4gIHotaW5kZXg6IDYwO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uOyB9XG4gIC5ib3R0b21CbG9jazo6LW1vei1mb2N1cy1pbm5lciB7XG4gICAgYm9yZGVyOiAwOyB9XG4gIC5ib3R0b21CbG9jay5hY3RpdmF0ZWQgLnByb2dyZXNzQmFyQ29udGFpbmVyLFxuICAuYm90dG9tQmxvY2suYWN0aXZhdGVkIC5jb250cm9sc0NvbnRhaW5lckxlZnQsXG4gIC5ib3R0b21CbG9jay5hY3RpdmF0ZWQgLmNvbnRyb2xzQ29udGFpbmVyUmlnaHQsXG4gIC5ib3R0b21CbG9jay5hY3RpdmF0ZWQgLmxvZ29Db250YWluZXIsXG4gIC5ib3R0b21CbG9jay5hY3RpdmF0ZWQgLmJhY2tncm91bmQge1xuICAgIG9wYWNpdHk6IDE7IH1cbiAgLmJvdHRvbUJsb2NrLnNob3dMb2dvQWx3YXlzIC5sb2dvQ29udGFpbmVyIHtcbiAgICBvcGFjaXR5OiAxOyB9XG4gIC5ib3R0b21CbG9jay5sb2dvSGlkZGVuIC5mdWxsU2NyZWVuQ29udGFpbmVyIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDE0cHg7IH1cbiAgICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1tYXgtd2lkdGh+PVwiNTUwcHhcIl0gLmJvdHRvbUJsb2NrLmxvZ29IaWRkZW4gLmZ1bGxTY3JlZW5Db250YWluZXIge1xuICAgICAgbWFyZ2luLXJpZ2h0OiA3cHg7IH1cbiAgICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj0ndHJ1ZSddIC5ib3R0b21CbG9jay5sb2dvSGlkZGVuIC5mdWxsU2NyZWVuQ29udGFpbmVyIHtcbiAgICAgIG1hcmdpbi1yaWdodDogMjVweDsgfVxuICAuYm90dG9tQmxvY2subG9nb0hpZGRlbiAubG9nb0NvbnRhaW5lciB7XG4gICAgZGlzcGxheTogbm9uZTsgfVxuICAuYm90dG9tQmxvY2sucGxheUNvbnRyb2xIaWRkZW4gLnBsYXlDb250YWluZXIge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cbiAgLmJvdHRvbUJsb2NrLnRpbWVDb250cm9sSGlkZGVuIC50aW1lQ29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBub25lOyB9XG4gIC5ib3R0b21CbG9jay52b2x1bWVDb250cm9sSGlkZGVuIC52b2x1bWVDb250YWluZXIge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cbiAgLmJvdHRvbUJsb2NrLmZ1bGxTY3JlZW5Db250cm9sSGlkZGVuIC5mdWxsU2NyZWVuQ29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBub25lOyB9XG4gIC5ib3R0b21CbG9jay5wcm9ncmVzc0NvbnRyb2xIaWRkZW4gLnByb2dyZXNzQmFyQ29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBub25lOyB9XG4gIC5ib3R0b21CbG9jay5kb3dubG9hZEJ1dHRvbkhpZGRlbiAuZG93bmxvYWRDb250YWluZXIge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cbiAgLmJvdHRvbUJsb2NrLnBpY3R1cmVJblBpY3R1cmVCdXR0b25IaWRkZW4gLnBpY3R1cmVJblBpY3R1cmVDb250YWluZXIge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cblxuLmVsZW1lbnRzQ29udGFpbmVyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBkaXNwbGF5OiBmbGV4O1xuICB3aWR0aDogMTAwJTtcbiAgZmxleC1ncm93OiAyOyB9XG5cbi5wcm9ncmVzc0JhckNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdG9wOiAycHg7XG4gIHBhZGRpbmc6IDAgMjBweDsgfVxuICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj0ndHJ1ZSddIC5wcm9ncmVzc0JhckNvbnRhaW5lciB7XG4gICAgdG9wOiAzcHg7XG4gICAgcGFkZGluZzogMCAzMHB4OyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI1NTBweFwiXSAucHJvZ3Jlc3NCYXJDb250YWluZXIge1xuICAgIHBhZGRpbmc6IDAgMTVweDsgfVxuICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1tYXgtd2lkdGh+PVwiMjgwcHhcIl0gLnByb2dyZXNzQmFyQ29udGFpbmVyIHtcbiAgICBwYWRkaW5nOiAwIDEycHg7IH1cblxuLnByb2dyZXNzQmFyQ29udGFpbmVyLFxuLmNvbnRyb2xzQ29udGFpbmVyTGVmdCxcbi5jb250cm9sc0NvbnRhaW5lclJpZ2h0LFxuLmxvZ29Db250YWluZXIge1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4ycztcbiAgb3BhY2l0eTogMDsgfVxuXG4uY29udHJvbHNDb250YWluZXJSaWdodCxcbi5jb250cm9sc0NvbnRhaW5lckxlZnQge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXg6IDE7XG4gIHdpZHRoOiAxMDAlO1xuICBtYXgtd2lkdGg6IDEwMCU7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cblxuLmNvbnRyb2xzQ29udGFpbmVyUmlnaHQge1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtZW5kOyB9XG5cbi5jb250cm9sc0NvbnRhaW5lclJpZ2h0LFxuLmNvbnRyb2xzQ29udGFpbmVyTGVmdCxcbi5sb2dvQ29udGFpbmVyIHtcbiAgaGVpZ2h0OiA1NHB4OyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLmNvbnRyb2xzQ29udGFpbmVyUmlnaHQsIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ11cbiAgLmNvbnRyb2xzQ29udGFpbmVyTGVmdCwgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXVxuICAubG9nb0NvbnRhaW5lciB7XG4gICAgaGVpZ2h0OiA4MHB4OyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI1NTBweFwiXSAuY29udHJvbHNDb250YWluZXJSaWdodCwgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjU1MHB4XCJdXG4gIC5jb250cm9sc0NvbnRhaW5lckxlZnQsIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI1NTBweFwiXVxuICAubG9nb0NvbnRhaW5lciB7XG4gICAgaGVpZ2h0OiA0MnB4OyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCIzNTBweFwiXSAuY29udHJvbHNDb250YWluZXJSaWdodCwgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjM1MHB4XCJdXG4gIC5jb250cm9sc0NvbnRhaW5lckxlZnQsIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCIzNTBweFwiXVxuICAubG9nb0NvbnRhaW5lciB7XG4gICAgaGVpZ2h0OiAzNnB4OyB9XG5cbi5wbGF5Q29udGFpbmVyIHtcbiAgbWFyZ2luLXJpZ2h0OiA5cHg7XG4gIG1hcmdpbi1sZWZ0OiAxM3B4OyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLnBsYXlDb250YWluZXIge1xuICAgIG1hcmdpbi1yaWdodDogMjBweDtcbiAgICBtYXJnaW4tbGVmdDogMjBweDsgfVxuICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1tYXgtd2lkdGh+PVwiNTUwcHhcIl0gLnBsYXlDb250YWluZXIge1xuICAgIG1hcmdpbi1sZWZ0OiA3cHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjI4MHB4XCJdIC5wbGF5Q29udGFpbmVyIHtcbiAgICBtYXJnaW4tbGVmdDogNHB4OyB9XG5cbi52b2x1bWVDb250YWluZXIge1xuICBtYXJnaW4tcmlnaHQ6IDE1cHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAudm9sdW1lQ29udGFpbmVyIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDIwcHg7IH1cblxuLnRpbWVDb250YWluZXIge1xuICBtYXJnaW4tcmlnaHQ6IDE4cHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAudGltZUNvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAzMHB4OyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI0MDBweFwiXSAudGltZUNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogbm9uZTsgfVxuXG4uZG93bmxvYWRDb250YWluZXIge1xuICBtYXJnaW4tcmlnaHQ6IDhweDsgfVxuICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj0ndHJ1ZSddIC5kb3dubG9hZENvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxOHB4OyB9XG5cbi5mdWxsU2NyZWVuQ29udGFpbmVyIHtcbiAgbWFyZ2luLXJpZ2h0OiA4cHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAuZnVsbFNjcmVlbkNvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxOHB4OyB9XG5cbi5waWN0dXJlSW5QaWN0dXJlQ29udGFpbmVyIHtcbiAgbWFyZ2luLXJpZ2h0OiA4cHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAucGljdHVyZUluUGljdHVyZUNvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxOHB4OyB9XG5cbi5sb2dvQ29udGFpbmVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgbWFyZ2luLXJpZ2h0OiAxNHB4OyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI1NTBweFwiXSAubG9nb0NvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiA5cHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAubG9nb0NvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyM3B4OyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCIyODBweFwiXSAubG9nb0NvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxMnB4OyB9XG5cbi5hZGRpdGlvbmFsQnV0dG9uIHtcbiAgbWFyZ2luLXJpZ2h0OiA4cHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAuYWRkaXRpb25hbEJ1dHRvbiB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxOHB4OyB9XG5cbi5iYWNrZ3JvdW5kIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICByaWdodDogMDtcbiAgYm90dG9tOiAwO1xuICBsZWZ0OiAwO1xuICBoZWlnaHQ6IDE4MXB4O1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4ycztcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIG9wYWNpdHk6IDA7XG4gIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCh0byBib3R0b20sIHJnYmEoMCwgMCwgMCwgMCksIHJnYmEoMCwgMCwgMCwgMC4wMykgMjQlLCByZ2JhKDAsIDAsIDAsIDAuMTUpIDUwJSwgcmdiYSgwLCAwLCAwLCAwLjMpIDc1JSwgcmdiYSgwLCAwLCAwLCAwLjQpKTtcbiAgYmFja2dyb3VuZC1zaXplOiAxMDAlIDE4MnB4OyB9XG4iXX0= */";
+    var css$10 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.bottom-block__controlButton___2zYHZ {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.bottom-block__controlButton___2zYHZ:hover {\n    opacity: .7; }\n.bottom-block__hidden___361S0 {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.bottom-block__bottomBlock___3Y_rW {\n  z-index: 60;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n.bottom-block__bottomBlock___3Y_rW::-moz-focus-inner {\n    border: 0; }\n.bottom-block__bottomBlock___3Y_rW.bottom-block__activated___YvJ-R .bottom-block__progressBarContainer___2CxAg,\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__activated___YvJ-R .bottom-block__controlsContainerLeft___2Ozxp,\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__activated___YvJ-R .bottom-block__controlsContainerRight___qaM9T,\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__activated___YvJ-R .bottom-block__logoContainer___1esHz,\n  .bottom-block__bottomBlock___3Y_rW.bottom-block__activated___YvJ-R .bottom-block__background___2ZL6j {\n    opacity: 1; }\n.bottom-block__bottomBlock___3Y_rW.bottom-block__showLogoAlways___2bJeD .bottom-block__logoContainer___1esHz {\n    opacity: 1; }\n.bottom-block__bottomBlock___3Y_rW.bottom-block__logoHidden___2N6oy .bottom-block__fullScreenContainer___3q_py {\n    margin-right: 14px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .bottom-block__bottomBlock___3Y_rW.bottom-block__logoHidden___2N6oy .bottom-block__fullScreenContainer___3q_py {\n      margin-right: 7px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .bottom-block__bottomBlock___3Y_rW.bottom-block__logoHidden___2N6oy .bottom-block__fullScreenContainer___3q_py {\n      margin-right: 25px; }\n.bottom-block__bottomBlock___3Y_rW.bottom-block__logoHidden___2N6oy .bottom-block__logoContainer___1esHz {\n    display: none; }\n.bottom-block__bottomBlock___3Y_rW.bottom-block__playControlHidden___1mEi9 .bottom-block__playContainer___25g5A {\n    display: none; }\n.bottom-block__bottomBlock___3Y_rW.bottom-block__timeControlHidden___32pcE .bottom-block__timeContainer___2N6cy {\n    display: none; }\n.bottom-block__bottomBlock___3Y_rW.bottom-block__volumeControlHidden___41JXw .bottom-block__volumeContainer___1Zwk- {\n    display: none; }\n.bottom-block__bottomBlock___3Y_rW.bottom-block__fullScreenControlHidden___1jT2c .bottom-block__fullScreenContainer___3q_py {\n    display: none; }\n.bottom-block__bottomBlock___3Y_rW.bottom-block__progressControlHidden___1rhHL .bottom-block__progressBarContainer___2CxAg {\n    display: none; }\n.bottom-block__bottomBlock___3Y_rW.bottom-block__downloadButtonHidden___qisqf .bottom-block__downloadContainer___2Gxyu {\n    display: none; }\n.bottom-block__bottomBlock___3Y_rW.bottom-block__pictureInPictureButtonHidden___WY-f5 .bottom-block__pictureInPictureContainer___tOmqU {\n    display: none; }\n.bottom-block__elementsContainer___1MGej {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 100%;\n  -webkit-box-flex: 2;\n      -ms-flex-positive: 2;\n          flex-grow: 2; }\n.bottom-block__progressBarContainer___2CxAg {\n  position: relative;\n  top: 2px;\n  padding: 0 20px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .bottom-block__progressBarContainer___2CxAg {\n    top: 3px;\n    padding: 0 30px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .bottom-block__progressBarContainer___2CxAg {\n    padding: 0 15px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"] .bottom-block__progressBarContainer___2CxAg {\n    padding: 0 12px; }\n.bottom-block__progressBarContainer___2CxAg,\n.bottom-block__controlsContainerLeft___2Ozxp,\n.bottom-block__controlsContainerRight___qaM9T,\n.bottom-block__logoContainer___1esHz {\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  opacity: 0; }\n.bottom-block__controlsContainerRight___qaM9T,\n.bottom-block__controlsContainerLeft___2Ozxp {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 100%;\n  max-width: 100%;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.bottom-block__controlsContainerRight___qaM9T {\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end; }\n.bottom-block__controlsContainerRight___qaM9T,\n.bottom-block__controlsContainerLeft___2Ozxp,\n.bottom-block__logoContainer___1esHz {\n  height: 54px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .bottom-block__controlsContainerRight___qaM9T, [data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"]\n  .bottom-block__controlsContainerLeft___2Ozxp, [data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"]\n  .bottom-block__logoContainer___1esHz {\n    height: 80px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .bottom-block__controlsContainerRight___qaM9T, [data-playable-hook='player-container'][data-playable-max-width~=\"550px\"]\n  .bottom-block__controlsContainerLeft___2Ozxp, [data-playable-hook='player-container'][data-playable-max-width~=\"550px\"]\n  .bottom-block__logoContainer___1esHz {\n    height: 42px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"350px\"] .bottom-block__controlsContainerRight___qaM9T, [data-playable-hook='player-container'][data-playable-max-width~=\"350px\"]\n  .bottom-block__controlsContainerLeft___2Ozxp, [data-playable-hook='player-container'][data-playable-max-width~=\"350px\"]\n  .bottom-block__logoContainer___1esHz {\n    height: 36px; }\n.bottom-block__playContainer___25g5A {\n  margin-right: 8px;\n  margin-left: 13px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .bottom-block__playContainer___25g5A {\n    margin-right: 20px;\n    margin-left: 20px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .bottom-block__playContainer___25g5A {\n    margin-left: 7px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"] .bottom-block__playContainer___25g5A {\n    margin-left: 4px; }\n.bottom-block__volumeContainer___1Zwk- {\n  margin-right: 13px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .bottom-block__volumeContainer___1Zwk- {\n    margin-right: 20px; }\n.bottom-block__timeContainer___2N6cy {\n  margin-right: 18px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .bottom-block__timeContainer___2N6cy {\n    margin-right: 30px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"400px\"] .bottom-block__timeContainer___2N6cy {\n    display: none; }\n.bottom-block__downloadContainer___2Gxyu {\n  margin-right: 8px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .bottom-block__downloadContainer___2Gxyu {\n    margin-right: 18px; }\n.bottom-block__fullScreenContainer___3q_py {\n  margin-right: 8px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .bottom-block__fullScreenContainer___3q_py {\n    margin-right: 18px; }\n.bottom-block__pictureInPictureContainer___tOmqU {\n  margin-right: 8px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .bottom-block__pictureInPictureContainer___tOmqU {\n    margin-right: 18px; }\n.bottom-block__logoContainer___1esHz {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-right: 14px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .bottom-block__logoContainer___1esHz {\n    margin-right: 9px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .bottom-block__logoContainer___1esHz {\n    margin-right: 23px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"280px\"] .bottom-block__logoContainer___1esHz {\n    margin-right: 12px; }\n.bottom-block__additionalButton___39M0e {\n  margin-right: 8px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .bottom-block__additionalButton___39M0e {\n    margin-right: 18px; }\n.bottom-block__background___2ZL6j {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  height: 181px;\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  pointer-events: none;\n  opacity: 0;\n  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(24%, rgba(0, 0, 0, 0.03)), color-stop(50%, rgba(0, 0, 0, 0.15)), color-stop(75%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4)));\n  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03) 24%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.4));\n  background-size: 100% 182px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJvdHRvbS1ibG9jay5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7OztHQUtHO0FBQ0g7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtBQUN0QjtJQUNFLFlBQVksRUFBRTtBQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtBQUUxQjtFQUNFLFlBQVk7RUFDWixxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLDZCQUF1QjtFQUF2Qiw4QkFBdUI7TUFBdkIsMkJBQXVCO1VBQXZCLHVCQUF1QixFQUFFO0FBQ3pCO0lBQ0UsVUFBVSxFQUFFO0FBQ2Q7Ozs7O0lBS0UsV0FBVyxFQUFFO0FBQ2Y7SUFDRSxXQUFXLEVBQUU7QUFDZjtJQUNFLG1CQUFtQixFQUFFO0FBQ3JCO01BQ0Usa0JBQWtCLEVBQUU7QUFDdEI7TUFDRSxtQkFBbUIsRUFBRTtBQUN6QjtJQUNFLGNBQWMsRUFBRTtBQUNsQjtJQUNFLGNBQWMsRUFBRTtBQUNsQjtJQUNFLGNBQWMsRUFBRTtBQUNsQjtJQUNFLGNBQWMsRUFBRTtBQUNsQjtJQUNFLGNBQWMsRUFBRTtBQUNsQjtJQUNFLGNBQWMsRUFBRTtBQUNsQjtJQUNFLGNBQWMsRUFBRTtBQUNsQjtJQUNFLGNBQWMsRUFBRTtBQUVwQjtFQUNFLG1CQUFtQjtFQUNuQixxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFlBQVk7RUFDWixvQkFBYTtNQUFiLHFCQUFhO1VBQWIsYUFBYSxFQUFFO0FBRWpCO0VBQ0UsbUJBQW1CO0VBQ25CLFNBQVM7RUFDVCxnQkFBZ0IsRUFBRTtBQUNsQjtJQUNFLFNBQVM7SUFDVCxnQkFBZ0IsRUFBRTtBQUNwQjtJQUNFLGdCQUFnQixFQUFFO0FBQ3BCO0lBQ0UsZ0JBQWdCLEVBQUU7QUFFdEI7Ozs7RUFJRSxnQ0FBd0I7RUFBeEIsd0JBQXdCO0VBQ3hCLFdBQVcsRUFBRTtBQUVmOztFQUVFLG1CQUFtQjtFQUNuQixxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLG9CQUFRO01BQVIsWUFBUTtVQUFSLFFBQVE7RUFDUixZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7QUFFeEI7RUFDRSxzQkFBMEI7TUFBMUIsbUJBQTBCO1VBQTFCLDBCQUEwQixFQUFFO0FBRTlCOzs7RUFHRSxhQUFhLEVBQUU7QUFDZjs7O0lBR0UsYUFBYSxFQUFFO0FBQ2pCOzs7SUFHRSxhQUFhLEVBQUU7QUFDakI7OztJQUdFLGFBQWEsRUFBRTtBQUVuQjtFQUNFLGtCQUFrQjtFQUNsQixrQkFBa0IsRUFBRTtBQUNwQjtJQUNFLG1CQUFtQjtJQUNuQixrQkFBa0IsRUFBRTtBQUN0QjtJQUNFLGlCQUFpQixFQUFFO0FBQ3JCO0lBQ0UsaUJBQWlCLEVBQUU7QUFFdkI7RUFDRSxtQkFBbUIsRUFBRTtBQUNyQjtJQUNFLG1CQUFtQixFQUFFO0FBRXpCO0VBQ0UsbUJBQW1CLEVBQUU7QUFDckI7SUFDRSxtQkFBbUIsRUFBRTtBQUN2QjtJQUNFLGNBQWMsRUFBRTtBQUVwQjtFQUNFLGtCQUFrQixFQUFFO0FBQ3BCO0lBQ0UsbUJBQW1CLEVBQUU7QUFFekI7RUFDRSxrQkFBa0IsRUFBRTtBQUNwQjtJQUNFLG1CQUFtQixFQUFFO0FBRXpCO0VBQ0Usa0JBQWtCLEVBQUU7QUFDcEI7SUFDRSxtQkFBbUIsRUFBRTtBQUV6QjtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsbUJBQW1CLEVBQUU7QUFDckI7SUFDRSxrQkFBa0IsRUFBRTtBQUN0QjtJQUNFLG1CQUFtQixFQUFFO0FBQ3ZCO0lBQ0UsbUJBQW1CLEVBQUU7QUFFekI7RUFDRSxrQkFBa0IsRUFBRTtBQUNwQjtJQUNFLG1CQUFtQixFQUFFO0FBRXpCO0VBQ0UsbUJBQW1CO0VBQ25CLFNBQVM7RUFDVCxVQUFVO0VBQ1YsUUFBUTtFQUNSLGNBQWM7RUFDZCxnQ0FBd0I7RUFBeEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQixXQUFXO0VBQ1gsbU9BQTZKO0VBQTdKLDZKQUE2SjtFQUM3Siw0QkFBNEIsRUFBRSIsImZpbGUiOiJib3R0b20tYmxvY2suc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIGNoYWxsZW5nZSBoZXJlIHRvIHN1cHBvcnQgXCJwbGF5YWJsZSBxdWVyaWVzXCIgYW5kIFwiZGlyZWN0aW9uXCIgYXQgdGhlIHNhbWUgdGltZSBhbmQgYWxsb3cgbWl4aW5zIGxpa2U6XG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBsdHIoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBydGwoKSlcbiAqL1xuLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4uYm90dG9tQmxvY2sge1xuICB6LWluZGV4OiA2MDtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjsgfVxuICAuYm90dG9tQmxvY2s6Oi1tb3otZm9jdXMtaW5uZXIge1xuICAgIGJvcmRlcjogMDsgfVxuICAuYm90dG9tQmxvY2suYWN0aXZhdGVkIC5wcm9ncmVzc0JhckNvbnRhaW5lcixcbiAgLmJvdHRvbUJsb2NrLmFjdGl2YXRlZCAuY29udHJvbHNDb250YWluZXJMZWZ0LFxuICAuYm90dG9tQmxvY2suYWN0aXZhdGVkIC5jb250cm9sc0NvbnRhaW5lclJpZ2h0LFxuICAuYm90dG9tQmxvY2suYWN0aXZhdGVkIC5sb2dvQ29udGFpbmVyLFxuICAuYm90dG9tQmxvY2suYWN0aXZhdGVkIC5iYWNrZ3JvdW5kIHtcbiAgICBvcGFjaXR5OiAxOyB9XG4gIC5ib3R0b21CbG9jay5zaG93TG9nb0Fsd2F5cyAubG9nb0NvbnRhaW5lciB7XG4gICAgb3BhY2l0eTogMTsgfVxuICAuYm90dG9tQmxvY2subG9nb0hpZGRlbiAuZnVsbFNjcmVlbkNvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNHB4OyB9XG4gICAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjU1MHB4XCJdIC5ib3R0b21CbG9jay5sb2dvSGlkZGVuIC5mdWxsU2NyZWVuQ29udGFpbmVyIHtcbiAgICAgIG1hcmdpbi1yaWdodDogN3B4OyB9XG4gICAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5ib3R0b21CbG9jay5sb2dvSGlkZGVuIC5mdWxsU2NyZWVuQ29udGFpbmVyIHtcbiAgICAgIG1hcmdpbi1yaWdodDogMjVweDsgfVxuICAuYm90dG9tQmxvY2subG9nb0hpZGRlbiAubG9nb0NvbnRhaW5lciB7XG4gICAgZGlzcGxheTogbm9uZTsgfVxuICAuYm90dG9tQmxvY2sucGxheUNvbnRyb2xIaWRkZW4gLnBsYXlDb250YWluZXIge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cbiAgLmJvdHRvbUJsb2NrLnRpbWVDb250cm9sSGlkZGVuIC50aW1lQ29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBub25lOyB9XG4gIC5ib3R0b21CbG9jay52b2x1bWVDb250cm9sSGlkZGVuIC52b2x1bWVDb250YWluZXIge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cbiAgLmJvdHRvbUJsb2NrLmZ1bGxTY3JlZW5Db250cm9sSGlkZGVuIC5mdWxsU2NyZWVuQ29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBub25lOyB9XG4gIC5ib3R0b21CbG9jay5wcm9ncmVzc0NvbnRyb2xIaWRkZW4gLnByb2dyZXNzQmFyQ29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBub25lOyB9XG4gIC5ib3R0b21CbG9jay5kb3dubG9hZEJ1dHRvbkhpZGRlbiAuZG93bmxvYWRDb250YWluZXIge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cbiAgLmJvdHRvbUJsb2NrLnBpY3R1cmVJblBpY3R1cmVCdXR0b25IaWRkZW4gLnBpY3R1cmVJblBpY3R1cmVDb250YWluZXIge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cblxuLmVsZW1lbnRzQ29udGFpbmVyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBkaXNwbGF5OiBmbGV4O1xuICB3aWR0aDogMTAwJTtcbiAgZmxleC1ncm93OiAyOyB9XG5cbi5wcm9ncmVzc0JhckNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdG9wOiAycHg7XG4gIHBhZGRpbmc6IDAgMjBweDsgfVxuICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl0gLnByb2dyZXNzQmFyQ29udGFpbmVyIHtcbiAgICB0b3A6IDNweDtcbiAgICBwYWRkaW5nOiAwIDMwcHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjU1MHB4XCJdIC5wcm9ncmVzc0JhckNvbnRhaW5lciB7XG4gICAgcGFkZGluZzogMCAxNXB4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCIyODBweFwiXSAucHJvZ3Jlc3NCYXJDb250YWluZXIge1xuICAgIHBhZGRpbmc6IDAgMTJweDsgfVxuXG4ucHJvZ3Jlc3NCYXJDb250YWluZXIsXG4uY29udHJvbHNDb250YWluZXJMZWZ0LFxuLmNvbnRyb2xzQ29udGFpbmVyUmlnaHQsXG4ubG9nb0NvbnRhaW5lciB7XG4gIHRyYW5zaXRpb246IG9wYWNpdHkgLjJzO1xuICBvcGFjaXR5OiAwOyB9XG5cbi5jb250cm9sc0NvbnRhaW5lclJpZ2h0LFxuLmNvbnRyb2xzQ29udGFpbmVyTGVmdCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleDogMTtcbiAgd2lkdGg6IDEwMCU7XG4gIG1heC13aWR0aDogMTAwJTtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuXG4uY29udHJvbHNDb250YWluZXJSaWdodCB7XG4gIGp1c3RpZnktY29udGVudDogZmxleC1lbmQ7IH1cblxuLmNvbnRyb2xzQ29udGFpbmVyUmlnaHQsXG4uY29udHJvbHNDb250YWluZXJMZWZ0LFxuLmxvZ29Db250YWluZXIge1xuICBoZWlnaHQ6IDU0cHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5jb250cm9sc0NvbnRhaW5lclJpZ2h0LCBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl1cbiAgLmNvbnRyb2xzQ29udGFpbmVyTGVmdCwgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdXG4gIC5sb2dvQ29udGFpbmVyIHtcbiAgICBoZWlnaHQ6IDgwcHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjU1MHB4XCJdIC5jb250cm9sc0NvbnRhaW5lclJpZ2h0LCBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1tYXgtd2lkdGh+PVwiNTUwcHhcIl1cbiAgLmNvbnRyb2xzQ29udGFpbmVyTGVmdCwgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjU1MHB4XCJdXG4gIC5sb2dvQ29udGFpbmVyIHtcbiAgICBoZWlnaHQ6IDQycHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjM1MHB4XCJdIC5jb250cm9sc0NvbnRhaW5lclJpZ2h0LCBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1tYXgtd2lkdGh+PVwiMzUwcHhcIl1cbiAgLmNvbnRyb2xzQ29udGFpbmVyTGVmdCwgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjM1MHB4XCJdXG4gIC5sb2dvQ29udGFpbmVyIHtcbiAgICBoZWlnaHQ6IDM2cHg7IH1cblxuLnBsYXlDb250YWluZXIge1xuICBtYXJnaW4tcmlnaHQ6IDhweDtcbiAgbWFyZ2luLWxlZnQ6IDEzcHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5wbGF5Q29udGFpbmVyIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDIwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IDIwcHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjU1MHB4XCJdIC5wbGF5Q29udGFpbmVyIHtcbiAgICBtYXJnaW4tbGVmdDogN3B4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCIyODBweFwiXSAucGxheUNvbnRhaW5lciB7XG4gICAgbWFyZ2luLWxlZnQ6IDRweDsgfVxuXG4udm9sdW1lQ29udGFpbmVyIHtcbiAgbWFyZ2luLXJpZ2h0OiAxM3B4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAudm9sdW1lQ29udGFpbmVyIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDIwcHg7IH1cblxuLnRpbWVDb250YWluZXIge1xuICBtYXJnaW4tcmlnaHQ6IDE4cHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC50aW1lQ29udGFpbmVyIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDMwcHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjQwMHB4XCJdIC50aW1lQ29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBub25lOyB9XG5cbi5kb3dubG9hZENvbnRhaW5lciB7XG4gIG1hcmdpbi1yaWdodDogOHB4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAuZG93bmxvYWRDb250YWluZXIge1xuICAgIG1hcmdpbi1yaWdodDogMThweDsgfVxuXG4uZnVsbFNjcmVlbkNvbnRhaW5lciB7XG4gIG1hcmdpbi1yaWdodDogOHB4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAuZnVsbFNjcmVlbkNvbnRhaW5lciB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxOHB4OyB9XG5cbi5waWN0dXJlSW5QaWN0dXJlQ29udGFpbmVyIHtcbiAgbWFyZ2luLXJpZ2h0OiA4cHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5waWN0dXJlSW5QaWN0dXJlQ29udGFpbmVyIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDE4cHg7IH1cblxuLmxvZ29Db250YWluZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBtYXJnaW4tcmlnaHQ6IDE0cHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjU1MHB4XCJdIC5sb2dvQ29udGFpbmVyIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDlweDsgfVxuICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl0gLmxvZ29Db250YWluZXIge1xuICAgIG1hcmdpbi1yaWdodDogMjNweDsgfVxuICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1tYXgtd2lkdGh+PVwiMjgwcHhcIl0gLmxvZ29Db250YWluZXIge1xuICAgIG1hcmdpbi1yaWdodDogMTJweDsgfVxuXG4uYWRkaXRpb25hbEJ1dHRvbiB7XG4gIG1hcmdpbi1yaWdodDogOHB4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAuYWRkaXRpb25hbEJ1dHRvbiB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxOHB4OyB9XG5cbi5iYWNrZ3JvdW5kIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICByaWdodDogMDtcbiAgYm90dG9tOiAwO1xuICBsZWZ0OiAwO1xuICBoZWlnaHQ6IDE4MXB4O1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4ycztcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIG9wYWNpdHk6IDA7XG4gIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCh0byBib3R0b20sIHJnYmEoMCwgMCwgMCwgMCksIHJnYmEoMCwgMCwgMCwgMC4wMykgMjQlLCByZ2JhKDAsIDAsIDAsIDAuMTUpIDUwJSwgcmdiYSgwLCAwLCAwLCAwLjMpIDc1JSwgcmdiYSgwLCAwLCAwLCAwLjQpKTtcbiAgYmFja2dyb3VuZC1zaXplOiAxMDAlIDE4MnB4OyB9XG4iXX0= */";
     var styles$10 = {"controlButton":"bottom-block__controlButton___2zYHZ","hidden":"bottom-block__hidden___361S0","bottomBlock":"bottom-block__bottomBlock___3Y_rW","activated":"bottom-block__activated___YvJ-R","progressBarContainer":"bottom-block__progressBarContainer___2CxAg","controlsContainerLeft":"bottom-block__controlsContainerLeft___2Ozxp","controlsContainerRight":"bottom-block__controlsContainerRight___qaM9T","logoContainer":"bottom-block__logoContainer___1esHz","background":"bottom-block__background___2ZL6j","showLogoAlways":"bottom-block__showLogoAlways___2bJeD","logoHidden":"bottom-block__logoHidden___2N6oy","fullScreenContainer":"bottom-block__fullScreenContainer___3q_py","playControlHidden":"bottom-block__playControlHidden___1mEi9","playContainer":"bottom-block__playContainer___25g5A","timeControlHidden":"bottom-block__timeControlHidden___32pcE","timeContainer":"bottom-block__timeContainer___2N6cy","volumeControlHidden":"bottom-block__volumeControlHidden___41JXw","volumeContainer":"bottom-block__volumeContainer___1Zwk-","fullScreenControlHidden":"bottom-block__fullScreenControlHidden___1jT2c","progressControlHidden":"bottom-block__progressControlHidden___1rhHL","downloadButtonHidden":"bottom-block__downloadButtonHidden___qisqf","downloadContainer":"bottom-block__downloadContainer___2Gxyu","pictureInPictureButtonHidden":"bottom-block__pictureInPictureButtonHidden___WY-f5","pictureInPictureContainer":"bottom-block__pictureInPictureContainer___tOmqU","elementsContainer":"bottom-block__elementsContainer___1MGej","additionalButton":"bottom-block__additionalButton___39M0e"};
     styleInject(css$10);
 
@@ -8204,7 +13305,7 @@ function readCookie(cookieName) {
         };
         BottomBlockView.prototype.addControl = function (key, element, position) {
             var wrapper = document.createElement('div');
-            wrapper.setAttribute('data-hook', "additional-" + key);
+            wrapper.setAttribute('data-playable-hook', "additional-" + key);
             wrapper.classList.add(this.styleNames.additionalButton);
             wrapper.appendChild(element);
             if (position === 'left') {
@@ -8586,7 +13687,7 @@ function readCookie(cookieName) {
     var out='<div class="'+(props.styles.tooltipContainer)+'" data-playable-component></div>';return out;
     }
 
-    var css$11 = ".tooltip__controlButton___E3x3L {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .tooltip__controlButton___E3x3L:hover {\n    opacity: .7; }\n  .tooltip__hidden___3R_Au {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .tooltip__tooltip___1TO08 {\n  position: absolute;\n  z-index: 100;\n  visibility: hidden;\n  -webkit-transition: opacity .2s, visibility .2s;\n  transition: opacity .2s, visibility .2s;\n  opacity: 0; }\n  .tooltip__tooltip___1TO08.tooltip__showAsText___3-qca {\n    padding: 4px 5px;\n    background: rgba(0, 0, 0, 0.5); }\n  .tooltip__tooltip___1TO08.tooltip__tooltipVisible___37y2K {\n    visibility: visible;\n    opacity: 1; }\n  .tooltip__showAsText___3-qca .tooltip__tooltipInner___2s85x {\n  font-size: 11px;\n  line-height: 12px;\n  white-space: nowrap;\n  color: white; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRvb2x0aXAuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0VBQ3RCO0lBQ0UsWUFBWSxFQUFFO0VBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0VBRTFCO0VBQ0UsbUJBQW1CO0VBQ25CLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsZ0RBQXdDO0VBQXhDLHdDQUF3QztFQUN4QyxXQUFXLEVBQUU7RUFDYjtJQUNFLGlCQUFpQjtJQUNqQiwrQkFBK0IsRUFBRTtFQUNuQztJQUNFLG9CQUFvQjtJQUNwQixXQUFXLEVBQUU7RUFFakI7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQixhQUFhLEVBQUUiLCJmaWxlIjoidG9vbHRpcC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4udG9vbHRpcCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogMTAwO1xuICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gIHRyYW5zaXRpb246IG9wYWNpdHkgLjJzLCB2aXNpYmlsaXR5IC4ycztcbiAgb3BhY2l0eTogMDsgfVxuICAudG9vbHRpcC5zaG93QXNUZXh0IHtcbiAgICBwYWRkaW5nOiA0cHggNXB4O1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTsgfVxuICAudG9vbHRpcC50b29sdGlwVmlzaWJsZSB7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgICBvcGFjaXR5OiAxOyB9XG5cbi5zaG93QXNUZXh0IC50b29sdGlwSW5uZXIge1xuICBmb250LXNpemU6IDExcHg7XG4gIGxpbmUtaGVpZ2h0OiAxMnB4O1xuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICBjb2xvcjogd2hpdGU7IH1cbiJdfQ== */";
+    var css$11 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.tooltip__controlButton___E3x3L {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.tooltip__controlButton___E3x3L:hover {\n    opacity: .7; }\n.tooltip__hidden___3R_Au {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.tooltip__tooltip___1TO08 {\n  position: absolute;\n  z-index: 100;\n  visibility: hidden;\n  -webkit-transition: opacity .2s, visibility .2s;\n  transition: opacity .2s, visibility .2s;\n  opacity: 0; }\n.tooltip__tooltip___1TO08.tooltip__showAsText___3-qca {\n    padding: 4px 5px;\n    background: rgba(0, 0, 0, 0.5); }\n.tooltip__tooltip___1TO08.tooltip__tooltipVisible___37y2K {\n    visibility: visible;\n    opacity: 1; }\n.tooltip__showAsText___3-qca .tooltip__tooltipInner___2s85x {\n  font-size: 11px;\n  line-height: 12px;\n  white-space: nowrap;\n  color: white; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRvb2x0aXAuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7R0FLRztBQUNIO0VBQ0UscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGlDQUF5QjtVQUF6Qix5QkFBeUI7RUFDekIscUNBQTZCO0VBQTdCLDZCQUE2QjtFQUM3QixXQUFXO0VBQ1gsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsOEJBQThCO0VBQzlCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7QUFDdEI7SUFDRSxZQUFZLEVBQUU7QUFFbEI7RUFDRSw4QkFBOEI7RUFDOUIsb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4QixxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixzQkFBc0I7RUFDdEIsc0JBQXNCLEVBQUU7QUFFMUI7RUFDRSxtQkFBbUI7RUFDbkIsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixnREFBd0M7RUFBeEMsd0NBQXdDO0VBQ3hDLFdBQVcsRUFBRTtBQUNiO0lBQ0UsaUJBQWlCO0lBQ2pCLCtCQUErQixFQUFFO0FBQ25DO0lBQ0Usb0JBQW9CO0lBQ3BCLFdBQVcsRUFBRTtBQUVqQjtFQUNFLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLGFBQWEsRUFBRSIsImZpbGUiOiJ0b29sdGlwLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFRoZSBjaGFsbGVuZ2UgaGVyZSB0byBzdXBwb3J0IFwicGxheWFibGUgcXVlcmllc1wiIGFuZCBcImRpcmVjdGlvblwiIGF0IHRoZSBzYW1lIHRpbWUgYW5kIGFsbG93IG1peGlucyBsaWtlOlxuICogICBAaW5jbHVkZSBxdWVyeShtYXgtd2lkdGgtNTUwKCkpXG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSwgbHRyKCkpXG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSwgcnRsKCkpXG4gKi9cbi5jb250cm9sQnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgcGFkZGluZzogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAuMnM7XG4gIHRyYW5zaXRpb24tcHJvcGVydHk6IG9wYWNpdHk7XG4gIG9wYWNpdHk6IDE7XG4gIGJvcmRlcjogMDtcbiAgYm9yZGVyLXJhZGl1czogMDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5jb250cm9sQnV0dG9uOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAuNzsgfVxuXG4uaGlkZGVuIHtcbiAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XG4gIHdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIG1pbi13aWR0aDogMCAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWluLWhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtYXJnaW46IDAgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCAhaW1wb3J0YW50O1xuICBvcGFjaXR5OiAwICFpbXBvcnRhbnQ7IH1cblxuLnRvb2x0aXAge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IDEwMDtcbiAgdmlzaWJpbGl0eTogaGlkZGVuO1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4ycywgdmlzaWJpbGl0eSAuMnM7XG4gIG9wYWNpdHk6IDA7IH1cbiAgLnRvb2x0aXAuc2hvd0FzVGV4dCB7XG4gICAgcGFkZGluZzogNHB4IDVweDtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7IH1cbiAgLnRvb2x0aXAudG9vbHRpcFZpc2libGUge1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gICAgb3BhY2l0eTogMTsgfVxuXG4uc2hvd0FzVGV4dCAudG9vbHRpcElubmVyIHtcbiAgZm9udC1zaXplOiAxMXB4O1xuICBsaW5lLWhlaWdodDogMTJweDtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgY29sb3I6IHdoaXRlOyB9XG4iXX0= */";
     var styles$11 = {"controlButton":"tooltip__controlButton___E3x3L","hidden":"tooltip__hidden___3R_Au","tooltip":"tooltip__tooltip___1TO08","showAsText":"tooltip__showAsText___3-qca","tooltipVisible":"tooltip__tooltipVisible___37y2K","tooltipInner":"tooltip__tooltipInner___2s85x"};
     styleInject(css$11);
 
@@ -8931,7 +14032,7 @@ function readCookie(cookieName) {
         },
     };
 
-    var css$13 = ".progress__controlButton___2pi4V {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .progress__controlButton___2pi4V:hover {\n    opacity: .7; }\n  .progress__hidden___3Rjqh {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .progress__seekBlock___V4YqW {\n  position: relative;\n  display: block;\n  width: 100%;\n  height: 6px;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  -webkit-transition: opacity .2s, visibility .2s;\n  transition: opacity .2s, visibility .2s;\n  -ms-touch-action: none;\n      touch-action: none; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .progress__seekBlock___V4YqW {\n    height: 8px; }\n  .progress__seekBlock___V4YqW.progress__inLive___3324R .progress__played___1dShL {\n    background-color: #ea492e; }\n  .progress__seekBlock___V4YqW.progress__inLive___3324R .progress__seekTo___T0D_O {\n    background-color: rgba(234, 73, 46, 0.5); }\n  .progress__seekBlock___V4YqW.progress__inLive___3324R .progress__syncButton___3N1QN {\n    display: initial; }\n  .progress__seekBlock___V4YqW:hover .progress__progressBarsWrapper___1SSlL, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__progressBarsWrapper___1SSlL {\n    -webkit-transform: scaleY(1);\n            transform: scaleY(1); }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .progress__seekBlock___V4YqW:hover .progress__progressBarsWrapper___1SSlL, div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__progressBarsWrapper___1SSlL {\n      -webkit-transform: scaleY(1);\n              transform: scaleY(1); }\n  .progress__seekBlock___V4YqW:hover .progress__progressBarsWrapper___1SSlL .progress__seekTo___T0D_O, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__progressBarsWrapper___1SSlL .progress__seekTo___T0D_O {\n      opacity: 1; }\n  .progress__seekBlock___V4YqW:hover .progress__progressBarsWrapper___1SSlL .progress__timeIndicator___2wltB:after, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__progressBarsWrapper___1SSlL .progress__timeIndicator___2wltB:after {\n      -webkit-transform: scale(1);\n              transform: scale(1); }\n  .progress__seekBlock___V4YqW:hover .progress__seekButton___3UtgF, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__seekButton___3UtgF {\n    -webkit-transform: scale(1);\n            transform: scale(1); }\n  .progress__seekBlock___V4YqW:hover .progress__syncButton___3N1QN, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__syncButton___3N1QN {\n    -webkit-transform: scale(1.4);\n            transform: scale(1.4); }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .progress__seekBlock___V4YqW:hover .progress__syncButton___3N1QN, div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__syncButton___3N1QN {\n      -webkit-transform: scale(1.33);\n              transform: scale(1.33); }\n  .progress__seekBlock___V4YqW:hover .progress__syncButton___3N1QN.progress__liveSync___PIvwF, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__syncButton___3N1QN.progress__liveSync___PIvwF {\n      background-color: #fff; }\n  .progress__seekButtonContainer___1TZ8Z {\n  position: absolute;\n  z-index: 7;\n  top: -3px;\n  left: -6px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .progress__seekButtonContainer___1TZ8Z {\n    top: -4px;\n    left: -8px;\n    width: 16px;\n    height: 16px; }\n  .progress__seekButton___3UtgF {\n  width: 12px;\n  height: 12px;\n  content: '';\n  cursor: pointer;\n  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  -webkit-transform: scale(0);\n          transform: scale(0);\n  border-radius: 50%;\n  background-color: #fff; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .progress__seekButton___3UtgF {\n    width: 16px;\n    height: 16px; }\n  .progress__syncButton___3N1QN {\n  position: absolute;\n  z-index: 6;\n  top: -2px;\n  right: -5px;\n  display: none;\n  width: 6px;\n  height: 6px;\n  cursor: pointer;\n  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  border: 2px solid #bababa;\n  border-radius: 50%;\n  background-color: #ea492e; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .progress__syncButton___3N1QN {\n    top: -2px;\n    right: -6px;\n    width: 8px;\n    height: 8px; }\n  .progress__syncButton___3N1QN:hover {\n    background-color: #fff; }\n  .progress__syncButton___3N1QN.progress__hidden___3Rjqh {\n    display: none; }\n  .progress__progressBarsWrapper___1SSlL {\n  height: 6px;\n  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  -webkit-transform: scaleY(0.34);\n          transform: scaleY(0.34); }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .progress__progressBarsWrapper___1SSlL {\n    height: 8px;\n    -webkit-transform: scaleY(0.25);\n            transform: scaleY(0.25); }\n  .progress__progressBar___210E8 {\n  position: absolute;\n  height: 6px;\n  padding: 0; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .progress__progressBar___210E8 {\n    height: 8px; }\n  .progress__played___1dShL {\n  width: 100%;\n  -webkit-transform-origin: 0 0;\n          transform-origin: 0 0;\n  background-color: #fff; }\n  .progress__buffered___2LiZB {\n  -webkit-transition: width .2s ease;\n  transition: width .2s ease;\n  background-color: rgba(255, 255, 255, 0.25); }\n  .progress__background___lqeL2 {\n  width: 100%;\n  background-color: rgba(255, 255, 255, 0.25); }\n  .progress__seekTo___T0D_O {\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  background-color: rgba(255, 255, 255, 0.5); }\n  .progress__timeIndicators___c6h-a {\n  position: absolute;\n  overflow-x: hidden;\n  width: 100%;\n  height: 100%;\n  background-color: transparent; }\n  .progress__timeIndicator___2wltB {\n  position: absolute; }\n  .progress__timeIndicator___2wltB:after {\n    position: absolute;\n    right: -3px;\n    width: 6px;\n    height: 6px;\n    content: '';\n    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n    transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n    transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n    transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    opacity: .6;\n    border-radius: 50%;\n    background-color: #fff; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .progress__timeIndicator___2wltB:after {\n      right: -4px;\n      width: 8px;\n      height: 8px; }\n  .progress__timeIndicator___2wltB:after:hover {\n      opacity: 1; }\n  .progress__hitbox___xqdFP {\n  position: relative;\n  z-index: 5;\n  top: -11px;\n  display: block;\n  width: 100%;\n  height: 16px;\n  cursor: pointer;\n  opacity: 0; }\n  [data-playable-focus-source='key'] [data-playable-hook='progress-control'].focus-within,\n[data-playable-focus-source='script'] [data-playable-hook='progress-control'].focus-within {\n  opacity: 1;\n  -webkit-box-shadow: 0 0 0 2px rgba(56, 153, 236, 0.8);\n          box-shadow: 0 0 0 2px rgba(56, 153, 236, 0.8); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2dyZXNzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLFlBQVksRUFBRTtFQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtFQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixlQUFlO0VBQ2YsWUFBWTtFQUNaLFlBQVk7RUFDWiwwQkFBa0I7S0FBbEIsdUJBQWtCO01BQWxCLHNCQUFrQjtVQUFsQixrQkFBa0I7RUFDbEIsZ0RBQXdDO0VBQXhDLHdDQUF3QztFQUN4Qyx1QkFBbUI7TUFBbkIsbUJBQW1CLEVBQUU7RUFDckI7SUFDRSxZQUFZLEVBQUU7RUFDaEI7SUFDRSwwQkFBMEIsRUFBRTtFQUM5QjtJQUNFLHlDQUF5QyxFQUFFO0VBQzdDO0lBQ0UsaUJBQWlCLEVBQUU7RUFDckI7SUFDRSw2QkFBcUI7WUFBckIscUJBQXFCLEVBQUU7RUFDdkI7TUFDRSw2QkFBcUI7Y0FBckIscUJBQXFCLEVBQUU7RUFDekI7TUFDRSxXQUFXLEVBQUU7RUFDZjtNQUNFLDRCQUFvQjtjQUFwQixvQkFBb0IsRUFBRTtFQUMxQjtJQUNFLDRCQUFvQjtZQUFwQixvQkFBb0IsRUFBRTtFQUN4QjtJQUNFLDhCQUFzQjtZQUF0QixzQkFBc0IsRUFBRTtFQUN4QjtNQUNFLCtCQUF1QjtjQUF2Qix1QkFBdUIsRUFBRTtFQUMzQjtNQUNFLHVCQUF1QixFQUFFO0VBRS9CO0VBQ0UsbUJBQW1CO0VBQ25CLFdBQVc7RUFDWCxVQUFVO0VBQ1YsV0FBVyxFQUFFO0VBQ2I7SUFDRSxVQUFVO0lBQ1YsV0FBVztJQUNYLFlBQVk7SUFDWixhQUFhLEVBQUU7RUFFbkI7RUFDRSxZQUFZO0VBQ1osYUFBYTtFQUNiLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsc0VBQXNEO0VBQXRELDhEQUFzRDtFQUF0RCxzREFBc0Q7RUFBdEQseUdBQXNEO0VBQ3RELDRCQUFvQjtVQUFwQixvQkFBb0I7RUFDcEIsbUJBQW1CO0VBQ25CLHVCQUF1QixFQUFFO0VBQ3pCO0lBQ0UsWUFBWTtJQUNaLGFBQWEsRUFBRTtFQUVuQjtFQUNFLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsVUFBVTtFQUNWLFlBQVk7RUFDWixjQUFjO0VBQ2QsV0FBVztFQUNYLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsc0VBQXNEO0VBQXRELDhEQUFzRDtFQUF0RCxzREFBc0Q7RUFBdEQseUdBQXNEO0VBQ3RELDBCQUEwQjtFQUMxQixtQkFBbUI7RUFDbkIsMEJBQTBCLEVBQUU7RUFDNUI7SUFDRSxVQUFVO0lBQ1YsWUFBWTtJQUNaLFdBQVc7SUFDWCxZQUFZLEVBQUU7RUFDaEI7SUFDRSx1QkFBdUIsRUFBRTtFQUMzQjtJQUNFLGNBQWMsRUFBRTtFQUVwQjtFQUNFLFlBQVk7RUFDWixzRUFBc0Q7RUFBdEQsOERBQXNEO0VBQXRELHNEQUFzRDtFQUF0RCx5R0FBc0Q7RUFDdEQsZ0NBQXdCO1VBQXhCLHdCQUF3QixFQUFFO0VBQzFCO0lBQ0UsWUFBWTtJQUNaLGdDQUF3QjtZQUF4Qix3QkFBd0IsRUFBRTtFQUU5QjtFQUNFLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osV0FBVyxFQUFFO0VBQ2I7SUFDRSxZQUFZLEVBQUU7RUFFbEI7RUFDRSxZQUFZO0VBQ1osOEJBQXNCO1VBQXRCLHNCQUFzQjtFQUN0Qix1QkFBdUIsRUFBRTtFQUUzQjtFQUNFLG1DQUEyQjtFQUEzQiwyQkFBMkI7RUFDM0IsNENBQTRDLEVBQUU7RUFFaEQ7RUFDRSxZQUFZO0VBQ1osNENBQTRDLEVBQUU7RUFFaEQ7RUFDRSxnQ0FBd0I7RUFBeEIsd0JBQXdCO0VBQ3hCLDJDQUEyQyxFQUFFO0VBRS9DO0VBQ0UsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osYUFBYTtFQUNiLDhCQUE4QixFQUFFO0VBRWxDO0VBQ0UsbUJBQW1CLEVBQUU7RUFDckI7SUFDRSxtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLFdBQVc7SUFDWCxZQUFZO0lBQ1osWUFBWTtJQUNaLHNFQUFzRDtJQUF0RCw4REFBc0Q7SUFBdEQsc0RBQXNEO0lBQXRELHlHQUFzRDtJQUN0RCw0QkFBb0I7WUFBcEIsb0JBQW9CO0lBQ3BCLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsdUJBQXVCLEVBQUU7RUFDekI7TUFDRSxZQUFZO01BQ1osV0FBVztNQUNYLFlBQVksRUFBRTtFQUNoQjtNQUNFLFdBQVcsRUFBRTtFQUVuQjtFQUNFLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsV0FBVztFQUNYLGVBQWU7RUFDZixZQUFZO0VBQ1osYUFBYTtFQUNiLGdCQUFnQjtFQUNoQixXQUFXLEVBQUU7RUFFZjs7RUFFRSxXQUFXO0VBQ1gsc0RBQThDO1VBQTlDLDhDQUE4QyxFQUFFIiwiZmlsZSI6InByb2dyZXNzLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udHJvbEJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmc6IDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogLjJzO1xuICB0cmFuc2l0aW9uLXByb3BlcnR5OiBvcGFjaXR5O1xuICBvcGFjaXR5OiAxO1xuICBib3JkZXI6IDA7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAuY29udHJvbEJ1dHRvbjpob3ZlciB7XG4gICAgb3BhY2l0eTogLjc7IH1cblxuLmhpZGRlbiB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbiAhaW1wb3J0YW50O1xuICB3aWR0aDogMCAhaW1wb3J0YW50O1xuICBtaW4td2lkdGg6IDAgIWltcG9ydGFudDtcbiAgaGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1pbi1oZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWFyZ2luOiAwICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmc6IDAgIWltcG9ydGFudDtcbiAgb3BhY2l0eTogMCAhaW1wb3J0YW50OyB9XG5cbi5zZWVrQmxvY2sge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA2cHg7XG4gIHVzZXItc2VsZWN0OiBub25lO1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4ycywgdmlzaWJpbGl0eSAuMnM7XG4gIHRvdWNoLWFjdGlvbjogbm9uZTsgfVxuICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj0ndHJ1ZSddIC5zZWVrQmxvY2sge1xuICAgIGhlaWdodDogOHB4OyB9XG4gIC5zZWVrQmxvY2suaW5MaXZlIC5wbGF5ZWQge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNlYTQ5MmU7IH1cbiAgLnNlZWtCbG9jay5pbkxpdmUgLnNlZWtUbyB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyMzQsIDczLCA0NiwgMC41KTsgfVxuICAuc2Vla0Jsb2NrLmluTGl2ZSAuc3luY0J1dHRvbiB7XG4gICAgZGlzcGxheTogaW5pdGlhbDsgfVxuICAuc2Vla0Jsb2NrOmhvdmVyIC5wcm9ncmVzc0JhcnNXcmFwcGVyLCAuc2Vla0Jsb2NrLmlzRHJhZ2dpbmcgLnByb2dyZXNzQmFyc1dyYXBwZXIge1xuICAgIHRyYW5zZm9ybTogc2NhbGVZKDEpOyB9XG4gICAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAuc2Vla0Jsb2NrOmhvdmVyIC5wcm9ncmVzc0JhcnNXcmFwcGVyLCBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj0ndHJ1ZSddIC5zZWVrQmxvY2suaXNEcmFnZ2luZyAucHJvZ3Jlc3NCYXJzV3JhcHBlciB7XG4gICAgICB0cmFuc2Zvcm06IHNjYWxlWSgxKTsgfVxuICAgIC5zZWVrQmxvY2s6aG92ZXIgLnByb2dyZXNzQmFyc1dyYXBwZXIgLnNlZWtUbywgLnNlZWtCbG9jay5pc0RyYWdnaW5nIC5wcm9ncmVzc0JhcnNXcmFwcGVyIC5zZWVrVG8ge1xuICAgICAgb3BhY2l0eTogMTsgfVxuICAgIC5zZWVrQmxvY2s6aG92ZXIgLnByb2dyZXNzQmFyc1dyYXBwZXIgLnRpbWVJbmRpY2F0b3I6YWZ0ZXIsIC5zZWVrQmxvY2suaXNEcmFnZ2luZyAucHJvZ3Jlc3NCYXJzV3JhcHBlciAudGltZUluZGljYXRvcjphZnRlciB7XG4gICAgICB0cmFuc2Zvcm06IHNjYWxlKDEpOyB9XG4gIC5zZWVrQmxvY2s6aG92ZXIgLnNlZWtCdXR0b24sIC5zZWVrQmxvY2suaXNEcmFnZ2luZyAuc2Vla0J1dHRvbiB7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxKTsgfVxuICAuc2Vla0Jsb2NrOmhvdmVyIC5zeW5jQnV0dG9uLCAuc2Vla0Jsb2NrLmlzRHJhZ2dpbmcgLnN5bmNCdXR0b24ge1xuICAgIHRyYW5zZm9ybTogc2NhbGUoMS40KTsgfVxuICAgIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLnNlZWtCbG9jazpob3ZlciAuc3luY0J1dHRvbiwgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAuc2Vla0Jsb2NrLmlzRHJhZ2dpbmcgLnN5bmNCdXR0b24ge1xuICAgICAgdHJhbnNmb3JtOiBzY2FsZSgxLjMzKTsgfVxuICAgIC5zZWVrQmxvY2s6aG92ZXIgLnN5bmNCdXR0b24ubGl2ZVN5bmMsIC5zZWVrQmxvY2suaXNEcmFnZ2luZyAuc3luY0J1dHRvbi5saXZlU3luYyB7XG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmOyB9XG5cbi5zZWVrQnV0dG9uQ29udGFpbmVyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiA3O1xuICB0b3A6IC0zcHg7XG4gIGxlZnQ6IC02cHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAuc2Vla0J1dHRvbkNvbnRhaW5lciB7XG4gICAgdG9wOiAtNHB4O1xuICAgIGxlZnQ6IC04cHg7XG4gICAgd2lkdGg6IDE2cHg7XG4gICAgaGVpZ2h0OiAxNnB4OyB9XG5cbi5zZWVrQnV0dG9uIHtcbiAgd2lkdGg6IDEycHg7XG4gIGhlaWdodDogMTJweDtcbiAgY29udGVudDogJyc7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgY3ViaWMtYmV6aWVyKDAsIDAsIDAuMiwgMSk7XG4gIHRyYW5zZm9ybTogc2NhbGUoMCk7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjsgfVxuICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj0ndHJ1ZSddIC5zZWVrQnV0dG9uIHtcbiAgICB3aWR0aDogMTZweDtcbiAgICBoZWlnaHQ6IDE2cHg7IH1cblxuLnN5bmNCdXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IDY7XG4gIHRvcDogLTJweDtcbiAgcmlnaHQ6IC01cHg7XG4gIGRpc3BsYXk6IG5vbmU7XG4gIHdpZHRoOiA2cHg7XG4gIGhlaWdodDogNnB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGN1YmljLWJlemllcigwLCAwLCAwLjIsIDEpO1xuICBib3JkZXI6IDJweCBzb2xpZCAjYmFiYWJhO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGJhY2tncm91bmQtY29sb3I6ICNlYTQ5MmU7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAuc3luY0J1dHRvbiB7XG4gICAgdG9wOiAtMnB4O1xuICAgIHJpZ2h0OiAtNnB4O1xuICAgIHdpZHRoOiA4cHg7XG4gICAgaGVpZ2h0OiA4cHg7IH1cbiAgLnN5bmNCdXR0b246aG92ZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7IH1cbiAgLnN5bmNCdXR0b24uaGlkZGVuIHtcbiAgICBkaXNwbGF5OiBub25lOyB9XG5cbi5wcm9ncmVzc0JhcnNXcmFwcGVyIHtcbiAgaGVpZ2h0OiA2cHg7XG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGN1YmljLWJlemllcigwLCAwLCAwLjIsIDEpO1xuICB0cmFuc2Zvcm06IHNjYWxlWSgwLjM0KTsgfVxuICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj0ndHJ1ZSddIC5wcm9ncmVzc0JhcnNXcmFwcGVyIHtcbiAgICBoZWlnaHQ6IDhweDtcbiAgICB0cmFuc2Zvcm06IHNjYWxlWSgwLjI1KTsgfVxuXG4ucHJvZ3Jlc3NCYXIge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGhlaWdodDogNnB4O1xuICBwYWRkaW5nOiAwOyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLnByb2dyZXNzQmFyIHtcbiAgICBoZWlnaHQ6IDhweDsgfVxuXG4ucGxheWVkIHtcbiAgd2lkdGg6IDEwMCU7XG4gIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjsgfVxuXG4uYnVmZmVyZWQge1xuICB0cmFuc2l0aW9uOiB3aWR0aCAuMnMgZWFzZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjI1KTsgfVxuXG4uYmFja2dyb3VuZCB7XG4gIHdpZHRoOiAxMDAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMjUpOyB9XG5cbi5zZWVrVG8ge1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4ycztcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjUpOyB9XG5cbi50aW1lSW5kaWNhdG9ycyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgfVxuXG4udGltZUluZGljYXRvciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTsgfVxuICAudGltZUluZGljYXRvcjphZnRlciB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHJpZ2h0OiAtM3B4O1xuICAgIHdpZHRoOiA2cHg7XG4gICAgaGVpZ2h0OiA2cHg7XG4gICAgY29udGVudDogJyc7XG4gICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgY3ViaWMtYmV6aWVyKDAsIDAsIDAuMiwgMSk7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgwKTtcbiAgICBvcGFjaXR5OiAuNjtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjsgfVxuICAgIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLnRpbWVJbmRpY2F0b3I6YWZ0ZXIge1xuICAgICAgcmlnaHQ6IC00cHg7XG4gICAgICB3aWR0aDogOHB4O1xuICAgICAgaGVpZ2h0OiA4cHg7IH1cbiAgICAudGltZUluZGljYXRvcjphZnRlcjpob3ZlciB7XG4gICAgICBvcGFjaXR5OiAxOyB9XG5cbi5oaXRib3gge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHotaW5kZXg6IDU7XG4gIHRvcDogLTExcHg7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxNnB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIG9wYWNpdHk6IDA7IH1cblxuOmdsb2JhbCBbZGF0YS1wbGF5YWJsZS1mb2N1cy1zb3VyY2U9J2tleSddIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3Byb2dyZXNzLWNvbnRyb2wnXS5mb2N1cy13aXRoaW4sXG46Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0nc2NyaXB0J10gW2RhdGEtcGxheWFibGUtaG9vaz0ncHJvZ3Jlc3MtY29udHJvbCddLmZvY3VzLXdpdGhpbiB7XG4gIG9wYWNpdHk6IDE7XG4gIGJveC1zaGFkb3c6IDAgMCAwIDJweCByZ2JhKDU2LCAxNTMsIDIzNiwgMC44KTsgfVxuIl19 */";
+    var css$13 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.progress__controlButton___2pi4V {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.progress__controlButton___2pi4V:hover {\n    opacity: .7; }\n.progress__hidden___3Rjqh {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.progress__seekBlock___V4YqW {\n  position: relative;\n  display: block;\n  width: 100%;\n  height: 6px;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  -webkit-transition: opacity .2s, visibility .2s;\n  transition: opacity .2s, visibility .2s;\n  -ms-touch-action: none;\n      touch-action: none; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .progress__seekBlock___V4YqW {\n    height: 8px; }\n.progress__seekBlock___V4YqW.progress__inLive___3324R .progress__played___1dShL {\n    background-color: #ea492e; }\n.progress__seekBlock___V4YqW.progress__inLive___3324R .progress__seekTo___T0D_O {\n    background-color: rgba(234, 73, 46, 0.5); }\n.progress__seekBlock___V4YqW.progress__inLive___3324R .progress__syncButton___3N1QN {\n    display: initial; }\n.progress__seekBlock___V4YqW:hover .progress__progressBarsWrapper___1SSlL, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__progressBarsWrapper___1SSlL {\n    -webkit-transform: scaleY(1);\n            transform: scaleY(1); }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .progress__seekBlock___V4YqW:hover .progress__progressBarsWrapper___1SSlL, [data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__progressBarsWrapper___1SSlL {\n      -webkit-transform: scaleY(1);\n              transform: scaleY(1); }\n.progress__seekBlock___V4YqW:hover .progress__progressBarsWrapper___1SSlL .progress__seekTo___T0D_O, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__progressBarsWrapper___1SSlL .progress__seekTo___T0D_O {\n      opacity: 1; }\n.progress__seekBlock___V4YqW:hover .progress__progressBarsWrapper___1SSlL .progress__timeIndicator___2wltB:after, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__progressBarsWrapper___1SSlL .progress__timeIndicator___2wltB:after {\n      -webkit-transform: scale(1);\n              transform: scale(1); }\n.progress__seekBlock___V4YqW:hover .progress__seekButton___3UtgF, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__seekButton___3UtgF {\n    -webkit-transform: scale(1);\n            transform: scale(1); }\n.progress__seekBlock___V4YqW:hover .progress__seekButton___3UtgF.progress__liveSync___PIvwF, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__seekButton___3UtgF.progress__liveSync___PIvwF {\n      left: 100%; }\n.progress__seekBlock___V4YqW:hover .progress__syncButton___3N1QN, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__syncButton___3N1QN {\n    -webkit-transform: scale(1.4);\n            transform: scale(1.4); }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .progress__seekBlock___V4YqW:hover .progress__syncButton___3N1QN, [data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__syncButton___3N1QN {\n      -webkit-transform: scale(1.33);\n              transform: scale(1.33); }\n.progress__seekBlock___V4YqW:hover .progress__syncButton___3N1QN.progress__liveSync___PIvwF, .progress__seekBlock___V4YqW.progress__isDragging___2Tcb5 .progress__syncButton___3N1QN.progress__liveSync___PIvwF {\n      background-color: #fff; }\n.progress__seekButtonContainer___1TZ8Z {\n  position: absolute;\n  z-index: 7;\n  top: -3px;\n  left: -6px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .progress__seekButtonContainer___1TZ8Z {\n    top: -4px;\n    left: -8px;\n    width: 16px;\n    height: 16px; }\n.progress__seekButton___3UtgF {\n  display: block;\n  width: 12px;\n  height: 12px;\n  content: '';\n  cursor: pointer;\n  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  -webkit-transform: scale(0);\n          transform: scale(0);\n  border-radius: 50%;\n  background-color: #fff; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .progress__seekButton___3UtgF {\n    width: 16px;\n    height: 16px; }\n.progress__syncButton___3N1QN {\n  position: absolute;\n  z-index: 6;\n  top: -2px;\n  right: -5px;\n  display: none;\n  width: 6px;\n  height: 6px;\n  cursor: pointer;\n  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  border: 2px solid #bababa;\n  border-radius: 50%;\n  background-color: #ea492e; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .progress__syncButton___3N1QN {\n    top: -2px;\n    right: -6px;\n    width: 8px;\n    height: 8px; }\n.progress__syncButton___3N1QN:hover {\n    background-color: #fff; }\n.progress__syncButton___3N1QN.progress__hidden___3Rjqh {\n    display: none; }\n.progress__progressBarsWrapper___1SSlL {\n  height: 6px;\n  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n  -webkit-transform: scaleY(0.34);\n          transform: scaleY(0.34); }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .progress__progressBarsWrapper___1SSlL {\n    height: 8px;\n    -webkit-transform: scaleY(0.25);\n            transform: scaleY(0.25); }\n.progress__progressBar___210E8 {\n  position: absolute;\n  height: 6px;\n  padding: 0; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .progress__progressBar___210E8 {\n    height: 8px; }\n.progress__played___1dShL {\n  width: 100%;\n  -webkit-transform-origin: 0 0;\n          transform-origin: 0 0;\n  background-color: #fff; }\n.progress__buffered___2LiZB {\n  -webkit-transition: width .2s ease;\n  transition: width .2s ease;\n  background-color: rgba(255, 255, 255, 0.25); }\n.progress__background___lqeL2 {\n  width: 100%;\n  background-color: rgba(255, 255, 255, 0.25); }\n.progress__seekTo___T0D_O {\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  background-color: rgba(255, 255, 255, 0.5); }\n.progress__timeIndicators___c6h-a {\n  position: absolute;\n  overflow-x: hidden;\n  width: 100%;\n  height: 100%;\n  background-color: transparent; }\n.progress__timeIndicator___2wltB {\n  position: absolute; }\n.progress__timeIndicator___2wltB:after {\n    position: absolute;\n    right: -3px;\n    width: 6px;\n    height: 6px;\n    content: '';\n    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n    transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n    transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n    transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    opacity: .6;\n    border-radius: 50%;\n    background-color: #fff; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .progress__timeIndicator___2wltB:after {\n      right: -4px;\n      width: 8px;\n      height: 8px; }\n.progress__timeIndicator___2wltB:after:hover {\n      opacity: 1; }\n.progress__hitbox___xqdFP {\n  position: relative;\n  z-index: 5;\n  top: -11px;\n  display: block;\n  width: 100%;\n  height: 16px;\n  cursor: pointer;\n  opacity: 0; }\n[data-playable-focus-source='key']\n[data-playable-hook='progress-control'].focus-within,\n[data-playable-focus-source='script']\n[data-playable-hook='progress-control'].focus-within {\n  opacity: 1;\n  -webkit-box-shadow: 0 0 0 2px rgba(56, 153, 236, 0.8);\n          box-shadow: 0 0 0 2px rgba(56, 153, 236, 0.8); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2dyZXNzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0dBS0c7QUFDSDtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0FBQ3RCO0lBQ0UsWUFBWSxFQUFFO0FBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0FBRTFCO0VBQ0UsbUJBQW1CO0VBQ25CLGVBQWU7RUFDZixZQUFZO0VBQ1osWUFBWTtFQUNaLDBCQUFrQjtLQUFsQix1QkFBa0I7TUFBbEIsc0JBQWtCO1VBQWxCLGtCQUFrQjtFQUNsQixnREFBd0M7RUFBeEMsd0NBQXdDO0VBQ3hDLHVCQUFtQjtNQUFuQixtQkFBbUIsRUFBRTtBQUNyQjtJQUNFLFlBQVksRUFBRTtBQUNoQjtJQUNFLDBCQUEwQixFQUFFO0FBQzlCO0lBQ0UseUNBQXlDLEVBQUU7QUFDN0M7SUFDRSxpQkFBaUIsRUFBRTtBQUNyQjtJQUNFLDZCQUFxQjtZQUFyQixxQkFBcUIsRUFBRTtBQUN2QjtNQUNFLDZCQUFxQjtjQUFyQixxQkFBcUIsRUFBRTtBQUN6QjtNQUNFLFdBQVcsRUFBRTtBQUNmO01BQ0UsNEJBQW9CO2NBQXBCLG9CQUFvQixFQUFFO0FBQzFCO0lBQ0UsNEJBQW9CO1lBQXBCLG9CQUFvQixFQUFFO0FBQ3RCO01BQ0UsV0FBVyxFQUFFO0FBQ2pCO0lBQ0UsOEJBQXNCO1lBQXRCLHNCQUFzQixFQUFFO0FBQ3hCO01BQ0UsK0JBQXVCO2NBQXZCLHVCQUF1QixFQUFFO0FBQzNCO01BQ0UsdUJBQXVCLEVBQUU7QUFFL0I7RUFDRSxtQkFBbUI7RUFDbkIsV0FBVztFQUNYLFVBQVU7RUFDVixXQUFXLEVBQUU7QUFDYjtJQUNFLFVBQVU7SUFDVixXQUFXO0lBQ1gsWUFBWTtJQUNaLGFBQWEsRUFBRTtBQUVuQjtFQUNFLGVBQWU7RUFDZixZQUFZO0VBQ1osYUFBYTtFQUNiLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsc0VBQXNEO0VBQXRELDhEQUFzRDtFQUF0RCxzREFBc0Q7RUFBdEQseUdBQXNEO0VBQ3RELDRCQUFvQjtVQUFwQixvQkFBb0I7RUFDcEIsbUJBQW1CO0VBQ25CLHVCQUF1QixFQUFFO0FBQ3pCO0lBQ0UsWUFBWTtJQUNaLGFBQWEsRUFBRTtBQUVuQjtFQUNFLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsVUFBVTtFQUNWLFlBQVk7RUFDWixjQUFjO0VBQ2QsV0FBVztFQUNYLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsc0VBQXNEO0VBQXRELDhEQUFzRDtFQUF0RCxzREFBc0Q7RUFBdEQseUdBQXNEO0VBQ3RELDBCQUEwQjtFQUMxQixtQkFBbUI7RUFDbkIsMEJBQTBCLEVBQUU7QUFDNUI7SUFDRSxVQUFVO0lBQ1YsWUFBWTtJQUNaLFdBQVc7SUFDWCxZQUFZLEVBQUU7QUFDaEI7SUFDRSx1QkFBdUIsRUFBRTtBQUMzQjtJQUNFLGNBQWMsRUFBRTtBQUVwQjtFQUNFLFlBQVk7RUFDWixzRUFBc0Q7RUFBdEQsOERBQXNEO0VBQXRELHNEQUFzRDtFQUF0RCx5R0FBc0Q7RUFDdEQsZ0NBQXdCO1VBQXhCLHdCQUF3QixFQUFFO0FBQzFCO0lBQ0UsWUFBWTtJQUNaLGdDQUF3QjtZQUF4Qix3QkFBd0IsRUFBRTtBQUU5QjtFQUNFLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osV0FBVyxFQUFFO0FBQ2I7SUFDRSxZQUFZLEVBQUU7QUFFbEI7RUFDRSxZQUFZO0VBQ1osOEJBQXNCO1VBQXRCLHNCQUFzQjtFQUN0Qix1QkFBdUIsRUFBRTtBQUUzQjtFQUNFLG1DQUEyQjtFQUEzQiwyQkFBMkI7RUFDM0IsNENBQTRDLEVBQUU7QUFFaEQ7RUFDRSxZQUFZO0VBQ1osNENBQTRDLEVBQUU7QUFFaEQ7RUFDRSxnQ0FBd0I7RUFBeEIsd0JBQXdCO0VBQ3hCLDJDQUEyQyxFQUFFO0FBRS9DO0VBQ0UsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osYUFBYTtFQUNiLDhCQUE4QixFQUFFO0FBRWxDO0VBQ0UsbUJBQW1CLEVBQUU7QUFDckI7SUFDRSxtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLFdBQVc7SUFDWCxZQUFZO0lBQ1osWUFBWTtJQUNaLHNFQUFzRDtJQUF0RCw4REFBc0Q7SUFBdEQsc0RBQXNEO0lBQXRELHlHQUFzRDtJQUN0RCw0QkFBb0I7WUFBcEIsb0JBQW9CO0lBQ3BCLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsdUJBQXVCLEVBQUU7QUFDekI7TUFDRSxZQUFZO01BQ1osV0FBVztNQUNYLFlBQVksRUFBRTtBQUNoQjtNQUNFLFdBQVcsRUFBRTtBQUVuQjtFQUNFLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsV0FBVztFQUNYLGVBQWU7RUFDZixZQUFZO0VBQ1osYUFBYTtFQUNiLGdCQUFnQjtFQUNoQixXQUFXLEVBQUU7QUFFZjs7OztFQUlFLFdBQVc7RUFDWCxzREFBOEM7VUFBOUMsOENBQThDLEVBQUUiLCJmaWxlIjoicHJvZ3Jlc3Muc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIGNoYWxsZW5nZSBoZXJlIHRvIHN1cHBvcnQgXCJwbGF5YWJsZSBxdWVyaWVzXCIgYW5kIFwiZGlyZWN0aW9uXCIgYXQgdGhlIHNhbWUgdGltZSBhbmQgYWxsb3cgbWl4aW5zIGxpa2U6XG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBsdHIoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBydGwoKSlcbiAqL1xuLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4uc2Vla0Jsb2NrIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogNnB4O1xuICB1c2VyLXNlbGVjdDogbm9uZTtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSAuMnMsIHZpc2liaWxpdHkgLjJzO1xuICB0b3VjaC1hY3Rpb246IG5vbmU7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5zZWVrQmxvY2sge1xuICAgIGhlaWdodDogOHB4OyB9XG4gIC5zZWVrQmxvY2suaW5MaXZlIC5wbGF5ZWQge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNlYTQ5MmU7IH1cbiAgLnNlZWtCbG9jay5pbkxpdmUgLnNlZWtUbyB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyMzQsIDczLCA0NiwgMC41KTsgfVxuICAuc2Vla0Jsb2NrLmluTGl2ZSAuc3luY0J1dHRvbiB7XG4gICAgZGlzcGxheTogaW5pdGlhbDsgfVxuICAuc2Vla0Jsb2NrOmhvdmVyIC5wcm9ncmVzc0JhcnNXcmFwcGVyLCAuc2Vla0Jsb2NrLmlzRHJhZ2dpbmcgLnByb2dyZXNzQmFyc1dyYXBwZXIge1xuICAgIHRyYW5zZm9ybTogc2NhbGVZKDEpOyB9XG4gICAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5zZWVrQmxvY2s6aG92ZXIgLnByb2dyZXNzQmFyc1dyYXBwZXIsIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAuc2Vla0Jsb2NrLmlzRHJhZ2dpbmcgLnByb2dyZXNzQmFyc1dyYXBwZXIge1xuICAgICAgdHJhbnNmb3JtOiBzY2FsZVkoMSk7IH1cbiAgICAuc2Vla0Jsb2NrOmhvdmVyIC5wcm9ncmVzc0JhcnNXcmFwcGVyIC5zZWVrVG8sIC5zZWVrQmxvY2suaXNEcmFnZ2luZyAucHJvZ3Jlc3NCYXJzV3JhcHBlciAuc2Vla1RvIHtcbiAgICAgIG9wYWNpdHk6IDE7IH1cbiAgICAuc2Vla0Jsb2NrOmhvdmVyIC5wcm9ncmVzc0JhcnNXcmFwcGVyIC50aW1lSW5kaWNhdG9yOmFmdGVyLCAuc2Vla0Jsb2NrLmlzRHJhZ2dpbmcgLnByb2dyZXNzQmFyc1dyYXBwZXIgLnRpbWVJbmRpY2F0b3I6YWZ0ZXIge1xuICAgICAgdHJhbnNmb3JtOiBzY2FsZSgxKTsgfVxuICAuc2Vla0Jsb2NrOmhvdmVyIC5zZWVrQnV0dG9uLCAuc2Vla0Jsb2NrLmlzRHJhZ2dpbmcgLnNlZWtCdXR0b24ge1xuICAgIHRyYW5zZm9ybTogc2NhbGUoMSk7IH1cbiAgICAuc2Vla0Jsb2NrOmhvdmVyIC5zZWVrQnV0dG9uLmxpdmVTeW5jLCAuc2Vla0Jsb2NrLmlzRHJhZ2dpbmcgLnNlZWtCdXR0b24ubGl2ZVN5bmMge1xuICAgICAgbGVmdDogMTAwJTsgfVxuICAuc2Vla0Jsb2NrOmhvdmVyIC5zeW5jQnV0dG9uLCAuc2Vla0Jsb2NrLmlzRHJhZ2dpbmcgLnN5bmNCdXR0b24ge1xuICAgIHRyYW5zZm9ybTogc2NhbGUoMS40KTsgfVxuICAgIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAuc2Vla0Jsb2NrOmhvdmVyIC5zeW5jQnV0dG9uLCBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl0gLnNlZWtCbG9jay5pc0RyYWdnaW5nIC5zeW5jQnV0dG9uIHtcbiAgICAgIHRyYW5zZm9ybTogc2NhbGUoMS4zMyk7IH1cbiAgICAuc2Vla0Jsb2NrOmhvdmVyIC5zeW5jQnV0dG9uLmxpdmVTeW5jLCAuc2Vla0Jsb2NrLmlzRHJhZ2dpbmcgLnN5bmNCdXR0b24ubGl2ZVN5bmMge1xuICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjsgfVxuXG4uc2Vla0J1dHRvbkNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogNztcbiAgdG9wOiAtM3B4O1xuICBsZWZ0OiAtNnB4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAuc2Vla0J1dHRvbkNvbnRhaW5lciB7XG4gICAgdG9wOiAtNHB4O1xuICAgIGxlZnQ6IC04cHg7XG4gICAgd2lkdGg6IDE2cHg7XG4gICAgaGVpZ2h0OiAxNnB4OyB9XG5cbi5zZWVrQnV0dG9uIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiAxMnB4O1xuICBoZWlnaHQ6IDEycHg7XG4gIGNvbnRlbnQ6ICcnO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGN1YmljLWJlemllcigwLCAwLCAwLjIsIDEpO1xuICB0cmFuc2Zvcm06IHNjYWxlKDApO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmY7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5zZWVrQnV0dG9uIHtcbiAgICB3aWR0aDogMTZweDtcbiAgICBoZWlnaHQ6IDE2cHg7IH1cblxuLnN5bmNCdXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IDY7XG4gIHRvcDogLTJweDtcbiAgcmlnaHQ6IC01cHg7XG4gIGRpc3BsYXk6IG5vbmU7XG4gIHdpZHRoOiA2cHg7XG4gIGhlaWdodDogNnB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGN1YmljLWJlemllcigwLCAwLCAwLjIsIDEpO1xuICBib3JkZXI6IDJweCBzb2xpZCAjYmFiYWJhO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGJhY2tncm91bmQtY29sb3I6ICNlYTQ5MmU7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5zeW5jQnV0dG9uIHtcbiAgICB0b3A6IC0ycHg7XG4gICAgcmlnaHQ6IC02cHg7XG4gICAgd2lkdGg6IDhweDtcbiAgICBoZWlnaHQ6IDhweDsgfVxuICAuc3luY0J1dHRvbjpob3ZlciB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjsgfVxuICAuc3luY0J1dHRvbi5oaWRkZW4ge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cblxuLnByb2dyZXNzQmFyc1dyYXBwZXIge1xuICBoZWlnaHQ6IDZweDtcbiAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgY3ViaWMtYmV6aWVyKDAsIDAsIDAuMiwgMSk7XG4gIHRyYW5zZm9ybTogc2NhbGVZKDAuMzQpOyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAucHJvZ3Jlc3NCYXJzV3JhcHBlciB7XG4gICAgaGVpZ2h0OiA4cHg7XG4gICAgdHJhbnNmb3JtOiBzY2FsZVkoMC4yNSk7IH1cblxuLnByb2dyZXNzQmFyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBoZWlnaHQ6IDZweDtcbiAgcGFkZGluZzogMDsgfVxuICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl0gLnByb2dyZXNzQmFyIHtcbiAgICBoZWlnaHQ6IDhweDsgfVxuXG4ucGxheWVkIHtcbiAgd2lkdGg6IDEwMCU7XG4gIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjsgfVxuXG4uYnVmZmVyZWQge1xuICB0cmFuc2l0aW9uOiB3aWR0aCAuMnMgZWFzZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjI1KTsgfVxuXG4uYmFja2dyb3VuZCB7XG4gIHdpZHRoOiAxMDAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMjUpOyB9XG5cbi5zZWVrVG8ge1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4ycztcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjUpOyB9XG5cbi50aW1lSW5kaWNhdG9ycyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgfVxuXG4udGltZUluZGljYXRvciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTsgfVxuICAudGltZUluZGljYXRvcjphZnRlciB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHJpZ2h0OiAtM3B4O1xuICAgIHdpZHRoOiA2cHg7XG4gICAgaGVpZ2h0OiA2cHg7XG4gICAgY29udGVudDogJyc7XG4gICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgY3ViaWMtYmV6aWVyKDAsIDAsIDAuMiwgMSk7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgwKTtcbiAgICBvcGFjaXR5OiAuNjtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjsgfVxuICAgIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAudGltZUluZGljYXRvcjphZnRlciB7XG4gICAgICByaWdodDogLTRweDtcbiAgICAgIHdpZHRoOiA4cHg7XG4gICAgICBoZWlnaHQ6IDhweDsgfVxuICAgIC50aW1lSW5kaWNhdG9yOmFmdGVyOmhvdmVyIHtcbiAgICAgIG9wYWNpdHk6IDE7IH1cblxuLmhpdGJveCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgei1pbmRleDogNTtcbiAgdG9wOiAtMTFweDtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDE2cHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgb3BhY2l0eTogMDsgfVxuXG46Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0na2V5J11cbltkYXRhLXBsYXlhYmxlLWhvb2s9J3Byb2dyZXNzLWNvbnRyb2wnXS5mb2N1cy13aXRoaW4sXG46Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0nc2NyaXB0J11cbltkYXRhLXBsYXlhYmxlLWhvb2s9J3Byb2dyZXNzLWNvbnRyb2wnXS5mb2N1cy13aXRoaW4ge1xuICBvcGFjaXR5OiAxO1xuICBib3gtc2hhZG93OiAwIDAgMCAycHggcmdiYSg1NiwgMTUzLCAyMzYsIDAuOCk7IH1cbiJdfQ== */";
     var styles$13 = {"controlButton":"progress__controlButton___2pi4V","hidden":"progress__hidden___3Rjqh","seekBlock":"progress__seekBlock___V4YqW","inLive":"progress__inLive___3324R","played":"progress__played___1dShL","seekTo":"progress__seekTo___T0D_O","syncButton":"progress__syncButton___3N1QN","progressBarsWrapper":"progress__progressBarsWrapper___1SSlL","isDragging":"progress__isDragging___2Tcb5","timeIndicator":"progress__timeIndicator___2wltB","seekButton":"progress__seekButton___3UtgF","liveSync":"progress__liveSync___PIvwF","seekButtonContainer":"progress__seekButtonContainer___1TZ8Z","progressBar":"progress__progressBar___210E8","buffered":"progress__buffered___2LiZB","background":"progress__background___lqeL2","timeIndicators":"progress__timeIndicators___c6h-a","hitbox":"progress__hitbox___xqdFP"};
     styleInject(css$13);
 
@@ -9089,10 +14190,10 @@ function readCookie(cookieName) {
         };
         ProgressView.prototype.setLiveSyncState = function (isSync) {
             toggleElementClass(this._$syncButton, this.styleNames.liveSync, isSync);
+            toggleElementClass(this._$seekButton, this.styleNames.liveSync, isSync);
             if (isSync) {
                 this._syncButtonTooltipReference.disable();
                 this._$played.setAttribute('style', "width:100%;");
-                this._$seekButton.setAttribute('style', "left:100%;");
             }
             else {
                 this._syncButtonTooltipReference.enable();
@@ -9221,7 +14322,7 @@ function readCookie(cookieName) {
         return isNegative ? "-" + time : time;
     }
 
-    var UPDATE_INTERVAL_DELAY = 1000 / 60;
+    var UPDATE_PROGRESS_INTERVAL_DELAY = 1000 / 60;
     var ProgressControl = /** @class */ (function () {
         function ProgressControl(_a) {
             var engine = _a.engine, liveStateEngine = _a.liveStateEngine, eventEmitter = _a.eventEmitter, textMap = _a.textMap, tooltipService = _a.tooltipService, theme = _a.theme, previewThumbnail = _a.previewThumbnail, previewFullSize = _a.previewFullSize;
@@ -9322,7 +14423,7 @@ function readCookie(cookieName) {
                 this._stopIntervalUpdates();
             }
             this._updateAllIndicators();
-            this._updateControlInterval = window.setInterval(this._updateAllIndicators, UPDATE_INTERVAL_DELAY);
+            this._updateControlInterval = window.setInterval(this._updateAllIndicators, UPDATE_PROGRESS_INTERVAL_DELAY);
         };
         ProgressControl.prototype._stopIntervalUpdates = function () {
             window.clearInterval(this._updateControlInterval);
@@ -9626,19 +14727,9 @@ function readCookie(cookieName) {
         return ProgressControl;
     }());
 
-    function dot_tpl_src_modules_ui_controls_play_templates_playIcon_dot(props
-    ) {
-    var out='<div class="'+(props.styles.icon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 14" preserveAspectRatio="xMidYMin slice" width="100%" style="padding-bottom: 127%; height: 1px; overflow: visible" > <!-- padding-bottom: 100% * height/width --> <path class="'+(props.themeStyles.playSvgFill)+'" d="M.079 0L0 14l10.5-7.181z"/> </svg></div>';return out;
-    }
-
-    function dot_tpl_src_modules_ui_controls_play_templates_pauseIcon_dot(props
-    ) {
-    var out='<div class="'+(props.styles.icon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14" preserveAspectRatio="xMidYMin slice" width="100%" style="padding-bottom: 140%; height: 1px; overflow: visible" > <!-- padding-bottom: 100% * height/width --> <path class="'+(props.themeStyles.playSvgFill)+'" d="M7 0h3v14H7V0zM0 0h3v14H0V0z"/> </svg></div>';return out;
-    }
-
     function dot_tpl_src_modules_ui_controls_play_templates_control_dot(props
     ) {
-    var out='<div class="'+(props.styles.playControl)+'" data-playable-hook="playback-control" data-is-playing="false"> <button class="'+(props.styles.playbackToggle)+' '+(props.styles.controlButton)+'" data-playable-hook="playback-control" aria-label="'+(props.texts.label)+'" type="button" tabindex="0"/></div>';return out;
+    var out='<div class="'+(props.styles.playControl)+'" data-playable-hook="playback-control"> <button class="'+(props.styles.playbackToggle)+' '+(props.styles.controlButton)+'" data-playable-hook="playback-control" aria-label="'+(props.texts.label)+'" type="button" tabindex="0"> <div class="'+(props.styles.playIcon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" preserveAspectRatio="xMidYMin slice" class="'+(props.styles.icon_small)+'" width="100%"> <path class="'+(props.themeStyles.playSvgFill)+'" d="M8 6v14l10.25-7.18L8 6z"/> </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" preserveAspectRatio="xMidYMin slice" class="'+(props.styles.icon_big)+'" width="100%"> <path class="'+(props.themeStyles.playSvgFill)+'" d="M10 7v21l16-11L10 7z"/> </svg> </div> <div class="'+(props.styles.pauseIcon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" preserveAspectRatio="xMidYMin slice" class="'+(props.styles.icon_small)+'" width="100%"> <path class="'+(props.themeStyles.playSvgFill)+'" d="M15 6h3v14h-3V6zM8 6h3v14H8V6z"/> </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" preserveAspectRatio="xMidYMin slice" class="'+(props.styles.icon_big)+'" width="100%"> <path class="'+(props.themeStyles.playSvgFill)+'" d="M10 7h5v21h-5V7zm10 0h5v21h-5V7z"/> </svg> </div> </button></div>';return out;
     }
 
     var playViewTheme = {
@@ -9647,8 +14738,8 @@ function readCookie(cookieName) {
         },
     };
 
-    var css$14 = ".play__controlButton___3PoOY {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .play__controlButton___3PoOY:hover {\n    opacity: .7; }\n  .play__hidden___1tNO8 {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .play__playControl___1AgWy {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start; }\n  .play__playbackToggle___3tzyO {\n  width: 26px;\n  min-width: 26px;\n  height: 26px;\n  min-height: 26px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .play__playbackToggle___3tzyO {\n    width: 35px;\n    min-width: 35px;\n    height: 35px;\n    min-height: 35px;\n    background-size: 15px 21px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .play__playbackToggle___3tzyO .play__icon___1z40F {\n      width: 15px;\n      height: 21px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .play__playbackToggle___3tzyO.play__paused___2fI5f {\n      background-size: 16px 21px; }\n  .play__playbackToggle___3tzyO .play__icon___1z40F {\n    width: 11px;\n    height: 14px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBsYXkuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0VBQ3RCO0lBQ0UsWUFBWSxFQUFFO0VBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0VBRTFCO0VBQ0UsbUJBQW1CO0VBQ25CLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsK0JBQXVCO1VBQXZCLHVCQUF1QjtFQUN2QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQjtFQUNwQix3QkFBNEI7TUFBNUIscUJBQTRCO1VBQTVCLDRCQUE0QixFQUFFO0VBRWhDO0VBQ0UsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2IsaUJBQWlCLEVBQUU7RUFDbkI7SUFDRSxZQUFZO0lBQ1osZ0JBQWdCO0lBQ2hCLGFBQWE7SUFDYixpQkFBaUI7SUFDakIsMkJBQTJCLEVBQUU7RUFDN0I7TUFDRSxZQUFZO01BQ1osYUFBYSxFQUFFO0VBQ2pCO01BQ0UsMkJBQTJCLEVBQUU7RUFDakM7SUFDRSxZQUFZO0lBQ1osYUFBYSxFQUFFIiwiZmlsZSI6InBsYXkuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250cm9sQnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgcGFkZGluZzogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAuMnM7XG4gIHRyYW5zaXRpb24tcHJvcGVydHk6IG9wYWNpdHk7XG4gIG9wYWNpdHk6IDE7XG4gIGJvcmRlcjogMDtcbiAgYm9yZGVyLXJhZGl1czogMDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5jb250cm9sQnV0dG9uOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAuNzsgfVxuXG4uaGlkZGVuIHtcbiAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XG4gIHdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIG1pbi13aWR0aDogMCAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWluLWhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtYXJnaW46IDAgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCAhaW1wb3J0YW50O1xuICBvcGFjaXR5OiAwICFpbXBvcnRhbnQ7IH1cblxuLnBsYXlDb250cm9sIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtc3RhcnQ7IH1cblxuLnBsYXliYWNrVG9nZ2xlIHtcbiAgd2lkdGg6IDI2cHg7XG4gIG1pbi13aWR0aDogMjZweDtcbiAgaGVpZ2h0OiAyNnB4O1xuICBtaW4taGVpZ2h0OiAyNnB4OyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLnBsYXliYWNrVG9nZ2xlIHtcbiAgICB3aWR0aDogMzVweDtcbiAgICBtaW4td2lkdGg6IDM1cHg7XG4gICAgaGVpZ2h0OiAzNXB4O1xuICAgIG1pbi1oZWlnaHQ6IDM1cHg7XG4gICAgYmFja2dyb3VuZC1zaXplOiAxNXB4IDIxcHg7IH1cbiAgICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj0ndHJ1ZSddIC5wbGF5YmFja1RvZ2dsZSAuaWNvbiB7XG4gICAgICB3aWR0aDogMTVweDtcbiAgICAgIGhlaWdodDogMjFweDsgfVxuICAgIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLnBsYXliYWNrVG9nZ2xlLnBhdXNlZCB7XG4gICAgICBiYWNrZ3JvdW5kLXNpemU6IDE2cHggMjFweDsgfVxuICAucGxheWJhY2tUb2dnbGUgLmljb24ge1xuICAgIHdpZHRoOiAxMXB4O1xuICAgIGhlaWdodDogMTRweDsgfVxuIl19 */";
-    var styles$14 = {"controlButton":"play__controlButton___3PoOY","hidden":"play__hidden___1tNO8","playControl":"play__playControl___1AgWy","playbackToggle":"play__playbackToggle___3tzyO","icon":"play__icon___1z40F","paused":"play__paused___2fI5f"};
+    var css$14 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.play__controlButton___3PoOY {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.play__controlButton___3PoOY:hover {\n    opacity: .7; }\n.play__hidden___1tNO8 {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.play__playControl___1AgWy {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start; }\n.play__playbackToggle___3tzyO {\n  width: 26px;\n  min-width: 26px;\n  height: 26px;\n  min-height: 26px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .play__playbackToggle___3tzyO {\n    width: 35px;\n    min-width: 35px;\n    height: 35px;\n    min-height: 35px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .play__playbackToggle___3tzyO .play__icon_small___jluYF {\n      display: none; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .play__playbackToggle___3tzyO .play__icon_big___2HowC {\n      display: block; }\n.play__playbackToggle___3tzyO .play__playIcon___2ypel {\n    display: none; }\n.play__playbackToggle___3tzyO .play__pauseIcon___3To0L {\n    display: block; }\n.play__playbackToggle___3tzyO.play__paused___2fI5f .play__playIcon___2ypel {\n    display: block; }\n.play__playbackToggle___3tzyO.play__paused___2fI5f .play__pauseIcon___3To0L {\n    display: none; }\n.play__playbackToggle___3tzyO .play__icon_small___jluYF {\n    display: block; }\n.play__playbackToggle___3tzyO .play__icon_big___2HowC {\n    display: none; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBsYXkuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7R0FLRztBQUNIO0VBQ0UscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGlDQUF5QjtVQUF6Qix5QkFBeUI7RUFDekIscUNBQTZCO0VBQTdCLDZCQUE2QjtFQUM3QixXQUFXO0VBQ1gsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsOEJBQThCO0VBQzlCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7QUFDdEI7SUFDRSxZQUFZLEVBQUU7QUFFbEI7RUFDRSw4QkFBOEI7RUFDOUIsb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4QixxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixzQkFBc0I7RUFDdEIsc0JBQXNCLEVBQUU7QUFFMUI7RUFDRSxtQkFBbUI7RUFDbkIscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCwrQkFBdUI7VUFBdkIsdUJBQXVCO0VBQ3ZCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CO0VBQ3BCLHdCQUE0QjtNQUE1QixxQkFBNEI7VUFBNUIsNEJBQTRCLEVBQUU7QUFFaEM7RUFDRSxZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixpQkFBaUIsRUFBRTtBQUNuQjtJQUNFLFlBQVk7SUFDWixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLGlCQUFpQixFQUFFO0FBQ25CO01BQ0UsY0FBYyxFQUFFO0FBQ2xCO01BQ0UsZUFBZSxFQUFFO0FBQ3JCO0lBQ0UsY0FBYyxFQUFFO0FBQ2xCO0lBQ0UsZUFBZSxFQUFFO0FBQ25CO0lBQ0UsZUFBZSxFQUFFO0FBQ25CO0lBQ0UsY0FBYyxFQUFFO0FBQ2xCO0lBQ0UsZUFBZSxFQUFFO0FBQ25CO0lBQ0UsY0FBYyxFQUFFIiwiZmlsZSI6InBsYXkuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIGNoYWxsZW5nZSBoZXJlIHRvIHN1cHBvcnQgXCJwbGF5YWJsZSBxdWVyaWVzXCIgYW5kIFwiZGlyZWN0aW9uXCIgYXQgdGhlIHNhbWUgdGltZSBhbmQgYWxsb3cgbWl4aW5zIGxpa2U6XG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBsdHIoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBydGwoKSlcbiAqL1xuLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4ucGxheUNvbnRyb2wge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDsgfVxuXG4ucGxheWJhY2tUb2dnbGUge1xuICB3aWR0aDogMjZweDtcbiAgbWluLXdpZHRoOiAyNnB4O1xuICBoZWlnaHQ6IDI2cHg7XG4gIG1pbi1oZWlnaHQ6IDI2cHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5wbGF5YmFja1RvZ2dsZSB7XG4gICAgd2lkdGg6IDM1cHg7XG4gICAgbWluLXdpZHRoOiAzNXB4O1xuICAgIGhlaWdodDogMzVweDtcbiAgICBtaW4taGVpZ2h0OiAzNXB4OyB9XG4gICAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5wbGF5YmFja1RvZ2dsZSAuaWNvbl9zbWFsbCB7XG4gICAgICBkaXNwbGF5OiBub25lOyB9XG4gICAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5wbGF5YmFja1RvZ2dsZSAuaWNvbl9iaWcge1xuICAgICAgZGlzcGxheTogYmxvY2s7IH1cbiAgLnBsYXliYWNrVG9nZ2xlIC5wbGF5SWNvbiB7XG4gICAgZGlzcGxheTogbm9uZTsgfVxuICAucGxheWJhY2tUb2dnbGUgLnBhdXNlSWNvbiB7XG4gICAgZGlzcGxheTogYmxvY2s7IH1cbiAgLnBsYXliYWNrVG9nZ2xlLnBhdXNlZCAucGxheUljb24ge1xuICAgIGRpc3BsYXk6IGJsb2NrOyB9XG4gIC5wbGF5YmFja1RvZ2dsZS5wYXVzZWQgLnBhdXNlSWNvbiB7XG4gICAgZGlzcGxheTogbm9uZTsgfVxuICAucGxheWJhY2tUb2dnbGUgLmljb25fc21hbGwge1xuICAgIGRpc3BsYXk6IGJsb2NrOyB9XG4gIC5wbGF5YmFja1RvZ2dsZSAuaWNvbl9iaWcge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cbiJdfQ== */";
+    var styles$14 = {"controlButton":"play__controlButton___3PoOY","hidden":"play__hidden___1tNO8","playControl":"play__playControl___1AgWy","playbackToggle":"play__playbackToggle___3tzyO","icon_small":"play__icon_small___jluYF","icon_big":"play__icon_big___2HowC","playIcon":"play__playIcon___2ypel","pauseIcon":"play__pauseIcon___3To0L","paused":"play__paused___2fI5f"};
     styleInject(css$14);
 
     var DATA_IS_PLAYING = 'data-playable-is-playing';
@@ -9662,6 +14753,7 @@ function readCookie(cookieName) {
             _this._textMap = textMap;
             _this._$rootElement = htmlToElement(dot_tpl_src_modules_ui_controls_play_templates_control_dot({
                 styles: _this.styleNames,
+                themeStyles: _this.themeStyles,
                 texts: {
                     label: _this._textMap.get(TextLabel$1.PLAY_CONTROL_LABEL),
                 },
@@ -9685,18 +14777,10 @@ function readCookie(cookieName) {
         PlayView.prototype.setPlayingState = function (isPlaying) {
             if (isPlaying) {
                 this._$playbackControl.classList.remove(this.styleNames.paused);
-                this._$playbackControl.innerHTML = dot_tpl_src_modules_ui_controls_play_templates_pauseIcon_dot({
-                    styles: this.styleNames,
-                    themeStyles: this.themeStyles,
-                });
                 this._$playbackControl.setAttribute('aria-label', this._textMap.get(TextLabel$1.PAUSE_CONTROL_LABEL));
             }
             else {
                 this._$playbackControl.classList.add(this.styleNames.paused);
-                this._$playbackControl.innerHTML = dot_tpl_src_modules_ui_controls_play_templates_playIcon_dot({
-                    styles: this.styleNames,
-                    themeStyles: this.themeStyles,
-                });
                 this._$playbackControl.setAttribute('aria-label', this._textMap.get(TextLabel$1.PLAY_CONTROL_LABEL));
             }
             this._$rootElement.setAttribute(DATA_IS_PLAYING, String(isPlaying));
@@ -9809,7 +14893,7 @@ function readCookie(cookieName) {
         },
     };
 
-    var css$15 = ".time__controlButton___mpXuO {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .time__controlButton___mpXuO:hover {\n    opacity: .7; }\n  .time__hidden___3xnRl {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .time__timeWrapper___1r8hO {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 auto;\n          flex: 0 0 auto;\n  height: 25px;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .time__time___10Maj {\n  font-size: 12px;\n  line-height: 12px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .time__time___10Maj {\n    font-size: 14px;\n    line-height: 14px; }\n  .time__duration___3gaxd {\n  margin-left: 5px; }\n  .time__duration___3gaxd:before {\n    margin-right: 4px;\n    content: '/'; }\n  .time__liveMode___2Nolg .time__separator___hIpG9 {\n  display: none; }\n  .time__liveMode___2Nolg .time__duration___3gaxd {\n  display: none; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRpbWUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0VBQ3RCO0lBQ0UsWUFBWSxFQUFFO0VBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0VBRTFCO0VBQ0UscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxvQkFBZTtNQUFmLG1CQUFlO1VBQWYsZUFBZTtFQUNmLGFBQWE7RUFDYiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0VBRXhCO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQixFQUFFO0VBQ3BCO0lBQ0UsZ0JBQWdCO0lBQ2hCLGtCQUFrQixFQUFFO0VBRXhCO0VBQ0UsaUJBQWlCLEVBQUU7RUFDbkI7SUFDRSxrQkFBa0I7SUFDbEIsYUFBYSxFQUFFO0VBRW5CO0VBQ0UsY0FBYyxFQUFFO0VBRWxCO0VBQ0UsY0FBYyxFQUFFIiwiZmlsZSI6InRpbWUuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250cm9sQnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgcGFkZGluZzogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAuMnM7XG4gIHRyYW5zaXRpb24tcHJvcGVydHk6IG9wYWNpdHk7XG4gIG9wYWNpdHk6IDE7XG4gIGJvcmRlcjogMDtcbiAgYm9yZGVyLXJhZGl1czogMDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5jb250cm9sQnV0dG9uOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAuNzsgfVxuXG4uaGlkZGVuIHtcbiAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XG4gIHdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIG1pbi13aWR0aDogMCAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWluLWhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtYXJnaW46IDAgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCAhaW1wb3J0YW50O1xuICBvcGFjaXR5OiAwICFpbXBvcnRhbnQ7IH1cblxuLnRpbWVXcmFwcGVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleDogMCAwIGF1dG87XG4gIGhlaWdodDogMjVweDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuXG4udGltZSB7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgbGluZS1oZWlnaHQ6IDEycHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAudGltZSB7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICAgIGxpbmUtaGVpZ2h0OiAxNHB4OyB9XG5cbi5kdXJhdGlvbiB7XG4gIG1hcmdpbi1sZWZ0OiA1cHg7IH1cbiAgLmR1cmF0aW9uOmJlZm9yZSB7XG4gICAgbWFyZ2luLXJpZ2h0OiA0cHg7XG4gICAgY29udGVudDogJy8nOyB9XG5cbi5saXZlTW9kZSAuc2VwYXJhdG9yIHtcbiAgZGlzcGxheTogbm9uZTsgfVxuXG4ubGl2ZU1vZGUgLmR1cmF0aW9uIHtcbiAgZGlzcGxheTogbm9uZTsgfVxuIl19 */";
+    var css$15 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.time__controlButton___mpXuO {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.time__controlButton___mpXuO:hover {\n    opacity: .7; }\n.time__hidden___3xnRl {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.time__timeWrapper___1r8hO {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 auto;\n          flex: 0 0 auto;\n  height: 25px;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.time__time___10Maj {\n  font-size: 12px;\n  line-height: 12px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .time__time___10Maj {\n    font-size: 14px;\n    line-height: 14px; }\n.time__duration___3gaxd {\n  margin-left: 5px; }\n.time__duration___3gaxd:before {\n    margin-right: 4px;\n    content: '/'; }\n.time__liveMode___2Nolg .time__separator___hIpG9 {\n  display: none; }\n.time__liveMode___2Nolg .time__duration___3gaxd {\n  display: none; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRpbWUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7R0FLRztBQUNIO0VBQ0UscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGlDQUF5QjtVQUF6Qix5QkFBeUI7RUFDekIscUNBQTZCO0VBQTdCLDZCQUE2QjtFQUM3QixXQUFXO0VBQ1gsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsOEJBQThCO0VBQzlCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7QUFDdEI7SUFDRSxZQUFZLEVBQUU7QUFFbEI7RUFDRSw4QkFBOEI7RUFDOUIsb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4QixxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixzQkFBc0I7RUFDdEIsc0JBQXNCLEVBQUU7QUFFMUI7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLG9CQUFlO01BQWYsbUJBQWU7VUFBZixlQUFlO0VBQ2YsYUFBYTtFQUNiLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7QUFFeEI7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCLEVBQUU7QUFDcEI7SUFDRSxnQkFBZ0I7SUFDaEIsa0JBQWtCLEVBQUU7QUFFeEI7RUFDRSxpQkFBaUIsRUFBRTtBQUNuQjtJQUNFLGtCQUFrQjtJQUNsQixhQUFhLEVBQUU7QUFFbkI7RUFDRSxjQUFjLEVBQUU7QUFFbEI7RUFDRSxjQUFjLEVBQUUiLCJmaWxlIjoidGltZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBUaGUgY2hhbGxlbmdlIGhlcmUgdG8gc3VwcG9ydCBcInBsYXlhYmxlIHF1ZXJpZXNcIiBhbmQgXCJkaXJlY3Rpb25cIiBhdCB0aGUgc2FtZSB0aW1lIGFuZCBhbGxvdyBtaXhpbnMgbGlrZTpcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpKVxuICogICBAaW5jbHVkZSBxdWVyeShtYXgtd2lkdGgtNTUwKCksIGx0cigpKVxuICogICBAaW5jbHVkZSBxdWVyeShtYXgtd2lkdGgtNTUwKCksIHJ0bCgpKVxuICovXG4uY29udHJvbEJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmc6IDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogLjJzO1xuICB0cmFuc2l0aW9uLXByb3BlcnR5OiBvcGFjaXR5O1xuICBvcGFjaXR5OiAxO1xuICBib3JkZXI6IDA7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAuY29udHJvbEJ1dHRvbjpob3ZlciB7XG4gICAgb3BhY2l0eTogLjc7IH1cblxuLmhpZGRlbiB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbiAhaW1wb3J0YW50O1xuICB3aWR0aDogMCAhaW1wb3J0YW50O1xuICBtaW4td2lkdGg6IDAgIWltcG9ydGFudDtcbiAgaGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1pbi1oZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWFyZ2luOiAwICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmc6IDAgIWltcG9ydGFudDtcbiAgb3BhY2l0eTogMCAhaW1wb3J0YW50OyB9XG5cbi50aW1lV3JhcHBlciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXg6IDAgMCBhdXRvO1xuICBoZWlnaHQ6IDI1cHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cblxuLnRpbWUge1xuICBmb250LXNpemU6IDEycHg7XG4gIGxpbmUtaGVpZ2h0OiAxMnB4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAudGltZSB7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICAgIGxpbmUtaGVpZ2h0OiAxNHB4OyB9XG5cbi5kdXJhdGlvbiB7XG4gIG1hcmdpbi1sZWZ0OiA1cHg7IH1cbiAgLmR1cmF0aW9uOmJlZm9yZSB7XG4gICAgbWFyZ2luLXJpZ2h0OiA0cHg7XG4gICAgY29udGVudDogJy8nOyB9XG5cbi5saXZlTW9kZSAuc2VwYXJhdG9yIHtcbiAgZGlzcGxheTogbm9uZTsgfVxuXG4ubGl2ZU1vZGUgLmR1cmF0aW9uIHtcbiAgZGlzcGxheTogbm9uZTsgfVxuIl19 */";
     var styles$15 = {"controlButton":"time__controlButton___mpXuO","hidden":"time__hidden___3xnRl","timeWrapper":"time__timeWrapper___1r8hO","time":"time__time___10Maj","duration":"time__duration___3gaxd","liveMode":"time__liveMode___2Nolg","separator":"time__separator___hIpG9"};
     styleInject(css$15);
 
@@ -9886,7 +14970,7 @@ function readCookie(cookieName) {
     TimeView.setTheme(timeViewTheme);
     TimeView.extendStyleNames(styles$15);
 
-    var UPDATE_INTERVAL_DELAY$1 = 1000 / 60;
+    var UPDATE_TIME_INTERVAL_DELAY = 1000 / 60;
     var TimeControl = /** @class */ (function () {
         function TimeControl(_a) {
             var eventEmitter = _a.eventEmitter, engine = _a.engine, theme = _a.theme;
@@ -9925,7 +15009,7 @@ function readCookie(cookieName) {
                 this._stopIntervalUpdates();
             }
             this._updateCurrentTime();
-            this._updateControlInterval = window.setInterval(this._updateCurrentTime, UPDATE_INTERVAL_DELAY$1);
+            this._updateControlInterval = window.setInterval(this._updateCurrentTime, UPDATE_TIME_INTERVAL_DELAY);
         };
         TimeControl.prototype._stopIntervalUpdates = function () {
             window.clearInterval(this._updateControlInterval);
@@ -10006,24 +15090,9 @@ function readCookie(cookieName) {
         return TimeControl;
     }());
 
-    function dot_tpl_src_modules_ui_controls_volume_templates_volume0Icon_dot(props
-    ) {
-    var out='<div class="'+(props.styles.icon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14" preserveAspectRatio="xMidYMin slice" width="100%" style="padding-bottom: 82%; height: 1px; overflow: visible" > <!-- padding-bottom: 100% * height/width --> <!--width="16"--> <!--height="13"--> <g class="'+(props.themeStyles.volumeSvgFill)+'"> <path d="M0 3.919h2.993v5.97H0V3.92zm2.995-.015L7 .924v12L2.995 9.882v-5.98z"/> <path fill-rule="nonzero" d="M13 6.257l-2.05-2.05-.743.743L12.257 7l-2.05 2.05.743.743L13 7.743l2.05 2.05.743-.743L13.743 7l2.05-2.05-.743-.743L13 6.257z"/> </g> </svg></div>';return out;
-    }
-
-    function dot_tpl_src_modules_ui_controls_volume_templates_volume50Icon_dot(props
-    ) {
-    var out='<div class="'+(props.styles.icon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14" preserveAspectRatio="xMidYMin slice" width="100%" style="padding-bottom: 82%; height: 1px; overflow: visible" > <!-- padding-bottom: 100% * height/width --> <g fill="none" fill-rule="evenodd"> <path class="'+(props.themeStyles.volumeSvgFill)+'" d="M0 3.919h2.993v5.97H0V3.92zm2.995-.015L7 .924v12L2.995 9.882v-5.98z"/> <path class="'+(props.themeStyles.volumeSvgStroke)+'" d="M9.853 10.837a5.45 5.45 0 0 0 0-7.707"/> </g> </svg></div>';return out;
-    }
-
-    function dot_tpl_src_modules_ui_controls_volume_templates_volume100Icon_dot(props
-    ) {
-    var out='<div class="'+(props.styles.icon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14" preserveAspectRatio="xMidYMin slice" width="100%" style="padding-bottom: 82%; height: 1px; overflow: visible" > <!-- padding-bottom: 100% * height/width --> <g fill="none" fill-rule="evenodd"> <path class="'+(props.themeStyles.volumeSvgFill)+'" d="M0 3.919h2.993v5.97H0V3.92zm2.995-.015L7 .924v12L2.995 9.882v-5.98z"/> <path class="'+(props.themeStyles.volumeSvgStroke)+'" d="M12.793 13.716a9.607 9.607 0 0 0 0-13.586M9.853 10.837a5.45 5.45 0 0 0 0-7.707"/> </g> </svg></div>';return out;
-    }
-
     function dot_tpl_src_modules_ui_controls_volume_templates_control_dot(props
     ) {
-    var out='<div class="'+(props.styles.volumeControl)+'" data-playable-hook="volume-control" data-volume-percent="100" data-is-muted="false"> <button class="'+(props.styles.muteButton)+' '+(props.styles.controlButton)+'" data-playable-hook="mute-button" aria-label="'+(props.texts.muteLabel)+'" type="button" tabindex="0"> </button> <div class="'+(props.styles.volumeInputBlock)+'" data-playable-hook="volume-input-block" aria-label="'+(props.texts.volumeLabel)+'" aria-valuemin="0" aria-valuenow="0" aria-valuemax="100" tabindex="0"> <div class="'+(props.styles.progressBar)+' '+(props.styles.background)+' '+(props.themeStyles.volumeProgressBackground)+'"> </div> <div class="'+(props.styles.progressBar)+' '+(props.styles.volume)+' '+(props.themeStyles.volumeProgress)+'" data-playable-hook="volume-input"> </div> <div class="'+(props.styles.hitbox)+'" data-playable-hook="volume-hitbox"> </div> </div></div>';return out;
+    var out='<div class="'+(props.styles.volumeControl)+'" data-playable-hook="volume-control"> <button class="'+(props.styles.muteToggle)+' '+(props.styles.controlButton)+'" data-playable-hook="mute-button" aria-label="'+(props.texts.muteLabel)+'" type="button" tabindex="0"> <div class="'+(props.styles.volume0Icon)+' '+(props.styles.muteIcon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" preserveAspectRatio="xMidYMin slice" class="'+(props.styles.icon_small)+'" width="100%"> <g class="'+(props.themeStyles.volumeSvgFill)+'"> <path class="'+(props.themeStyles.volumeSvgFill)+'" d="M5 9.995h2.993v5.97H5V9.995zm2.995-.014L12 7v12l-4.005-3.042v-5.98.003z"/> <path d="M18 12.333l-2.05-2.05-.75.743 2.05 2.05-2.05 2.05.75.743 2.05-2.05 2 2.05.8-.743-2.05-2.05 2.05-2.05-.8-.743-2 2.05z"/> </g> </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" preserveAspectRatio="xMidYMin slice" class="'+(props.styles.icon_big)+'" width="100%"> <g class="'+(props.themeStyles.volumeSvgFill)+'"> <path class="'+(props.themeStyles.volumeSvgFill)+'" d="M23.586 18.04l-2.829-2.828 1.415-1.415L25 16.626l2.828-2.83 1.415 1.416-2.829 2.828 2.829 2.828-1.415 1.415L25 19.453l-2.828 2.83-1.415-1.415 2.829-2.828zM9 13.04l7-5v19l-7-5H5v-9h4z"/> </g> </svg> </div> <div class="'+(props.styles.volume50Icon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" preserveAspectRatio="xMidYMin slice" class="'+(props.styles.icon_small)+'" width="100%"> <g fill-rule="evenodd"> <path class="'+(props.themeStyles.volumeSvgFill)+'" d="M5 10.1h3v6H5v-6zm3 0l4-3v12l-4-3v-6z"/> <path class="'+(props.themeStyles.volumeSvgStroke)+'" d="M14.85 17a5.45 5.45 0 000-7.7"/> </g> </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" preserveAspectRatio="xMidYMin slice" class="'+(props.styles.icon_big)+'" width="100%"> <path class="'+(props.themeStyles.volumeSvgFill)+'" d="M9 13l7-5v19l-7-5H5v-9h4zm12.884 11.407l-1.414-1.414a7.174 7.174 0 000-10.146l1.414-1.414a9.174 9.174 0 010 12.974z" fill-rule="evenodd"/> </svg> </div> <div class="'+(props.styles.volume100Icon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" preserveAspectRatio="xMidYMin slice" class="'+(props.styles.icon_small)+'" width="100%"> <g fill-rule="evenodd"> <path class="'+(props.themeStyles.volumeSvgFill)+'" d="M5 9.995h2.993v5.97H5V9.995zm2.995-.014L12 7v12l-4.005-3.042v-5.98.003z"/> <path class="'+(props.themeStyles.volumeSvgStroke)+'" d="M18 19.8a9.6 9.6 0 000-13.6m-2.95 10.7a5.45 5.45 0 000-7.7"/> </g> </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" preserveAspectRatio="xMidYMin slice" class="'+(props.styles.icon_big)+'" width="100%"> <g class="'+(props.themeStyles.volumeSvgFill)+'"> <path class="'+(props.themeStyles.volumeSvgFill)+'" d="M9 13.04l7-5v19l-7-5H5v-9h4zm16.897 15.794l-1.414-1.414c5.237-5.238 5.237-13.73 0-18.966l1.414-1.414c6.018 6.018 6.018 15.776 0 21.794zm-4.013-4.387l-1.414-1.414a7.174 7.174 0 000-10.146l1.414-1.414a9.174 9.174 0 010 12.974z"/> </g> </svg> </div> </button> <div class="'+(props.styles.volumeInputBlock)+'" data-playable-hook="volume-input-block" aria-label="'+(props.texts.volumeLabel)+'" aria-valuemin="0" aria-valuenow="0" aria-valuemax="100" tabindex="0"> <div class="'+(props.styles.progressBar)+' '+(props.styles.background)+' '+(props.themeStyles.volumeProgressBackground)+'"> </div> <div class="'+(props.styles.progressBar)+' '+(props.styles.volume)+' '+(props.themeStyles.volumeProgress)+'" data-playable-hook="volume-input"> </div> <div class="'+(props.styles.hitbox)+'" data-playable-hook="volume-hitbox"> </div> </div></div>';return out;
     }
 
     var volumeViewTheme = {
@@ -10046,8 +15115,8 @@ function readCookie(cookieName) {
         },
     };
 
-    var css$16 = ".volume__controlButton___1XXXG {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .volume__controlButton___1XXXG:hover {\n    opacity: .7; }\n  .volume__hidden___504PW {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .volume__volumeControl___1f_-O {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  -webkit-transition: width .2s;\n  transition: width .2s;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .volume__volumeControl___1f_-O {\n    height: 35px; }\n  .volume__volumeControl___1f_-O:hover .volume__volumeInputBlock___EzZei, .volume__volumeControl___1f_-O.volume__isDragging___3mlpX .volume__volumeInputBlock___EzZei {\n    width: 50px;\n    margin-right: 5px;\n    opacity: 1; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .volume__volumeControl___1f_-O:hover .volume__volumeInputBlock___EzZei, div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .volume__volumeControl___1f_-O.volume__isDragging___3mlpX .volume__volumeInputBlock___EzZei {\n      width: 90px;\n      margin-right: 10px; }\n  .volume__muteButton___1d1Ei {\n  width: 26px;\n  min-width: 26px;\n  height: 26px;\n  min-height: 26px;\n  padding: 0; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .volume__muteButton___1d1Ei {\n    width: 35px;\n    min-width: 35px;\n    height: 35px;\n    min-height: 35px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .volume__muteButton___1d1Ei .volume__icon___38qX4 {\n      width: 25px;\n      height: 21px; }\n  .volume__muteButton___1d1Ei .volume__icon___38qX4 {\n    width: 17px;\n    height: 14px; }\n  .volume__volumeInputBlock___EzZei {\n  position: relative;\n  display: block;\n  width: 0;\n  height: 25px;\n  margin-left: 2px;\n  -webkit-transition: opacity .2s, width .2s;\n  transition: opacity .2s, width .2s;\n  opacity: 0; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .volume__volumeInputBlock___EzZei {\n    margin-left: 5px; }\n  .volume__progressBar___1JJYW {\n  position: absolute;\n  top: 11.5px;\n  height: 2px;\n  padding: 0; }\n  .volume__volume___1XvBT:after {\n  position: absolute;\n  top: -3px;\n  right: -4px;\n  width: 8px;\n  height: 8px;\n  content: '';\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  border-radius: 50%; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .volume__volume___1XvBT:after {\n    top: -4px;\n    right: -5px;\n    width: 10px;\n    height: 10px; }\n  .volume__background___2Mafo {\n  width: 100%; }\n  .volume__hitbox___1jBrF {\n  position: relative;\n  z-index: 5;\n  display: block;\n  width: 100%;\n  height: 25px;\n  cursor: pointer;\n  opacity: 0; }\n  [data-playable-focus-source='key'] [data-playable-hook='volume-control'] .focus-within.volume__volumeInputBlock___EzZei,\n[data-playable-focus-source='script'] [data-playable-hook='volume-control'] .focus-within.volume__volumeInputBlock___EzZei {\n  width: 50px;\n  margin-right: 5px;\n  opacity: 1;\n  -webkit-box-shadow: 0 0 0 2px rgba(56, 153, 236, 0.8);\n          box-shadow: 0 0 0 2px rgba(56, 153, 236, 0.8); }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] [data-playable-focus-source='key'] [data-playable-hook='volume-control'] .focus-within.volume__volumeInputBlock___EzZei, div[data-playable-hook='player-container'][data-playable-in-full-screen='true']\n  [data-playable-focus-source='script'] [data-playable-hook='volume-control'] .focus-within.volume__volumeInputBlock___EzZei {\n    width: 90px;\n    margin-right: 10px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInZvbHVtZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGlDQUF5QjtVQUF6Qix5QkFBeUI7RUFDekIscUNBQTZCO0VBQTdCLDZCQUE2QjtFQUM3QixXQUFXO0VBQ1gsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsOEJBQThCO0VBQzlCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7RUFDdEI7SUFDRSxZQUFZLEVBQUU7RUFFbEI7RUFDRSw4QkFBOEI7RUFDOUIsb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4QixxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixzQkFBc0I7RUFDdEIsc0JBQXNCLEVBQUU7RUFFMUI7RUFDRSxtQkFBbUI7RUFDbkIscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCwwQkFBa0I7S0FBbEIsdUJBQWtCO01BQWxCLHNCQUFrQjtVQUFsQixrQkFBa0I7RUFDbEIsOEJBQXNCO0VBQXRCLHNCQUFzQjtFQUN0Qix3QkFBNEI7TUFBNUIscUJBQTRCO1VBQTVCLDRCQUE0QjtFQUM1QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0VBQ3RCO0lBQ0UsYUFBYSxFQUFFO0VBQ2pCO0lBQ0UsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixXQUFXLEVBQUU7RUFDYjtNQUNFLFlBQVk7TUFDWixtQkFBbUIsRUFBRTtFQUUzQjtFQUNFLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQixXQUFXLEVBQUU7RUFDYjtJQUNFLFlBQVk7SUFDWixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLGlCQUFpQixFQUFFO0VBQ25CO01BQ0UsWUFBWTtNQUNaLGFBQWEsRUFBRTtFQUNuQjtJQUNFLFlBQVk7SUFDWixhQUFhLEVBQUU7RUFFbkI7RUFDRSxtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLFNBQVM7RUFDVCxhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLDJDQUFtQztFQUFuQyxtQ0FBbUM7RUFDbkMsV0FBVyxFQUFFO0VBQ2I7SUFDRSxpQkFBaUIsRUFBRTtFQUV2QjtFQUNFLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osWUFBWTtFQUNaLFdBQVcsRUFBRTtFQUVmO0VBQ0UsbUJBQW1CO0VBQ25CLFVBQVU7RUFDVixZQUFZO0VBQ1osV0FBVztFQUNYLFlBQVk7RUFDWixZQUFZO0VBQ1osZ0NBQXdCO0VBQXhCLHdCQUF3QjtFQUN4QixtQkFBbUIsRUFBRTtFQUNyQjtJQUNFLFVBQVU7SUFDVixZQUFZO0lBQ1osWUFBWTtJQUNaLGFBQWEsRUFBRTtFQUVuQjtFQUNFLFlBQVksRUFBRTtFQUVoQjtFQUNFLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsZUFBZTtFQUNmLFlBQVk7RUFDWixhQUFhO0VBQ2IsZ0JBQWdCO0VBQ2hCLFdBQVcsRUFBRTtFQUVmOztFQUVFLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLHNEQUE4QztVQUE5Qyw4Q0FBOEMsRUFBRTtFQUNoRDs7SUFFRSxZQUFZO0lBQ1osbUJBQW1CLEVBQUUiLCJmaWxlIjoidm9sdW1lLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udHJvbEJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmc6IDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogLjJzO1xuICB0cmFuc2l0aW9uLXByb3BlcnR5OiBvcGFjaXR5O1xuICBvcGFjaXR5OiAxO1xuICBib3JkZXI6IDA7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAuY29udHJvbEJ1dHRvbjpob3ZlciB7XG4gICAgb3BhY2l0eTogLjc7IH1cblxuLmhpZGRlbiB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbiAhaW1wb3J0YW50O1xuICB3aWR0aDogMCAhaW1wb3J0YW50O1xuICBtaW4td2lkdGg6IDAgIWltcG9ydGFudDtcbiAgaGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1pbi1oZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWFyZ2luOiAwICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmc6IDAgIWltcG9ydGFudDtcbiAgb3BhY2l0eTogMCAhaW1wb3J0YW50OyB9XG5cbi52b2x1bWVDb250cm9sIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBkaXNwbGF5OiBmbGV4O1xuICB1c2VyLXNlbGVjdDogbm9uZTtcbiAgdHJhbnNpdGlvbjogd2lkdGggLjJzO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtc3RhcnQ7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAudm9sdW1lQ29udHJvbCB7XG4gICAgaGVpZ2h0OiAzNXB4OyB9XG4gIC52b2x1bWVDb250cm9sOmhvdmVyIC52b2x1bWVJbnB1dEJsb2NrLCAudm9sdW1lQ29udHJvbC5pc0RyYWdnaW5nIC52b2x1bWVJbnB1dEJsb2NrIHtcbiAgICB3aWR0aDogNTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDVweDtcbiAgICBvcGFjaXR5OiAxOyB9XG4gICAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAudm9sdW1lQ29udHJvbDpob3ZlciAudm9sdW1lSW5wdXRCbG9jaywgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAudm9sdW1lQ29udHJvbC5pc0RyYWdnaW5nIC52b2x1bWVJbnB1dEJsb2NrIHtcbiAgICAgIHdpZHRoOiA5MHB4O1xuICAgICAgbWFyZ2luLXJpZ2h0OiAxMHB4OyB9XG5cbi5tdXRlQnV0dG9uIHtcbiAgd2lkdGg6IDI2cHg7XG4gIG1pbi13aWR0aDogMjZweDtcbiAgaGVpZ2h0OiAyNnB4O1xuICBtaW4taGVpZ2h0OiAyNnB4O1xuICBwYWRkaW5nOiAwOyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLm11dGVCdXR0b24ge1xuICAgIHdpZHRoOiAzNXB4O1xuICAgIG1pbi13aWR0aDogMzVweDtcbiAgICBoZWlnaHQ6IDM1cHg7XG4gICAgbWluLWhlaWdodDogMzVweDsgfVxuICAgIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLm11dGVCdXR0b24gLmljb24ge1xuICAgICAgd2lkdGg6IDI1cHg7XG4gICAgICBoZWlnaHQ6IDIxcHg7IH1cbiAgLm11dGVCdXR0b24gLmljb24ge1xuICAgIHdpZHRoOiAxN3B4O1xuICAgIGhlaWdodDogMTRweDsgfVxuXG4udm9sdW1lSW5wdXRCbG9jayB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiAwO1xuICBoZWlnaHQ6IDI1cHg7XG4gIG1hcmdpbi1sZWZ0OiAycHg7XG4gIHRyYW5zaXRpb246IG9wYWNpdHkgLjJzLCB3aWR0aCAuMnM7XG4gIG9wYWNpdHk6IDA7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAudm9sdW1lSW5wdXRCbG9jayB7XG4gICAgbWFyZ2luLWxlZnQ6IDVweDsgfVxuXG4ucHJvZ3Jlc3NCYXIge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMTEuNXB4O1xuICBoZWlnaHQ6IDJweDtcbiAgcGFkZGluZzogMDsgfVxuXG4udm9sdW1lOmFmdGVyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IC0zcHg7XG4gIHJpZ2h0OiAtNHB4O1xuICB3aWR0aDogOHB4O1xuICBoZWlnaHQ6IDhweDtcbiAgY29udGVudDogJyc7XG4gIHRyYW5zaXRpb246IG9wYWNpdHkgLjJzO1xuICBib3JkZXItcmFkaXVzOiA1MCU7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAudm9sdW1lOmFmdGVyIHtcbiAgICB0b3A6IC00cHg7XG4gICAgcmlnaHQ6IC01cHg7XG4gICAgd2lkdGg6IDEwcHg7XG4gICAgaGVpZ2h0OiAxMHB4OyB9XG5cbi5iYWNrZ3JvdW5kIHtcbiAgd2lkdGg6IDEwMCU7IH1cblxuLmhpdGJveCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgei1pbmRleDogNTtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDI1cHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgb3BhY2l0eTogMDsgfVxuXG46Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0na2V5J10gW2RhdGEtcGxheWFibGUtaG9vaz0ndm9sdW1lLWNvbnRyb2wnXSAuZm9jdXMtd2l0aGluOmxvY2FsLnZvbHVtZUlucHV0QmxvY2ssXG46Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0nc2NyaXB0J10gW2RhdGEtcGxheWFibGUtaG9vaz0ndm9sdW1lLWNvbnRyb2wnXSAuZm9jdXMtd2l0aGluOmxvY2FsLnZvbHVtZUlucHV0QmxvY2sge1xuICB3aWR0aDogNTBweDtcbiAgbWFyZ2luLXJpZ2h0OiA1cHg7XG4gIG9wYWNpdHk6IDE7XG4gIGJveC1zaGFkb3c6IDAgMCAwIDJweCByZ2JhKDU2LCAxNTMsIDIzNiwgMC44KTsgfVxuICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj0ndHJ1ZSddIDpnbG9iYWwgW2RhdGEtcGxheWFibGUtZm9jdXMtc291cmNlPSdrZXknXSBbZGF0YS1wbGF5YWJsZS1ob29rPSd2b2x1bWUtY29udHJvbCddIC5mb2N1cy13aXRoaW46bG9jYWwudm9sdW1lSW5wdXRCbG9jaywgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXVxuICA6Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0nc2NyaXB0J10gW2RhdGEtcGxheWFibGUtaG9vaz0ndm9sdW1lLWNvbnRyb2wnXSAuZm9jdXMtd2l0aGluOmxvY2FsLnZvbHVtZUlucHV0QmxvY2sge1xuICAgIHdpZHRoOiA5MHB4O1xuICAgIG1hcmdpbi1yaWdodDogMTBweDsgfVxuIl19 */";
-    var styles$16 = {"controlButton":"volume__controlButton___1XXXG","hidden":"volume__hidden___504PW","volumeControl":"volume__volumeControl___1f_-O","volumeInputBlock":"volume__volumeInputBlock___EzZei","isDragging":"volume__isDragging___3mlpX","muteButton":"volume__muteButton___1d1Ei","icon":"volume__icon___38qX4","progressBar":"volume__progressBar___1JJYW","volume":"volume__volume___1XvBT","background":"volume__background___2Mafo","hitbox":"volume__hitbox___1jBrF"};
+    var css$16 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.volume__controlButton___1XXXG {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.volume__controlButton___1XXXG:hover {\n    opacity: .7; }\n.volume__hidden___504PW {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.volume__volumeControl___1f_-O {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  -webkit-transition: width .2s;\n  transition: width .2s;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .volume__volumeControl___1f_-O {\n    height: 35px; }\n.volume__volumeControl___1f_-O:hover .volume__volumeInputBlock___EzZei, .volume__volumeControl___1f_-O.volume__isDragging___3mlpX .volume__volumeInputBlock___EzZei {\n    width: 50px;\n    margin-right: 5px;\n    opacity: 1; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .volume__volumeControl___1f_-O:hover .volume__volumeInputBlock___EzZei, [data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .volume__volumeControl___1f_-O.volume__isDragging___3mlpX .volume__volumeInputBlock___EzZei {\n      width: 90px;\n      margin-right: 10px; }\n.volume__volume0Icon___HUzhQ {\n  display: none; }\n.volume__volume50Icon___2qxWM {\n  display: none; }\n.volume__volume100Icon___3RP1S {\n  display: none; }\n.volume__muteIcon___3usXq {\n  display: none; }\n.volume__muteToggle___26zPy {\n  width: 26px;\n  min-width: 26px;\n  height: 26px;\n  min-height: 26px;\n  padding: 0; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .volume__muteToggle___26zPy {\n    width: 35px;\n    min-width: 35px;\n    height: 35px;\n    min-height: 35px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .volume__muteToggle___26zPy .volume__icon_small___3WQH2 {\n      display: none; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .volume__muteToggle___26zPy .volume__icon_big___3-Lie {\n      display: block; }\n.volume__muteToggle___26zPy.volume__volume0___3Yvhr .volume__volume0Icon___HUzhQ {\n    display: block; }\n.volume__muteToggle___26zPy.volume__volume50___2zDH8 .volume__volume50Icon___2qxWM {\n    display: block; }\n.volume__muteToggle___26zPy.volume__volume100___1qN8v .volume__volume100Icon___3RP1S {\n    display: block; }\n.volume__muteToggle___26zPy.volume__muted___2jeGx .volume__volume0Icon___HUzhQ {\n    display: block; }\n.volume__muteToggle___26zPy .volume__icon_small___3WQH2 {\n    display: block; }\n.volume__muteToggle___26zPy .volume__icon_big___3-Lie {\n    display: none; }\n.volume__volumeInputBlock___EzZei {\n  position: relative;\n  display: block;\n  width: 0;\n  height: 25px;\n  margin-left: 2px;\n  -webkit-transition: opacity .2s, width .2s;\n  transition: opacity .2s, width .2s;\n  opacity: 0; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .volume__volumeInputBlock___EzZei {\n    margin-left: 5px; }\n.volume__progressBar___1JJYW {\n  position: absolute;\n  top: 11.5px;\n  height: 2px;\n  padding: 0; }\n.volume__volume___1XvBT:after {\n  position: absolute;\n  top: -3px;\n  right: -4px;\n  width: 8px;\n  height: 8px;\n  content: '';\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  border-radius: 50%; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .volume__volume___1XvBT:after {\n    top: -4px;\n    right: -5px;\n    width: 10px;\n    height: 10px; }\n.volume__background___2Mafo {\n  width: 100%; }\n.volume__hitbox___1jBrF {\n  position: relative;\n  z-index: 5;\n  display: block;\n  width: 100%;\n  height: 25px;\n  cursor: pointer;\n  opacity: 0; }\n[data-playable-focus-source='key'] [data-playable-hook='volume-control'] .focus-within.volume__volumeInputBlock___EzZei,\n[data-playable-focus-source='script'] [data-playable-hook='volume-control'] .focus-within.volume__volumeInputBlock___EzZei {\n  width: 50px;\n  margin-right: 5px;\n  opacity: 1;\n  -webkit-box-shadow: 0 0 0 2px rgba(56, 153, 236, 0.8);\n          box-shadow: 0 0 0 2px rgba(56, 153, 236, 0.8); }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] [data-playable-focus-source='key'] [data-playable-hook='volume-control'] .focus-within.volume__volumeInputBlock___EzZei, [data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"]\n  [data-playable-focus-source='script'] [data-playable-hook='volume-control'] .focus-within.volume__volumeInputBlock___EzZei {\n    width: 90px;\n    margin-right: 10px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInZvbHVtZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7OztHQUtHO0FBQ0g7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtBQUN0QjtJQUNFLFlBQVksRUFBRTtBQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtBQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLDBCQUFrQjtLQUFsQix1QkFBa0I7TUFBbEIsc0JBQWtCO1VBQWxCLGtCQUFrQjtFQUNsQiw4QkFBc0I7RUFBdEIsc0JBQXNCO0VBQ3RCLHdCQUE0QjtNQUE1QixxQkFBNEI7VUFBNUIsNEJBQTRCO0VBQzVCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7QUFDdEI7SUFDRSxhQUFhLEVBQUU7QUFDakI7SUFDRSxZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLFdBQVcsRUFBRTtBQUNiO01BQ0UsWUFBWTtNQUNaLG1CQUFtQixFQUFFO0FBRTNCO0VBQ0UsY0FBYyxFQUFFO0FBRWxCO0VBQ0UsY0FBYyxFQUFFO0FBRWxCO0VBQ0UsY0FBYyxFQUFFO0FBRWxCO0VBQ0UsY0FBYyxFQUFFO0FBRWxCO0VBQ0UsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLFdBQVcsRUFBRTtBQUNiO0lBQ0UsWUFBWTtJQUNaLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsaUJBQWlCLEVBQUU7QUFDbkI7TUFDRSxjQUFjLEVBQUU7QUFDbEI7TUFDRSxlQUFlLEVBQUU7QUFDckI7SUFDRSxlQUFlLEVBQUU7QUFDbkI7SUFDRSxlQUFlLEVBQUU7QUFDbkI7SUFDRSxlQUFlLEVBQUU7QUFDbkI7SUFDRSxlQUFlLEVBQUU7QUFDbkI7SUFDRSxlQUFlLEVBQUU7QUFDbkI7SUFDRSxjQUFjLEVBQUU7QUFFcEI7RUFDRSxtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLFNBQVM7RUFDVCxhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLDJDQUFtQztFQUFuQyxtQ0FBbUM7RUFDbkMsV0FBVyxFQUFFO0FBQ2I7SUFDRSxpQkFBaUIsRUFBRTtBQUV2QjtFQUNFLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osWUFBWTtFQUNaLFdBQVcsRUFBRTtBQUVmO0VBQ0UsbUJBQW1CO0VBQ25CLFVBQVU7RUFDVixZQUFZO0VBQ1osV0FBVztFQUNYLFlBQVk7RUFDWixZQUFZO0VBQ1osZ0NBQXdCO0VBQXhCLHdCQUF3QjtFQUN4QixtQkFBbUIsRUFBRTtBQUNyQjtJQUNFLFVBQVU7SUFDVixZQUFZO0lBQ1osWUFBWTtJQUNaLGFBQWEsRUFBRTtBQUVuQjtFQUNFLFlBQVksRUFBRTtBQUVoQjtFQUNFLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsZUFBZTtFQUNmLFlBQVk7RUFDWixhQUFhO0VBQ2IsZ0JBQWdCO0VBQ2hCLFdBQVcsRUFBRTtBQUVmOztFQUVFLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLHNEQUE4QztVQUE5Qyw4Q0FBOEMsRUFBRTtBQUNoRDs7SUFFRSxZQUFZO0lBQ1osbUJBQW1CLEVBQUUiLCJmaWxlIjoidm9sdW1lLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFRoZSBjaGFsbGVuZ2UgaGVyZSB0byBzdXBwb3J0IFwicGxheWFibGUgcXVlcmllc1wiIGFuZCBcImRpcmVjdGlvblwiIGF0IHRoZSBzYW1lIHRpbWUgYW5kIGFsbG93IG1peGlucyBsaWtlOlxuICogICBAaW5jbHVkZSBxdWVyeShtYXgtd2lkdGgtNTUwKCkpXG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSwgbHRyKCkpXG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSwgcnRsKCkpXG4gKi9cbi5jb250cm9sQnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgcGFkZGluZzogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAuMnM7XG4gIHRyYW5zaXRpb24tcHJvcGVydHk6IG9wYWNpdHk7XG4gIG9wYWNpdHk6IDE7XG4gIGJvcmRlcjogMDtcbiAgYm9yZGVyLXJhZGl1czogMDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5jb250cm9sQnV0dG9uOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAuNzsgfVxuXG4uaGlkZGVuIHtcbiAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XG4gIHdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIG1pbi13aWR0aDogMCAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWluLWhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtYXJnaW46IDAgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCAhaW1wb3J0YW50O1xuICBvcGFjaXR5OiAwICFpbXBvcnRhbnQ7IH1cblxuLnZvbHVtZUNvbnRyb2wge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHVzZXItc2VsZWN0OiBub25lO1xuICB0cmFuc2l0aW9uOiB3aWR0aCAuMnM7XG4gIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl0gLnZvbHVtZUNvbnRyb2wge1xuICAgIGhlaWdodDogMzVweDsgfVxuICAudm9sdW1lQ29udHJvbDpob3ZlciAudm9sdW1lSW5wdXRCbG9jaywgLnZvbHVtZUNvbnRyb2wuaXNEcmFnZ2luZyAudm9sdW1lSW5wdXRCbG9jayB7XG4gICAgd2lkdGg6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiA1cHg7XG4gICAgb3BhY2l0eTogMTsgfVxuICAgIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAudm9sdW1lQ29udHJvbDpob3ZlciAudm9sdW1lSW5wdXRCbG9jaywgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC52b2x1bWVDb250cm9sLmlzRHJhZ2dpbmcgLnZvbHVtZUlucHV0QmxvY2sge1xuICAgICAgd2lkdGg6IDkwcHg7XG4gICAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7IH1cblxuLnZvbHVtZTBJY29uIHtcbiAgZGlzcGxheTogbm9uZTsgfVxuXG4udm9sdW1lNTBJY29uIHtcbiAgZGlzcGxheTogbm9uZTsgfVxuXG4udm9sdW1lMTAwSWNvbiB7XG4gIGRpc3BsYXk6IG5vbmU7IH1cblxuLm11dGVJY29uIHtcbiAgZGlzcGxheTogbm9uZTsgfVxuXG4ubXV0ZVRvZ2dsZSB7XG4gIHdpZHRoOiAyNnB4O1xuICBtaW4td2lkdGg6IDI2cHg7XG4gIGhlaWdodDogMjZweDtcbiAgbWluLWhlaWdodDogMjZweDtcbiAgcGFkZGluZzogMDsgfVxuICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl0gLm11dGVUb2dnbGUge1xuICAgIHdpZHRoOiAzNXB4O1xuICAgIG1pbi13aWR0aDogMzVweDtcbiAgICBoZWlnaHQ6IDM1cHg7XG4gICAgbWluLWhlaWdodDogMzVweDsgfVxuICAgIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAubXV0ZVRvZ2dsZSAuaWNvbl9zbWFsbCB7XG4gICAgICBkaXNwbGF5OiBub25lOyB9XG4gICAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5tdXRlVG9nZ2xlIC5pY29uX2JpZyB7XG4gICAgICBkaXNwbGF5OiBibG9jazsgfVxuICAubXV0ZVRvZ2dsZS52b2x1bWUwIC52b2x1bWUwSWNvbiB7XG4gICAgZGlzcGxheTogYmxvY2s7IH1cbiAgLm11dGVUb2dnbGUudm9sdW1lNTAgLnZvbHVtZTUwSWNvbiB7XG4gICAgZGlzcGxheTogYmxvY2s7IH1cbiAgLm11dGVUb2dnbGUudm9sdW1lMTAwIC52b2x1bWUxMDBJY29uIHtcbiAgICBkaXNwbGF5OiBibG9jazsgfVxuICAubXV0ZVRvZ2dsZS5tdXRlZCAudm9sdW1lMEljb24ge1xuICAgIGRpc3BsYXk6IGJsb2NrOyB9XG4gIC5tdXRlVG9nZ2xlIC5pY29uX3NtYWxsIHtcbiAgICBkaXNwbGF5OiBibG9jazsgfVxuICAubXV0ZVRvZ2dsZSAuaWNvbl9iaWcge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cblxuLnZvbHVtZUlucHV0QmxvY2sge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMDtcbiAgaGVpZ2h0OiAyNXB4O1xuICBtYXJnaW4tbGVmdDogMnB4O1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4ycywgd2lkdGggLjJzO1xuICBvcGFjaXR5OiAwOyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAudm9sdW1lSW5wdXRCbG9jayB7XG4gICAgbWFyZ2luLWxlZnQ6IDVweDsgfVxuXG4ucHJvZ3Jlc3NCYXIge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMTEuNXB4O1xuICBoZWlnaHQ6IDJweDtcbiAgcGFkZGluZzogMDsgfVxuXG4udm9sdW1lOmFmdGVyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IC0zcHg7XG4gIHJpZ2h0OiAtNHB4O1xuICB3aWR0aDogOHB4O1xuICBoZWlnaHQ6IDhweDtcbiAgY29udGVudDogJyc7XG4gIHRyYW5zaXRpb246IG9wYWNpdHkgLjJzO1xuICBib3JkZXItcmFkaXVzOiA1MCU7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC52b2x1bWU6YWZ0ZXIge1xuICAgIHRvcDogLTRweDtcbiAgICByaWdodDogLTVweDtcbiAgICB3aWR0aDogMTBweDtcbiAgICBoZWlnaHQ6IDEwcHg7IH1cblxuLmJhY2tncm91bmQge1xuICB3aWR0aDogMTAwJTsgfVxuXG4uaGl0Ym94IHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiA1O1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMjVweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBvcGFjaXR5OiAwOyB9XG5cbjpnbG9iYWwgW2RhdGEtcGxheWFibGUtZm9jdXMtc291cmNlPSdrZXknXSBbZGF0YS1wbGF5YWJsZS1ob29rPSd2b2x1bWUtY29udHJvbCddIC5mb2N1cy13aXRoaW46bG9jYWwudm9sdW1lSW5wdXRCbG9jayxcbjpnbG9iYWwgW2RhdGEtcGxheWFibGUtZm9jdXMtc291cmNlPSdzY3JpcHQnXSBbZGF0YS1wbGF5YWJsZS1ob29rPSd2b2x1bWUtY29udHJvbCddIC5mb2N1cy13aXRoaW46bG9jYWwudm9sdW1lSW5wdXRCbG9jayB7XG4gIHdpZHRoOiA1MHB4O1xuICBtYXJnaW4tcmlnaHQ6IDVweDtcbiAgb3BhY2l0eTogMTtcbiAgYm94LXNoYWRvdzogMCAwIDAgMnB4IHJnYmEoNTYsIDE1MywgMjM2LCAwLjgpOyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSA6Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0na2V5J10gW2RhdGEtcGxheWFibGUtaG9vaz0ndm9sdW1lLWNvbnRyb2wnXSAuZm9jdXMtd2l0aGluOmxvY2FsLnZvbHVtZUlucHV0QmxvY2ssIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXVxuICA6Z2xvYmFsIFtkYXRhLXBsYXlhYmxlLWZvY3VzLXNvdXJjZT0nc2NyaXB0J10gW2RhdGEtcGxheWFibGUtaG9vaz0ndm9sdW1lLWNvbnRyb2wnXSAuZm9jdXMtd2l0aGluOmxvY2FsLnZvbHVtZUlucHV0QmxvY2sge1xuICAgIHdpZHRoOiA5MHB4O1xuICAgIG1hcmdpbi1yaWdodDogMTBweDsgfVxuIl19 */";
+    var styles$16 = {"controlButton":"volume__controlButton___1XXXG","hidden":"volume__hidden___504PW","volumeControl":"volume__volumeControl___1f_-O","volumeInputBlock":"volume__volumeInputBlock___EzZei","isDragging":"volume__isDragging___3mlpX","volume0Icon":"volume__volume0Icon___HUzhQ","volume50Icon":"volume__volume50Icon___2qxWM","volume100Icon":"volume__volume100Icon___3RP1S","muteIcon":"volume__muteIcon___3usXq","muteToggle":"volume__muteToggle___26zPy","icon_small":"volume__icon_small___3WQH2","icon_big":"volume__icon_big___3-Lie","volume0":"volume__volume0___3Yvhr","volume50":"volume__volume50___2zDH8","volume100":"volume__volume100___1qN8v","muted":"volume__muted___2jeGx","progressBar":"volume__progressBar___1JJYW","volume":"volume__volume___1XvBT","background":"volume__background___2Mafo","hitbox":"volume__hitbox___1jBrF"};
     styleInject(css$16);
 
     var DATA_IS_MUTED = 'data-playable-is-muted';
@@ -10087,11 +15156,11 @@ function readCookie(cookieName) {
                     volumeLabel: this._textMap.get(TextLabel$1.VOLUME_CONTROL_LABEL),
                 },
             }));
-            this._$muteButton = getElementByHook(this._$rootElement, 'mute-button');
+            this._$muteToggle = getElementByHook(this._$rootElement, 'mute-button');
             this._$volumeContainer = getElementByHook(this._$rootElement, 'volume-input-block');
             this._$hitbox = getElementByHook(this._$rootElement, 'volume-hitbox');
             this._$volume = getElementByHook(this._$rootElement, 'volume-input');
-            this._muteButtonTooltipReference = this._tooltipService.createReference(this._$muteButton, {
+            this._muteToggleTooltipReference = this._tooltipService.createReference(this._$muteToggle, {
                 text: this._textMap.get(TextLabel$1.MUTE_CONTROL_TOOLTIP),
             });
         };
@@ -10108,14 +15177,14 @@ function readCookie(cookieName) {
             this._$hitbox.addEventListener('mousedown', this._startDragOnMouseDown);
             window.addEventListener('mousemove', this._setVolumeByDrag);
             window.addEventListener('mouseup', this._stopDragOnMouseUp);
-            this._$muteButton.addEventListener('click', this._onButtonClick);
+            this._$muteToggle.addEventListener('click', this._onButtonClick);
         };
         VolumeView.prototype._unbindEvents = function () {
             this._$hitbox.removeEventListener('wheel', this._setVolumeByWheel);
             this._$hitbox.removeEventListener('mousedown', this._startDragOnMouseDown);
             window.removeEventListener('mousemove', this._setVolumeByDrag);
             window.removeEventListener('mouseup', this._stopDragOnMouseUp);
-            this._$muteButton.removeEventListener('click', this._onButtonClick);
+            this._$muteToggle.removeEventListener('click', this._onButtonClick);
         };
         VolumeView.prototype._startDragOnMouseDown = function (event) {
             if (event.button > 1) {
@@ -10167,22 +15236,21 @@ function readCookie(cookieName) {
             this._$volumeContainer.setAttribute('aria-valuenow', String(percent));
             this._$volume.setAttribute('style', "width:" + percent + "%;");
             this._$rootElement.setAttribute(DATA_VOLUME, String(percent));
-            var iconTemplateProps = {
-                styles: this.styleNames,
-                themeStyles: this.themeStyles,
-            };
+            this._$muteToggle.classList.remove(this.styleNames.volume0);
+            this._$muteToggle.classList.remove(this.styleNames.volume50);
+            this._$muteToggle.classList.remove(this.styleNames.volume100);
             if (percent >= MAX_VOLUME_ICON_RANGE) {
-                this._$muteButton.innerHTML = dot_tpl_src_modules_ui_controls_volume_templates_volume100Icon_dot(iconTemplateProps);
+                this._$muteToggle.classList.add(this.styleNames.volume100);
             }
             else if (percent > 0) {
-                this._$muteButton.innerHTML = dot_tpl_src_modules_ui_controls_volume_templates_volume50Icon_dot(iconTemplateProps);
+                this._$muteToggle.classList.add(this.styleNames.volume50);
             }
             else {
-                this._$muteButton.innerHTML = dot_tpl_src_modules_ui_controls_volume_templates_volume0Icon_dot(iconTemplateProps);
+                this._$muteToggle.classList.add(this.styleNames.volume0);
             }
         };
         VolumeView.prototype._onButtonClick = function () {
-            this._$muteButton.focus();
+            this._$muteToggle.focus();
             this._callbacks.onToggleMuteClick();
         };
         VolumeView.prototype.setVolume = function (volume) {
@@ -10193,15 +15261,15 @@ function readCookie(cookieName) {
         };
         VolumeView.prototype._setMuteDOMAttributes = function (isMuted) {
             if (isMuted) {
-                this._$muteButton.innerHTML = dot_tpl_src_modules_ui_controls_volume_templates_volume0Icon_dot({
-                    styles: this.styleNames,
-                    themeStyles: this.themeStyles,
-                });
+                this._$muteToggle.classList.add(this.styleNames.muted);
             }
-            this._$muteButton.setAttribute('aria-label', isMuted
+            else {
+                this._$muteToggle.classList.remove(this.styleNames.muted);
+            }
+            this._$muteToggle.setAttribute('aria-label', isMuted
                 ? this._textMap.get(TextLabel$1.UNMUTE_CONTROL_LABEL)
                 : this._textMap.get(TextLabel$1.MUTE_CONTROL_LABEL));
-            this._muteButtonTooltipReference.setText(isMuted
+            this._muteToggleTooltipReference.setText(isMuted
                 ? this._textMap.get(TextLabel$1.UNMUTE_CONTROL_TOOLTIP)
                 : this._textMap.get(TextLabel$1.MUTE_CONTROL_TOOLTIP));
             this._$rootElement.setAttribute(DATA_IS_MUTED, String(isMuted));
@@ -10216,18 +15284,18 @@ function readCookie(cookieName) {
             return this._$rootElement;
         };
         VolumeView.prototype.getButtonElement = function () {
-            return this._$muteButton;
+            return this._$muteToggle;
         };
         VolumeView.prototype.getInputElement = function () {
             return this._$volumeContainer;
         };
         VolumeView.prototype.destroy = function () {
             this._unbindEvents();
-            this._muteButtonTooltipReference.destroy();
+            this._muteToggleTooltipReference.destroy();
             if (this._$rootElement.parentNode) {
                 this._$rootElement.parentNode.removeChild(this._$rootElement);
             }
-            this._$muteButton = null;
+            this._$muteToggle = null;
             this._$rootElement = null;
         };
         return VolumeView;
@@ -10380,19 +15448,9 @@ function readCookie(cookieName) {
         return VolumeControl;
     }());
 
-    function dot_tpl_src_modules_ui_controls_fullScreen_templates_enterFullScreenIcon_dot(props
-    ) {
-    var out='<div class="'+(props.styles.icon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" preserveAspectRatio="xMidYMin slice" width="100%" style="padding-bottom: 100%; height: 1px; overflow: visible"> <!-- padding-bottom: 100% * height/width --> <path class="'+(props.themeStyles.fullScreenSvgFill)+'" fill-rule="evenodd" d="M2 10H0v4h4v-2H2v-2zM0 1v3h2V2h2V0H0v1zm14-1h-4v2h2v2h2V0zm-2 12h-2v2h4v-4h-2v2z"/> </svg></div>';return out;
-    }
-
-    function dot_tpl_src_modules_ui_controls_fullScreen_templates_exitFullScreenIcon_dot(props
-    ) {
-    var out='<div class="'+(props.styles.icon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" preserveAspectRatio="xMidYMin slice" width="100%" style="padding-bottom: 100%; height: 1px; overflow: visible" > <!-- padding-bottom: 100% * height/width --> <path class="'+(props.themeStyles.fullScreenSvgFill)+'" fill-rule="evenodd" d="M4 21h2v-6H0v2h4v4zM6 0H4v4H0v2h6V0zm9 6h6V4h-4V0h-2v6zm2 11h4v-2h-6v6h2v-4z"/> </svg></div>';return out;
-    }
-
     function dot_tpl_src_modules_ui_controls_fullScreen_templates_control_dot(props
     ) {
-    var out='<div class="'+(props.styles.fullScreenControl)+'" data-playable-hook="full-screen-control" data-is-in-full-screen="false"> <button class="'+(props.styles.fullScreenToggle)+' '+(props.styles.controlButton)+'" data-playable-hook="full-screen-button" aria-label="'+(props.texts.label)+'" type="button" tabindex="0"/></div>';return out;
+    var out='<div class="'+(props.styles.fullScreenControl)+'" data-playable-hook="full-screen-control"> <button class="'+(props.styles.fullScreenToggle)+' '+(props.styles.controlButton)+'" data-playable-hook="full-screen-button" aria-label="'+(props.texts.label)+'" type="button" tabindex="0"> <svg class="'+(props.styles.enterIcon)+'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" preserveAspectRatio="xMidYMin slice" width="100%"> <path class="'+(props.themeStyles.fullScreenSvgFill)+'" fill-rule="evenodd" d="M8 16H6v4h4v-2H8v-2zM6 7v3h2V8h2V6H6v1zm14-1h-4v2h2v2h2V6zm-2 12h-2v2h4v-4h-2v2z"/> </svg> <svg class="'+(props.styles.exitIcon)+'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" preserveAspectRatio="xMidYMin slice" width="100%"> <path class="'+(props.themeStyles.fullScreenSvgFill)+'" fill-rule="evenodd" d="M11 28h2v-6H7v2h4v4zm2-21h-2v4H7v2h6V7zm9 6h6v-2h-4V7h-2v6zm2 11h4v-2h-6v6h2v-4z"/> </svg> </button></div>';return out;
     }
 
     var fullScreenViewTheme = {
@@ -10401,8 +15459,8 @@ function readCookie(cookieName) {
         },
     };
 
-    var css$17 = ".full-screen__controlButton___3i-tz {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .full-screen__controlButton___3i-tz:hover {\n    opacity: .7; }\n  .full-screen__hidden___3BgVZ {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .full-screen__fullScreenControl___ng08Y {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n  .full-screen__fullScreenToggle___2T_-2 {\n  width: 26px;\n  min-width: 26px;\n  height: 26px;\n  min-height: 26px;\n  -webkit-transition: -webkit-transform .2s;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .full-screen__fullScreenToggle___2T_-2 {\n    width: 35px;\n    min-width: 35px;\n    height: 35px;\n    min-height: 21px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .full-screen__fullScreenToggle___2T_-2 .full-screen__icon___3x8Mv {\n      width: 21px;\n      height: 21px; }\n  .full-screen__fullScreenToggle___2T_-2 .full-screen__icon___3x8Mv {\n    width: 14px;\n    min-width: 14px;\n    height: 14px;\n    min-height: 14px; }\n  .full-screen__fullScreenToggle___2T_-2:hover {\n    -webkit-transform: scale(1.18);\n            transform: scale(1.18); }\n  .full-screen__fullScreenToggle___2T_-2.full-screen__inFullScreen___3F0AO:hover {\n    -webkit-transform: scale(0.8);\n            transform: scale(0.8); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZ1bGwtc2NyZWVuLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLFlBQVksRUFBRTtFQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtFQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CO0VBQ3BCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCLEVBQUU7RUFFNUI7RUFDRSxZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsMENBQTBCO0VBQTFCLGtDQUEwQjtFQUExQiwwQkFBMEI7RUFBMUIsaURBQTBCLEVBQUU7RUFDNUI7SUFDRSxZQUFZO0lBQ1osZ0JBQWdCO0lBQ2hCLGFBQWE7SUFDYixpQkFBaUIsRUFBRTtFQUNuQjtNQUNFLFlBQVk7TUFDWixhQUFhLEVBQUU7RUFDbkI7SUFDRSxZQUFZO0lBQ1osZ0JBQWdCO0lBQ2hCLGFBQWE7SUFDYixpQkFBaUIsRUFBRTtFQUNyQjtJQUNFLCtCQUF1QjtZQUF2Qix1QkFBdUIsRUFBRTtFQUMzQjtJQUNFLDhCQUFzQjtZQUF0QixzQkFBc0IsRUFBRSIsImZpbGUiOiJmdWxsLXNjcmVlbi5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4uZnVsbFNjcmVlbkNvbnRyb2wge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyOyB9XG5cbi5mdWxsU2NyZWVuVG9nZ2xlIHtcbiAgd2lkdGg6IDI2cHg7XG4gIG1pbi13aWR0aDogMjZweDtcbiAgaGVpZ2h0OiAyNnB4O1xuICBtaW4taGVpZ2h0OiAyNnB4O1xuICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gLjJzOyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLmZ1bGxTY3JlZW5Ub2dnbGUge1xuICAgIHdpZHRoOiAzNXB4O1xuICAgIG1pbi13aWR0aDogMzVweDtcbiAgICBoZWlnaHQ6IDM1cHg7XG4gICAgbWluLWhlaWdodDogMjFweDsgfVxuICAgIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLmZ1bGxTY3JlZW5Ub2dnbGUgLmljb24ge1xuICAgICAgd2lkdGg6IDIxcHg7XG4gICAgICBoZWlnaHQ6IDIxcHg7IH1cbiAgLmZ1bGxTY3JlZW5Ub2dnbGUgLmljb24ge1xuICAgIHdpZHRoOiAxNHB4O1xuICAgIG1pbi13aWR0aDogMTRweDtcbiAgICBoZWlnaHQ6IDE0cHg7XG4gICAgbWluLWhlaWdodDogMTRweDsgfVxuICAuZnVsbFNjcmVlblRvZ2dsZTpob3ZlciB7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxLjE4KTsgfVxuICAuZnVsbFNjcmVlblRvZ2dsZS5pbkZ1bGxTY3JlZW46aG92ZXIge1xuICAgIHRyYW5zZm9ybTogc2NhbGUoMC44KTsgfVxuIl19 */";
-    var styles$17 = {"controlButton":"full-screen__controlButton___3i-tz","hidden":"full-screen__hidden___3BgVZ","fullScreenControl":"full-screen__fullScreenControl___ng08Y","fullScreenToggle":"full-screen__fullScreenToggle___2T_-2","icon":"full-screen__icon___3x8Mv","inFullScreen":"full-screen__inFullScreen___3F0AO"};
+    var css$17 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.full-screen__controlButton___3i-tz {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.full-screen__controlButton___3i-tz:hover {\n    opacity: .7; }\n.full-screen__hidden___3BgVZ {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.full-screen__fullScreenControl___ng08Y {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n.full-screen__fullScreenToggle___2T_-2 {\n  width: 26px;\n  min-width: 26px;\n  height: 26px;\n  min-height: 26px;\n  -webkit-transition: -webkit-transform .2s;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .full-screen__fullScreenToggle___2T_-2 {\n    width: 35px;\n    height: 35px; }\n.full-screen__fullScreenToggle___2T_-2:hover {\n    -webkit-transform: scale(1.18);\n            transform: scale(1.18); }\n.full-screen__fullScreenToggle___2T_-2 .full-screen__enterIcon___1i13n {\n    display: block; }\n.full-screen__fullScreenToggle___2T_-2 .full-screen__exitIcon___1Q_V5 {\n    display: none; }\n.full-screen__fullScreenToggle___2T_-2.full-screen__inFullScreen___3F0AO:hover {\n    -webkit-transform: scale(0.8);\n            transform: scale(0.8); }\n.full-screen__fullScreenToggle___2T_-2.full-screen__inFullScreen___3F0AO .full-screen__enterIcon___1i13n {\n    display: none; }\n.full-screen__fullScreenToggle___2T_-2.full-screen__inFullScreen___3F0AO .full-screen__exitIcon___1Q_V5 {\n    display: block; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZ1bGwtc2NyZWVuLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0dBS0c7QUFDSDtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0FBQ3RCO0lBQ0UsWUFBWSxFQUFFO0FBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0FBRTFCO0VBQ0UsbUJBQW1CO0VBQ25CLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0I7RUFDcEIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0IsRUFBRTtBQUU1QjtFQUNFLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQiwwQ0FBMEI7RUFBMUIsa0NBQTBCO0VBQTFCLDBCQUEwQjtFQUExQixpREFBMEIsRUFBRTtBQUM1QjtJQUNFLFlBQVk7SUFDWixhQUFhLEVBQUU7QUFDakI7SUFDRSwrQkFBdUI7WUFBdkIsdUJBQXVCLEVBQUU7QUFDM0I7SUFDRSxlQUFlLEVBQUU7QUFDbkI7SUFDRSxjQUFjLEVBQUU7QUFDbEI7SUFDRSw4QkFBc0I7WUFBdEIsc0JBQXNCLEVBQUU7QUFDMUI7SUFDRSxjQUFjLEVBQUU7QUFDbEI7SUFDRSxlQUFlLEVBQUUiLCJmaWxlIjoiZnVsbC1zY3JlZW4uc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIGNoYWxsZW5nZSBoZXJlIHRvIHN1cHBvcnQgXCJwbGF5YWJsZSBxdWVyaWVzXCIgYW5kIFwiZGlyZWN0aW9uXCIgYXQgdGhlIHNhbWUgdGltZSBhbmQgYWxsb3cgbWl4aW5zIGxpa2U6XG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBsdHIoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBydGwoKSlcbiAqL1xuLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4uZnVsbFNjcmVlbkNvbnRyb2wge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyOyB9XG5cbi5mdWxsU2NyZWVuVG9nZ2xlIHtcbiAgd2lkdGg6IDI2cHg7XG4gIG1pbi13aWR0aDogMjZweDtcbiAgaGVpZ2h0OiAyNnB4O1xuICBtaW4taGVpZ2h0OiAyNnB4O1xuICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gLjJzOyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAuZnVsbFNjcmVlblRvZ2dsZSB7XG4gICAgd2lkdGg6IDM1cHg7XG4gICAgaGVpZ2h0OiAzNXB4OyB9XG4gIC5mdWxsU2NyZWVuVG9nZ2xlOmhvdmVyIHtcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMTgpOyB9XG4gIC5mdWxsU2NyZWVuVG9nZ2xlIC5lbnRlckljb24ge1xuICAgIGRpc3BsYXk6IGJsb2NrOyB9XG4gIC5mdWxsU2NyZWVuVG9nZ2xlIC5leGl0SWNvbiB7XG4gICAgZGlzcGxheTogbm9uZTsgfVxuICAuZnVsbFNjcmVlblRvZ2dsZS5pbkZ1bGxTY3JlZW46aG92ZXIge1xuICAgIHRyYW5zZm9ybTogc2NhbGUoMC44KTsgfVxuICAuZnVsbFNjcmVlblRvZ2dsZS5pbkZ1bGxTY3JlZW4gLmVudGVySWNvbiB7XG4gICAgZGlzcGxheTogbm9uZTsgfVxuICAuZnVsbFNjcmVlblRvZ2dsZS5pbkZ1bGxTY3JlZW4gLmV4aXRJY29uIHtcbiAgICBkaXNwbGF5OiBibG9jazsgfVxuIl19 */";
+    var styles$17 = {"controlButton":"full-screen__controlButton___3i-tz","hidden":"full-screen__hidden___3BgVZ","fullScreenControl":"full-screen__fullScreenControl___ng08Y","fullScreenToggle":"full-screen__fullScreenToggle___2T_-2","enterIcon":"full-screen__enterIcon___1i13n","exitIcon":"full-screen__exitIcon___1Q_V5","inFullScreen":"full-screen__inFullScreen___3F0AO"};
     styleInject(css$17);
 
     var FullScreenView = /** @class */ (function (_super) {
@@ -10415,6 +15473,7 @@ function readCookie(cookieName) {
             _this._textMap = textMap;
             _this._$rootElement = htmlToElement(dot_tpl_src_modules_ui_controls_fullScreen_templates_control_dot({
                 styles: _this.styleNames,
+                themeStyles: _this.themeStyles,
                 texts: {
                     label: _this._textMap.get(TextLabel$1.ENTER_FULL_SCREEN_LABEL),
                 },
@@ -10442,19 +15501,11 @@ function readCookie(cookieName) {
         FullScreenView.prototype.setFullScreenState = function (isInFullScreen) {
             if (isInFullScreen) {
                 this._$toggleFullScreenControl.classList.add(this.styleNames.inFullScreen);
-                this._$toggleFullScreenControl.innerHTML = dot_tpl_src_modules_ui_controls_fullScreen_templates_exitFullScreenIcon_dot({
-                    styles: this.styleNames,
-                    themeStyles: this.themeStyles,
-                });
                 this._$toggleFullScreenControl.setAttribute('aria-label', this._textMap.get(TextLabel$1.EXIT_FULL_SCREEN_LABEL));
                 this._tooltipReference.setText(this._textMap.get(TextLabel$1.EXIT_FULL_SCREEN_TOOLTIP));
             }
             else {
                 this._$toggleFullScreenControl.classList.remove(this.styleNames.inFullScreen);
-                this._$toggleFullScreenControl.innerHTML = dot_tpl_src_modules_ui_controls_fullScreen_templates_enterFullScreenIcon_dot({
-                    styles: this.styleNames,
-                    themeStyles: this.themeStyles,
-                });
                 this._$toggleFullScreenControl.setAttribute('aria-label', this._textMap.get(TextLabel$1.ENTER_FULL_SCREEN_LABEL));
                 this._tooltipReference.setText(this._textMap.get(TextLabel$1.ENTER_FULL_SCREEN_TOOLTIP));
             }
@@ -10567,19 +15618,9 @@ function readCookie(cookieName) {
         return FullScreenControl;
     }());
 
-    function dot_tpl_src_modules_ui_controls_pictureInPicture_templates_enterPictureInPicture_dot(props
-    ) {
-    var out='<div class="'+(props.styles.icon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 15"> <g fill="#FFF" fill-rule="evenodd" class="'+(props.themeStyles.pictureInPictureSvgFill)+'"> <path d="M6 13H0V0h15v5h-1.992V1.96H2.027V11H6z"/> <path d="M8 7h9v8H8V7zm2 2v4h5V9h-5z"/> </g> </svg></div>';return out;
-    }
-
-    function dot_tpl_src_modules_ui_controls_pictureInPicture_templates_exitPictureInPicture_dot(props
-    ) {
-    var out='<!--TODO fix icons--><div class="'+(props.styles.icon)+'"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 15"> <g fill="#FFF" fill-rule="evenodd" class="'+(props.themeStyles.pictureInPictureSvgFill)+'"> <path d="M7 13H0V0h15v5h-2.006V2.003H2.019V11H7z"/> <path d="M16 9H9V7h7z"/> <path d="M11 14V7H9v7z"/> <path d="M16.364 12.95l-1.414 1.414L10 9.414 11.414 8z"/> </g> </svg></div>';return out;
-    }
-
     function dot_tpl_src_modules_ui_controls_pictureInPicture_templates_control_dot(props
     ) {
-    var out='<div class="'+(props.styles.pictureInPictureControl)+'" data-playable-hook="picture-in-picture-control" data-is-picture-in-picture="false"> <button class="'+(props.styles.pictureInPictureToggle)+' '+(props.styles.controlButton)+'" data-playable-hook="picture-in-picture-control" aria-label="'+(props.texts.label)+'" type="button" tabindex="0"/></div>';return out;
+    var out='<div class="'+(props.styles.pictureInPictureControl)+'" data-playable-hook="picture-in-picture-control" data-is-picture-in-picture="false"> <button class="'+(props.styles.pictureInPictureToggle)+' '+(props.styles.controlButton)+'" data-playable-hook="picture-in-picture-control" aria-label="'+(props.texts.label)+'" type="button" tabindex="0"> <div class="'+(props.styles.enterIcon)+'"> <svg class="'+(props.styles.icon_small)+'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" preserveAspectRatio="xMidYMin slice" width="100%"> <g fill-rule="evenodd" class="'+(props.themeStyles.pictureInPictureSvgFill)+'"> <path d="M11 19H5V6h15v5h-2V8H7v9h4v2z"/> <path d="M13 13h9v8h-9v-8zm2 2v4h5v-4h-5z"/> </g> </svg> <svg class="'+(props.styles.icon_big)+'" viewBox="0 0 35 35" version="1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice" width="100%"> <g fill-rule="evenodd" class="'+(props.themeStyles.pictureInPictureSvgFill)+'"> <path d="M14 26H5V7h22v7h-2V9H7v15h7v2z"/> <path d="M17 17h12v11H17V17zm2 2v7h8v-7h-8z"/> </g> </svg> </div> <div class="'+(props.styles.exitIcon)+'"> <svg class="'+(props.styles.icon_small)+'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" preserveAspectRatio="xMidYMin slice" width="100%"> <g fill-rule="evenodd" class="'+(props.themeStyles.pictureInPictureSvgFill)+'"> <path d="M12 19H5V6h15v5h-2V8H7v9h5v2z"/> <path d="M21 15h-7v-2h7v2z"/> <path d="M16 20v-7h-2v7h2z"/> <path d="M21.279 18.95l-1.415 1.414-4.95-4.95L16.329 14l4.95 4.95z"/> </g> </svg> <svg class="'+(props.styles.icon_big)+'" viewBox="0 0 35 35" version="1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice" width="100%"> <g fill-rule="evenodd" class="'+(props.themeStyles.pictureInPictureSvgFill)+'"> <path d="M17 26H5V7h22v9h-2V9H7v15h10v2z"/> <path d="M28 21h-8v-2h8v2z"/> <path d="M22 27v-8h-2v8h2z"/> <path d="M29 27l-1 1-7-6 2-2 6 7z"/> </g> </svg> </div> </button></div>';return out;
     }
 
     var pictureInPictureViewTheme = {
@@ -10588,8 +15629,8 @@ function readCookie(cookieName) {
         },
     };
 
-    var css$18 = ".picture-in-picture__controlButton___1gCAB {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .picture-in-picture__controlButton___1gCAB:hover {\n    opacity: .7; }\n  .picture-in-picture__hidden___17cZh {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .picture-in-picture__pictureInPictureControl___3PS8W {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n  .picture-in-picture__pictureInPictureToggle___68YJ9 {\n  width: 26px;\n  min-width: 26px;\n  height: 26px;\n  min-height: 26px;\n  -webkit-transition: -webkit-transform .2s;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .picture-in-picture__pictureInPictureToggle___68YJ9 {\n    width: 35px;\n    min-width: 35px;\n    height: 35px;\n    min-height: 21px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .picture-in-picture__pictureInPictureToggle___68YJ9 .picture-in-picture__icon___HLiwK {\n      width: 21px;\n      height: 21px; }\n  .picture-in-picture__pictureInPictureToggle___68YJ9 .picture-in-picture__icon___HLiwK {\n    width: 14px;\n    min-width: 14px;\n    height: 14px;\n    min-height: 14px; }\n  .picture-in-picture__pictureInPictureToggle___68YJ9:hover {\n    -webkit-transform: scale(1.18);\n            transform: scale(1.18); }\n  .picture-in-picture__pictureInPictureToggle___68YJ9.picture-in-picture__inPictureInPicture___33ewm:hover {\n    -webkit-transform: scale(0.8);\n            transform: scale(0.8); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBpY3R1cmUtaW4tcGljdHVyZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGlDQUF5QjtVQUF6Qix5QkFBeUI7RUFDekIscUNBQTZCO0VBQTdCLDZCQUE2QjtFQUM3QixXQUFXO0VBQ1gsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsOEJBQThCO0VBQzlCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7RUFDdEI7SUFDRSxZQUFZLEVBQUU7RUFFbEI7RUFDRSw4QkFBOEI7RUFDOUIsb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4QixxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixzQkFBc0I7RUFDdEIsc0JBQXNCLEVBQUU7RUFFMUI7RUFDRSxtQkFBbUI7RUFDbkIscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQjtFQUNwQix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QixFQUFFO0VBRTVCO0VBQ0UsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLDBDQUEwQjtFQUExQixrQ0FBMEI7RUFBMUIsMEJBQTBCO0VBQTFCLGlEQUEwQixFQUFFO0VBQzVCO0lBQ0UsWUFBWTtJQUNaLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsaUJBQWlCLEVBQUU7RUFDbkI7TUFDRSxZQUFZO01BQ1osYUFBYSxFQUFFO0VBQ25CO0lBQ0UsWUFBWTtJQUNaLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsaUJBQWlCLEVBQUU7RUFDckI7SUFDRSwrQkFBdUI7WUFBdkIsdUJBQXVCLEVBQUU7RUFDM0I7SUFDRSw4QkFBc0I7WUFBdEIsc0JBQXNCLEVBQUUiLCJmaWxlIjoicGljdHVyZS1pbi1waWN0dXJlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udHJvbEJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmc6IDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogLjJzO1xuICB0cmFuc2l0aW9uLXByb3BlcnR5OiBvcGFjaXR5O1xuICBvcGFjaXR5OiAxO1xuICBib3JkZXI6IDA7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAuY29udHJvbEJ1dHRvbjpob3ZlciB7XG4gICAgb3BhY2l0eTogLjc7IH1cblxuLmhpZGRlbiB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbiAhaW1wb3J0YW50O1xuICB3aWR0aDogMCAhaW1wb3J0YW50O1xuICBtaW4td2lkdGg6IDAgIWltcG9ydGFudDtcbiAgaGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1pbi1oZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWFyZ2luOiAwICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmc6IDAgIWltcG9ydGFudDtcbiAgb3BhY2l0eTogMCAhaW1wb3J0YW50OyB9XG5cbi5waWN0dXJlSW5QaWN0dXJlQ29udHJvbCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7IH1cblxuLnBpY3R1cmVJblBpY3R1cmVUb2dnbGUge1xuICB3aWR0aDogMjZweDtcbiAgbWluLXdpZHRoOiAyNnB4O1xuICBoZWlnaHQ6IDI2cHg7XG4gIG1pbi1oZWlnaHQ6IDI2cHg7XG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAuMnM7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAucGljdHVyZUluUGljdHVyZVRvZ2dsZSB7XG4gICAgd2lkdGg6IDM1cHg7XG4gICAgbWluLXdpZHRoOiAzNXB4O1xuICAgIGhlaWdodDogMzVweDtcbiAgICBtaW4taGVpZ2h0OiAyMXB4OyB9XG4gICAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAucGljdHVyZUluUGljdHVyZVRvZ2dsZSAuaWNvbiB7XG4gICAgICB3aWR0aDogMjFweDtcbiAgICAgIGhlaWdodDogMjFweDsgfVxuICAucGljdHVyZUluUGljdHVyZVRvZ2dsZSAuaWNvbiB7XG4gICAgd2lkdGg6IDE0cHg7XG4gICAgbWluLXdpZHRoOiAxNHB4O1xuICAgIGhlaWdodDogMTRweDtcbiAgICBtaW4taGVpZ2h0OiAxNHB4OyB9XG4gIC5waWN0dXJlSW5QaWN0dXJlVG9nZ2xlOmhvdmVyIHtcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMTgpOyB9XG4gIC5waWN0dXJlSW5QaWN0dXJlVG9nZ2xlLmluUGljdHVyZUluUGljdHVyZTpob3ZlciB7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgwLjgpOyB9XG4iXX0= */";
-    var styles$18 = {"controlButton":"picture-in-picture__controlButton___1gCAB","hidden":"picture-in-picture__hidden___17cZh","pictureInPictureControl":"picture-in-picture__pictureInPictureControl___3PS8W","pictureInPictureToggle":"picture-in-picture__pictureInPictureToggle___68YJ9","icon":"picture-in-picture__icon___HLiwK","inPictureInPicture":"picture-in-picture__inPictureInPicture___33ewm"};
+    var css$18 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.picture-in-picture__controlButton___1pevT {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.picture-in-picture__controlButton___1pevT:hover {\n    opacity: .7; }\n.picture-in-picture__hidden___19f1_ {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.picture-in-picture__pictureInPictureControl___1NhQu {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n.picture-in-picture__pictureInPictureToggle___2hEBv {\n  width: 26px;\n  min-width: 26px;\n  height: 26px;\n  min-height: 26px;\n  -webkit-transition: -webkit-transform .2s;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .picture-in-picture__pictureInPictureToggle___2hEBv {\n    width: 35px;\n    min-width: 35px;\n    height: 35px;\n    min-height: 21px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .picture-in-picture__pictureInPictureToggle___2hEBv .picture-in-picture__icon_small___2Aveu {\n      display: none; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .picture-in-picture__pictureInPictureToggle___2hEBv .picture-in-picture__icon_big___dUOko {\n      display: block; }\n.picture-in-picture__pictureInPictureToggle___2hEBv .picture-in-picture__enterIcon___2um8L {\n    display: block; }\n.picture-in-picture__pictureInPictureToggle___2hEBv .picture-in-picture__exitIcon___HJ8Ie {\n    display: none; }\n.picture-in-picture__pictureInPictureToggle___2hEBv .picture-in-picture__icon_small___2Aveu {\n    display: block; }\n.picture-in-picture__pictureInPictureToggle___2hEBv .picture-in-picture__icon_big___dUOko {\n    display: none; }\n.picture-in-picture__pictureInPictureToggle___2hEBv:hover {\n    -webkit-transform: scale(1.18);\n            transform: scale(1.18); }\n.picture-in-picture__pictureInPictureToggle___2hEBv.picture-in-picture__inPictureInPicture___1cNDf:hover {\n    -webkit-transform: scale(0.8);\n            transform: scale(0.8); }\n.picture-in-picture__pictureInPictureToggle___2hEBv.picture-in-picture__inPictureInPicture___1cNDf .picture-in-picture__enterIcon___2um8L {\n    display: none; }\n.picture-in-picture__pictureInPictureToggle___2hEBv.picture-in-picture__inPictureInPicture___1cNDf .picture-in-picture__exitIcon___HJ8Ie {\n    display: block; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBpY3R1cmUtaW4tcGljdHVyZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7OztHQUtHO0FBQ0g7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtBQUN0QjtJQUNFLFlBQVksRUFBRTtBQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtBQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CO0VBQ3BCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCLEVBQUU7QUFFNUI7RUFDRSxZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsMENBQTBCO0VBQTFCLGtDQUEwQjtFQUExQiwwQkFBMEI7RUFBMUIsaURBQTBCLEVBQUU7QUFDNUI7SUFDRSxZQUFZO0lBQ1osZ0JBQWdCO0lBQ2hCLGFBQWE7SUFDYixpQkFBaUIsRUFBRTtBQUNuQjtNQUNFLGNBQWMsRUFBRTtBQUNsQjtNQUNFLGVBQWUsRUFBRTtBQUNyQjtJQUNFLGVBQWUsRUFBRTtBQUNuQjtJQUNFLGNBQWMsRUFBRTtBQUNsQjtJQUNFLGVBQWUsRUFBRTtBQUNuQjtJQUNFLGNBQWMsRUFBRTtBQUNsQjtJQUNFLCtCQUF1QjtZQUF2Qix1QkFBdUIsRUFBRTtBQUMzQjtJQUNFLDhCQUFzQjtZQUF0QixzQkFBc0IsRUFBRTtBQUMxQjtJQUNFLGNBQWMsRUFBRTtBQUNsQjtJQUNFLGVBQWUsRUFBRSIsImZpbGUiOiJwaWN0dXJlLWluLXBpY3R1cmUuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIGNoYWxsZW5nZSBoZXJlIHRvIHN1cHBvcnQgXCJwbGF5YWJsZSBxdWVyaWVzXCIgYW5kIFwiZGlyZWN0aW9uXCIgYXQgdGhlIHNhbWUgdGltZSBhbmQgYWxsb3cgbWl4aW5zIGxpa2U6XG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBsdHIoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBydGwoKSlcbiAqL1xuLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4ucGljdHVyZUluUGljdHVyZUNvbnRyb2wge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyOyB9XG5cbi5waWN0dXJlSW5QaWN0dXJlVG9nZ2xlIHtcbiAgd2lkdGg6IDI2cHg7XG4gIG1pbi13aWR0aDogMjZweDtcbiAgaGVpZ2h0OiAyNnB4O1xuICBtaW4taGVpZ2h0OiAyNnB4O1xuICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gLjJzOyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAucGljdHVyZUluUGljdHVyZVRvZ2dsZSB7XG4gICAgd2lkdGg6IDM1cHg7XG4gICAgbWluLXdpZHRoOiAzNXB4O1xuICAgIGhlaWdodDogMzVweDtcbiAgICBtaW4taGVpZ2h0OiAyMXB4OyB9XG4gICAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5waWN0dXJlSW5QaWN0dXJlVG9nZ2xlIC5pY29uX3NtYWxsIHtcbiAgICAgIGRpc3BsYXk6IG5vbmU7IH1cbiAgICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl0gLnBpY3R1cmVJblBpY3R1cmVUb2dnbGUgLmljb25fYmlnIHtcbiAgICAgIGRpc3BsYXk6IGJsb2NrOyB9XG4gIC5waWN0dXJlSW5QaWN0dXJlVG9nZ2xlIC5lbnRlckljb24ge1xuICAgIGRpc3BsYXk6IGJsb2NrOyB9XG4gIC5waWN0dXJlSW5QaWN0dXJlVG9nZ2xlIC5leGl0SWNvbiB7XG4gICAgZGlzcGxheTogbm9uZTsgfVxuICAucGljdHVyZUluUGljdHVyZVRvZ2dsZSAuaWNvbl9zbWFsbCB7XG4gICAgZGlzcGxheTogYmxvY2s7IH1cbiAgLnBpY3R1cmVJblBpY3R1cmVUb2dnbGUgLmljb25fYmlnIHtcbiAgICBkaXNwbGF5OiBub25lOyB9XG4gIC5waWN0dXJlSW5QaWN0dXJlVG9nZ2xlOmhvdmVyIHtcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMTgpOyB9XG4gIC5waWN0dXJlSW5QaWN0dXJlVG9nZ2xlLmluUGljdHVyZUluUGljdHVyZTpob3ZlciB7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgwLjgpOyB9XG4gIC5waWN0dXJlSW5QaWN0dXJlVG9nZ2xlLmluUGljdHVyZUluUGljdHVyZSAuZW50ZXJJY29uIHtcbiAgICBkaXNwbGF5OiBub25lOyB9XG4gIC5waWN0dXJlSW5QaWN0dXJlVG9nZ2xlLmluUGljdHVyZUluUGljdHVyZSAuZXhpdEljb24ge1xuICAgIGRpc3BsYXk6IGJsb2NrOyB9XG4iXX0= */";
+    var styles$18 = {"controlButton":"picture-in-picture__controlButton___1pevT","hidden":"picture-in-picture__hidden___19f1_","pictureInPictureControl":"picture-in-picture__pictureInPictureControl___1NhQu","pictureInPictureToggle":"picture-in-picture__pictureInPictureToggle___2hEBv","icon_small":"picture-in-picture__icon_small___2Aveu","icon_big":"picture-in-picture__icon_big___dUOko","enterIcon":"picture-in-picture__enterIcon___2um8L","exitIcon":"picture-in-picture__exitIcon___HJ8Ie","inPictureInPicture":"picture-in-picture__inPictureInPicture___1cNDf"};
     styleInject(css$18);
 
     var PictureInPictureView = /** @class */ (function (_super) {
@@ -10602,6 +15643,7 @@ function readCookie(cookieName) {
             _this._textMap = textMap;
             _this._$rootElement = htmlToElement(dot_tpl_src_modules_ui_controls_pictureInPicture_templates_control_dot({
                 styles: _this.styleNames,
+                themeStyles: _this.themeStyles,
                 texts: {
                     label: _this._textMap.get(TextLabel$1.ENTER_PICTURE_IN_PICTURE_LABEL),
                 },
@@ -10622,25 +15664,16 @@ function readCookie(cookieName) {
             this._$togglePictureInPictureControl.removeEventListener('click', this._onButtonClick);
         };
         PictureInPictureView.prototype._onButtonClick = function () {
-            this._$togglePictureInPictureControl.focus();
             this._callbacks.onButtonClick();
         };
         PictureInPictureView.prototype.setPictureInPictureState = function (isPictureInPicture) {
             if (isPictureInPicture) {
-                this._$togglePictureInPictureControl.classList.add(this.styleNames.pictureInPicture);
-                this._$togglePictureInPictureControl.innerHTML = dot_tpl_src_modules_ui_controls_pictureInPicture_templates_exitPictureInPicture_dot({
-                    styles: this.styleNames,
-                    themeStyles: this.themeStyles,
-                });
+                this._$togglePictureInPictureControl.classList.add(this.styleNames.inPictureInPicture);
                 this._$togglePictureInPictureControl.setAttribute('aria-label', this._textMap.get(TextLabel$1.EXIT_PICTURE_IN_PICTURE_LABEL));
                 this._tooltipReference.setText(this._textMap.get(TextLabel$1.EXIT_PICTURE_IN_PICTURE_TOOLTIP));
             }
             else {
-                this._$togglePictureInPictureControl.classList.remove(this.styleNames.pictureInPicture);
-                this._$togglePictureInPictureControl.innerHTML = dot_tpl_src_modules_ui_controls_pictureInPicture_templates_enterPictureInPicture_dot({
-                    styles: this.styleNames,
-                    themeStyles: this.themeStyles,
-                });
+                this._$togglePictureInPictureControl.classList.remove(this.styleNames.inPictureInPicture);
                 this._$togglePictureInPictureControl.setAttribute('aria-label', this._textMap.get(TextLabel$1.ENTER_PICTURE_IN_PICTURE_LABEL));
                 this._tooltipReference.setText(this._textMap.get(TextLabel$1.ENTER_PICTURE_IN_PICTURE_TOOLTIP));
             }
@@ -10775,7 +15808,7 @@ function readCookie(cookieName) {
 
     function dot_tpl_src_modules_ui_controls_logo_templates_logoButton_dot(props
     ) {
-    var out='<button class="'+(props.styles.logoButton)+' '+(props.styles.controlButton)+'" aria-label="'+(props.texts.label)+'" type="button" tabindex="0"> <div class="'+(props.styles.icon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" preserveAspectRatio="xMidYMin slice" width="100%" style="padding-bottom: 127%; height: 1px; overflow: visible"> <path fill="#FFF" fill-rule="evenodd" class="'+(props.themeStyles.logoButtonSvgFill)+'" d="M2 12h10v-2h2v4H0V0h4v2H2v10zm10-8.515L7.414 8.071 6 6.657 10.657 2H9.004V0H14v5.005h-2v-1.52z"/> </svg> </div></button>';return out;
+    var out='<button class="'+(props.styles.logoButton)+' '+(props.styles.controlButton)+'" aria-label="'+(props.texts.label)+'" type="button" tabindex="0"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="'+(props.styles.icon_small)+'" preserveAspectRatio="xMidYMin slice" width="100%"> <path fill-rule="evenodd" class="'+(props.themeStyles.logoButtonSvgFill)+'" d="M8 20H6V6h4v2H8v10h10v-2h2v4H8zM18 9.485l-4.586 4.586L12 12.657 16.657 8h-1.653V6H20v5.005h-2v-1.52z"/> </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" class="'+(props.styles.icon_big)+'" preserveAspectRatio="xMidYMin slice" width="100%"> <path fill-rule="evenodd" class="'+(props.themeStyles.logoButtonSvgFill)+'" d="M9 28H7V7h7.071v2H9v17h17v-5h2v7H9zm17-17.98l-8.586 8.587L16 17.192 24.192 9h-2.184V7H28v6.012h-2V10.02z"/> </svg></button>';return out;
     }
 
     var logoViewTheme = {
@@ -10784,8 +15817,8 @@ function readCookie(cookieName) {
         },
     };
 
-    var css$19 = ".logo__controlButton___owdbK {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .logo__controlButton___owdbK:hover {\n    opacity: .7; }\n  .logo__hidden___Pm6t6 {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .logo__logoWrapper___2HWRo {\n  position: relative;\n  z-index: 3;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  opacity: 1;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .logo__logoWrapper___2HWRo:hover .logo__logoPlaceholder___14fTk {\n    opacity: .7; }\n  .logo__logoImage___1N2ry {\n  max-width: 125px;\n  max-height: 26px;\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .logo__logoImage___1N2ry {\n    max-width: 90px;\n    max-height: 20px; }\n  div[data-playable-hook='player-container'][data-playable-max-width~=\"350px\"] .logo__logoImage___1N2ry {\n    max-width: 70px;\n    max-height: 18px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .logo__logoImage___1N2ry {\n    max-width: 450px;\n    max-height: 36px; }\n  .logo__logoImage___1N2ry.logo__hidden___Pm6t6 {\n    display: none; }\n  .logo__logoButton___1JWF4 {\n  width: 26px;\n  min-width: 26px;\n  height: 26px;\n  min-height: 26px;\n  -webkit-transition: -webkit-transform .2s;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .logo__logoButton___1JWF4 {\n    width: 35px;\n    min-width: 35px;\n    height: 35px;\n    min-height: 35px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .logo__logoButton___1JWF4 .logo__icon___39sTd {\n      width: 21px;\n      min-width: 21px;\n      height: 21px;\n      min-height: 21px; }\n  .logo__logoButton___1JWF4 .logo__icon___39sTd {\n    width: 14px;\n    min-width: 14px;\n    height: 14px;\n    min-height: 14px; }\n  .logo__logoButton___1JWF4:hover {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxvZ28uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0VBQ3RCO0lBQ0UsWUFBWSxFQUFFO0VBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0VBRTFCO0VBQ0UsbUJBQW1CO0VBQ25CLFdBQVc7RUFDWCxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLGdDQUF3QjtFQUF4Qix3QkFBd0I7RUFDeEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixXQUFXO0VBQ1gseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLFlBQVksRUFBRTtFQUVsQjtFQUNFLGlCQUFpQjtFQUNqQixpQkFBaUI7RUFDakIsZ0NBQXdCO0VBQXhCLHdCQUF3QixFQUFFO0VBQzFCO0lBQ0UsZ0JBQWdCO0lBQ2hCLGlCQUFpQixFQUFFO0VBQ3JCO0lBQ0UsZ0JBQWdCO0lBQ2hCLGlCQUFpQixFQUFFO0VBQ3JCO0lBQ0UsaUJBQWlCO0lBQ2pCLGlCQUFpQixFQUFFO0VBQ3JCO0lBQ0UsY0FBYyxFQUFFO0VBRXBCO0VBQ0UsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLDBDQUEwQjtFQUExQixrQ0FBMEI7RUFBMUIsMEJBQTBCO0VBQTFCLGlEQUEwQixFQUFFO0VBQzVCO0lBQ0UsWUFBWTtJQUNaLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsaUJBQWlCLEVBQUU7RUFDbkI7TUFDRSxZQUFZO01BQ1osZ0JBQWdCO01BQ2hCLGFBQWE7TUFDYixpQkFBaUIsRUFBRTtFQUN2QjtJQUNFLFlBQVk7SUFDWixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLGlCQUFpQixFQUFFO0VBQ3JCO0lBQ0UsOEJBQXNCO1lBQXRCLHNCQUFzQixFQUFFIiwiZmlsZSI6ImxvZ28uc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250cm9sQnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgcGFkZGluZzogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAuMnM7XG4gIHRyYW5zaXRpb24tcHJvcGVydHk6IG9wYWNpdHk7XG4gIG9wYWNpdHk6IDE7XG4gIGJvcmRlcjogMDtcbiAgYm9yZGVyLXJhZGl1czogMDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5jb250cm9sQnV0dG9uOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAuNzsgfVxuXG4uaGlkZGVuIHtcbiAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XG4gIHdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIG1pbi13aWR0aDogMCAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWluLWhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtYXJnaW46IDAgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCAhaW1wb3J0YW50O1xuICBvcGFjaXR5OiAwICFpbXBvcnRhbnQ7IH1cblxuLmxvZ29XcmFwcGVyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiAzO1xuICBkaXNwbGF5OiBmbGV4O1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4ycztcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogLjJzO1xuICBvcGFjaXR5OiAxO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAubG9nb1dyYXBwZXI6aG92ZXIgLmxvZ29QbGFjZWhvbGRlciB7XG4gICAgb3BhY2l0eTogLjc7IH1cblxuLmxvZ29JbWFnZSB7XG4gIG1heC13aWR0aDogMTI1cHg7XG4gIG1heC1oZWlnaHQ6IDI2cHg7XG4gIHRyYW5zaXRpb246IG9wYWNpdHkgLjJzOyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLW1heC13aWR0aH49XCI1NTBweFwiXSAubG9nb0ltYWdlIHtcbiAgICBtYXgtd2lkdGg6IDkwcHg7XG4gICAgbWF4LWhlaWdodDogMjBweDsgfVxuICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1tYXgtd2lkdGh+PVwiMzUwcHhcIl0gLmxvZ29JbWFnZSB7XG4gICAgbWF4LXdpZHRoOiA3MHB4O1xuICAgIG1heC1oZWlnaHQ6IDE4cHg7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAubG9nb0ltYWdlIHtcbiAgICBtYXgtd2lkdGg6IDQ1MHB4O1xuICAgIG1heC1oZWlnaHQ6IDM2cHg7IH1cbiAgLmxvZ29JbWFnZS5oaWRkZW4ge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cblxuLmxvZ29CdXR0b24ge1xuICB3aWR0aDogMjZweDtcbiAgbWluLXdpZHRoOiAyNnB4O1xuICBoZWlnaHQ6IDI2cHg7XG4gIG1pbi1oZWlnaHQ6IDI2cHg7XG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAuMnM7IH1cbiAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAubG9nb0J1dHRvbiB7XG4gICAgd2lkdGg6IDM1cHg7XG4gICAgbWluLXdpZHRoOiAzNXB4O1xuICAgIGhlaWdodDogMzVweDtcbiAgICBtaW4taGVpZ2h0OiAzNXB4OyB9XG4gICAgZGl2W2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49J3RydWUnXSAubG9nb0J1dHRvbiAuaWNvbiB7XG4gICAgICB3aWR0aDogMjFweDtcbiAgICAgIG1pbi13aWR0aDogMjFweDtcbiAgICAgIGhlaWdodDogMjFweDtcbiAgICAgIG1pbi1oZWlnaHQ6IDIxcHg7IH1cbiAgLmxvZ29CdXR0b24gLmljb24ge1xuICAgIHdpZHRoOiAxNHB4O1xuICAgIG1pbi13aWR0aDogMTRweDtcbiAgICBoZWlnaHQ6IDE0cHg7XG4gICAgbWluLWhlaWdodDogMTRweDsgfVxuICAubG9nb0J1dHRvbjpob3ZlciB7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxLjIpOyB9XG4iXX0= */";
-    var styles$19 = {"controlButton":"logo__controlButton___owdbK","hidden":"logo__hidden___Pm6t6","logoWrapper":"logo__logoWrapper___2HWRo","logoPlaceholder":"logo__logoPlaceholder___14fTk","logoImage":"logo__logoImage___1N2ry","logoButton":"logo__logoButton___1JWF4","icon":"logo__icon___39sTd"};
+    var css$19 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.logo__controlButton___owdbK {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.logo__controlButton___owdbK:hover {\n    opacity: .7; }\n.logo__hidden___Pm6t6 {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.logo__logoWrapper___2HWRo {\n  position: relative;\n  z-index: 3;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  opacity: 1;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.logo__logoWrapper___2HWRo:hover .logo__logoPlaceholder___14fTk {\n    opacity: .7; }\n.logo__logoImage___1N2ry {\n  max-width: 125px;\n  max-height: 26px;\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"550px\"] .logo__logoImage___1N2ry {\n    max-width: 90px;\n    max-height: 20px; }\n[data-playable-hook='player-container'][data-playable-max-width~=\"350px\"] .logo__logoImage___1N2ry {\n    max-width: 70px;\n    max-height: 18px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .logo__logoImage___1N2ry {\n    max-width: 450px;\n    max-height: 36px; }\n.logo__logoImage___1N2ry.logo__hidden___Pm6t6 {\n    display: none; }\n.logo__logoButton___1JWF4 {\n  width: 26px;\n  min-width: 26px;\n  height: 26px;\n  min-height: 26px;\n  -webkit-transition: -webkit-transform .2s;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .logo__logoButton___1JWF4 {\n    width: 35px;\n    min-width: 35px;\n    height: 35px;\n    min-height: 35px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .logo__logoButton___1JWF4 .logo__icon_small___2o0-C {\n      display: none; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .logo__logoButton___1JWF4 .logo__icon_big___pAlEu {\n      display: block; }\n.logo__logoButton___1JWF4 .logo__icon_small___2o0-C {\n    display: block; }\n.logo__logoButton___1JWF4 .logo__icon_big___pAlEu {\n    display: none; }\n.logo__logoButton___1JWF4:hover {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxvZ28uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7R0FLRztBQUNIOzs7OztHQUtHO0FBQ0g7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtBQUN0QjtJQUNFLFlBQVksRUFBRTtBQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtBQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxnQ0FBd0I7RUFBeEIsd0JBQXdCO0VBQ3hCLGlDQUF5QjtVQUF6Qix5QkFBeUI7RUFDekIsV0FBVztFQUNYLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUU7QUFDdEI7SUFDRSxZQUFZLEVBQUU7QUFFbEI7RUFDRSxpQkFBaUI7RUFDakIsaUJBQWlCO0VBQ2pCLGdDQUF3QjtFQUF4Qix3QkFBd0IsRUFBRTtBQUMxQjtJQUNFLGdCQUFnQjtJQUNoQixpQkFBaUIsRUFBRTtBQUNyQjtJQUNFLGdCQUFnQjtJQUNoQixpQkFBaUIsRUFBRTtBQUNyQjtJQUNFLGlCQUFpQjtJQUNqQixpQkFBaUIsRUFBRTtBQUNyQjtJQUNFLGNBQWMsRUFBRTtBQUVwQjtFQUNFLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQiwwQ0FBMEI7RUFBMUIsa0NBQTBCO0VBQTFCLDBCQUEwQjtFQUExQixpREFBMEIsRUFBRTtBQUM1QjtJQUNFLFlBQVk7SUFDWixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLGlCQUFpQixFQUFFO0FBQ25CO01BQ0UsY0FBYyxFQUFFO0FBQ2xCO01BQ0UsZUFBZSxFQUFFO0FBQ3JCO0lBQ0UsZUFBZSxFQUFFO0FBQ25CO0lBQ0UsY0FBYyxFQUFFO0FBQ2xCO0lBQ0UsOEJBQXNCO1lBQXRCLHNCQUFzQixFQUFFIiwiZmlsZSI6ImxvZ28uc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIGNoYWxsZW5nZSBoZXJlIHRvIHN1cHBvcnQgXCJwbGF5YWJsZSBxdWVyaWVzXCIgYW5kIFwiZGlyZWN0aW9uXCIgYXQgdGhlIHNhbWUgdGltZSBhbmQgYWxsb3cgbWl4aW5zIGxpa2U6XG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBsdHIoKSlcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpLCBydGwoKSlcbiAqL1xuLyoqXG4gKiBUaGUgY2hhbGxlbmdlIGhlcmUgdG8gc3VwcG9ydCBcInBsYXlhYmxlIHF1ZXJpZXNcIiBhbmQgXCJkaXJlY3Rpb25cIiBhdCB0aGUgc2FtZSB0aW1lIGFuZCBhbGxvdyBtaXhpbnMgbGlrZTpcbiAqICAgQGluY2x1ZGUgcXVlcnkobWF4LXdpZHRoLTU1MCgpKVxuICogICBAaW5jbHVkZSBxdWVyeShtYXgtd2lkdGgtNTUwKCksIGx0cigpKVxuICogICBAaW5jbHVkZSBxdWVyeShtYXgtd2lkdGgtNTUwKCksIHJ0bCgpKVxuICovXG4uY29udHJvbEJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmc6IDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogLjJzO1xuICB0cmFuc2l0aW9uLXByb3BlcnR5OiBvcGFjaXR5O1xuICBvcGFjaXR5OiAxO1xuICBib3JkZXI6IDA7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuICAuY29udHJvbEJ1dHRvbjpob3ZlciB7XG4gICAgb3BhY2l0eTogLjc7IH1cblxuLmhpZGRlbiB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbiAhaW1wb3J0YW50O1xuICB3aWR0aDogMCAhaW1wb3J0YW50O1xuICBtaW4td2lkdGg6IDAgIWltcG9ydGFudDtcbiAgaGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1pbi1oZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWFyZ2luOiAwICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmc6IDAgIWltcG9ydGFudDtcbiAgb3BhY2l0eTogMCAhaW1wb3J0YW50OyB9XG5cbi5sb2dvV3JhcHBlciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgei1pbmRleDogMztcbiAgZGlzcGxheTogZmxleDtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSAuMnM7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgb3BhY2l0eTogMTtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmxvZ29XcmFwcGVyOmhvdmVyIC5sb2dvUGxhY2Vob2xkZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5sb2dvSW1hZ2Uge1xuICBtYXgtd2lkdGg6IDEyNXB4O1xuICBtYXgtaGVpZ2h0OiAyNnB4O1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4yczsgfVxuICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1tYXgtd2lkdGh+PVwiNTUwcHhcIl0gLmxvZ29JbWFnZSB7XG4gICAgbWF4LXdpZHRoOiA5MHB4O1xuICAgIG1heC1oZWlnaHQ6IDIwcHg7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtbWF4LXdpZHRofj1cIjM1MHB4XCJdIC5sb2dvSW1hZ2Uge1xuICAgIG1heC13aWR0aDogNzBweDtcbiAgICBtYXgtaGVpZ2h0OiAxOHB4OyB9XG4gIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAubG9nb0ltYWdlIHtcbiAgICBtYXgtd2lkdGg6IDQ1MHB4O1xuICAgIG1heC1oZWlnaHQ6IDM2cHg7IH1cbiAgLmxvZ29JbWFnZS5oaWRkZW4ge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cblxuLmxvZ29CdXR0b24ge1xuICB3aWR0aDogMjZweDtcbiAgbWluLXdpZHRoOiAyNnB4O1xuICBoZWlnaHQ6IDI2cHg7XG4gIG1pbi1oZWlnaHQ6IDI2cHg7XG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAuMnM7IH1cbiAgW2RhdGEtcGxheWFibGUtaG9vaz0ncGxheWVyLWNvbnRhaW5lciddW2RhdGEtcGxheWFibGUtaW4tZnVsbC1zY3JlZW49XCJ0cnVlXCJdIC5sb2dvQnV0dG9uIHtcbiAgICB3aWR0aDogMzVweDtcbiAgICBtaW4td2lkdGg6IDM1cHg7XG4gICAgaGVpZ2h0OiAzNXB4O1xuICAgIG1pbi1oZWlnaHQ6IDM1cHg7IH1cbiAgICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl0gLmxvZ29CdXR0b24gLmljb25fc21hbGwge1xuICAgICAgZGlzcGxheTogbm9uZTsgfVxuICAgIFtkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPVwidHJ1ZVwiXSAubG9nb0J1dHRvbiAuaWNvbl9iaWcge1xuICAgICAgZGlzcGxheTogYmxvY2s7IH1cbiAgLmxvZ29CdXR0b24gLmljb25fc21hbGwge1xuICAgIGRpc3BsYXk6IGJsb2NrOyB9XG4gIC5sb2dvQnV0dG9uIC5pY29uX2JpZyB7XG4gICAgZGlzcGxheTogbm9uZTsgfVxuICAubG9nb0J1dHRvbjpob3ZlciB7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxLjIpOyB9XG4iXX0= */";
+    var styles$19 = {"controlButton":"logo__controlButton___owdbK","hidden":"logo__hidden___Pm6t6","logoWrapper":"logo__logoWrapper___2HWRo","logoPlaceholder":"logo__logoPlaceholder___14fTk","logoImage":"logo__logoImage___1N2ry","logoButton":"logo__logoButton___1JWF4","icon_small":"logo__icon_small___2o0-C","icon_big":"logo__icon_big___pAlEu"};
     styleInject(css$19);
 
     var LogoView = /** @class */ (function (_super) {
@@ -11004,9 +16037,9 @@ function readCookie(cookieName) {
         return Logo;
     }());
 
-    function dot_tpl_src_modules_ui_controls_download_templates_button_dot(props
+    function dot_tpl_src_modules_ui_controls_download_templates_control_dot(props
     ) {
-    var out='<div class="'+(props.styles.buttonWrapper)+'"> <button class="'+(props.styles.downloadButton)+' '+(props.styles.controlButton)+'" data-playable-hook="download-button" aria-label="'+(props.texts.label)+'" type="button" tabindex="0"> <div class="'+(props.styles.icon)+'"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14" preserveAspectRatio="xMidYMin slice" width="100%" style="padding-bottom: 127%; height: 1px; overflow: visible"> <path fill="#FFF" fill-rule="evenodd" class="'+(props.themeStyles.downloadSvgFill)+'" d="M8 5.586V0h2v5.364l2.048-2.048 1.414 1.414-4.048 4.048-.268-.268-.525.526-4.31-4.311L5.725 3.31 8 5.586zM2 12h13V8h2v6H0V8h2v4z"/> </svg> </div> </button></div>';return out;
+    var out='<div class="'+(props.styles.buttonWrapper)+'"> <button class="'+(props.styles.downloadButton)+' '+(props.styles.controlButton)+'" data-playable-hook="download-button" aria-label="'+(props.texts.label)+'" type="button" tabindex="0"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="'+(props.styles.icon_small)+'" width="100%"> <g fill-rule="evenodd" class="'+(props.themeStyles.downloadSvgFill)+'"> <path d="M6 18h14v2H6v-2zm3.586-8.328L13 13.025v2.708l-4.828-4.647 1.414-1.414zM13 13.123l3.618-3.655 1.414 1.414L13 15.749v-2.626z"/> <path d="M12 6h2v8l-1 2-1-2V6z"/> </g> </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" class="'+(props.styles.icon_big)+'" width="100%"> <path d="M16.5 17.586V7h2v10.825L23.571 13l1.414 1.414-7.085 6.743-.329.328-7.071-7.07L11.914 13l4.586 4.586zM5.5 26h24v2h-24v-2z" fill-rule="evenodd"/> </svg> </button></div>';return out;
     }
 
     var downloadViewTheme = {
@@ -11015,8 +16048,8 @@ function readCookie(cookieName) {
         },
     };
 
-    var css$20 = ".download__controlButton___fk1Ma {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .download__controlButton___fk1Ma:hover {\n    opacity: .7; }\n  .download__hidden___36lL8 {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .download__buttonWrapper___244Vz {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n  .download__downloadButton___3J_rA {\n  width: 26px;\n  min-width: 26px;\n  height: 26px;\n  min-height: 26px;\n  -webkit-transition: -webkit-transform .2s;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .download__downloadButton___3J_rA {\n    width: 35px;\n    min-width: 35px;\n    height: 35px;\n    min-height: 21px; }\n  div[data-playable-hook='player-container'][data-playable-in-full-screen='true'] .download__downloadButton___3J_rA .download__icon___2Zjb8 {\n      width: 25px;\n      height: 21px; }\n  .download__downloadButton___3J_rA .download__icon___2Zjb8 {\n    width: 17px;\n    min-width: 17px;\n    height: 14px;\n    min-height: 14px; }\n  .download__downloadButton___3J_rA:hover {\n    -webkit-transform: scale(1.18);\n            transform: scale(1.18); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRvd25sb2FkLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLFlBQVksRUFBRTtFQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtFQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLDBCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CO0VBQ3BCLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCLEVBQUU7RUFFNUI7RUFDRSxZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsMENBQTBCO0VBQTFCLGtDQUEwQjtFQUExQiwwQkFBMEI7RUFBMUIsaURBQTBCLEVBQUU7RUFDNUI7SUFDRSxZQUFZO0lBQ1osZ0JBQWdCO0lBQ2hCLGFBQWE7SUFDYixpQkFBaUIsRUFBRTtFQUNuQjtNQUNFLFlBQVk7TUFDWixhQUFhLEVBQUU7RUFDbkI7SUFDRSxZQUFZO0lBQ1osZ0JBQWdCO0lBQ2hCLGFBQWE7SUFDYixpQkFBaUIsRUFBRTtFQUNyQjtJQUNFLCtCQUF1QjtZQUF2Qix1QkFBdUIsRUFBRSIsImZpbGUiOiJkb3dubG9hZC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4uYnV0dG9uV3JhcHBlciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7IH1cblxuLmRvd25sb2FkQnV0dG9uIHtcbiAgd2lkdGg6IDI2cHg7XG4gIG1pbi13aWR0aDogMjZweDtcbiAgaGVpZ2h0OiAyNnB4O1xuICBtaW4taGVpZ2h0OiAyNnB4O1xuICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gLjJzOyB9XG4gIGRpdltkYXRhLXBsYXlhYmxlLWhvb2s9J3BsYXllci1jb250YWluZXInXVtkYXRhLXBsYXlhYmxlLWluLWZ1bGwtc2NyZWVuPSd0cnVlJ10gLmRvd25sb2FkQnV0dG9uIHtcbiAgICB3aWR0aDogMzVweDtcbiAgICBtaW4td2lkdGg6IDM1cHg7XG4gICAgaGVpZ2h0OiAzNXB4O1xuICAgIG1pbi1oZWlnaHQ6IDIxcHg7IH1cbiAgICBkaXZbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj0ndHJ1ZSddIC5kb3dubG9hZEJ1dHRvbiAuaWNvbiB7XG4gICAgICB3aWR0aDogMjVweDtcbiAgICAgIGhlaWdodDogMjFweDsgfVxuICAuZG93bmxvYWRCdXR0b24gLmljb24ge1xuICAgIHdpZHRoOiAxN3B4O1xuICAgIG1pbi13aWR0aDogMTdweDtcbiAgICBoZWlnaHQ6IDE0cHg7XG4gICAgbWluLWhlaWdodDogMTRweDsgfVxuICAuZG93bmxvYWRCdXR0b246aG92ZXIge1xuICAgIHRyYW5zZm9ybTogc2NhbGUoMS4xOCk7IH1cbiJdfQ== */";
-    var styles$20 = {"controlButton":"download__controlButton___fk1Ma","hidden":"download__hidden___36lL8","buttonWrapper":"download__buttonWrapper___244Vz","downloadButton":"download__downloadButton___3J_rA","icon":"download__icon___2Zjb8"};
+    var css$20 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.download__controlButton___fk1Ma {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.download__controlButton___fk1Ma:hover {\n    opacity: .7; }\n.download__hidden___36lL8 {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.download__buttonWrapper___244Vz {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n.download__downloadButton___3J_rA {\n  width: 26px;\n  min-width: 26px;\n  height: 26px;\n  min-height: 26px;\n  -webkit-transition: -webkit-transform .2s;\n  transition: -webkit-transform .2s;\n  transition: transform .2s;\n  transition: transform .2s, -webkit-transform .2s; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .download__downloadButton___3J_rA {\n    width: 35px;\n    min-width: 35px;\n    height: 35px;\n    min-height: 21px; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .download__downloadButton___3J_rA .download__icon_small___1rNov {\n      display: none; }\n[data-playable-hook='player-container'][data-playable-in-full-screen=\"true\"] .download__downloadButton___3J_rA .download__icon_big___3csO6 {\n      display: block; }\n.download__downloadButton___3J_rA .download__icon_small___1rNov {\n    display: block; }\n.download__downloadButton___3J_rA .download__icon_big___3csO6 {\n    display: none; }\n.download__downloadButton___3J_rA:hover {\n    -webkit-transform: scale(1.18);\n            transform: scale(1.18); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRvd25sb2FkLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0dBS0c7QUFDSDtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0FBQ3RCO0lBQ0UsWUFBWSxFQUFFO0FBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0FBRTFCO0VBQ0UsbUJBQW1CO0VBQ25CLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0I7RUFDcEIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0IsRUFBRTtBQUU1QjtFQUNFLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQiwwQ0FBMEI7RUFBMUIsa0NBQTBCO0VBQTFCLDBCQUEwQjtFQUExQixpREFBMEIsRUFBRTtBQUM1QjtJQUNFLFlBQVk7SUFDWixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLGlCQUFpQixFQUFFO0FBQ25CO01BQ0UsY0FBYyxFQUFFO0FBQ2xCO01BQ0UsZUFBZSxFQUFFO0FBQ3JCO0lBQ0UsZUFBZSxFQUFFO0FBQ25CO0lBQ0UsY0FBYyxFQUFFO0FBQ2xCO0lBQ0UsK0JBQXVCO1lBQXZCLHVCQUF1QixFQUFFIiwiZmlsZSI6ImRvd25sb2FkLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFRoZSBjaGFsbGVuZ2UgaGVyZSB0byBzdXBwb3J0IFwicGxheWFibGUgcXVlcmllc1wiIGFuZCBcImRpcmVjdGlvblwiIGF0IHRoZSBzYW1lIHRpbWUgYW5kIGFsbG93IG1peGlucyBsaWtlOlxuICogICBAaW5jbHVkZSBxdWVyeShtYXgtd2lkdGgtNTUwKCkpXG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSwgbHRyKCkpXG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSwgcnRsKCkpXG4gKi9cbi5jb250cm9sQnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgcGFkZGluZzogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAuMnM7XG4gIHRyYW5zaXRpb24tcHJvcGVydHk6IG9wYWNpdHk7XG4gIG9wYWNpdHk6IDE7XG4gIGJvcmRlcjogMDtcbiAgYm9yZGVyLXJhZGl1czogMDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5jb250cm9sQnV0dG9uOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAuNzsgfVxuXG4uaGlkZGVuIHtcbiAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XG4gIHdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIG1pbi13aWR0aDogMCAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWluLWhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtYXJnaW46IDAgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCAhaW1wb3J0YW50O1xuICBvcGFjaXR5OiAwICFpbXBvcnRhbnQ7IH1cblxuLmJ1dHRvbldyYXBwZXIge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyOyB9XG5cbi5kb3dubG9hZEJ1dHRvbiB7XG4gIHdpZHRoOiAyNnB4O1xuICBtaW4td2lkdGg6IDI2cHg7XG4gIGhlaWdodDogMjZweDtcbiAgbWluLWhlaWdodDogMjZweDtcbiAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIC4yczsgfVxuICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl0gLmRvd25sb2FkQnV0dG9uIHtcbiAgICB3aWR0aDogMzVweDtcbiAgICBtaW4td2lkdGg6IDM1cHg7XG4gICAgaGVpZ2h0OiAzNXB4O1xuICAgIG1pbi1oZWlnaHQ6IDIxcHg7IH1cbiAgICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl0gLmRvd25sb2FkQnV0dG9uIC5pY29uX3NtYWxsIHtcbiAgICAgIGRpc3BsYXk6IG5vbmU7IH1cbiAgICBbZGF0YS1wbGF5YWJsZS1ob29rPSdwbGF5ZXItY29udGFpbmVyJ11bZGF0YS1wbGF5YWJsZS1pbi1mdWxsLXNjcmVlbj1cInRydWVcIl0gLmRvd25sb2FkQnV0dG9uIC5pY29uX2JpZyB7XG4gICAgICBkaXNwbGF5OiBibG9jazsgfVxuICAuZG93bmxvYWRCdXR0b24gLmljb25fc21hbGwge1xuICAgIGRpc3BsYXk6IGJsb2NrOyB9XG4gIC5kb3dubG9hZEJ1dHRvbiAuaWNvbl9iaWcge1xuICAgIGRpc3BsYXk6IG5vbmU7IH1cbiAgLmRvd25sb2FkQnV0dG9uOmhvdmVyIHtcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMTgpOyB9XG4iXX0= */";
+    var styles$20 = {"controlButton":"download__controlButton___fk1Ma","hidden":"download__hidden___36lL8","buttonWrapper":"download__buttonWrapper___244Vz","downloadButton":"download__downloadButton___3J_rA","icon_small":"download__icon_small___1rNov","icon_big":"download__icon_big___3csO6"};
     styleInject(css$20);
 
     var DownloadView = /** @class */ (function (_super) {
@@ -11027,7 +16060,7 @@ function readCookie(cookieName) {
             _this = _super.call(this, theme) || this;
             _this._callbacks = callbacks;
             _this._textMap = textMap;
-            _this._$rootElement = htmlToElement(dot_tpl_src_modules_ui_controls_download_templates_button_dot({
+            _this._$rootElement = htmlToElement(dot_tpl_src_modules_ui_controls_download_templates_control_dot({
                 styles: _this.styleNames,
                 themeStyles: _this.themeStyles,
                 texts: {
@@ -11587,7 +16620,7 @@ function readCookie(cookieName) {
     var out='<div class="'+(props.styles.container)+'" data-playable-component> <div class="'+(props.styles.frame)+'" data-playable-hook="preview-full-size-frame" > </div></div>';return out;
     }
 
-    var css$22 = ".preview-full-size__controlButton___2sWjc {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .preview-full-size__controlButton___2sWjc:hover {\n    opacity: .7; }\n  .preview-full-size__hidden___1ZRC_ {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n  .preview-full-size__container___M_Ygb {\n  position: absolute;\n  z-index: 50;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: reverse;\n      -ms-flex-direction: column-reverse;\n          flex-direction: column-reverse;\n  pointer-events: none;\n  background-color: black;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .preview-full-size__frame___3AEDD {\n  position: absolute;\n  z-index: 2;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: .5; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByZXZpZXctZnVsbC1zaXplLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsaUNBQXlCO1VBQXpCLHlCQUF5QjtFQUN6QixxQ0FBNkI7RUFBN0IsNkJBQTZCO0VBQzdCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCw4QkFBOEI7RUFDOUIseUJBQXdCO01BQXhCLHNCQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLFlBQVksRUFBRTtFQUVsQjtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixzQkFBc0IsRUFBRTtFQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osT0FBTztFQUNQLFNBQVM7RUFDVCxVQUFVO0VBQ1YsUUFBUTtFQUNSLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsNkJBQStCO0VBQS9CLCtCQUErQjtNQUEvQixtQ0FBK0I7VUFBL0IsK0JBQStCO0VBQy9CLHFCQUFxQjtFQUNyQix3QkFBd0I7RUFDeEIsMEJBQW9CO01BQXBCLHVCQUFvQjtVQUFwQixvQkFBb0IsRUFBRTtFQUV4QjtFQUNFLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsT0FBTztFQUNQLFNBQVM7RUFDVCxVQUFVO0VBQ1YsUUFBUTtFQUNSLFlBQVksRUFBRSIsImZpbGUiOiJwcmV2aWV3LWZ1bGwtc2l6ZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRyb2xCdXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IC4ycztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTtcbiAgb3BhY2l0eTogMTtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cbiAgLmNvbnRyb2xCdXR0b246aG92ZXIge1xuICAgIG9wYWNpdHk6IC43OyB9XG5cbi5oaWRkZW4ge1xuICB2aXNpYmlsaXR5OiBoaWRkZW4gIWltcG9ydGFudDtcbiAgd2lkdGg6IDAgIWltcG9ydGFudDtcbiAgbWluLXdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiAwICFpbXBvcnRhbnQ7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gIG9wYWNpdHk6IDAgIWltcG9ydGFudDsgfVxuXG4uY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiA1MDtcbiAgdG9wOiAwO1xuICByaWdodDogMDtcbiAgYm90dG9tOiAwO1xuICBsZWZ0OiAwO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uLXJldmVyc2U7XG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgfVxuXG4uZnJhbWUge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IDI7XG4gIHRvcDogMDtcbiAgcmlnaHQ6IDA7XG4gIGJvdHRvbTogMDtcbiAgbGVmdDogMDtcbiAgb3BhY2l0eTogLjU7IH1cbiJdfQ== */";
+    var css$22 = "/**\n * The challenge here to support \"playable queries\" and \"direction\" at the same time and allow mixins like:\n *   @include query(max-width-550())\n *   @include query(max-width-550(), ltr())\n *   @include query(max-width-550(), rtl())\n */\n.preview-full-size__controlButton___2sWjc {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  cursor: pointer;\n  -webkit-transition-duration: .2s;\n          transition-duration: .2s;\n  -webkit-transition-property: opacity;\n  transition-property: opacity;\n  opacity: 1;\n  border: 0;\n  border-radius: 0;\n  outline: none;\n  background-color: transparent;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.preview-full-size__controlButton___2sWjc:hover {\n    opacity: .7; }\n.preview-full-size__hidden___1ZRC_ {\n  visibility: hidden !important;\n  width: 0 !important;\n  min-width: 0 !important;\n  height: 0 !important;\n  min-height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  opacity: 0 !important; }\n.preview-full-size__container___M_Ygb {\n  position: absolute;\n  z-index: 55;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: reverse;\n      -ms-flex-direction: column-reverse;\n          flex-direction: column-reverse;\n  pointer-events: none;\n  background-color: black;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n.preview-full-size__frame___3AEDD {\n  position: absolute;\n  z-index: 2;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: .5; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByZXZpZXctZnVsbC1zaXplLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0dBS0c7QUFDSDtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixpQ0FBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHFDQUE2QjtFQUE3Qiw2QkFBNkI7RUFDN0IsV0FBVztFQUNYLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsY0FBYztFQUNkLDhCQUE4QjtFQUM5Qix5QkFBd0I7TUFBeEIsc0JBQXdCO1VBQXhCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0FBQ3RCO0lBQ0UsWUFBWSxFQUFFO0FBRWxCO0VBQ0UsOEJBQThCO0VBQzlCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFO0FBRTFCO0VBQ0UsbUJBQW1CO0VBQ25CLFlBQVk7RUFDWixPQUFPO0VBQ1AsU0FBUztFQUNULFVBQVU7RUFDVixRQUFRO0VBQ1IscUJBQWM7RUFBZCxxQkFBYztFQUFkLGNBQWM7RUFDZCw2QkFBK0I7RUFBL0IsK0JBQStCO01BQS9CLG1DQUErQjtVQUEvQiwrQkFBK0I7RUFDL0IscUJBQXFCO0VBQ3JCLHdCQUF3QjtFQUN4QiwwQkFBb0I7TUFBcEIsdUJBQW9CO1VBQXBCLG9CQUFvQixFQUFFO0FBRXhCO0VBQ0UsbUJBQW1CO0VBQ25CLFdBQVc7RUFDWCxPQUFPO0VBQ1AsU0FBUztFQUNULFVBQVU7RUFDVixRQUFRO0VBQ1IsWUFBWSxFQUFFIiwiZmlsZSI6InByZXZpZXctZnVsbC1zaXplLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFRoZSBjaGFsbGVuZ2UgaGVyZSB0byBzdXBwb3J0IFwicGxheWFibGUgcXVlcmllc1wiIGFuZCBcImRpcmVjdGlvblwiIGF0IHRoZSBzYW1lIHRpbWUgYW5kIGFsbG93IG1peGlucyBsaWtlOlxuICogICBAaW5jbHVkZSBxdWVyeShtYXgtd2lkdGgtNTUwKCkpXG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSwgbHRyKCkpXG4gKiAgIEBpbmNsdWRlIHF1ZXJ5KG1heC13aWR0aC01NTAoKSwgcnRsKCkpXG4gKi9cbi5jb250cm9sQnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgcGFkZGluZzogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAuMnM7XG4gIHRyYW5zaXRpb24tcHJvcGVydHk6IG9wYWNpdHk7XG4gIG9wYWNpdHk6IDE7XG4gIGJvcmRlcjogMDtcbiAgYm9yZGVyLXJhZGl1czogMDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyB9XG4gIC5jb250cm9sQnV0dG9uOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAuNzsgfVxuXG4uaGlkZGVuIHtcbiAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XG4gIHdpZHRoOiAwICFpbXBvcnRhbnQ7XG4gIG1pbi13aWR0aDogMCAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDAgIWltcG9ydGFudDtcbiAgbWluLWhlaWdodDogMCAhaW1wb3J0YW50O1xuICBtYXJnaW46IDAgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCAhaW1wb3J0YW50O1xuICBvcGFjaXR5OiAwICFpbXBvcnRhbnQ7IH1cblxuLmNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogNTU7XG4gIHRvcDogMDtcbiAgcmlnaHQ6IDA7XG4gIGJvdHRvbTogMDtcbiAgbGVmdDogMDtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbi1yZXZlcnNlO1xuICBwb2ludGVyLWV2ZW50czogbm9uZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7IH1cblxuLmZyYW1lIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiAyO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIG9wYWNpdHk6IC41OyB9XG4iXX0= */";
     var styles$22 = {"controlButton":"preview-full-size__controlButton___2sWjc","hidden":"preview-full-size__hidden___1ZRC_","container":"preview-full-size__container___M_Ygb","frame":"preview-full-size__frame___3AEDD"};
     styleInject(css$22);
 
@@ -12094,19 +17127,23 @@ function readCookie(cookieName) {
     var NativeOutput = /** @class */ (function () {
         function NativeOutput(_a) {
             var eventEmitter = _a.eventEmitter, config = _a.config, _b = _a.availablePlaybackAdapters, availablePlaybackAdapters = _b === void 0 ? [] : _b;
-            this._createVideoTag(config.videoElement);
+            this._createVideoTag(config);
             this._eventEmitter = eventEmitter;
             this._availablePlaybackAdapters = availablePlaybackAdapters;
             this._stateEngine = new StateEngine(this._eventEmitter, this._video);
             this._nativeEventsBroadcaster = new NativeEventsBroadcaster(eventEmitter, this._video);
             this._adapterStrategy = new AdaptersStrategy(this._eventEmitter, this._video, this._availablePlaybackAdapters);
         }
-        NativeOutput.prototype._createVideoTag = function (videoElement) {
+        NativeOutput.prototype._createVideoTag = function (_a) {
+            var videoElement = _a.videoElement, preventContextMenu = _a.preventContextMenu;
             if (videoElement && videoElement.tagName === 'VIDEO') {
                 this._video = videoElement;
             }
             else {
                 this._video = document.createElement('video');
+            }
+            if (preventContextMenu) {
+                this._video.addEventListener('contextmenu', function (e) { return e.preventDefault(); });
             }
         };
         NativeOutput.prototype.play = function () {
@@ -12414,7 +17451,7 @@ function readCookie(cookieName) {
             if (this.attachedAdapter) {
                 adapterDebugInfo = this.attachedAdapter.debugInfo;
             }
-            return __assign({}, adapterDebugInfo, { duration: duration,
+            return __assign(__assign({}, adapterDebugInfo), { duration: duration,
                 currentTime: currentTime, loadingStateTimestamps: this._stateEngine.stateTimestamps, viewDimensions: this._getViewDimensions(), output: 'html5video' });
         };
         NativeOutput.prototype.destroy = function () {
@@ -12616,7 +17653,7 @@ function readCookie(cookieName) {
                         var _a = this.video, buffered = _a.buffered, currentTime = _a.currentTime;
                         var overallBufferLength = geOverallBufferLength(buffered);
                         var nearestBufferSegInfo = getNearestBufferSegmentInfo(buffered, currentTime);
-                        return __assign({}, this.mediaStreams[0], { deliveryPriority: this.mediaStreamDeliveryPriority, overallBufferLength: overallBufferLength,
+                        return __assign(__assign({}, this.mediaStreams[0]), { deliveryPriority: this.mediaStreamDeliveryPriority, overallBufferLength: overallBufferLength,
                             nearestBufferSegInfo: nearestBufferSegInfo });
                     }
                     return {};
@@ -12695,7 +17732,7 @@ function readCookie(cookieName) {
     ];
 
     var additionalModules = {};
-    var playbackAdapters = defaultPlaybackAdapters.slice();
+    var playbackAdapters = __spreadArrays(defaultPlaybackAdapters);
     var container = DependencyContainer.createContainer();
     container.register(DIModules);
     var defaultModulesNames = Object.keys(DIModules);
@@ -12709,7 +17746,7 @@ function readCookie(cookieName) {
         additionalModules = {};
     }
     function clearPlaybackAdapters() {
-        playbackAdapters = defaultPlaybackAdapters.slice();
+        playbackAdapters = __spreadArrays(defaultPlaybackAdapters);
     }
     function create(params, themeConfig) {
         if (params === void 0) { params = {}; }
@@ -12769,17 +17806,16 @@ function readCookie(cookieName) {
 })));
 //# sourceMappingURL=playable.bundle.js.map
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 22), __webpack_require__(/*! ./../../../timers-browserify/main.js */ 671).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../yoshi-flow-legacy/node_modules/webpack/buildin/global.js */ 44), __webpack_require__(/*! ./../../../timers-browserify/main.js */ 1158).setImmediate))
 
 /***/ }),
 
-/***/ 374:
+/***/ 579:
 /*!****************************************************************!*\
   !*** ../node_modules/@wix/web-bi-logger/dist/src/lib/utils.js ***!
   \****************************************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12792,9 +17828,9 @@ exports.getCookieParams = getCookieParams;
 exports.buildUrl = buildUrl;
 exports.guid = guid;
 
-var _browser = __webpack_require__(/*! ./browser */ 259);
+var _browser = __webpack_require__(/*! ./browser */ 362);
 
-var _env = __webpack_require__(/*! ./env */ 133);
+var _env = __webpack_require__(/*! ./env */ 188);
 
 var cacheKillerCounter = 0;
 
@@ -12852,74 +17888,12 @@ function guid() {
 
 /***/ }),
 
-/***/ 375:
-/*!****************************************************************!*\
-  !*** ../node_modules/@wix/wix-bi-logger-client/dist/assert.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var AssertionError = function (_Error) {
-  _inherits(AssertionError, _Error);
-
-  function AssertionError(message) {
-    _classCallCheck(this, AssertionError);
-
-    var _this = _possibleConstructorReturn(this, (AssertionError.__proto__ || Object.getPrototypeOf(AssertionError)).call(this, message));
-
-    _this.name = _this.constructor.name;
-    return _this;
-  }
-
-  return AssertionError;
-}(Error);
-
-function assertDefined(target, message) {
-  if (target === undefined) {
-    throw new AssertionError(message);
-  }
-}
-
-function assertObject(target, message) {
-  if (target !== undefined && ((typeof target === 'undefined' ? 'undefined' : _typeof(target)) !== 'object' || Array.isArray(target) || target === null)) {
-    throw new AssertionError(message);
-  }
-}
-
-function assertOk(target, message) {
-  if (!target) {
-    throw new AssertionError(message);
-  }
-}
-
-module.exports.defined = assertDefined;
-module.exports.object = assertObject;
-module.exports.ok = assertOk;
-module.exports.AssertionError = AssertionError;
-//# sourceMappingURL=assert.js.map
-
-/***/ }),
-
-/***/ 376:
+/***/ 580:
 /*!*******************************************************************!*\
   !*** ../node_modules/@wix/wix-bi-logger-client/dist/bi-logger.js ***!
   \*******************************************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12929,15 +17903,15 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var assert = __webpack_require__(/*! ./assert */ 375);
+var assert = __webpack_require__(/*! ./assert */ 363);
 
-var _require = __webpack_require__(/*! ./utils/collections */ 687),
+var _require = __webpack_require__(/*! ./utils/collections */ 1165),
     mapValues = _require.mapValues,
     filterValues = _require.filterValues;
 
-var promise = __webpack_require__(/*! ./utils/promise */ 688);
-var log = __webpack_require__(/*! ./utils/log */ 689);
-var EventBuffer = __webpack_require__(/*! ./utils/event-buffer */ 690);
+var promise = __webpack_require__(/*! ./utils/promise */ 1166);
+var log = __webpack_require__(/*! ./utils/log */ 1167);
+var EventBuffer = __webpack_require__(/*! ./utils/event-buffer */ 1168);
 
 var BiLogger = function () {
   //TODO: validate args
@@ -12977,7 +17951,7 @@ var BiLogger = function () {
           return v();
         });
 
-        return buffer.feed(Object.assign({}, event, resolvedDefaults));
+        return buffer.feed(Object.assign({}, event, resolvedDefaults), context);
       }
 
       return this._getDefaults().then(function (defaults) {
@@ -12993,6 +17967,14 @@ var BiLogger = function () {
 
         return _this._send(fullEvent, context);
       });
+    }
+  }, {
+    key: 'flush',
+    value: function flush() {
+      if (!this._buffer) {
+        return Promise.resolve();
+      }
+      return this._buffer.flush();
     }
   }, {
     key: '_send',
@@ -13109,40 +18091,186 @@ module.exports = BiLogger;
 
 /***/ }),
 
-/***/ 377:
-/*!***************************************************!*\
-  !*** ./components/VideoPlayer/VideoPlayer.st.css ***!
-  \***************************************************/
-/*! exports provided: default */
+/***/ 581:
+/*!***************************************************************************!*\
+  !*** ../node_modules/@wix/wix-bi-logger-client/dist/bi-logger-manager.js ***!
+  \***************************************************************************/
+/*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports, "__esModule", { value: true })
+"use strict";
 
-exports.default = __webpack_require__.stylable.create(
-  "root",
-  "VideoPlayer4111471387",
-  {"root":"VideoPlayer4111471387--root","playButton":"VideoPlayer4111471387--playButton","backgroundColor":"color_10","font":"font_8","fontColor":"color_2","borderColor":"color_2","borderSize":"0","boxShadow":"none","textSizeScale":"1px","playButtonSize":"50px","playButtonMobileSize":"30px"},
-  "",
-  7,
-  /*! ./components/VideoPlayer/VideoPlayer.st.css */ 377
-);
 
-exports.default.$skin = {"params":{"backgroundColor":"COLOR_ALPHA","font":"FONT","fontColor":"COLOR","borderColor":"BORDER_COLOR_ALPHA","borderSize":"BORDER_SIZE","boxShadow":"BOX_SHADOW","textSizeScale":"TEXT_SIZE","playButtonSize":"BORDER_SIZE","playButtonMobileSize":"BORDER_SIZE"},"paramsDefaults":{"backgroundColor":"color_10","font":"font_8","fontColor":"color_2","borderColor":"color_2","borderSize":"0","boxShadow":"none","textSizeScale":"1px","playButtonSize":"50px","playButtonMobileSize":"30px"}};
-exports.default.$skin.$render = function render_css($id, $params, $functions) {
-  return "\n" + $id + ".Video2270652342--root{position: relative}\n" + $id + " .Video2270652342--playerContainer{position: relative;height: 100%;width: 100%;background-color: #000}\n" + $id + " .Video2270652342--playerContainer iframe{height: 100%;width: 100%;visibility: visible}\n" + $id + " .Video2270652342--cover{position: absolute;top: 0;left: 0;height: 100%;width: 100%;background: #000 50% 50% no-repeat;background-size: cover;cursor: pointer}\n" + $id + " .Video2270652342--cover.Video2270652342--transparentOverlay{background: transparent}\n" + $id + " .Video2270652342--overlay{display: flex;height: 100%;justify-content: center;flex-direction: column;align-items: center;background-color: rgba(0,0,0,0.35)}\n" + $id + " .Video2270652342--title{margin: 0 15px 15px;text-align: center}\n" + $id + ".VideoPlayer4111471387--root{box-shadow: " + $params["boxShadow"] + ";border: " + $params["borderSize"] + " solid " + $params["borderColor"] + ";margin-top: calc(-1 * " + $params["borderSize"] + ");margin-left: calc(-1 * " + $params["borderSize"] + ")}\n" + $id + ".VideoPlayer4111471387--root .Video2270652342--title{font: " + $params["font"] + ";color: " + $params["fontColor"] + ";margin: 0 0 15px;padding: 0 .2em;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;max-height: 2.8em}\n" + $id + ".VideoPlayer4111471387--root[data-videoplayer4111471387-ismobileview] .Video2270652342--title{font-size: calc(18 * " + $params["textSizeScale"] + ");margin: 0 0 10px}\n" + $id + ".VideoPlayer4111471387--root .Video2270652342--overlay{background-color: " + $params["backgroundColor"] + ";padding: 0 10%;transition: opacity .2s ease}\n" + $id + ".VideoPlayer4111471387--root .VideoPlayer4111471387--playButton{display: block;width: " + $params["playButtonSize"] + ";height: " + $params["playButtonSize"] + ";padding: 0;border: 0;background: transparent;box-sizing: border-box;cursor: pointer;transition: opacity .2s ease}\n" + $id + ".VideoPlayer4111471387--root .VideoPlayer4111471387--playButton:hover{opacity: .8}\n" + $id + ".VideoPlayer4111471387--root[data-videoplayer4111471387-ismobileview] .VideoPlayer4111471387--playButton{width: " + $params["playButtonMobileSize"] + ";height: " + $params["playButtonMobileSize"] + "}\n" + $id + " .VideoPlayer4111471387--playButton circle{stroke: " + $params["fontColor"] + "}\n" + $id + " .VideoPlayer4111471387--playButton path{fill: " + $params["fontColor"] + "}\n";
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var assert = __webpack_require__(/*! ./assert */ 363);
+
+var BiLoggerManager = function () {
+  function BiLoggerManager() {
+    _classCallCheck(this, BiLoggerManager);
+
+    this.reset();
+  }
+
+  _createClass(BiLoggerManager, [{
+    key: 'reset',
+    value: function reset() {
+      this._handlers = [];
+    }
+  }, {
+    key: 'onLoggerCreated',
+    value: function onLoggerCreated(handler) {
+      assert.defined(handler, 'Handler must be provided.');
+      assert.func(handler, 'Handler must be a function.');
+
+      this._handlers.push(handler);
+    }
+  }, {
+    key: 'notifyLoggerCreated',
+    value: function notifyLoggerCreated(logger) {
+      this._handlers.forEach(function (handler) {
+        return handler(logger);
+      });
+    }
+  }]);
+
+  return BiLoggerManager;
+}();
+
+module.exports = {
+  manager: new BiLoggerManager(),
+  BiLoggerManager: BiLoggerManager
+};
+//# sourceMappingURL=bi-logger-manager.js.map
+
+/***/ }),
+
+/***/ 703:
+/*!*****************************************!*\
+  !*** ./components/VideoPlayer/index.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/*! all exports used */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _VideoPlayer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VideoPlayer */ 478);
+/* harmony import */ var _VideoPlayer_st_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VideoPlayer.st.css */ 155);
+/* harmony import */ var _VideoPlayer_st_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_VideoPlayer_st_css__WEBPACK_IMPORTED_MODULE_1__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  componentType: 'wixui.VideoPlayer',
+  component: _VideoPlayer__WEBPACK_IMPORTED_MODULE_0__[/* VideoPlayer */ "a"],
+  santaComponent: _VideoPlayer__WEBPACK_IMPORTED_MODULE_0__[/* santaVideoPlayer */ "b"],
+  skin: _VideoPlayer_st_css__WEBPACK_IMPORTED_MODULE_1__["$skin"]
+});
+
+/***/ }),
+
+/***/ 704:
+/*!******************************************************************!*\
+  !*** ./components/VideoPlayer/behaviors/videoPlayerBehaviors.js ***!
+  \******************************************************************/
+/*! exports provided: videoPlayerBehaviors */
+/*! exports used: videoPlayerBehaviors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return videoPlayerBehaviors; });
+var videoPlayerBehaviors = {
+  togglePlay: {
+    methodName: 'togglePlay'
+  },
+  play: {
+    methodName: 'play'
+  },
+  playPreview: {
+    methodName: 'play'
+  },
+  pause: {
+    methodName: 'pause'
+  },
+  stop: {
+    methodName: 'stop'
+  },
+  mute: {
+    methodName: 'mute'
+  },
+  unmute: {
+    methodName: 'unmute'
+  },
+  seek: {
+    methodName: 'seek',
+    params: ['time']
+  },
+  setVolume: {
+    methodName: 'setVolume',
+    params: ['volume']
+  }
 };
 
 /***/ }),
 
-/***/ 4:
+/***/ 705:
+/*!**************************************************!*\
+  !*** ./components/VideoPlayer/playButtonIcon.js ***!
+  \**************************************************/
+/*! exports provided: playButtonIcon */
+/*! exports used: playButtonIcon */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return playButtonIcon; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var playButtonIcon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+  role: "presentation",
+  "aria-hidden": "true",
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 36 36",
+  preserveAspectRatio: "xMidYMin slice",
+  width: "100%"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+  fill: "none",
+  fillRule: "evenodd"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
+  cx: "18",
+  cy: "18",
+  r: "17",
+  stroke: "#fff",
+  strokeWidth: "2"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+  fill: "#fff",
+  d: "M23.935 17.708l-10.313 6.033V11.676z"
+})));
+
+/***/ }),
+
+/***/ 706:
+/*!********************************************!*\
+  !*** ../node_modules/wix-ui-core/video.js ***!
+  \********************************************/
+/*! no static exports found */
+/*! exports used: Video */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./dist/src/components/video */ 1173);
+
+
+/***/ }),
+
+/***/ 8:
 /*!*******************************************!*\
   !*** ../node_modules/classnames/index.js ***!
   \*******************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -13197,4345 +18325,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	} else {}
 }());
 
-
-/***/ }),
-
-/***/ 461:
-/*!*****************************************!*\
-  !*** ./components/VideoPlayer/index.js ***!
-  \*****************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _VideoPlayer = __webpack_require__(/*! ./VideoPlayer */ 665);
-
-var _VideoPlayerSt = __webpack_require__(/*! ./VideoPlayer.st.css */ 377);
-
-var _VideoPlayerSt2 = _interopRequireDefault(_VideoPlayerSt);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = {
-  componentType: 'wixui.VideoPlayer',
-  component: _VideoPlayer.VideoPlayer,
-  santaComponent: _VideoPlayer.santaVideoPlayer,
-  skin: _VideoPlayerSt2.default.$skin
-};
-
-/***/ }),
-
-/***/ 48:
-/*!**********************************************!*\
-  !*** ../node_modules/eventemitter3/index.js ***!
-  \**********************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var has = Object.prototype.hasOwnProperty
-  , prefix = '~';
-
-/**
- * Constructor to create a storage for our `EE` objects.
- * An `Events` instance is a plain object whose properties are event names.
- *
- * @constructor
- * @private
- */
-function Events() {}
-
-//
-// We try to not inherit from `Object.prototype`. In some engines creating an
-// instance in this way is faster than calling `Object.create(null)` directly.
-// If `Object.create(null)` is not supported we prefix the event names with a
-// character to make sure that the built-in object properties are not
-// overridden or used as an attack vector.
-//
-if (Object.create) {
-  Events.prototype = Object.create(null);
-
-  //
-  // This hack is needed because the `__proto__` property is still inherited in
-  // some old browsers like Android 4, iPhone 5.1, Opera 11 and Safari 5.
-  //
-  if (!new Events().__proto__) prefix = false;
-}
-
-/**
- * Representation of a single event listener.
- *
- * @param {Function} fn The listener function.
- * @param {*} context The context to invoke the listener with.
- * @param {Boolean} [once=false] Specify if the listener is a one-time listener.
- * @constructor
- * @private
- */
-function EE(fn, context, once) {
-  this.fn = fn;
-  this.context = context;
-  this.once = once || false;
-}
-
-/**
- * Add a listener for a given event.
- *
- * @param {EventEmitter} emitter Reference to the `EventEmitter` instance.
- * @param {(String|Symbol)} event The event name.
- * @param {Function} fn The listener function.
- * @param {*} context The context to invoke the listener with.
- * @param {Boolean} once Specify if the listener is a one-time listener.
- * @returns {EventEmitter}
- * @private
- */
-function addListener(emitter, event, fn, context, once) {
-  if (typeof fn !== 'function') {
-    throw new TypeError('The listener must be a function');
-  }
-
-  var listener = new EE(fn, context || emitter, once)
-    , evt = prefix ? prefix + event : event;
-
-  if (!emitter._events[evt]) emitter._events[evt] = listener, emitter._eventsCount++;
-  else if (!emitter._events[evt].fn) emitter._events[evt].push(listener);
-  else emitter._events[evt] = [emitter._events[evt], listener];
-
-  return emitter;
-}
-
-/**
- * Clear event by name.
- *
- * @param {EventEmitter} emitter Reference to the `EventEmitter` instance.
- * @param {(String|Symbol)} evt The Event name.
- * @private
- */
-function clearEvent(emitter, evt) {
-  if (--emitter._eventsCount === 0) emitter._events = new Events();
-  else delete emitter._events[evt];
-}
-
-/**
- * Minimal `EventEmitter` interface that is molded against the Node.js
- * `EventEmitter` interface.
- *
- * @constructor
- * @public
- */
-function EventEmitter() {
-  this._events = new Events();
-  this._eventsCount = 0;
-}
-
-/**
- * Return an array listing the events for which the emitter has registered
- * listeners.
- *
- * @returns {Array}
- * @public
- */
-EventEmitter.prototype.eventNames = function eventNames() {
-  var names = []
-    , events
-    , name;
-
-  if (this._eventsCount === 0) return names;
-
-  for (name in (events = this._events)) {
-    if (has.call(events, name)) names.push(prefix ? name.slice(1) : name);
-  }
-
-  if (Object.getOwnPropertySymbols) {
-    return names.concat(Object.getOwnPropertySymbols(events));
-  }
-
-  return names;
-};
-
-/**
- * Return the listeners registered for a given event.
- *
- * @param {(String|Symbol)} event The event name.
- * @returns {Array} The registered listeners.
- * @public
- */
-EventEmitter.prototype.listeners = function listeners(event) {
-  var evt = prefix ? prefix + event : event
-    , handlers = this._events[evt];
-
-  if (!handlers) return [];
-  if (handlers.fn) return [handlers.fn];
-
-  for (var i = 0, l = handlers.length, ee = new Array(l); i < l; i++) {
-    ee[i] = handlers[i].fn;
-  }
-
-  return ee;
-};
-
-/**
- * Return the number of listeners listening to a given event.
- *
- * @param {(String|Symbol)} event The event name.
- * @returns {Number} The number of listeners.
- * @public
- */
-EventEmitter.prototype.listenerCount = function listenerCount(event) {
-  var evt = prefix ? prefix + event : event
-    , listeners = this._events[evt];
-
-  if (!listeners) return 0;
-  if (listeners.fn) return 1;
-  return listeners.length;
-};
-
-/**
- * Calls each of the listeners registered for a given event.
- *
- * @param {(String|Symbol)} event The event name.
- * @returns {Boolean} `true` if the event had listeners, else `false`.
- * @public
- */
-EventEmitter.prototype.emit = function emit(event, a1, a2, a3, a4, a5) {
-  var evt = prefix ? prefix + event : event;
-
-  if (!this._events[evt]) return false;
-
-  var listeners = this._events[evt]
-    , len = arguments.length
-    , args
-    , i;
-
-  if (listeners.fn) {
-    if (listeners.once) this.removeListener(event, listeners.fn, undefined, true);
-
-    switch (len) {
-      case 1: return listeners.fn.call(listeners.context), true;
-      case 2: return listeners.fn.call(listeners.context, a1), true;
-      case 3: return listeners.fn.call(listeners.context, a1, a2), true;
-      case 4: return listeners.fn.call(listeners.context, a1, a2, a3), true;
-      case 5: return listeners.fn.call(listeners.context, a1, a2, a3, a4), true;
-      case 6: return listeners.fn.call(listeners.context, a1, a2, a3, a4, a5), true;
-    }
-
-    for (i = 1, args = new Array(len -1); i < len; i++) {
-      args[i - 1] = arguments[i];
-    }
-
-    listeners.fn.apply(listeners.context, args);
-  } else {
-    var length = listeners.length
-      , j;
-
-    for (i = 0; i < length; i++) {
-      if (listeners[i].once) this.removeListener(event, listeners[i].fn, undefined, true);
-
-      switch (len) {
-        case 1: listeners[i].fn.call(listeners[i].context); break;
-        case 2: listeners[i].fn.call(listeners[i].context, a1); break;
-        case 3: listeners[i].fn.call(listeners[i].context, a1, a2); break;
-        case 4: listeners[i].fn.call(listeners[i].context, a1, a2, a3); break;
-        default:
-          if (!args) for (j = 1, args = new Array(len -1); j < len; j++) {
-            args[j - 1] = arguments[j];
-          }
-
-          listeners[i].fn.apply(listeners[i].context, args);
-      }
-    }
-  }
-
-  return true;
-};
-
-/**
- * Add a listener for a given event.
- *
- * @param {(String|Symbol)} event The event name.
- * @param {Function} fn The listener function.
- * @param {*} [context=this] The context to invoke the listener with.
- * @returns {EventEmitter} `this`.
- * @public
- */
-EventEmitter.prototype.on = function on(event, fn, context) {
-  return addListener(this, event, fn, context, false);
-};
-
-/**
- * Add a one-time listener for a given event.
- *
- * @param {(String|Symbol)} event The event name.
- * @param {Function} fn The listener function.
- * @param {*} [context=this] The context to invoke the listener with.
- * @returns {EventEmitter} `this`.
- * @public
- */
-EventEmitter.prototype.once = function once(event, fn, context) {
-  return addListener(this, event, fn, context, true);
-};
-
-/**
- * Remove the listeners of a given event.
- *
- * @param {(String|Symbol)} event The event name.
- * @param {Function} fn Only remove the listeners that match this function.
- * @param {*} context Only remove the listeners that have this context.
- * @param {Boolean} once Only remove one-time listeners.
- * @returns {EventEmitter} `this`.
- * @public
- */
-EventEmitter.prototype.removeListener = function removeListener(event, fn, context, once) {
-  var evt = prefix ? prefix + event : event;
-
-  if (!this._events[evt]) return this;
-  if (!fn) {
-    clearEvent(this, evt);
-    return this;
-  }
-
-  var listeners = this._events[evt];
-
-  if (listeners.fn) {
-    if (
-      listeners.fn === fn &&
-      (!once || listeners.once) &&
-      (!context || listeners.context === context)
-    ) {
-      clearEvent(this, evt);
-    }
-  } else {
-    for (var i = 0, events = [], length = listeners.length; i < length; i++) {
-      if (
-        listeners[i].fn !== fn ||
-        (once && !listeners[i].once) ||
-        (context && listeners[i].context !== context)
-      ) {
-        events.push(listeners[i]);
-      }
-    }
-
-    //
-    // Reset the array, or remove it completely if we have no more listeners.
-    //
-    if (events.length) this._events[evt] = events.length === 1 ? events[0] : events;
-    else clearEvent(this, evt);
-  }
-
-  return this;
-};
-
-/**
- * Remove all listeners, or those of the specified event.
- *
- * @param {(String|Symbol)} [event] The event name.
- * @returns {EventEmitter} `this`.
- * @public
- */
-EventEmitter.prototype.removeAllListeners = function removeAllListeners(event) {
-  var evt;
-
-  if (event) {
-    evt = prefix ? prefix + event : event;
-    if (this._events[evt]) clearEvent(this, evt);
-  } else {
-    this._events = new Events();
-    this._eventsCount = 0;
-  }
-
-  return this;
-};
-
-//
-// Alias methods names because people roll like that.
-//
-EventEmitter.prototype.off = EventEmitter.prototype.removeListener;
-EventEmitter.prototype.addListener = EventEmitter.prototype.on;
-
-//
-// Expose the prefix.
-//
-EventEmitter.prefixed = prefix;
-
-//
-// Allow `EventEmitter` to be imported as module namespace.
-//
-EventEmitter.EventEmitter = EventEmitter;
-
-//
-// Expose the module.
-//
-if (true) {
-  module.exports = EventEmitter;
-}
-
-
-/***/ }),
-
-/***/ 5:
-/*!******************************************!*\
-  !*** ../node_modules/tslib/tslib.es6.js ***!
-  \******************************************/
-/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ../node_modules/@wix/search-box/dist/src/components/ClearButton/index.js (referenced with cjs require), ../node_modules/@wix/search-box/dist/src/components/QuickResultItem/QuickResultItem.js (referenced with cjs require), ../node_modules/@wix/search-box/dist/src/components/SearchBox/SearchBox.js (referenced with cjs require), ../node_modules/@wix/search-box/dist/src/components/SearchBox/SearchIcon.js (referenced with cjs require), ../node_modules/@wix/search-box/dist/src/components/SearchBox/index.js (referenced with cjs require), ../node_modules/@wix/search-box/dist/src/components/SearchBox/measure/index.js (referenced with cjs require), ../node_modules/@wix/search-box/dist/src/components/SearchBox/measure/measure.js (referenced with cjs require), ../node_modules/@wix/search-box/dist/src/components/SuggestionItem/SuggestionItem.js (referenced with cjs require), ../node_modules/@wix/search-box/dist/src/index.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/clients/GoogleMaps/google2address/google2address.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/address-input/AddressInput.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/button-next/button-next.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/captcha/Captcha.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/deprecated/divider/Divider.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/dropdown-content/DropdownContent.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/dropdown-option/DropdownOption.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/dropdown-option/OptionFactory.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/dropdown/Dropdown.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/file-picker-button/FilePickerButton.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/input-with-options/InputWithOptions.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/input/Input.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/linear-progress-bar/LinearProgressBar.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/pagination/PageStrip.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/pagination/Pagination.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/popover/Popover.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/popover/index.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/popover/modifiers.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/radio-button/RadioButton.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/signature-input/SignatureInput.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/signature-input/SignatureInputContext.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/signature-input/clear-button/ClearButton.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/signature-input/signing-pad/SigningPad.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/signature-input/title/Title.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/slider/Slider.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/slider/Thumb.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/slider/Ticks.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/time-picker/Tickers.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/time-picker/TimePicker.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/video/Video.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/video/players/DailyMotion.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/video/players/Facebook.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/video/players/Playable.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/video/players/Twitch.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/video/players/Vimeo.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/video/players/YouTube.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/components/video/players/playerHOC.js (referenced with cjs require), ../node_modules/wix-ui-core/dist/src/hocs/Focusable/FocusableHOC.js (referenced with cjs require) */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation. All rights reserved.
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0
-
-THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
-WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
-MERCHANTABLITY OR NON-INFRINGEMENT.
-
-See the Apache Version 2.0 License for specific language governing permissions
-and limitations under the License.
-***************************************************************************** */
-/* global Reflect, Promise */
-
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    }
-    return __assign.apply(this, arguments);
-}
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
-function __decorate(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function __param(paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function __metadata(metadataKey, metadataValue) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function __awaiter(thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-}
-
-function __exportStar(m, exports) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-
-function __values(o) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
-    if (m) return m.call(o);
-    return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-}
-
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-}
-
-function __spread() {
-    for (var ar = [], i = 0; i < arguments.length; i++)
-        ar = ar.concat(__read(arguments[i]));
-    return ar;
-}
-
-function __spreadArrays() {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-};
-
-function __await(v) {
-    return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
-
-function __asyncGenerator(thisArg, _arguments, generator) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var g = generator.apply(thisArg, _arguments || []), i, q = [];
-    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
-    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
-    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-    function fulfill(value) { resume("next", value); }
-    function reject(value) { resume("throw", value); }
-    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function __asyncDelegator(o) {
-    var i, p;
-    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
-}
-
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
-
-function __importStar(mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result.default = mod;
-    return result;
-}
-
-function __importDefault(mod) {
-    return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-
-/***/ }),
-
-/***/ 62:
-/*!**************************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/constants.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.EVENTS = {
-    PLAYING: 'playing',
-    PAUSED: 'paused',
-    ENDED: 'ended',
-};
-exports.PROGRESS_INTERVAL = 1000;
-//# sourceMappingURL=constants.js.map
-
-/***/ }),
-
-/***/ 63:
-/*!**************************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/Video.st.css ***!
-  \**************************************************************************/
-/*! exports provided: default */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-Object.defineProperty(exports, "__esModule", { value: true })
-
-exports.default = __webpack_require__.stylable.create(
-  "root",
-  "Video2270652342",
-  {"root":"Video2270652342--root","playerContainer":"Video2270652342--playerContainer","cover":"Video2270652342--cover","transparentOverlay":"Video2270652342--transparentOverlay","overlay":"Video2270652342--overlay","title":"Video2270652342--title"},
-  "",
-  1,
-  /*! ../node_modules/wix-ui-core/dist/src/components/video/Video.st.css */ 63
-);
-
-
-
-/***/ }),
-
-/***/ 65:
-/*!******************************************!*\
-  !*** ../node_modules/lodash/uniqueId.js ***!
-  \******************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! lodash */ 2).uniqueId
-
-/***/ }),
-
-/***/ 665:
-/*!***********************************************!*\
-  !*** ./components/VideoPlayer/VideoPlayer.js ***!
-  \***********************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.santaVideoPlayer = exports.VideoPlayer = undefined;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _react = __webpack_require__(/*! react */ 0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _lodash = __webpack_require__(/*! lodash */ 2);
-
-var _lodash2 = _interopRequireDefault(_lodash);
-
-var _createReactClass = __webpack_require__(/*! create-react-class */ 17);
-
-var _createReactClass2 = _interopRequireDefault(_createReactClass);
-
-var _propTypes = __webpack_require__(/*! prop-types */ 1);
-
-var _santaComponents = __webpack_require__(/*! santa-components */ 11);
-
-var _video = __webpack_require__(/*! wix-ui-core/video */ 666);
-
-var _playbackBiModule = __webpack_require__(/*! @wix/playback-bi-module */ 679);
-
-var _events = __webpack_require__(/*! ./bi/events */ 695);
-
-var _videoPlayerBehaviors = __webpack_require__(/*! ./behaviors/videoPlayerBehaviors */ 696);
-
-var _VideoPlayerSt = __webpack_require__(/*! ./VideoPlayer.st.css */ 377);
-
-var _VideoPlayerSt2 = _interopRequireDefault(_VideoPlayerSt);
-
-var _playButtonIcon = __webpack_require__(/*! ./playButtonIcon */ 697);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var skinBasedComp = _santaComponents.mixins.skinBasedComp,
-    runTimeCompData = _santaComponents.mixins.runTimeCompData,
-    compStateMixin = _santaComponents.mixins.compStateMixin;
-var imageClientApi = _santaComponents.utils.imageClientApi;
-var playbackTypes = _santaComponents.constants.MEDIA.playbackTypes;
-var ACTION_TYPES = _santaComponents.constants.SITE.ACTION_TYPES;
-
-
-var getComponentSkins = function getComponentSkins() {
-  return {
-    'wixui.skins.VideoPlayer': _VideoPlayerSt2.default.$skin
-  };
-};
-
-function getPublicState(state) {
-  var isPlaying = _lodash2.default.get(state, 'isPlaying');
-  var currentTime = _lodash2.default.get(state, 'currentTime');
-  var duration = _lodash2.default.get(state, 'duration');
-  var volume = _lodash2.default.get(state, 'volume');
-  var isMuted = _lodash2.default.get(state, 'isMuted');
-
-  return {
-    isPlaying: isPlaying,
-    currentTime: currentTime,
-    duration: duration,
-    volume: volume,
-    isMuted: isMuted
-  };
-}
-
-var VIDEO_TYPE_FILE = 'file';
-var MAX_LOGO_WIDTH = 126;
-var LOGO_TRANSFORM_TYPE = { transformType: 'fit' };
-var FITTING_SCALE_TO_FILL = imageClientApi.fittingTypes.SCALE_TO_FILL;
-
-var listenToEventOnce = function listenToEventOnce(eventEmitter, eventName) {
-  var callback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _lodash2.default.noop;
-
-  var handler = function handler() {
-    eventEmitter.off(eventName, handler);
-    callback();
-  };
-
-  eventEmitter.on(eventName, handler);
-};
-
-var VideoPlayer = exports.VideoPlayer = function VideoPlayer(santaProps) {
-  var styleState = {
-    isMobileView: santaProps.isMobileView,
-    isDesktopView: !santaProps.isMobileView,
-    isTitleExists: Boolean(santaProps.showTitle && santaProps.title)
-  };
-
-  var config = _lodash2.default.merge({}, santaProps.config, {
-    playable: {
-      playButton: _react2.default.createElement(
-        'button',
-        { type: 'button', className: _VideoPlayerSt2.default.playButton },
-        _playButtonIcon.playButtonIcon
-      ),
-      preload: 'none',
-      modules: _defineProperty({}, _playbackBiModule.PlaybackBIModule.moduleName, _playbackBiModule.PlaybackBIModule)
-    }
-  });
-
-  var props = _lodash2.default.assign({}, santaProps, {
-    config: config,
-    id: 'video-player-' + santaProps.videoId,
-    fillAllSpace: true,
-    width: santaProps.style.width,
-    height: santaProps.style.height
-  });
-
-  return _react2.default.createElement(_video.Video, _extends({
-    key: 'video' + santaProps.controls + santaProps.showTitle
-  }, props, (0, _VideoPlayerSt2.default)('root', styleState, santaProps)));
-};
-
-VideoPlayer.propTypes = {
-  controls: _propTypes.bool,
-  config: _propTypes.object,
-  showTitle: _propTypes.bool,
-  title: _propTypes.string,
-  isMobileView: _propTypes.bool
-};
-
-VideoPlayer.displayName = 'VideoPlayer';
-
-var santaVideoPlayer = exports.santaVideoPlayer = (0, _createReactClass2.default)({
-  displayName: 'VideoPlayerSanta',
-
-  mixins: [skinBasedComp(getComponentSkins()), runTimeCompData, compStateMixin(getPublicState)],
-
-  propTypes: {
-    styleId: _santaComponents.santaTypesDefinitions.Component.styleId,
-    style: _santaComponents.santaTypesDefinitions.Component.style,
-    isMobileView: _santaComponents.santaTypesDefinitions.isMobileView,
-    id: _santaComponents.santaTypesDefinitions.Component.id,
-    compProp: _santaComponents.santaTypesDefinitions.Component.compProp,
-    compData: _santaComponents.santaTypesDefinitions.Component.compData,
-    reportBI: _santaComponents.santaTypesDefinitions.reportBI,
-    biVisitorId: _santaComponents.santaTypesDefinitions.biVisitorId,
-    metaSiteId: _santaComponents.santaTypesDefinitions.RendererModel.metaSiteId,
-    isPlayingAllowed: _santaComponents.santaTypesDefinitions.RenderFlags.isPlayingAllowed,
-    staticMediaUrl: _santaComponents.santaTypesDefinitions.ServiceTopology.staticMediaUrl,
-    staticVideoUrl: _santaComponents.santaTypesDefinitions.ServiceTopology.staticVideoUrl,
-    registerPlayer: _santaComponents.santaTypesDefinitions.Media.registerPlayer,
-    unregisterPlayer: _santaComponents.santaTypesDefinitions.Media.unregisterPlayer,
-    updatePlayerState: _santaComponents.santaTypesDefinitions.Media.updatePlayerState
-  },
-
-  statics: {
-    behaviors: _videoPlayerBehaviors.videoPlayerBehaviors,
-    getComponentSkins: getComponentSkins
-  },
-
-  getInitialState: function getInitialState() {
-    var duration = _lodash2.default.get(this.props, 'compData.videoRef.duration');
-    var volume = _lodash2.default.get(this.props, 'compProp.autoplay') ? 0 : 100;
-    var isMuted = volume === 0;
-
-    return {
-      isReady: false,
-      isPlaying: false,
-      currentTime: 0,
-      duration: duration,
-      volume: volume,
-      isMuted: isMuted
-    };
-  },
-  componentDidMount: function componentDidMount() {
-    this.props.registerPlayer(this.props.id);
-  },
-  componentWillUnmount: function componentWillUnmount() {
-    this.stop();
-    this.props.unregisterPlayer(this.props.id);
-  },
-  UNSAFE_componentWillReceiveProps: function UNSAFE_componentWillReceiveProps(nextProps) {
-    if (!nextProps.isPlayingAllowed && this.props.isPlayingAllowed) {
-      this.player.stop();
-    }
-  },
-  play: function play() {
-    var callback = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _lodash2.default.noop;
-
-    this.player.play().then(function () {
-      return callback();
-    });
-  },
-  pause: function pause() {
-    var callback = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _lodash2.default.noop;
-
-    this.player.pause().then(function () {
-      return callback();
-    });
-  },
-  stop: function stop() {
-    var callback = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _lodash2.default.noop;
-
-    this.player.stop().then(function () {
-      return callback();
-    });
-  },
-  togglePlay: function togglePlay() {
-    var callback = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _lodash2.default.noop;
-
-    this.player.togglePlay().then(function () {
-      return callback();
-    });
-  },
-  mute: function mute() {
-    var _this = this;
-
-    var callback = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _lodash2.default.noop;
-
-    return this.player.mute().then(function () {
-      _this.setState({
-        isMuted: true
-      });
-      callback();
-    });
-  },
-  unmute: function unmute() {
-    var _this2 = this;
-
-    var callback = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _lodash2.default.noop;
-
-    return this.player.unMute().then(function () {
-      _this2.setState({
-        isMuted: false
-      });
-      callback();
-    });
-  },
-  seek: function seek(time) {
-    var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _lodash2.default.noop;
-
-    var timePoint = Number(time);
-
-    if (_lodash2.default.isFinite(timePoint)) {
-      this.player.seekTo(timePoint).then(function () {
-        return callback();
-      });
-    }
-  },
-  setVolume: function setVolume(volume) {
-    this.player.setVolume(Number(volume));
-
-    this.setState({
-      volume: Number(volume)
-    });
-  },
-  updatePlaybackState: function updatePlaybackState(playbackState) {
-    var isPlaying = playbackState === playbackTypes.PLAYING;
-
-    this.setState({ isPlaying: isPlaying });
-    this.props.updatePlayerState(this.props.id, { playbackState: playbackState });
-  },
-  handleFirstPlayRequested: function handleFirstPlayRequested() {
-    this.props.reportBI(_events.biEvents.PLAY_REQUESTED, {
-      videoId: this.getVideoId(),
-      videoSource: this.getVideoType(),
-      playSource: this.getPlaySource()
-    });
-  },
-  handleFirstPlay: function handleFirstPlay() {
-    this.props.reportBI(_events.biEvents.PLAY_START, {
-      videoId: this.getVideoId(),
-      videoSource: this.getVideoType(),
-      playSource: this.getPlaySource()
-    });
-  },
-  handleFirstEnded: function handleFirstEnded() {
-    this.props.reportBI(_events.biEvents.PLAY_DONE, {
-      videoId: this.getVideoId(),
-      videoSource: this.getVideoType()
-    });
-  },
-  handleInit: function handleInit(playerAPI) {
-    if (this.getVideoType() === VIDEO_TYPE_FILE) {
-      playerAPI.setWixBIVideoID(this.getVideoId());
-      playerAPI.setWixVisitorID(this.props.biVisitorId);
-      playerAPI.setWixMSID(this.props.metaSiteId);
-      playerAPI.setWixBIProduct('editor_player');
-
-      listenToEventOnce(playerAPI, 'engine-state/play-requested', this.handleFirstPlayRequested);
-    }
-  },
-  handleReady: function handleReady() {
-    var volume = this.player.getVolume();
-    var isMuted = this.player.isMuted();
-
-    this.setState({
-      isReady: true,
-      volume: volume,
-      isMuted: isMuted
-    });
-
-    this.handleAction(ACTION_TYPES.ITEM_READY);
-  },
-  handleDuration: function handleDuration(duration) {
-    this.setState({
-      duration: duration
-    });
-  },
-  handlePlay: function handlePlay() {
-    this.updatePlaybackState(playbackTypes.PLAYING);
-    this.handleAction(ACTION_TYPES.ON_PLAY);
-  },
-  handlePause: function handlePause() {
-    this.updatePlaybackState(playbackTypes.PAUSED);
-    this.handleAction(ACTION_TYPES.ON_PAUSE);
-  },
-  handleProgress: function handleProgress(currentTime) {
-    var volume = this.player.getVolume();
-    var isMuted = this.player.isMuted();
-
-    this.setState({
-      currentTime: currentTime,
-      volume: volume,
-      isMuted: isMuted
-    });
-
-    this.handleAction(ACTION_TYPES.ON_PROGRESS, currentTime);
-  },
-  handleEnded: function handleEnded() {
-    this.updatePlaybackState(playbackTypes.PLAY_ENDED);
-    this.handleAction(ACTION_TYPES.ON_ENDED);
-  },
-  handleError: function handleError(err) {
-    this.props.reportBI(_events.biEvents.ERROR, {
-      errorMessage: err && err.name && err.message ? err.name + ' : ' + err.message : err,
-      videoId: this.getVideoId(),
-      videoSource: this.getVideoType(),
-      playSource: this.getPlaySource()
-    });
-  },
-  handleMouseIn: function handleMouseIn(e) {
-    this.handleAction(ACTION_TYPES.MOUSE_IN, e);
-  },
-  handleMouseOut: function handleMouseOut(e) {
-    this.handleAction(ACTION_TYPES.MOUSE_OUT, e);
-  },
-  getPlaySource: function getPlaySource() {
-    return this.props.compProp.autoplay ? 'autoplay' : 'click';
-  },
-  getVideoType: function getVideoType() {
-    return _lodash2.default.get(this.props, 'compData.videoType') || VIDEO_TYPE_FILE;
-  },
-  getVideoId: function getVideoId() {
-    return _lodash2.default.get(this.props, 'id');
-  },
-  getPosterUrl: function getPosterUrl() {
-    var style = this.props.style;
-
-    var posterImageRef = _lodash2.default.get(this.props, 'compData.videoRef.posterImageRef');
-
-    if (!posterImageRef) {
-      return;
-    }
-
-    var width = posterImageRef.width,
-        height = posterImageRef.height,
-        uri = posterImageRef.uri;
-
-    var src = { id: uri, width: width, height: height };
-    var target = { width: style.width, height: style.height };
-
-    var previewData = imageClientApi.getData(FITTING_SCALE_TO_FILL, src, target);
-
-    return this.props.staticMediaUrl + '/' + previewData.uri;
-  },
-  getVideoUrl: function getVideoUrl() {
-    var videoUrl = _lodash2.default.get(this.props, 'compData.videoUrl');
-
-    if (videoUrl) {
-      return videoUrl;
-    }
-
-    var qualities = _lodash2.default.get(this.props, 'compData.videoRef.qualities');
-    if (!qualities) {
-      return;
-    }
-
-    var _$maxBy = _lodash2.default.maxBy(qualities, 'width'),
-        url = _$maxBy.url;
-
-    return '' + this.props.staticVideoUrl + url;
-  },
-  getLogoUrl: function getLogoUrl() {
-    if (!_lodash2.default.isObject(this.props.compData.logoRef)) {
-      return;
-    }
-
-    var _props$compData$logoR = this.props.compData.logoRef,
-        width = _props$compData$logoR.width,
-        height = _props$compData$logoR.height,
-        uri = _props$compData$logoR.uri;
-
-    var src = {
-      id: uri,
-      width: width,
-      height: height
-    };
-    var target = {
-      width: MAX_LOGO_WIDTH,
-      height: Math.ceil(MAX_LOGO_WIDTH / width * height)
-    };
-    var previewData = imageClientApi.getData(FITTING_SCALE_TO_FILL, src, target, LOGO_TRANSFORM_TYPE);
-
-    return this.props.staticMediaUrl + '/' + previewData.uri;
-  },
-  getSkinProperties: function getSkinProperties() {
-    var _this3 = this;
-
-    var _props = this.props,
-        id = _props.id,
-        styleId = _props.styleId,
-        style = _props.style,
-        isPlayingAllowed = _props.isPlayingAllowed,
-        isMobileView = _props.isMobileView;
-    var _props$compProp = this.props.compProp,
-        loop = _props$compProp.loop,
-        showVideoTitle = _props$compProp.showVideoTitle,
-        controlsVisibility = _props$compProp.controlsVisibility,
-        autoplay = _props$compProp.autoplay;
-    var videoTitle = this.props.compData.videoTitle;
-
-    var controls = controlsVisibility === 'hover';
-    var playing = isPlayingAllowed && autoplay;
-
-    var props = {
-      className: styleId,
-      videoId: id,
-      style: style,
-      isMobileView: isMobileView,
-      src: this.getVideoUrl(),
-      loop: loop,
-      playing: playing,
-      muted: autoplay,
-      controls: controls,
-      showTitle: showVideoTitle,
-      config: {
-        playable: {
-          title: videoTitle,
-          logoUrl: this.getLogoUrl(),
-          poster: this.getPosterUrl()
-        }
-      },
-      playerRef: function playerRef(player) {
-        _this3.player = player;
-      },
-      onMouseIn: this.handleMouseIn,
-      onMouseOut: this.handleMouseOut,
-      onInit: this.handleInit,
-      onReady: this.handleReady,
-      onDuration: this.handleDuration,
-      onProgress: this.handleProgress,
-      onPlay: this.handlePlay,
-      onPause: this.handlePause,
-      onEnded: this.handleEnded,
-      onFirstPlay: this.handleFirstPlay,
-      onFirstEnded: this.handleFirstEnded,
-      onError: this.handleError
-    };
-
-    return {
-      '': {
-        children: [_santaComponents.utils.createReactElement(VideoPlayer, props)]
-      }
-    };
-  }
-});
-
-/***/ }),
-
-/***/ 666:
-/*!********************************************!*\
-  !*** ../node_modules/wix-ui-core/video.js ***!
-  \********************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! ./dist/src/components/video */ 667);
-
-
-/***/ }),
-
-/***/ 667:
-/*!**********************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/index.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var Video_1 = __webpack_require__(/*! ./Video */ 668);
-exports.Video = Video_1.Video;
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ 668:
-/*!**********************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/Video.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var tslib_1 = __webpack_require__(/*! tslib */ 5);
-var React = __webpack_require__(/*! react */ 0);
-var players_1 = __webpack_require__(/*! ./players */ 669);
-var Video_st_css_1 = __webpack_require__(/*! ./Video.st.css */ 63);
-var noop = function () { return null; };
-var DEFAULT_PLAYER = 'playable';
-var getPlayerName = function (url) {
-    for (var key in players_1.playerVerifiers) {
-        var name_1 = key;
-        if (players_1.playerVerifiers[name_1](url)) {
-            return name_1;
-        }
-    }
-    return DEFAULT_PLAYER;
-};
-var Video = /** @class */ (function (_super) {
-    tslib_1.__extends(Video, _super);
-    function Video(props) {
-        var _this = _super.call(this, props) || this;
-        _this.state = {
-            playerName: null,
-        };
-        _this.state.playerName = getPlayerName(_this.props.src);
-        return _this;
-    }
-    Video.prototype.componentWillReceiveProps = function (nextProps) {
-        if (this.props.src !== nextProps.src) {
-            this.setState({
-                playerName: getPlayerName(nextProps.src),
-            });
-        }
-    };
-    Video.prototype.render = function () {
-        var playerName = this.state.playerName;
-        if (!playerName) {
-            return null;
-        }
-        var Player = players_1.playerComponents[playerName];
-        var playerProps = tslib_1.__assign({}, this.props, this.props.config[playerName]);
-        var _a = this.props, id = _a.id, fillAllSpace = _a.fillAllSpace, playerRef = _a.playerRef;
-        var _b = this.props, width = _b.width, height = _b.height;
-        if (fillAllSpace) {
-            width = '100%';
-            height = '100%';
-        }
-        return (React.createElement("div", tslib_1.__assign({ id: id, style: { width: width, height: height } }, Video_st_css_1.default('root', {}, this.props)),
-            React.createElement(Player, tslib_1.__assign({}, playerProps, { ref: playerRef }))));
-    };
-    Video.displayName = 'Video';
-    Video.defaultProps = {
-        controls: true,
-        loop: false,
-        muted: false,
-        showTitle: true,
-        fillAllSpace: false,
-        volume: 100,
-        onInit: noop,
-        onReady: noop,
-        onDuration: noop,
-        onPlay: noop,
-        onPause: noop,
-        onEnded: noop,
-        onProgress: noop,
-        onError: noop,
-        onFirstPlay: noop,
-        onFirstEnded: noop,
-        config: {},
-    };
-    return Video;
-}(React.Component));
-exports.Video = Video;
-//# sourceMappingURL=Video.js.map
-
-/***/ }),
-
-/***/ 669:
-/*!******************************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/index.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var Playable_1 = __webpack_require__(/*! ./Playable */ 670);
-var YouTube_1 = __webpack_require__(/*! ./YouTube */ 672);
-var Facebook_1 = __webpack_require__(/*! ./Facebook */ 675);
-var Vimeo_1 = __webpack_require__(/*! ./Vimeo */ 676);
-var Twitch_1 = __webpack_require__(/*! ./Twitch */ 677);
-var DailyMotion_1 = __webpack_require__(/*! ./DailyMotion */ 678);
-// @TODO enum ?
-exports.playerVerifiers = {
-    dailymotion: DailyMotion_1.verifier,
-    facebook: Facebook_1.verifier,
-    playable: Playable_1.verifier,
-    twitch: Twitch_1.verifier,
-    vimeo: Vimeo_1.verifier,
-    youtube: YouTube_1.verifier,
-};
-exports.playerComponents = {
-    dailymotion: DailyMotion_1.Player,
-    facebook: Facebook_1.Player,
-    playable: Playable_1.Player,
-    twitch: Twitch_1.Player,
-    vimeo: Vimeo_1.Player,
-    youtube: YouTube_1.Player,
-};
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ 670:
-/*!*********************************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/Playable.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var tslib_1 = __webpack_require__(/*! tslib */ 5);
-var React = __webpack_require__(/*! react */ 0);
-var eventemitter3_1 = __webpack_require__(/*! eventemitter3 */ 48);
-var classnames_1 = __webpack_require__(/*! classnames */ 4);
-var isString = __webpack_require__(/*! lodash/isString */ 100);
-var isArray = __webpack_require__(/*! lodash/isArray */ 258);
-var playable_1 = __webpack_require__(/*! playable */ 373);
-var constants_1 = __webpack_require__(/*! ../constants */ 62);
-var playerHOC_1 = __webpack_require__(/*! ./playerHOC */ 101);
-var Video_st_css_1 = __webpack_require__(/*! ../Video.st.css */ 63);
-var URL_REGEX = /\.(mp4|og[gv]|webm|mov|m4v)($|\?)/i;
-exports.verifier = function (url) {
-    if (isString(url)) {
-        return URL_REGEX.test(url);
-    }
-    if (isArray(url)) {
-        return url.some(function (item) { return URL_REGEX.test(item); });
-    }
-    return false;
-};
-var mapPropsToPlayer = {
-    src: function (instance) { return instance.reload(); },
-    playing: function (instance, player, nextPlaying) {
-        if (nextPlaying) {
-            player.play();
-        }
-        else {
-            player.pause();
-        }
-    },
-    muted: function (instance, player, nextMuted) {
-        if (nextMuted) {
-            player.mute();
-        }
-        else {
-            player.unmute();
-        }
-    },
-    volume: 'setVolume',
-    title: 'setTitle',
-    loop: 'setLoop',
-    logoUrl: 'setLogo',
-    alwaysShowLogo: 'setAlwaysShowLogo',
-    onLogoClick: 'setLogoClickCallback',
-    preload: 'setPreload',
-    showTitle: function (instance, player, isShowTitle) {
-        if (isShowTitle) {
-            player.showTitle();
-        }
-        else {
-            player.hideTitle();
-        }
-    },
-    controls: function (instance, player, isShowControls) {
-        if (isShowControls) {
-            player.showPlayControl();
-            player.showVolumeControl();
-            player.showTimeControl();
-            player.showFullScreenControl();
-            player.showProgressControl();
-        }
-        else {
-            player.hidePlayControl();
-            player.hideVolumeControl();
-            player.hideTimeControl();
-            player.hideFullScreenControl();
-            player.hideProgressControl();
-        }
-    },
-};
-var mapMethodsToPlayer = {
-    play: 'play',
-    pause: 'pause',
-    stop: 'reset',
-    getDuration: 'getDuration',
-    getCurrentTime: 'getCurrentTime',
-    seekTo: 'seekTo',
-    getVolume: 'getVolume',
-    setVolume: 'setVolume',
-    isMuted: function (instance, player) { return player.isMuted; },
-    mute: 'mute',
-    unMute: 'unmute',
-};
-var PlayablePlayer = /** @class */ (function (_super) {
-    tslib_1.__extends(PlayablePlayer, _super);
-    function PlayablePlayer(props) {
-        var _this = _super.call(this, props) || this;
-        _this.state = {
-            hasBeenPlayed: false,
-        };
-        _this.onPlayClick = function () {
-            _this.player.play();
-        };
-        _this.containerRef = React.createRef();
-        _this.eventEmitter = new eventemitter3_1.EventEmitter();
-        return _this;
-    }
-    PlayablePlayer.prototype.componentDidMount = function () {
-        this.initPlayer();
-    };
-    PlayablePlayer.prototype.componentWillUnmount = function () {
-        if (this.player) {
-            this.player.destroy();
-        }
-        this.eventEmitter.removeAllListeners();
-    };
-    PlayablePlayer.prototype.initPlayer = function () {
-        var _this = this;
-        var _a = this.props, src = _a.src, playing = _a.playing, poster = _a.poster, muted = _a.muted, title = _a.title, showTitle = _a.showTitle, loop = _a.loop, volume = _a.volume, controls = _a.controls, onInit = _a.onInit, onReady = _a.onReady, onDuration = _a.onDuration, onProgress = _a.onProgress, logoUrl = _a.logoUrl, onLogoClick = _a.onLogoClick, alwaysShowLogo = _a.alwaysShowLogo, modules = _a.modules;
-        var preload = (!poster ? 'metadata' : this.props.preload);
-        this.registerModules(modules);
-        this.player = playable_1.create({
-            src: src,
-            autoplay: !!playing,
-            playsinline: true,
-            muted: muted,
-            fillAllSpace: true,
-            title: title,
-            preload: preload,
-            loop: loop,
-            volume: volume,
-            hideOverlay: true,
-        });
-        this._hidePlayableUI();
-        if (!showTitle) {
-            this.player.hideTitle();
-        }
-        if (logoUrl || onLogoClick || alwaysShowLogo) {
-            this.player.setLogo(logoUrl);
-            this.player.setAlwaysShowLogo(alwaysShowLogo);
-            this.player.setLogoClickCallback(onLogoClick);
-        }
-        this.player.attachToElement(this.containerRef.current);
-        this.player.on(playable_1.VIDEO_EVENTS.PLAY_REQUEST, function () {
-            if (controls) {
-                _this._showPlayableUI();
-            }
-            _this.setState({ hasBeenPlayed: true });
-        });
-        this.player.on(playable_1.ENGINE_STATES.METADATA_LOADED, function () {
-            onReady();
-            onDuration(_this.player.getDuration());
-        });
-        this.player.on(playable_1.ENGINE_STATES.PLAYING, function () {
-            _this.setState({ hasBeenPlayed: true });
-            _this.eventEmitter.emit(constants_1.EVENTS.PLAYING);
-        });
-        this.player.on(playable_1.ENGINE_STATES.PAUSED, function () {
-            _this.eventEmitter.emit(constants_1.EVENTS.PAUSED);
-        });
-        this.player.on(playable_1.ENGINE_STATES.ENDED, function () {
-            _this.setState({ hasBeenPlayed: false });
-            _this.eventEmitter.emit(constants_1.EVENTS.ENDED);
-        });
-        this.player.on(playable_1.VIDEO_EVENTS.CURRENT_TIME_UPDATED, function (currentTime) {
-            onProgress(currentTime);
-        });
-        onInit(this.player);
-    };
-    PlayablePlayer.prototype._showPlayableUI = function () {
-        this.player.showPlayControl();
-        this.player.showVolumeControl();
-        this.player.showTimeControl();
-        this.player.showFullScreenControl();
-        this.player.showProgressControl();
-        this.player.showPictureInPictureControl();
-    };
-    PlayablePlayer.prototype._hidePlayableUI = function () {
-        this.player.hidePlayControl();
-        this.player.hideVolumeControl();
-        this.player.hideTimeControl();
-        this.player.hideFullScreenControl();
-        this.player.hideProgressControl();
-        this.player.hidePictureInPictureControl();
-    };
-    PlayablePlayer.prototype.registerModules = function (modules) {
-        if (modules === void 0) { modules = {}; }
-        Object.keys(modules).forEach(function (moduleName) {
-            return playable_1.registerModule(moduleName, modules[moduleName]);
-        });
-    };
-    PlayablePlayer.prototype.render = function () {
-        var _a;
-        var _b = this.props, showTitle = _b.showTitle, title = _b.title, poster = _b.poster, playButton = _b.playButton;
-        var coverStyles = { backgroundImage: poster ? "url(" + poster + ")" : 'none' };
-        return (React.createElement(React.Fragment, null,
-            React.createElement("div", { ref: this.containerRef, className: Video_st_css_1.default.playerContainer, "data-player-name": "Playable" }),
-            !this.state.hasBeenPlayed && (React.createElement("div", { className: classnames_1.default(Video_st_css_1.default.cover, (_a = {},
-                    _a[Video_st_css_1.default.transparentOverlay] = !poster,
-                    _a)), style: coverStyles, onClick: this.onPlayClick, "data-hook": "cover" },
-                React.createElement("div", { className: Video_st_css_1.default.overlay },
-                    showTitle && title && (React.createElement("div", { "data-hook": "title", title: title, className: Video_st_css_1.default.title }, title)),
-                    playButton)))));
-    };
-    PlayablePlayer.displayName = 'Playable';
-    PlayablePlayer.defaultProps = {
-        poster: '',
-        playButton: null,
-    };
-    return PlayablePlayer;
-}(React.PureComponent));
-exports.Player = playerHOC_1.default(PlayablePlayer, mapPropsToPlayer, mapMethodsToPlayer);
-//# sourceMappingURL=Playable.js.map
-
-/***/ }),
-
-/***/ 671:
-/*!*************************************************!*\
-  !*** ../node_modules/timers-browserify/main.js ***!
-  \*************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
-            (typeof self !== "undefined" && self) ||
-            window;
-var apply = Function.prototype.apply;
-
-// DOM APIs, for completeness
-
-exports.setTimeout = function() {
-  return new Timeout(apply.call(setTimeout, scope, arguments), clearTimeout);
-};
-exports.setInterval = function() {
-  return new Timeout(apply.call(setInterval, scope, arguments), clearInterval);
-};
-exports.clearTimeout =
-exports.clearInterval = function(timeout) {
-  if (timeout) {
-    timeout.close();
-  }
-};
-
-function Timeout(id, clearFn) {
-  this._id = id;
-  this._clearFn = clearFn;
-}
-Timeout.prototype.unref = Timeout.prototype.ref = function() {};
-Timeout.prototype.close = function() {
-  this._clearFn.call(scope, this._id);
-};
-
-// Does not start the time, just sets up the members needed.
-exports.enroll = function(item, msecs) {
-  clearTimeout(item._idleTimeoutId);
-  item._idleTimeout = msecs;
-};
-
-exports.unenroll = function(item) {
-  clearTimeout(item._idleTimeoutId);
-  item._idleTimeout = -1;
-};
-
-exports._unrefActive = exports.active = function(item) {
-  clearTimeout(item._idleTimeoutId);
-
-  var msecs = item._idleTimeout;
-  if (msecs >= 0) {
-    item._idleTimeoutId = setTimeout(function onTimeout() {
-      if (item._onTimeout)
-        item._onTimeout();
-    }, msecs);
-  }
-};
-
-// setimmediate attaches itself to the global object
-__webpack_require__(/*! setimmediate */ 255);
-// On some exotic environments, it's not clear which object `setimmediate` was
-// able to install onto.  Search each possibility in the same order as the
-// `setimmediate` library.
-exports.setImmediate = (typeof self !== "undefined" && self.setImmediate) ||
-                       (typeof global !== "undefined" && global.setImmediate) ||
-                       (this && this.setImmediate);
-exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
-                         (typeof global !== "undefined" && global.clearImmediate) ||
-                         (this && this.clearImmediate);
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ 22)))
-
-/***/ }),
-
-/***/ 672:
-/*!********************************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/YouTube.js ***!
-  \********************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var tslib_1 = __webpack_require__(/*! tslib */ 5);
-var React = __webpack_require__(/*! react */ 0);
-var eventemitter3_1 = __webpack_require__(/*! eventemitter3 */ 48);
-var isString = __webpack_require__(/*! lodash/isString */ 100);
-var utils_1 = __webpack_require__(/*! ../utils */ 132);
-var constants_1 = __webpack_require__(/*! ../constants */ 62);
-var playerHOC_1 = __webpack_require__(/*! ./playerHOC */ 101);
-var Video_st_css_1 = __webpack_require__(/*! ../Video.st.css */ 63);
-var URL_REGEX = /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})/;
-exports.verifier = function (url) {
-    return isString(url) && URL_REGEX.test(url);
-};
-var SDKConfig = {
-    name: 'YT',
-    url: 'https://www.youtube.com/iframe_api',
-    onReady: 'onYouTubeIframeAPIReady',
-    isLoaded: function (YT) { return !!YT.loaded; },
-    isRequireAllow: false,
-};
-var mapPropsToPlayer = {
-    src: function (instance) { return instance.reload(); },
-    playing: function (instance, player, nextPlaying) {
-        if (nextPlaying) {
-            player.playVideo();
-        }
-        else {
-            player.pauseVideo();
-        }
-    },
-    muted: function (instance, player, nextMuted) {
-        if (nextMuted) {
-            player.mute();
-        }
-        else {
-            player.unMute();
-        }
-    },
-    volume: 'setVolume',
-    loop: 'setLoop',
-};
-var mapMethodsToPlayer = {
-    play: 'playVideo',
-    pause: 'pauseVideo',
-    stop: 'stopVideo',
-    getDuration: 'getDuration',
-    getCurrentTime: 'getCurrentTime',
-    seekTo: 'seekTo',
-    getVolume: 'getVolume',
-    setVolume: 'setVolume',
-    isMuted: 'isMuted',
-    mute: 'mute',
-    unMute: 'unMute',
-};
-var YouTubePlayer = /** @class */ (function (_super) {
-    tslib_1.__extends(YouTubePlayer, _super);
-    function YouTubePlayer(props) {
-        var _this = _super.call(this, props) || this;
-        _this.initPlayer = function (YT) {
-            var _a = _this.props, playing = _a.playing, muted = _a.muted, controls = _a.controls, loop = _a.loop, playerOptions = _a.playerOptions, onInit = _a.onInit, onReady = _a.onReady, onDuration = _a.onDuration, onError = _a.onError;
-            var src = _this.props.src;
-            var videoId = src.match(URL_REGEX)[1];
-            _this.player = new YT.Player(_this.containerRef.current, {
-                width: '100%',
-                height: '100%',
-                videoId: videoId,
-                playerVars: tslib_1.__assign({ autoplay: playing ? 1 : 0, mute: muted ? 1 : 0, controls: controls ? 1 : 0, loop: loop ? 1 : 0, origin: window.location.origin, playsinline: 1 }, (loop && { playlist: videoId }), playerOptions),
-                events: {
-                    onReady: function () {
-                        onReady();
-                        onDuration(_this.player.getDuration());
-                    },
-                    onStateChange: _this.onStateChange(YT.PlayerState),
-                    onError: onError,
-                },
-            });
-            onInit(_this.player);
-        };
-        _this.onStateChange = function (PlayerState) { return function (_a) {
-            var data = _a.data;
-            var PLAYING = PlayerState.PLAYING, PAUSED = PlayerState.PAUSED, ENDED = PlayerState.ENDED;
-            switch (data) {
-                case PLAYING:
-                    _this.eventEmitter.emit(constants_1.EVENTS.PLAYING);
-                    _this.progress();
-                    break;
-                case PAUSED:
-                    _this.eventEmitter.emit(constants_1.EVENTS.PAUSED);
-                    _this.stopProgress();
-                    break;
-                case ENDED:
-                    _this.eventEmitter.emit(constants_1.EVENTS.ENDED);
-                    _this.stopProgress();
-                    break;
-                default:
-            }
-        }; };
-        _this.progress = function () {
-            _this.stopProgress();
-            _this.props.onProgress(_this.player.getCurrentTime() || 0);
-            _this.progressTimeout = window.setTimeout(_this.progress, constants_1.PROGRESS_INTERVAL);
-        };
-        _this.containerRef = React.createRef();
-        _this.eventEmitter = new eventemitter3_1.EventEmitter();
-        return _this;
-    }
-    YouTubePlayer.prototype.componentDidMount = function () {
-        var _this = this;
-        utils_1.getSDK(SDKConfig)
-            .then(this.initPlayer)
-            .catch(function (error) {
-            _this.props.onError(error);
-        });
-    };
-    YouTubePlayer.prototype.componentWillUnmount = function () {
-        if (this.player) {
-            this.player.destroy();
-        }
-        this.eventEmitter.removeAllListeners();
-        this.stopProgress();
-    };
-    YouTubePlayer.prototype.stopProgress = function () {
-        window.clearTimeout(this.progressTimeout);
-    };
-    YouTubePlayer.prototype.render = function () {
-        return (React.createElement("div", { ref: this.containerRef, className: Video_st_css_1.default.playerContainer, "data-player-name": "YouTube" }));
-    };
-    YouTubePlayer.displayName = 'YouTube';
-    return YouTubePlayer;
-}(React.PureComponent));
-exports.Player = playerHOC_1.default(YouTubePlayer, mapPropsToPlayer, mapMethodsToPlayer);
-//# sourceMappingURL=YouTube.js.map
-
-/***/ }),
-
-/***/ 673:
-/*!*****************************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/utils/getSDK.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var originalLoadjs = __webpack_require__(/*! loadjs */ 674);
-var loadjs = originalLoadjs;
-function mockLoadjs(mockedLoadjs) {
-    loadjs = mockedLoadjs || originalLoadjs;
-}
-exports.mockLoadjs = mockLoadjs;
-var stack = {};
-var loadSDK = function (name, url, onLoaded, onError, onReady) {
-    loadjs(url, {
-        success: function () {
-            if (onReady) {
-                var previousOnReady_1 = window[onReady];
-                window[onReady] = function () {
-                    if (previousOnReady_1) {
-                        previousOnReady_1();
-                    }
-                    onLoaded(window[name]);
-                };
-            }
-            else {
-                onLoaded(window[name]);
-            }
-        },
-        error: function (err) {
-            onError(err);
-        },
-    });
-};
-var requireSDK = function (name, url, onLoaded, onError, resolveRequire) {
-    window.require([url], function (sdk) {
-        window[name] = resolveRequire(sdk);
-        onLoaded(window[name]);
-    }, function (err) {
-        onError(err);
-    });
-};
-function getSDK(_a) {
-    var name = _a.name, url = _a.url, onReady = _a.onReady, _b = _a.isLoaded, isLoaded = _b === void 0 ? function () { return true; } : _b, _c = _a.resolveRequire, resolveRequire = _c === void 0 ? function (sdk) { return sdk; } : _c, isRequireAllow = _a.isRequireAllow;
-    if (window[name] && isLoaded(window[name])) {
-        return Promise.resolve(window[name]);
-    }
-    return new Promise(function (resolve, reject) {
-        if (stack[url]) {
-            stack[url].push(resolve);
-            return;
-        }
-        stack[url] = [resolve];
-        var onLoaded = function (sdk) {
-            stack[url].forEach(function (resolveItem) { return resolveItem(sdk); });
-        };
-        if (isRequireAllow &&
-            typeof window.require === 'function' &&
-            typeof window.define === 'function' &&
-            window.define.amd) {
-            requireSDK(name, url, onLoaded, reject, resolveRequire);
-        }
-        else {
-            loadSDK(name, url, onLoaded, reject, onReady);
-        }
-    });
-}
-exports.getSDK = getSDK;
-//# sourceMappingURL=getSDK.js.map
-
-/***/ }),
-
-/***/ 674:
-/*!*************************************************!*\
-  !*** ../node_modules/loadjs/dist/loadjs.umd.js ***!
-  \*************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(root, factory) {
-  if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else {}
-}(this, function() {
-/**
- * Global dependencies.
- * @global {Object} document - DOM
- */
-
-var devnull = function() {},
-    bundleIdCache = {},
-    bundleResultCache = {},
-    bundleCallbackQueue = {};
-
-
-/**
- * Subscribe to bundle load event.
- * @param {string[]} bundleIds - Bundle ids
- * @param {Function} callbackFn - The callback function
- */
-function subscribe(bundleIds, callbackFn) {
-  // listify
-  bundleIds = bundleIds.push ? bundleIds : [bundleIds];
-
-  var depsNotFound = [],
-      i = bundleIds.length,
-      numWaiting = i,
-      fn,
-      bundleId,
-      r,
-      q;
-
-  // define callback function
-  fn = function (bundleId, pathsNotFound) {
-    if (pathsNotFound.length) depsNotFound.push(bundleId);
-
-    numWaiting--;
-    if (!numWaiting) callbackFn(depsNotFound);
-  };
-
-  // register callback
-  while (i--) {
-    bundleId = bundleIds[i];
-
-    // execute callback if in result cache
-    r = bundleResultCache[bundleId];
-    if (r) {
-      fn(bundleId, r);
-      continue;
-    }
-
-    // add to callback queue
-    q = bundleCallbackQueue[bundleId] = bundleCallbackQueue[bundleId] || [];
-    q.push(fn);
-  }
-}
-
-
-/**
- * Publish bundle load event.
- * @param {string} bundleId - Bundle id
- * @param {string[]} pathsNotFound - List of files not found
- */
-function publish(bundleId, pathsNotFound) {
-  // exit if id isn't defined
-  if (!bundleId) return;
-
-  var q = bundleCallbackQueue[bundleId];
-
-  // cache result
-  bundleResultCache[bundleId] = pathsNotFound;
-
-  // exit if queue is empty
-  if (!q) return;
-
-  // empty callback queue
-  while (q.length) {
-    q[0](bundleId, pathsNotFound);
-    q.splice(0, 1);
-  }
-}
-
-
-/**
- * Execute callbacks.
- * @param {Object or Function} args - The callback args
- * @param {string[]} depsNotFound - List of dependencies not found
- */
-function executeCallbacks(args, depsNotFound) {
-  // accept function as argument
-  if (args.call) args = {success: args};
-
-  // success and error callbacks
-  if (depsNotFound.length) (args.error || devnull)(depsNotFound);
-  else (args.success || devnull)(args);
-}
-
-
-/**
- * Load individual file.
- * @param {string} path - The file path
- * @param {Function} callbackFn - The callback function
- */
-function loadFile(path, callbackFn, args, numTries) {
-  var doc = document,
-      async = args.async,
-      maxTries = (args.numRetries || 0) + 1,
-      beforeCallbackFn = args.before || devnull,
-      pathStripped = path.replace(/^(css|img)!/, ''),
-      isLegacyIECss,
-      e;
-
-  numTries = numTries || 0;
-
-  if (/(^css!|\.css$)/.test(path)) {
-    // css
-    e = doc.createElement('link');
-    e.rel = 'stylesheet';
-    e.href = pathStripped;
-
-    // tag IE9+
-    isLegacyIECss = 'hideFocus' in e;
-
-    // use preload in IE Edge (to detect load errors)
-    if (isLegacyIECss && e.relList) {
-      isLegacyIECss = 0;
-      e.rel = 'preload';
-      e.as = 'style';
-    }
-  } else if (/(^img!|\.(png|gif|jpg|svg)$)/.test(path)) {
-    // image
-    e = doc.createElement('img');
-    e.src = pathStripped;    
-  } else {
-    // javascript
-    e = doc.createElement('script');
-    e.src = path;
-    e.async = async === undefined ? true : async;
-  }
-
-  e.onload = e.onerror = e.onbeforeload = function (ev) {
-    var result = ev.type[0];
-
-    // treat empty stylesheets as failures to get around lack of onerror
-    // support in IE9-11
-    if (isLegacyIECss) {
-      try {
-        if (!e.sheet.cssText.length) result = 'e';
-      } catch (x) {
-        // sheets objects created from load errors don't allow access to
-        // `cssText` (unless error is Code:18 SecurityError)
-        if (x.code != 18) result = 'e';
-      }
-    }
-
-    // handle retries in case of load failure
-    if (result == 'e') {
-      // increment counter
-      numTries += 1;
-
-      // exit function and try again
-      if (numTries < maxTries) {
-        return loadFile(path, callbackFn, args, numTries);
-      }
-    } else if (e.rel == 'preload' && e.as == 'style') {
-      // activate preloaded stylesheets
-      return e.rel = 'stylesheet'; // jshint ignore:line
-    }
-    
-    // execute callback
-    callbackFn(path, result, ev.defaultPrevented);
-  };
-
-  // add to document (unless callback returns `false`)
-  if (beforeCallbackFn(path, e) !== false) doc.head.appendChild(e);
-}
-
-
-/**
- * Load multiple files.
- * @param {string[]} paths - The file paths
- * @param {Function} callbackFn - The callback function
- */
-function loadFiles(paths, callbackFn, args) {
-  // listify paths
-  paths = paths.push ? paths : [paths];
-
-  var numWaiting = paths.length,
-      x = numWaiting,
-      pathsNotFound = [],
-      fn,
-      i;
-
-  // define callback function
-  fn = function(path, result, defaultPrevented) {
-    // handle error
-    if (result == 'e') pathsNotFound.push(path);
-
-    // handle beforeload event. If defaultPrevented then that means the load
-    // will be blocked (ex. Ghostery/ABP on Safari)
-    if (result == 'b') {
-      if (defaultPrevented) pathsNotFound.push(path);
-      else return;
-    }
-
-    numWaiting--;
-    if (!numWaiting) callbackFn(pathsNotFound);
-  };
-
-  // load scripts
-  for (i=0; i < x; i++) loadFile(paths[i], fn, args);
-}
-
-
-/**
- * Initiate script load and register bundle.
- * @param {(string|string[])} paths - The file paths
- * @param {(string|Function|Object)} [arg1] - The (1) bundleId or (2) success
- *   callback or (3) object literal with success/error arguments, numRetries,
- *   etc.
- * @param {(Function|Object)} [arg2] - The (1) success callback or (2) object
- *   literal with success/error arguments, numRetries, etc.
- */
-function loadjs(paths, arg1, arg2) {
-  var bundleId,
-      args;
-
-  // bundleId (if string)
-  if (arg1 && arg1.trim) bundleId = arg1;
-
-  // args (default is {})
-  args = (bundleId ? arg2 : arg1) || {};
-
-  // throw error if bundle is already defined
-  if (bundleId) {
-    if (bundleId in bundleIdCache) {
-      throw "LoadJS";
-    } else {
-      bundleIdCache[bundleId] = true;
-    }
-  }
-
-  function loadFn(resolve, reject) {
-    loadFiles(paths, function (pathsNotFound) {
-      // execute callbacks
-      executeCallbacks(args, pathsNotFound);
-      
-      // resolve Promise
-      if (resolve) {
-        executeCallbacks({success: resolve, error: reject}, pathsNotFound);
-      }
-
-      // publish bundle load event
-      publish(bundleId, pathsNotFound);
-    }, args);
-  }
-  
-  if (args.returnPromise) return new Promise(loadFn);
-  else loadFn();
-}
-
-
-/**
- * Execute callbacks when dependencies have been satisfied.
- * @param {(string|string[])} deps - List of bundle ids
- * @param {Object} args - success/error arguments
- */
-loadjs.ready = function ready(deps, args) {
-  // subscribe to bundle load event
-  subscribe(deps, function (depsNotFound) {
-    // execute callbacks
-    executeCallbacks(args, depsNotFound);
-  });
-
-  return loadjs;
-};
-
-
-/**
- * Manually satisfy bundle dependencies.
- * @param {string} bundleId - The bundle id
- */
-loadjs.done = function done(bundleId) {
-  publish(bundleId, []);
-};
-
-
-/**
- * Reset loadjs dependencies statuses
- */
-loadjs.reset = function reset() {
-  bundleIdCache = {};
-  bundleResultCache = {};
-  bundleCallbackQueue = {};
-};
-
-
-/**
- * Determine if bundle has already been defined
- * @param String} bundleId - The bundle id
- */
-loadjs.isDefined = function isDefined(bundleId) {
-  return bundleId in bundleIdCache;
-};
-
-
-// export
-return loadjs;
-
-}));
-
-
-/***/ }),
-
-/***/ 675:
-/*!*********************************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/Facebook.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var tslib_1 = __webpack_require__(/*! tslib */ 5);
-var React = __webpack_require__(/*! react */ 0);
-var eventemitter3_1 = __webpack_require__(/*! eventemitter3 */ 48);
-var isString = __webpack_require__(/*! lodash/isString */ 100);
-var utils_1 = __webpack_require__(/*! ../utils */ 132);
-var playerHOC_1 = __webpack_require__(/*! ./playerHOC */ 101);
-var constants_1 = __webpack_require__(/*! ../constants */ 62);
-var Video_st_css_1 = __webpack_require__(/*! ../Video.st.css */ 63);
-var URL_REGEX = /facebook\.com\/([^/?].+\/)?video(s|\.php)[/?].*$/;
-exports.verifier = function (url) {
-    return isString(url) && URL_REGEX.test(url);
-};
-var SDKConfig = {
-    name: 'FB',
-    url: '//connect.facebook.net/en_US/sdk.js',
-    onReady: 'fbAsyncInit',
-    isRequireAllow: false,
-};
-var mapPropsToPlayer = {
-    src: function (instance) { return instance.reload(); },
-    playing: function (instance, player, nextPlaying) {
-        if (nextPlaying) {
-            player.play();
-        }
-        else {
-            player.pause();
-        }
-    },
-    muted: function (instance, player, nextMuted) {
-        if (nextMuted) {
-            player.mute();
-        }
-        else {
-            player.unmute();
-        }
-    },
-    volume: function (instance, player, nextVolume) { return player.setVolume(nextVolume / 100); },
-};
-var mapMethodsToPlayer = {
-    play: 'play',
-    pause: 'pause',
-    stop: function (instance) { return instance.reload(); },
-    getDuration: 'getDuration',
-    getCurrentTime: 'getCurrentPosition',
-    seekTo: 'seek',
-    getVolume: function (instance, player) { return 100 * player.getVolume(); },
-    setVolume: function (instance, player, fraction) { return player.setVolume(fraction / 100); },
-    isMuted: 'isMuted',
-    mute: 'mute',
-    unMute: 'unmute',
-};
-var parseSize = function (value) { return Math.ceil(value) || 'auto'; };
-var FacebookPlayer = /** @class */ (function (_super) {
-    tslib_1.__extends(FacebookPlayer, _super);
-    function FacebookPlayer(props) {
-        var _this = _super.call(this, props) || this;
-        _this.isDurationReady = false;
-        _this.unsubscribeFBEvents = function () { return null; };
-        _this.initPlayer = function (FB) {
-            var appId = _this.props.appId;
-            FB.init({
-                appId: appId,
-                xfbml: true,
-                version: 'v2.5',
-            });
-            FB.Event.subscribe('xfbml.ready', _this.handleReady);
-            FB.Event.subscribe('iframeplugin:create', _this.setAllowAttribute);
-            _this.unsubscribeFBEvents = function () {
-                FB.Event.unsubscribe('xfbml.ready', _this.handleReady);
-                FB.Event.unsubscribe('iframeplugin:create', _this.setAllowAttribute);
-            };
-            _this.parser = FB.XFBML.parse;
-        };
-        _this.handleReady = function (msg) {
-            var _a = _this.props, muted = _a.muted, onInit = _a.onInit, onReady = _a.onReady, onError = _a.onError;
-            if (msg.type === 'video' && msg.id === _this.playerId) {
-                _this.player = msg.instance;
-                _this.player.subscribe('startedPlaying', function () {
-                    _this.eventEmitter.emit(constants_1.EVENTS.PLAYING);
-                    _this.progress();
-                });
-                _this.player.subscribe('paused', function () {
-                    _this.eventEmitter.emit(constants_1.EVENTS.PAUSED);
-                    _this.stopProgress();
-                });
-                _this.player.subscribe('finishedPlaying', function () {
-                    _this.eventEmitter.emit(constants_1.EVENTS.ENDED);
-                    _this.stopProgress();
-                });
-                _this.player.subscribe('error', onError);
-                if (!muted) {
-                    _this.player.unmute();
-                }
-                _this.awaitDuration();
-                onInit(_this.player);
-                onReady();
-            }
-        };
-        _this.awaitDuration = function () {
-            if (!_this.isDurationReady) {
-                var duration = _this.player.getDuration();
-                if (duration) {
-                    _this.isDurationReady = true;
-                    _this.props.onDuration(duration);
-                }
-            }
-            _this.durationTimeout = window.setTimeout(_this.awaitDuration, constants_1.PROGRESS_INTERVAL);
-        };
-        _this.progress = function () {
-            _this.stopProgress();
-            _this.props.onProgress(_this.player.getCurrentPosition() || 0);
-            _this.progressTimeout = window.setTimeout(_this.progress, constants_1.PROGRESS_INTERVAL);
-        };
-        _this.setAllowAttribute = function () {
-            if (!_this.containerRef.current) {
-                return;
-            }
-            var iframe = _this.containerRef.current.querySelector('iframe');
-            if (!iframe) {
-                return;
-            }
-            iframe.setAttribute('allow', 'autoplay; encrypted-media');
-        };
-        _this.containerRef = React.createRef();
-        _this.eventEmitter = new eventemitter3_1.EventEmitter();
-        _this.playerId = "facebook-" + props.id;
-        return _this;
-    }
-    FacebookPlayer.prototype.componentDidMount = function () {
-        var _this = this;
-        utils_1.getSDK(SDKConfig)
-            .then(this.initPlayer)
-            .catch(function (error) {
-            _this.props.onError(error);
-        });
-    };
-    FacebookPlayer.prototype.componentWillUnmount = function () {
-        this.eventEmitter.removeAllListeners();
-        this.unsubscribeFBEvents();
-        this.stopAwaitDuration();
-        this.stopProgress();
-        this.parser = null;
-    };
-    FacebookPlayer.prototype.componentDidUpdate = function (prevProps) {
-        if ((this.props.width !== prevProps.width ||
-            this.props.height !== prevProps.height) &&
-            this.parser) {
-            this.parser(this.containerRef.current.parentElement);
-        }
-    };
-    FacebookPlayer.prototype.stopAwaitDuration = function () {
-        window.clearTimeout(this.durationTimeout);
-    };
-    FacebookPlayer.prototype.stopProgress = function () {
-        window.clearTimeout(this.progressTimeout);
-    };
-    FacebookPlayer.prototype.render = function () {
-        var _a = this.props, src = _a.src, playing = _a.playing, controls = _a.controls, width = _a.width, height = _a.height;
-        return (React.createElement("div", { ref: this.containerRef, id: this.playerId, className: "fb-video " + Video_st_css_1.default.playerContainer, "data-href": src, "data-width": parseSize(width), "data-height": parseSize(height), "data-autoplay": playing ? 'true' : 'false', "data-allowfullscreen": "true", "data-controls": controls ? 'true' : 'false', "data-player-name": "Facebook", "data-hook": "player-container" }));
-    };
-    FacebookPlayer.displayName = 'Facebook';
-    return FacebookPlayer;
-}(React.PureComponent));
-exports.Player = playerHOC_1.default(FacebookPlayer, mapPropsToPlayer, mapMethodsToPlayer);
-//# sourceMappingURL=Facebook.js.map
-
-/***/ }),
-
-/***/ 676:
-/*!******************************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/Vimeo.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var tslib_1 = __webpack_require__(/*! tslib */ 5);
-var React = __webpack_require__(/*! react */ 0);
-var eventemitter3_1 = __webpack_require__(/*! eventemitter3 */ 48);
-var isString = __webpack_require__(/*! lodash/isString */ 100);
-var utils_1 = __webpack_require__(/*! ../utils */ 132);
-var constants_1 = __webpack_require__(/*! ../constants */ 62);
-var playerHOC_1 = __webpack_require__(/*! ./playerHOC */ 101);
-var Video_st_css_1 = __webpack_require__(/*! ../Video.st.css */ 63);
-var URL_REGEX = /vimeo\.com\/.+/;
-exports.verifier = function (url) {
-    return isString(url) && URL_REGEX.test(url);
-};
-var SDKConfig = {
-    name: 'Vimeo',
-    url: 'https://player.vimeo.com/api/player.js',
-    isRequireAllow: true,
-    resolveRequire: function (sdk) { return ({ Player: sdk }); },
-};
-var mapPropsToPlayer = {
-    src: function (instance) { return instance.reload(); },
-    playing: function (instance, player, nextPlaying) {
-        if (nextPlaying) {
-            player.play();
-        }
-        else {
-            player.pause();
-        }
-    },
-    muted: function (instance, player, nextMuted) {
-        if (nextMuted) {
-            player.setVolume(0);
-        }
-        else {
-            player.setVolume(instance.props.volume / 100);
-        }
-    },
-    volume: function (instance, player, nextVolume) { return player.setVolume(nextVolume / 100); },
-};
-var mapMethodsToPlayer = {
-    play: 'play',
-    pause: 'pause',
-    stop: 'unload',
-    getDuration: function (instance) { return instance.ref.duration; },
-    getCurrentTime: function (instance) { return instance.ref.currentTime; },
-    seekTo: 'setCurrentTime',
-    getVolume: function (instance) { return instance.ref.volume; },
-    setVolume: function (instance, player, fraction) { return player.setVolume(fraction / 100); },
-    isMuted: function (instance) { return instance.ref.volume === 0; },
-    mute: function (instance, player) { return player.setVolume(0); },
-    unMute: function (instance, player) { return player.setVolume(1); },
-};
-var VimeoPlayer = /** @class */ (function (_super) {
-    tslib_1.__extends(VimeoPlayer, _super);
-    function VimeoPlayer(props) {
-        var _this = _super.call(this, props) || this;
-        _this.duration = 0;
-        _this.currentTime = 0;
-        _this.initPlayer = function (Vimeo) {
-            var _a = _this.props, src = _a.src, playing = _a.playing, muted = _a.muted, loop = _a.loop, showTitle = _a.showTitle, playerOptions = _a.playerOptions, onInit = _a.onInit, onReady = _a.onReady, onDuration = _a.onDuration, onProgress = _a.onProgress, onError = _a.onError;
-            _this.player = new Vimeo.Player(_this.containerRef.current, tslib_1.__assign({ url: src, autoplay: playing, muted: muted,
-                loop: loop, title: showTitle }, playerOptions));
-            _this.player.ready().then(function () {
-                onReady();
-                _this.player.getDuration().then(function (duration) {
-                    _this.duration = duration;
-                    onDuration(duration);
-                });
-            });
-            _this.player.on('play', function () {
-                _this.eventEmitter.emit(constants_1.EVENTS.PLAYING);
-            });
-            _this.player.on('pause', function () {
-                _this.eventEmitter.emit(constants_1.EVENTS.PAUSED);
-            });
-            _this.player.on('ended', function () {
-                _this.eventEmitter.emit(constants_1.EVENTS.ENDED);
-            });
-            _this.player.on('volumechange', function (_a) {
-                var volume = _a.volume;
-                _this.volume = volume * 100;
-            });
-            _this.player.on('timeupdate', function (_a) {
-                var seconds = _a.seconds;
-                _this.currentTime = seconds;
-                onProgress(seconds);
-            });
-            _this.player.on('error', onError);
-            onInit(_this.player);
-        };
-        _this.containerRef = React.createRef();
-        _this.eventEmitter = new eventemitter3_1.EventEmitter();
-        _this.volume = props.volume;
-        return _this;
-    }
-    VimeoPlayer.prototype.componentDidMount = function () {
-        var _this = this;
-        utils_1.getSDK(SDKConfig)
-            .then(this.initPlayer)
-            .catch(function (error) {
-            _this.props.onError(error);
-        });
-    };
-    VimeoPlayer.prototype.componentWillUnmount = function () {
-        if (this.player) {
-            this.player.destroy();
-        }
-        this.eventEmitter.removeAllListeners();
-    };
-    VimeoPlayer.prototype.render = function () {
-        return (React.createElement("div", { ref: this.containerRef, className: Video_st_css_1.default.playerContainer, "data-player-name": "Vimeo" }));
-    };
-    VimeoPlayer.displayName = 'Vimeo';
-    return VimeoPlayer;
-}(React.PureComponent));
-exports.Player = playerHOC_1.default(VimeoPlayer, mapPropsToPlayer, mapMethodsToPlayer);
-//# sourceMappingURL=Vimeo.js.map
-
-/***/ }),
-
-/***/ 677:
-/*!*******************************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/Twitch.js ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var tslib_1 = __webpack_require__(/*! tslib */ 5);
-var React = __webpack_require__(/*! react */ 0);
-var eventemitter3_1 = __webpack_require__(/*! eventemitter3 */ 48);
-var isString = __webpack_require__(/*! lodash/isString */ 100);
-var utils_1 = __webpack_require__(/*! ../utils */ 132);
-var constants_1 = __webpack_require__(/*! ../constants */ 62);
-var playerHOC_1 = __webpack_require__(/*! ./playerHOC */ 101);
-var Video_st_css_1 = __webpack_require__(/*! ../Video.st.css */ 63);
-var VIDEO_URL_REGEX = /(?:www\.|go\.)?twitch\.tv\/videos\/(\d+)($|\?)/;
-var CHANNEL_URL_REGEX = /(?:www\.|go\.)?twitch\.tv\/([a-z0-9_]+)($|\?)/;
-exports.verifier = function (url) {
-    return isString(url) &&
-        (VIDEO_URL_REGEX.test(url) ||
-            CHANNEL_URL_REGEX.test(url));
-};
-var SDKConfig = {
-    name: 'Twitch',
-    url: 'https://player.twitch.tv/js/embed/v1.js',
-    isRequireAllow: true,
-    resolveRequire: function (sdk) { return ({ Player: sdk.PlayerEmbed }); },
-};
-var mapPropsToPlayer = {
-    src: function (instance) { return instance.reload(); },
-    playing: function (instance, player, nextPlaying) {
-        if (nextPlaying) {
-            player.play();
-        }
-        else {
-            player.pause();
-        }
-    },
-    muted: 'setMuted',
-    volume: function (instance, player, nextVolume) { return player.setVolume(nextVolume / 100); },
-};
-var mapMethodsToPlayer = {
-    play: 'play',
-    pause: 'pause',
-    stop: function (instance) { return instance.reload(); },
-    getDuration: 'getDuration',
-    getCurrentTime: 'getCurrentTime',
-    seekTo: 'seek',
-    getVolume: function (instance, player) { return 100 * player.getVolume(); },
-    setVolume: function (instance, player, fraction) { return player.setVolume(fraction / 100); },
-    isMuted: 'getMuted',
-    mute: function (instance, player) { return player.setMuted(true); },
-    unMute: function (instance, player) { return player.setMuted(false); },
-};
-var TwitchPlayer = /** @class */ (function (_super) {
-    tslib_1.__extends(TwitchPlayer, _super);
-    function TwitchPlayer(props) {
-        var _this = _super.call(this, props) || this;
-        _this.isDurationReady = false;
-        _this.initPlayer = function (Twitch) {
-            var _a = _this.props, playing = _a.playing, muted = _a.muted, playerOptions = _a.playerOptions, onInit = _a.onInit, onReady = _a.onReady;
-            var src = _this.props.src;
-            var isChannel = CHANNEL_URL_REGEX.test(src);
-            var id = isChannel
-                ? src.match(CHANNEL_URL_REGEX)[1]
-                : src.match(VIDEO_URL_REGEX)[1];
-            var _b = Twitch.Player, READY = _b.READY, PLAY = _b.PLAY, PAUSE = _b.PAUSE, ENDED = _b.ENDED;
-            _this.player = new Twitch.Player(_this.playerId, tslib_1.__assign({ video: isChannel ? '' : id, channel: isChannel ? id : '', height: '100%', width: '100%', playsinline: true, autoplay: playing, muted: muted }, playerOptions));
-            _this.player.addEventListener(READY, function () {
-                _this.awaitDuration();
-                onReady();
-            });
-            _this.player.addEventListener(PLAY, function () {
-                _this.eventEmitter.emit(constants_1.EVENTS.PLAYING);
-                _this.progress();
-            });
-            _this.player.addEventListener(PAUSE, function () {
-                _this.eventEmitter.emit(constants_1.EVENTS.PAUSED);
-                _this.stopProgress();
-            });
-            _this.player.addEventListener(ENDED, function () {
-                _this.eventEmitter.emit(constants_1.EVENTS.ENDED);
-                _this.stopProgress();
-            });
-            onInit(_this.player);
-        };
-        _this.awaitDuration = function () {
-            if (!_this.isDurationReady) {
-                var duration = _this.player.getDuration();
-                if (duration) {
-                    _this.isDurationReady = true;
-                    _this.props.onDuration(duration);
-                }
-            }
-            _this.durationTimeout = window.setTimeout(_this.awaitDuration, constants_1.PROGRESS_INTERVAL);
-        };
-        _this.progress = function () {
-            _this.stopProgress();
-            _this.props.onProgress(_this.player.getCurrentTime() || 0);
-            _this.progressTimeout = window.setTimeout(_this.progress, constants_1.PROGRESS_INTERVAL);
-        };
-        _this.eventEmitter = new eventemitter3_1.EventEmitter();
-        _this.playerId = "twitch-" + props.id;
-        return _this;
-    }
-    TwitchPlayer.prototype.componentDidMount = function () {
-        var _this = this;
-        utils_1.getSDK(SDKConfig)
-            .then(this.initPlayer)
-            .catch(function (error) {
-            _this.props.onError(error);
-        });
-    };
-    TwitchPlayer.prototype.componentWillUnmount = function () {
-        if (this.player) {
-            this.player.destroy();
-        }
-        this.eventEmitter.removeAllListeners();
-        this.stopProgress();
-        this.stopAwaitDuration();
-    };
-    TwitchPlayer.prototype.stopAwaitDuration = function () {
-        window.clearTimeout(this.durationTimeout);
-    };
-    TwitchPlayer.prototype.stopProgress = function () {
-        window.clearTimeout(this.progressTimeout);
-    };
-    TwitchPlayer.prototype.render = function () {
-        return (React.createElement("div", { id: this.playerId, className: Video_st_css_1.default.playerContainer, "data-player-name": "Twitch" }));
-    };
-    TwitchPlayer.displayName = 'Twitch';
-    return TwitchPlayer;
-}(React.PureComponent));
-exports.Player = playerHOC_1.default(TwitchPlayer, mapPropsToPlayer, mapMethodsToPlayer);
-//# sourceMappingURL=Twitch.js.map
-
-/***/ }),
-
-/***/ 678:
-/*!************************************************************************************!*\
-  !*** ../node_modules/wix-ui-core/dist/src/components/video/players/DailyMotion.js ***!
-  \************************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var tslib_1 = __webpack_require__(/*! tslib */ 5);
-var React = __webpack_require__(/*! react */ 0);
-var eventemitter3_1 = __webpack_require__(/*! eventemitter3 */ 48);
-var isString = __webpack_require__(/*! lodash/isString */ 100);
-var utils_1 = __webpack_require__(/*! ../utils */ 132);
-var constants_1 = __webpack_require__(/*! ../constants */ 62);
-var playerHOC_1 = __webpack_require__(/*! ./playerHOC */ 101);
-var Video_st_css_1 = __webpack_require__(/*! ../Video.st.css */ 63);
-var URL_REGEX = /^(?:(?:https?):)?(?:\/\/)?(?:www\.)?(?:(?:dailymotion\.com(?:\/embed)?\/video)|dai\.ly)\/([a-zA-Z0-9]+)(?:_[\w_-]+)?$/;
-exports.verifier = function (url) {
-    return isString(url) && URL_REGEX.test(url);
-};
-var SDKConfig = {
-    name: 'DM',
-    url: 'https://api.dmcdn.net/all.js',
-    onReady: 'dmAsyncInit',
-    isLoaded: function (DM) { return !!DM.player; },
-    isRequireAllow: false,
-};
-var mapPropsToPlayer = {
-    src: function (instance) { return instance.reload(); },
-    playing: function (instance, player, nextPlaying) {
-        if (nextPlaying) {
-            player.play();
-        }
-        else {
-            player.pause();
-        }
-    },
-    muted: 'setMuted',
-    volume: function (instance, player, nextVolume) { return player.setVolume(nextVolume / 100); },
-    controls: 'setControls',
-};
-var mapMethodsToPlayer = {
-    play: 'play',
-    pause: 'pause',
-    stop: function (instance) { return instance.reload(); },
-    getDuration: function (instance, player) { return player.duration || 0; },
-    getCurrentTime: function (instance, player) { return player.currentTime || 0; },
-    seekTo: 'setCurrentTime',
-    getVolume: function (instance, player) { return 100 * player.volume; },
-    setVolume: function (instance, player, fraction) { return player.setVolume(fraction / 100); },
-    isMuted: function (instance, player) { return player.muted; },
-    mute: function (instance, player) { return player.setMuted(true); },
-    unMute: function (instance, player) { return player.setMuted(false); },
-};
-var DailyMotionPlayer = /** @class */ (function (_super) {
-    tslib_1.__extends(DailyMotionPlayer, _super);
-    function DailyMotionPlayer(props) {
-        var _this = _super.call(this, props) || this;
-        _this.initPlayer = function (DM) {
-            var _a = _this.props, playing = _a.playing, muted = _a.muted, controls = _a.controls, showTitle = _a.showTitle, playerOptions = _a.playerOptions, onInit = _a.onInit, onReady = _a.onReady, onDuration = _a.onDuration, onError = _a.onError;
-            var src = _this.props.src;
-            var _b = src.match(URL_REGEX), id = _b[1];
-            _this.player = new DM.player(_this.containerRef.current, {
-                width: '100%',
-                height: '100%',
-                video: id,
-                params: tslib_1.__assign({ controls: controls, autoplay: playing, mute: muted, 'ui-start-screen-info': showTitle, origin: window.location.origin }, playerOptions),
-                events: {
-                    apiready: function () {
-                        onReady();
-                    },
-                    durationchange: function () {
-                        onDuration(_this.player.duration);
-                    },
-                    playing: function () {
-                        _this.eventEmitter.emit(constants_1.EVENTS.PLAYING);
-                        _this.progress();
-                    },
-                    pause: function () {
-                        _this.eventEmitter.emit(constants_1.EVENTS.PAUSED);
-                        _this.stopProgress();
-                    },
-                    video_end: function () {
-                        _this.eventEmitter.emit(constants_1.EVENTS.ENDED);
-                        _this.stopProgress();
-                    },
-                    error: function (event) { return onError(event); },
-                },
-            });
-            onInit(_this.player);
-        };
-        _this.progress = function () {
-            _this.stopProgress();
-            _this.props.onProgress(_this.player.currentTime || 0);
-            _this.progressTimeout = window.setTimeout(_this.progress, constants_1.PROGRESS_INTERVAL);
-        };
-        _this.containerRef = React.createRef();
-        _this.eventEmitter = new eventemitter3_1.EventEmitter();
-        return _this;
-    }
-    DailyMotionPlayer.prototype.componentDidMount = function () {
-        var _this = this;
-        utils_1.getSDK(SDKConfig)
-            .then(this.initPlayer)
-            .catch(function (error) {
-            _this.props.onError(error);
-        });
-    };
-    DailyMotionPlayer.prototype.componentWillUnmount = function () {
-        this.eventEmitter.removeAllListeners();
-        this.stopProgress();
-    };
-    DailyMotionPlayer.prototype.stopProgress = function () {
-        window.clearTimeout(this.progressTimeout);
-    };
-    DailyMotionPlayer.prototype.render = function () {
-        return (React.createElement("div", { className: Video_st_css_1.default.playerContainer, "data-player-name": "DailyMotion" },
-            React.createElement("div", { ref: this.containerRef })));
-    };
-    DailyMotionPlayer.displayName = 'DailyMotion';
-    return DailyMotionPlayer;
-}(React.PureComponent));
-exports.Player = playerHOC_1.default(DailyMotionPlayer, mapPropsToPlayer, mapMethodsToPlayer);
-//# sourceMappingURL=DailyMotion.js.map
-
-/***/ }),
-
-/***/ 679:
-/*!*****************************************************************!*\
-  !*** ../node_modules/@wix/playback-bi-module/dist/src/index.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(/*! ./playback-bi-module */ 680));
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ 680:
-/*!******************************************************************************!*\
-  !*** ../node_modules/@wix/playback-bi-module/dist/src/playback-bi-module.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var playable_1 = __webpack_require__(/*! playable */ 373);
-var web_bi_logger_1 = __importDefault(__webpack_require__(/*! @wix/web-bi-logger */ 681));
-var bi_logger_video_platform_1 = __importDefault(__webpack_require__(/*! @wix/bi-logger-video-platform */ 694));
-var DEFAULT_INTERVAL_FOR_PROGRESS = 5000;
-var UNKNOW_TYLE = 'unknown_type';
-var convertMSToInt = function (time) { return Math.round(time * 1000); };
-var PlaybackBIModule = /** @class */ (function () {
-    function PlaybackBIModule(_a) {
-        var eventEmitter = _a.eventEmitter, engine = _a.engine;
-        this._customData = JSON.stringify({});
-        this._intervalID = null;
-        this._intervalDelta = DEFAULT_INTERVAL_FOR_PROGRESS;
-        this._isOngoingPlayback = false;
-        this._isVideoPlaying = false;
-        this._eventEmitter = eventEmitter;
-        this._engine = engine;
-        this._videoTag = this._engine.getElement();
-        this._logger = bi_logger_video_platform_1.default(web_bi_logger_1.default)();
-        this._bindCallbacks();
-        this._bindEvents();
-        this._generateNewViewID();
-    }
-    PlaybackBIModule.prototype.setWixBIVideoID = function (id) {
-        this._videoID = id;
-    };
-    PlaybackBIModule.prototype.setWixBIProduct = function (product) {
-        this._product = product;
-    };
-    PlaybackBIModule.prototype.setWixBICustomDataJSON = function (customDataJSON) {
-        if (customDataJSON === void 0) { customDataJSON = {}; }
-        this._customData = JSON.stringify(customDataJSON);
-    };
-    PlaybackBIModule.prototype.setWixBIProgressInterval = function (delta) {
-        this._intervalDelta = delta;
-    };
-    PlaybackBIModule.prototype.setWixVisitorID = function (visitorID) {
-        this._visitorID = visitorID;
-        this._logger.util.updateDefaults({
-            _visitorId: visitorID,
-        });
-    };
-    PlaybackBIModule.prototype.setWixMSID = function (msID) {
-        this._msID = msID;
-        this._logger.util.updateDefaults({
-            _msid: msID,
-        });
-    };
-    Object.defineProperty(PlaybackBIModule.prototype, "_isAllMandatoryDataSet", {
-        get: function () {
-            return this._visitorID && this._msID;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(PlaybackBIModule.prototype, "_collerationID", {
-        get: function () {
-            return this._videoID + "_" + this._viewID + "_" + this._randomSalt;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    PlaybackBIModule.prototype._generateNewViewID = function () {
-        this._viewID = Date.now().toString();
-        this._randomSalt = Math.floor(Math.random() * 1000);
-    };
-    PlaybackBIModule.prototype.getPlayedRange = function () {
-        var played = this._videoTag.played;
-        var playedRanges = [];
-        for (var i = 0; i < played.length; i++) {
-            playedRanges.push([
-                convertMSToInt(played.start(i)),
-                convertMSToInt(played.end(i)),
-            ]);
-        }
-        return playedRanges;
-    };
-    PlaybackBIModule.prototype._resetState = function () {
-        this._isOngoingPlayback = false;
-        this._isVideoPlaying = false;
-        this._stopIntervalSendForProgress();
-    };
-    PlaybackBIModule.prototype._bindCallbacks = function () {
-        this._sendProgress = this._sendProgress.bind(this);
-    };
-    PlaybackBIModule.prototype._bindEvents = function () {
-        this._unbindEvents = this._eventEmitter.bindEvents([
-            [playable_1.VIDEO_EVENTS.PLAY_REQUEST, this._sendPlayRequest],
-            [playable_1.VIDEO_EVENTS.PLAY_ABORTED, this._sendPlayAborted],
-            [playable_1.VIDEO_EVENTS.STATE_CHANGED, this._processStateChange],
-        ], this);
-    };
-    PlaybackBIModule.prototype._processStateChange = function (_a) {
-        var nextState = _a.nextState;
-        if (!this._isAllMandatoryDataSet) {
-            return;
-        }
-        switch (nextState) {
-            case playable_1.ENGINE_STATES.SRC_SET:
-                this._resetState();
-                break;
-            case playable_1.ENGINE_STATES.PLAYING:
-                if (this._isOngoingPlayback) {
-                    this._sendResumed();
-                }
-                else {
-                    this._sendPlaying();
-                }
-                break;
-            case playable_1.ENGINE_STATES.PAUSED:
-                this._sendPause();
-                break;
-            case playable_1.ENGINE_STATES.ENDED:
-                this._sendFinish();
-                break;
-            default:
-                break;
-        }
-    };
-    PlaybackBIModule.prototype._startIntervalSendForProgress = function () {
-        if (this._intervalID) {
-            return;
-        }
-        this._intervalID = window.setInterval(this._sendProgress, this._intervalDelta);
-    };
-    PlaybackBIModule.prototype._stopIntervalSendForProgress = function () {
-        window.clearInterval(this._intervalID);
-        this._intervalID = null;
-    };
-    PlaybackBIModule.prototype._sendPlayRequest = function () {
-        if (!this._isAllMandatoryDataSet || this._isOngoingPlayback) {
-            return;
-        }
-        var _a = this._engine.getDebugInfo(), _b = _a.bitrates, bitrates = _b === void 0 ? [] : _b, _c = _a.type, type = _c === void 0 ? UNKNOW_TYLE : _c;
-        this._generateNewViewID();
-        this._logger.playablePlayRequested({
-            customDataJson: this._customData,
-            correlationId: this._collerationID,
-            product: this._product,
-            videoId: this._videoID,
-            videoDuration: convertMSToInt(this._engine.getDuration()),
-            videoType: type,
-            bitrateJson: JSON.stringify(bitrates),
-        });
-    };
-    PlaybackBIModule.prototype._sendPlayAborted = function (event) {
-        if (!this._isAllMandatoryDataSet) {
-            return;
-        }
-        this._logger.playablePlayAborted({
-            correlationId: this._collerationID,
-            videoId: this._videoID,
-            reasonMessage: event.message,
-        });
-        this._generateNewViewID();
-    };
-    PlaybackBIModule.prototype._sendPlaying = function () {
-        if (!this._isVideoPlaying) {
-            this._logger.playablePlayStarted({
-                correlationId: this._collerationID,
-                videoId: this._videoID,
-            });
-            this._isOngoingPlayback = true;
-            this._isVideoPlaying = true;
-            this._startIntervalSendForProgress();
-        }
-    };
-    PlaybackBIModule.prototype._getCurrentTimeOfVideo = function () {
-        return convertMSToInt(this._engine.getCurrentTime());
-    };
-    PlaybackBIModule.prototype._sendResumed = function () {
-        if (!this._isVideoPlaying) {
-            this._logger.playablePlayResumed({
-                correlationId: this._collerationID,
-                videoId: this._videoID,
-                currentTimeFrame: this._getCurrentTimeOfVideo(),
-            });
-            this._isVideoPlaying = true;
-            this._startIntervalSendForProgress();
-        }
-    };
-    PlaybackBIModule.prototype._sendProgress = function () {
-        var _a = this._engine.getDebugInfo(), type = _a.type, currentBitrate = _a.currentBitrate;
-        this._logger.playableProgressInfo({
-            correlationId: this._collerationID,
-            currentBitrate: currentBitrate,
-            currentTimeFrame: this._getCurrentTimeOfVideo(),
-            deliveryType: type,
-            playedRange: JSON.stringify(this.getPlayedRange()),
-            videoId: this._videoID,
-        });
-    };
-    PlaybackBIModule.prototype._sendPause = function () {
-        if (this._isVideoPlaying) {
-            this._logger.playablePlayPaused({
-                correlationId: this._collerationID,
-                currentTimeFrame: this._getCurrentTimeOfVideo(),
-                playedRange: JSON.stringify(this.getPlayedRange()),
-                videoId: this._videoID,
-            });
-            this._stopIntervalSendForProgress();
-            this._isVideoPlaying = false;
-        }
-    };
-    PlaybackBIModule.prototype._sendFinish = function () {
-        this._logger.playablePlayFinished({
-            correlationId: this._collerationID,
-            playedRange: JSON.stringify(this.getPlayedRange()),
-            videoId: this._videoID,
-        });
-        this._stopIntervalSendForProgress();
-        this._isOngoingPlayback = false;
-        this._isVideoPlaying = false;
-    };
-    PlaybackBIModule.prototype.destroy = function () {
-        this._stopIntervalSendForProgress();
-        this._unbindEvents();
-        this._eventEmitter = null;
-        this._engine = null;
-        this._videoTag = null;
-        this._logger = null;
-    };
-    PlaybackBIModule.moduleName = 'wix-playback-bi-module';
-    PlaybackBIModule.dependencies = ['eventEmitter', 'engine'];
-    __decorate([
-        playable_1.playerAPIDecorator()
-    ], PlaybackBIModule.prototype, "setWixBIVideoID", null);
-    __decorate([
-        playable_1.playerAPIDecorator()
-    ], PlaybackBIModule.prototype, "setWixBIProduct", null);
-    __decorate([
-        playable_1.playerAPIDecorator()
-    ], PlaybackBIModule.prototype, "setWixBICustomDataJSON", null);
-    __decorate([
-        playable_1.playerAPIDecorator()
-    ], PlaybackBIModule.prototype, "setWixBIProgressInterval", null);
-    __decorate([
-        playable_1.playerAPIDecorator()
-    ], PlaybackBIModule.prototype, "setWixVisitorID", null);
-    __decorate([
-        playable_1.playerAPIDecorator()
-    ], PlaybackBIModule.prototype, "setWixMSID", null);
-    return PlaybackBIModule;
-}());
-exports.PlaybackBIModule = PlaybackBIModule;
-//# sourceMappingURL=playback-bi-module.js.map
-
-/***/ }),
-
-/***/ 681:
-/*!**********************************************************************!*\
-  !*** ../node_modules/@wix/web-bi-logger/dist/src/tracking-logger.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.setHost = exports.factory = undefined;
-
-var _tracker = __webpack_require__(/*! ./lib/tracker */ 682);
-
-var tracker = _interopRequireWildcard(_tracker);
-
-var _logger = __webpack_require__(/*! ./logger */ 684);
-
-var logger = _interopRequireWildcard(_logger);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-var factory = exports.factory = function factory() {
-  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  var trackSession = options.trackSession || typeof options.trackSession === 'undefined';
-
-  if (trackSession) {
-    tracker.track(logger.factory);
-  }
-
-  return logger.factory(options);
-};
-
-var setHost = exports.setHost = logger.setHost;
-
-exports.default = {
-  factory: factory,
-  setHost: logger.setHost
-};
-
-/***/ }),
-
-/***/ 682:
-/*!******************************************************************!*\
-  !*** ../node_modules/@wix/web-bi-logger/dist/src/lib/tracker.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.track = track;
-
-var _utils = __webpack_require__(/*! ./utils */ 374);
-
-var _navigator = __webpack_require__(/*! ./navigator */ 683);
-
-var _env = __webpack_require__(/*! ./env */ 133);
-
-var _browser = __webpack_require__(/*! ./browser */ 259);
-
-var IS_TRACKING = '__isTrackingBiBrowsingSession__';
-var ENDPOINT = 'p';
-var SOURCE = 19;
-var EVID = 3;
-
-function shouldTrack() {
-  return !(0, _env.isWebWorker)() && (0, _env.requestWindow)(function (window) {
-    return !window[IS_TRACKING];
-  });
-}
-
-function setIsTracking() {
-  return (0, _env.requestWindow)(function (window) {
-    return window[IS_TRACKING] = true;
-  });
-}
-
-function getLogger(loggerFactory) {
-  return loggerFactory({ endpoint: ENDPOINT, useBeacon: true }).setDefaults({ src: SOURCE, evid: EVID, vsi: (0, _utils.guid)() }).logger();
-}
-
-function trackBrowsingSession(loggerFactory) {
-  var logger = getLogger(loggerFactory);
-  var firstInSession = 1;
-
-  (0, _navigator.listen)(function (fromUrl, toUrl) {
-    var _requestWindow = (0, _env.requestWindow)(function (window) {
-      return { sr: (0, _browser.getDesktopSize)(window), wr: (0, _browser.getWindowSize)(window) };
-    }),
-        sr = _requestWindow.sr,
-        wr = _requestWindow.wr;
-
-    logger.log({ from: fromUrl, to: toUrl, fis: firstInSession, sr: sr, wr: wr });
-    firstInSession = 0;
-  });
-}
-
-/**
- * Sends a page view event on initial load and on every page switch
- * BI event definition: http://bo.wix.com/bi-catalog-webapp/#/sources/19/events/3
- */
-function track(loggerFactory) {
-  if (shouldTrack()) {
-    setIsTracking();
-    trackBrowsingSession(loggerFactory);
-  }
-}
-
-/***/ }),
-
-/***/ 683:
-/*!********************************************************************!*\
-  !*** ../node_modules/@wix/web-bi-logger/dist/src/lib/navigator.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.listen = listen;
-
-var _env = __webpack_require__(/*! ./env */ 133);
-
-function hook(obj, fnName, hook) {
-  if (!obj || !obj[fnName]) {
-    return;
-  }
-
-  var original = obj[fnName];
-  obj[fnName] = function () {
-    hook.apply(null, arguments);
-    return original.apply(obj, arguments);
-  };
-}
-
-function onLoad(cb) {
-  setTimeout(function () {
-    return (0, _env.requestWindow)(function (window) {
-      return cb(window.location.href);
-    });
-  });
-}
-
-function onPushState(cb) {
-  (0, _env.requestWindow)(function (_ref) {
-    var history = _ref.history;
-    return ['pushState', 'replaceState'].forEach(function (fnName) {
-      hook(history, fnName, function (_, __, url) {
-        return cb(url);
-      });
-    });
-  });
-}
-
-function onPopState(cb) {
-  (0, _env.requestWindow)(function (window) {
-    return window.addEventListener('popstate', function () {
-      return cb(window.location.href);
-    });
-  });
-}
-
-function listen(cb) {
-  (0, _env.requestWindow)(function (window) {
-    var fromUrl = window.document.referrer;
-
-    [onLoad, onPushState, onPopState].forEach(function (event) {
-      return event(function (toUrl) {
-        cb(fromUrl, toUrl);
-        fromUrl = toUrl;
-      });
-    });
-  });
-}
-
-/***/ }),
-
-/***/ 684:
-/*!*************************************************************!*\
-  !*** ../node_modules/@wix/web-bi-logger/dist/src/logger.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.setHost = exports.factory = undefined;
-
-var _wixBiLoggerClient = __webpack_require__(/*! @wix/wix-bi-logger-client */ 685);
-
-var _env = __webpack_require__(/*! ./lib/env */ 133);
-
-var env = _interopRequireWildcard(_env);
-
-var _publishers = __webpack_require__(/*! ./lib/publishers */ 692);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-var factory = exports.factory = function factory(options) {
-  return new _wixBiLoggerClient.BiLoggerFactory().addPublisher((0, _publishers.resolvePublisher)(options));
-};
-var setHost = exports.setHost = env.setHost;
-
-/***/ }),
-
-/***/ 685:
-/*!***************************************************************!*\
-  !*** ../node_modules/@wix/wix-bi-logger-client/dist/index.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var BiLoggerClientFactory = __webpack_require__(/*! ./bi-logger-factory */ 686);
-var BiLogger = __webpack_require__(/*! ./bi-logger */ 376);
-
-module.exports.BiLoggerFactory = BiLoggerClientFactory;
-module.exports.BiLogger = BiLogger;
-
-module.exports.factory = function () {
-  return new BiLoggerClientFactory();
-};
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ 686:
-/*!***************************************************************************!*\
-  !*** ../node_modules/@wix/wix-bi-logger-client/dist/bi-logger-factory.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var assert = __webpack_require__(/*! ./assert */ 375);
-var BiLogger = __webpack_require__(/*! ./bi-logger */ 376);
-
-var BiLoggerFactory = function () {
-  function BiLoggerFactory() {
-    _classCallCheck(this, BiLoggerFactory);
-
-    this._publishers = [];
-    this._validators = [];
-    this._defaults = {};
-    this._events = {};
-  }
-
-  _createClass(BiLoggerFactory, [{
-    key: 'addPublisher',
-    value: function addPublisher(publisher) {
-      assert.defined(publisher, 'Publisher must be provided');
-      assert.ok(typeof publisher === 'function', 'Expected a publisher function');
-      this._publishers.push(publisher);
-      return this;
-    }
-  }, {
-    key: 'addValidator',
-    value: function addValidator(validator) {
-      assert.defined(validator, 'Validator must be provided');
-      assert.ok((typeof validator === 'undefined' ? 'undefined' : _typeof(validator)) === 'object' && validator, 'Expected a validator object');
-      assert.ok(validator.execute && validator.match, 'Provided validator does not match the interface');
-      this._validators.push(validator);
-      return this;
-    }
-  }, {
-    key: 'setDefaults',
-    value: function setDefaults(defaults) {
-      assert.defined(defaults, 'Defaults must be provided');
-      assert.object(defaults, 'Defaults must be an object');
-      this._defaults = defaults;
-      return this;
-    }
-  }, {
-    key: 'updateDefaults',
-    value: function updateDefaults(defaults) {
-      assert.defined(defaults, 'Defaults must be provided');
-      assert.object(defaults, 'Defaults must be an object');
-      Object.assign(this._defaults, defaults);
-      return this;
-    }
-  }, {
-    key: 'setEvents',
-    value: function setEvents(events) {
-      assert.defined(events, 'Events must be provided');
-      assert.object(events, 'Events must be an object');
-      this._events = events;
-      return this;
-    }
-  }, {
-    key: 'setDefaultValueTimeout',
-    value: function setDefaultValueTimeout(defaultValueTimeout) {
-      assert.defined(defaultValueTimeout, 'Default Value Timeout must be provided');
-      this._defaultValueTimeout = defaultValueTimeout;
-      return this;
-    }
-  }, {
-    key: 'setDefaultContinueOnFail',
-    value: function setDefaultContinueOnFail(defaultContinueOnFail) {
-      assert.defined(defaultContinueOnFail, 'Default Continue On Fail must be provided');
-      this._defaultContinueOnFail = defaultContinueOnFail;
-      return this;
-    }
-  }, {
-    key: 'setPublisherFailHandler',
-    value: function setPublisherFailHandler(onPublisherFailHandler) {
-      assert.defined(onPublisherFailHandler, 'Publisher Fail Handler must be provided');
-      this._onPublisherFailHandler = onPublisherFailHandler;
-      return this;
-    }
-  }, {
-    key: 'logger',
-    value: function logger(context) {
-      return new BiLogger({
-        publishers: this._publishers,
-        validators: this._validators,
-        defaults: this._defaults,
-        events: this._events,
-        defaultValueTimeout: this._defaultValueTimeout,
-        defaultContinueOnFail: this._defaultContinueOnFail,
-        onPublisherFailHandler: this._onPublisherFailHandler
-      }, context);
-    }
-  }]);
-
-  return BiLoggerFactory;
-}();
-
-module.exports = BiLoggerFactory;
-//# sourceMappingURL=bi-logger-factory.js.map
-
-/***/ }),
-
-/***/ 687:
-/*!***************************************************************************!*\
-  !*** ../node_modules/@wix/wix-bi-logger-client/dist/utils/collections.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * This callback type is called `requestCallback` and is displayed as a global symbol.
- *
- * @callback iterateeCallback
- * @param {*} Value
- * @param {string} Key
- * @param {object} Original object
- */
-/**
- * Iterates over object values
- * @param {Object} collection
- * @param {iterateeCallback} iteratee
- * @return {Object} iterated object
- */
-module.exports.mapValues = function (collection, iteratee) {
-  if (!collection) {
-    return {};
-  }
-
-  return Object.keys(collection).reduce(function (acc, key) {
-    acc[key] = iteratee(collection[key], key, collection);
-    return acc;
-  }, {});
-};
-
-module.exports.filterValues = function (collection, iteratee) {
-  if (!collection) {
-    return {};
-  }
-
-  return Object.keys(collection).reduce(function (acc, key) {
-    var keep = iteratee(collection[key], key, collection);
-
-    if (keep) {
-      acc[key] = collection[key];
-    }
-
-    return acc;
-  }, {});
-};
-//# sourceMappingURL=collections.js.map
-
-/***/ }),
-
-/***/ 688:
-/*!***********************************************************************!*\
-  !*** ../node_modules/@wix/wix-bi-logger-client/dist/utils/promise.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * rejects original promise after specified timeout
- * @param {Promise<R>} promise Original promise
- * @param {string} [message] Additional message for timeout reject
- * @param {number} timeout Time for reject
- * @return {Promise<R>}
- */
-module.exports.timedPromise = function (promise, _ref) {
-  var message = _ref.message,
-      timeout = _ref.timeout;
-
-  var timeoutPromise = new Promise(function (resolve, reject) {
-    setTimeout(reject, timeout, message ? 'Timeout: ' + message : 'Timeout');
-  });
-  return Promise.race([promise, timeoutPromise]);
-};
-
-/**
- * Works like Promise.all expect uses object insetead of array.
- * @param {Object} promiseObject
- * @return {Promise} Promise wiht original keys and resolved values
- */
-module.exports.allAsObject = function (promiseObject) {
-  var keys = Object.keys(promiseObject);
-  return Promise.all(keys.map(function (key) {
-    return promiseObject[key];
-  })).then(function (resolved) {
-    return resolved.reduce(function (acc, value, i) {
-      acc[keys[i]] = value;
-      return acc;
-    }, {});
-  });
-};
-//# sourceMappingURL=promise.js.map
-
-/***/ }),
-
-/***/ 689:
-/*!*******************************************************************!*\
-  !*** ../node_modules/@wix/wix-bi-logger-client/dist/utils/log.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = {
-  error: function error() {
-    if (console && console.error) {
-      var _console;
-
-      (_console = console).error.apply(_console, arguments);
-    }
-  }
-};
-//# sourceMappingURL=log.js.map
-
-/***/ }),
-
-/***/ 690:
-/*!****************************************************************************!*\
-  !*** ../node_modules/@wix/wix-bi-logger-client/dist/utils/event-buffer.js ***!
-  \****************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var debounce = __webpack_require__(/*! ./debounce */ 691);
-
-var createEvent = function createEvent(event, startTime) {
-  return {
-    dt: Date.now() - startTime,
-    f: event
-  };
-};
-
-var createBatch = function createBatch(events, startTime) {
-  return {
-    dt: Date.now() - startTime,
-    e: events
-  };
-};
-
-var EventBuffer = function () {
-  function EventBuffer(debounceMs) {
-    var _this = this;
-
-    _classCallCheck(this, EventBuffer);
-
-    this._flushHandler = function (x) {
-      return x;
-    };
-    this._flushDebounced = debounce(function () {
-      return _this._flush();
-    }, debounceMs);
-
-    this._init();
-  }
-
-  _createClass(EventBuffer, [{
-    key: '_init',
-    value: function _init() {
-      var _this2 = this;
-
-      this._startTime = Date.now();
-      this._events = [];
-      this._resolve = null;
-      this._promise = new Promise(function (resolve) {
-        return _this2._resolve = resolve;
-      });
-    }
-  }, {
-    key: '_flush',
-    value: function _flush() {
-      var events = this._events;
-      var resolve = this._resolve;
-      var startTime = this._startTime;
-
-      this._init();
-
-      this._flushHandler(createBatch(events, startTime)).then(resolve);
-    }
-  }, {
-    key: 'onFlush',
-    value: function onFlush(handler) {
-      this._flushHandler = handler;
-
-      return this;
-    }
-  }, {
-    key: 'feed',
-    value: function feed(event) {
-      this._events.push(createEvent(event, this._startTime));
-      this._flushDebounced();
-
-      return this._promise;
-    }
-  }]);
-
-  return EventBuffer;
-}();
-
-module.exports = EventBuffer;
-//# sourceMappingURL=event-buffer.js.map
-
-/***/ }),
-
-/***/ 691:
-/*!************************************************************************!*\
-  !*** ../node_modules/@wix/wix-bi-logger-client/dist/utils/debounce.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-// Returns a function, that, as long as it continues to be invoked, will not
-// be triggered. The function will be called after it stops being called for
-// N milliseconds. If `immediate` is passed, trigger the function on the
-// leading edge, instead of the trailing.
-function debounce(func, wait, immediate) {
-  var timeout = void 0;
-
-  // This is the function that is actually executed when
-  // the DOM event is triggered.
-  return function () {
-    // Store the context of this and any parameters passed to executedFunction
-    var context = this;
-    var args = arguments;
-
-    // The function to be called after
-    // the debounce time has elapsed
-    var later = function later() {
-      // null timeout to indicate the debounce ended
-      timeout = null;
-
-      // Call function now if you did not on the leading end
-      if (!immediate) {
-        func.apply(context, args);
-      }
-    };
-
-    // Determine if you should call the function
-    // on the leading or trail end
-    var callNow = immediate && !timeout;
-
-    // This will reset the waiting every function execution.
-    // This is the step that prevents the function from
-    // being executed because it will never reach the
-    // inside of the previous setTimeout
-    clearTimeout(timeout);
-
-    // Restart the debounce waiting period.
-    // setTimeout returns a truthy value (it differs in web vs node)
-    timeout = setTimeout(later, wait);
-
-    // Call immediately if you're dong a leading
-    // end execution
-    if (callNow) {
-      func.apply(context, args);
-    }
-  };
-}
-
-module.exports = debounce;
-//# sourceMappingURL=debounce.js.map
-
-/***/ }),
-
-/***/ 692:
-/*!*********************************************************************!*\
-  !*** ../node_modules/@wix/web-bi-logger/dist/src/lib/publishers.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.imagePublisher = imagePublisher;
-exports.beaconPublisher = beaconPublisher;
-exports.fetchPublisher = fetchPublisher;
-exports.resolvePublisher = resolvePublisher;
-
-var _utils = __webpack_require__(/*! ./utils */ 374);
-
-var _env = __webpack_require__(/*! ./env */ 133);
-
-var _transport = __webpack_require__(/*! ./transport */ 693);
-
-function imagePublisher() {
-  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return function imagePublisher(params) {
-    var context = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    // eslint-disable-line func-names
-    var url = (0, _utils.buildUrl)(options, params, context);
-    return (0, _transport.pixelTransport)(url, context.image);
-  };
-}
-
-function beaconPublisher() {
-  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return function beaconPublisher(params) {
-    var context = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    // eslint-disable-line func-names
-    var url = (0, _utils.buildUrl)(options, params, context);
-    return (0, _transport.beaconTransport)(url).catch(function () {
-      return (0, _transport.pixelTransport)(url, context.image);
-    });
-  };
-}
-
-function fetchPublisher() {
-  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return function fetchPublisher(params) {
-    var context = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    // eslint-disable-line func-names
-    var url = (0, _utils.buildUrl)(options, params, context);
-    return (0, _transport.fetchTransport)(url);
-  };
-}
-
-function resolvePublisher() {
-  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  var publisher = void 0;
-
-  if ((0, _env.isWebWorker)()) {
-    publisher = fetchPublisher;
-  } else if (typeof options.useBeacon === 'undefined' || options.useBeacon) {
-    publisher = beaconPublisher;
-  } else {
-    publisher = imagePublisher;
-  }
-
-  publisher = publisher(options);
-
-  /* eslint-disable camelcase */
-  return function (params, context) {
-    return publisher(_extends({}, params, (0, _utils.getCookieParams)({
-      _client_id: { name: '_wixCIDX' },
-      _uuid: { name: '_wixUIDX', transform: function transform(value) {
-          return typeof value === 'string' && value.split('|')[1];
-        } }
-    })), context);
-  };
-}
-
-/***/ }),
-
-/***/ 693:
-/*!********************************************************************!*\
-  !*** ../node_modules/@wix/web-bi-logger/dist/src/lib/transport.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.beaconTransport = beaconTransport;
-exports.pixelTransport = pixelTransport;
-exports.fetchTransport = fetchTransport;
-
-var _browser = __webpack_require__(/*! ./browser */ 259);
-
-function beaconTransport(url) {
-  return new Promise(function (resolve, reject) {
-    return (0, _browser.sendBeacon)(url) ? resolve() : reject(new Error('Transport Error: Cannot send bi using beacons'));
-  });
-}
-
-function pixelTransport(url, image) {
-  return new Promise(function (resolve, reject) {
-    var biImage = image || new window.Image(0, 0);
-    biImage.onload = function () {
-      return resolve();
-    };
-    biImage.onerror = function () {
-      return reject(new Error('Transport Error: Cannot send bi using pixelTransport'));
-    };
-    biImage.src = url;
-  });
-}
-
-function fetchTransport(url) {
-  return fetch(url, { credentials: 'include' }).then(function (response) {
-    if (!response.ok) {
-      throw Error('Transport Error: Cannot send bi using fetch. Status: ' + response.status);
-    }
-  });
-}
-
-/***/ }),
-
-/***/ 694:
-/*!***********************************************************************!*\
-  !*** ../node_modules/@wix/bi-logger-video-platform/dist/src/index.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __assign = (this && this.__assign) || Object.assign || function(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-        s = arguments[i];
-        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-            t[p] = s[p];
-    }
-    return t;
-};
-var __rest = (this && this.__rest) || function (s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) if (e.indexOf(p[i]) < 0)
-            t[p[i]] = s[p[i]];
-    return t;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-/**
-* @typedef {string} Url
-*/
-/**
-* @typedef {string} GUID
-*/
-/**
-* @typedef {number} DateTime
-*/
-var dummy;
-var defaultConfig = { endpoint: 'video-platform' };
-var init = function (webOrMobileLogger) { return function (userConfig) {
-    if (userConfig === void 0) { userConfig = {}; }
-    var defaults = userConfig.defaults, restOfConfig = __rest(userConfig, ["defaults"]);
-    var config = __assign({}, defaultConfig, restOfConfig);
-    var factoryInstance = typeof webOrMobileLogger.factory === 'function' ? webOrMobileLogger.factory(config) : webOrMobileLogger;
-    var logger = getLogger(factoryInstance);
-    return defaults ? logger.util.updateDefaults(defaults) : logger;
-}; };
-exports.initCustomLogger = function (factoryInstance) { return getLogger(factoryInstance); };
-var getLogger = function (biLoggerClientFactoryInstance) {
-    return new Logger(biLoggerClientFactoryInstance);
-};
-var Logger = /** @class */ (function () {
-    function Logger(biLoggerClientFactoryInstance) {
-        var _this = this;
-        this.biLoggerClientFactoryInstance = biLoggerClientFactoryInstance;
-        this.util = {
-            updateDefaults: function (defaults) {
-                _this.biLoggerClientFactoryInstance.updateDefaults(defaults);
-                return _this;
-            },
-            log: function (logParams) {
-                return _this.bi.log(logParams);
-            }
-        };
-        biLoggerClientFactoryInstance
-            .updateDefaults({ src: 71 });
-        this.bi = biLoggerClientFactoryInstance.logger({ endpoint: 'video-platform' });
-    }
-    ;
-    /**
-    * @typedef {Object} playableProgressInfoParams
-    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
-    * @property {number} currentBitrate - current_bitrate
-    * @property {number} currentTimeFrame - ms
-    * @property {string} deliveryType - delivery_type
-    * @property {string} playedRange - [[0, 15], [33, 55], [100, 140]]
-    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
-    **/
-    /**
-     * Name: playable.progress.info. Evid: 904.
-     * Event description: playable.progress.info (every 5 sec event).
-    
-     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
-     *
-     * currentBitrate - Type: numeric. Desc: current_bitrate
-     *
-     * currentTimeFrame - Type: numeric. Desc: ms
-     *
-     * deliveryType - Type: string. Desc: delivery_type
-     *
-     * playedRange - Type: string. Desc: [[0, 15], [33, 55], [100, 140]]
-     *
-     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
-     * @param {playableProgressInfoParams} params The parameters for this event.
-     * @return {Promise}
-    **/
-    Logger.prototype.playableProgressInfo = function (params) {
-        return this.bi.log(__assign({ evid: 904 }, params));
-    };
-    /**
-    * @typedef {Object} playablePlayStartedParams
-    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
-    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
-    **/
-    /**
-     * Name: playable.play.started. Evid: 903.
-     * Event description: playable.play.started.
-    
-     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
-     *
-     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
-     * @param {playablePlayStartedParams} params The parameters for this event.
-     * @return {Promise}
-    **/
-    Logger.prototype.playablePlayStarted = function (params) {
-        return this.bi.log(__assign({ evid: 903 }, params));
-    };
-    /*event 900 has no function name set, please set one in BI Catalog.*/
-    /**
-    * @typedef {Object} playablePlayResumedParams
-    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
-    * @property {number} currentTimeFrame - ms
-    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
-    **/
-    /**
-     * Name: playable.play.resumed. Evid: 906.
-     * Event description: playable.play.resumed.
-    
-     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
-     *
-     * currentTimeFrame - Type: numeric. Desc: ms
-     *
-     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
-     * @param {playablePlayResumedParams} params The parameters for this event.
-     * @return {Promise}
-    **/
-    Logger.prototype.playablePlayResumed = function (params) {
-        return this.bi.log(__assign({ evid: 906 }, params));
-    };
-    /**
-    * @typedef {Object} playablePlayRequestedParams
-    * @property {string} bitrateJson - json of all bitrades ([800,1000,10000])
-    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
-    * @property {string} customDataJson - custom data from different products
-    * @property {boolean} isAutoplay - is_autoplay
-    * @property {boolean} isTriggeredByUser - is_triggered_by_user
-    * @property {string} product - (wix_video, wix_video_embed, wix_video_live, editor_player)
-    * @property {boolean} replay - is replayed
-    * @property {number} videoDuration - ms
-    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
-    * @property {string} videoType - HLS, MP4 etc
-    **/
-    /**
-     * Name: playable.play.requested. Evid: 901.
-     * Event description: Play request.
-    
-     * bitrateJson - Type: string. Desc: json of all bitrades ([800,1000,10000])
-     *
-     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
-     *
-     * customDataJson - Type: string. Desc: custom data from different products
-     *
-     * isAutoplay - Type: bool. Desc: is_autoplay
-     *
-     * isTriggeredByUser - Type: bool. Desc: is_triggered_by_user
-     *
-     * product - Type: string. Desc: (wix_video, wix_video_embed, wix_video_live, editor_player)
-     *
-     * replay - Type: bool. Desc: is replayed
-     *
-     * videoDuration - Type: numeric. Desc: ms
-     *
-     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
-     *
-     * videoType - Type: string. Desc: HLS, MP4 etc
-     * @param {playablePlayRequestedParams} params The parameters for this event.
-     * @return {Promise}
-    **/
-    Logger.prototype.playablePlayRequested = function (params) {
-        return this.bi.log(__assign({ evid: 901 }, params));
-    };
-    /**
-    * @typedef {Object} playablePlayFinishedParams
-    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
-    * @property {string} playedRange - [[0, 15], [33, 55], [100, 140]]
-    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
-    **/
-    /**
-     * Name: playable.play.finished. Evid: 907.
-     * Event description: playable.play.finished.
-    
-     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
-     *
-     * playedRange - Type: string. Desc: [[0, 15], [33, 55], [100, 140]]
-     *
-     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
-     * @param {playablePlayFinishedParams} params The parameters for this event.
-     * @return {Promise}
-    **/
-    Logger.prototype.playablePlayFinished = function (params) {
-        return this.bi.log(__assign({ evid: 907 }, params));
-    };
-    /**
-    * @typedef {Object} playablePlayPausedParams
-    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
-    * @property {number} currentTimeFrame - ms
-    * @property {string} playedRange - [[0, 15], [33, 55], [100, 140]]
-    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
-    **/
-    /**
-     * Name: playable.play.paused. Evid: 905.
-     * Event description: playable.play.paused.
-    
-     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
-     *
-     * currentTimeFrame - Type: numeric. Desc: ms
-     *
-     * playedRange - Type: string. Desc: [[0, 15], [33, 55], [100, 140]]
-     *
-     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
-     * @param {playablePlayPausedParams} params The parameters for this event.
-     * @return {Promise}
-    **/
-    Logger.prototype.playablePlayPaused = function (params) {
-        return this.bi.log(__assign({ evid: 905 }, params));
-    };
-    /**
-    * @typedef {Object} playablePlayAnomaliesParams
-    * @property {string} anomalyName - [[0, 15], [33, 55], [100, 140]]
-    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
-    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
-    **/
-    /**
-     * Name: playable.play.anomalies. Evid: 908.
-     * Event description: playable.play.anomalies.
-    
-     * anomalyName - Type: string. Desc: [[0, 15], [33, 55], [100, 140]]
-     *
-     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
-     *
-     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
-     * @param {playablePlayAnomaliesParams} params The parameters for this event.
-     * @return {Promise}
-    **/
-    Logger.prototype.playablePlayAnomalies = function (params) {
-        return this.bi.log(__assign({ evid: 908 }, params));
-    };
-    /**
-    * @typedef {Object} playableErrorParams
-    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
-    * @property {number} currentTimeFrame - current_time_frame
-    * @property {string} errorMessage - msg
-    * @property {string} errorType - error
-    * @property {string} product - product
-    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
-    * @property {string} videoType - HLS, MP4 etc
-    **/
-    /**
-     * Name: playable.error. Evid: 909.
-     * Event description: error event.
-    
-     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
-     *
-     * currentTimeFrame - Type: numeric. Desc: current_time_frame
-     *
-     * errorMessage - Type: string. Desc: msg
-     *
-     * errorType - Type: string. Desc: error
-     *
-     * product - Type: string. Desc: product
-     *
-     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
-     *
-     * videoType - Type: string. Desc: HLS, MP4 etc
-     * @param {playableErrorParams} params The parameters for this event.
-     * @return {Promise}
-    **/
-    Logger.prototype.playableError = function (params) {
-        return this.bi.log(__assign({ evid: 909 }, params));
-    };
-    /**
-    * @typedef {Object} playablePlayAbortedParams
-    * @property {string} correlationId - one view id (video_id + view_id (random smthng))
-    * @property {string} reasonMessage - reason
-    * @property {string} videoId - video_id (as backend) or videoUrl if not passed
-    **/
-    /**
-     * Name: playable.play.aborted. Evid: 902.
-     * Event description: Playable.play.aborted (after aborted you should change the correlation id).
-    
-     * correlationId - Type: string. Desc: one view id (video_id + view_id (random smthng))
-     *
-     * reasonMessage - Type: string. Desc: reason
-     *
-     * videoId - Type: string. Desc: video_id (as backend) or videoUrl if not passed
-     * @param {playablePlayAbortedParams} params The parameters for this event.
-     * @return {Promise}
-    **/
-    Logger.prototype.playablePlayAborted = function (params) {
-        return this.bi.log(__assign({ evid: 902 }, params));
-    };
-    return Logger;
-}());
-exports.Logger = Logger;
-exports.default = init;
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ 695:
-/*!*********************************************!*\
-  !*** ./components/VideoPlayer/bi/events.js ***!
-  \*********************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var biEvents = exports.biEvents = {
-  PLAY_REQUESTED: {
-    eventId: 397,
-    adapter: 'ugc-viewer',
-    params: {
-      playSource: 'playSource',
-      videoId: 'videoId',
-      videoSource: 'videoSource',
-      site_id: 'site_id'
-    }
-  },
-  PLAY_START: {
-    eventId: 398,
-    adapter: 'ugc-viewer',
-    params: {
-      playSource: 'playSource',
-      videoId: 'videoId',
-      videoSource: 'videoSource',
-      site_id: 'site_id'
-    }
-  },
-  PLAY_DONE: {
-    eventId: 399,
-    adapter: 'ugc-viewer',
-    params: {
-      videoId: 'videoId',
-      videoSource: 'videoSource',
-      site_id: 'site_id'
-    }
-  },
-  ERROR: {
-    eventId: 420,
-    adapter: 'ugc-viewer',
-    params: {
-      errorMessage: 'errorMessage',
-      playSource: 'playSource',
-      videoId: 'videoId',
-      videoSource: 'videoSource',
-      site_id: 'site_id'
-    }
-  }
-};
-
-/***/ }),
-
-/***/ 696:
-/*!******************************************************************!*\
-  !*** ./components/VideoPlayer/behaviors/videoPlayerBehaviors.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var videoPlayerBehaviors = exports.videoPlayerBehaviors = {
-  togglePlay: { methodName: 'togglePlay' },
-  play: { methodName: 'play' },
-  playPreview: { methodName: 'play' },
-  pause: { methodName: 'pause' },
-  stop: { methodName: 'stop' },
-  mute: { methodName: 'mute' },
-  unmute: { methodName: 'unmute' },
-  seek: { methodName: 'seek', params: ['time'] },
-  setVolume: { methodName: 'setVolume', params: ['volume'] }
-};
-
-/***/ }),
-
-/***/ 697:
-/*!**************************************************!*\
-  !*** ./components/VideoPlayer/playButtonIcon.js ***!
-  \**************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.playButtonIcon = undefined;
-
-var _react = __webpack_require__(/*! react */ 0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var playButtonIcon = exports.playButtonIcon = _react2.default.createElement(
-  "svg",
-  { role: "presentation", "aria-hidden": "true", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 36 36", preserveAspectRatio: "xMidYMin slice", width: "100%" },
-  _react2.default.createElement(
-    "g",
-    { fill: "none", fillRule: "evenodd" },
-    _react2.default.createElement("circle", { cx: "18", cy: "18", r: "17", stroke: "#fff", strokeWidth: "2" }),
-    _react2.default.createElement("path", { fill: "#fff", d: "M23.935 17.708l-10.313 6.033V11.676z" })
-  )
-);
-
-/***/ }),
-
-/***/ 8:
-/*!*********************************************!*\
-  !*** ../node_modules/fbjs/lib/invariant.js ***!
-  \*********************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
-
-
-
-/**
- * Use invariant() to assert state which your program assumes to be true.
- *
- * Provide sprintf-style format (only %s is supported) and arguments
- * to provide information about what broke and what you were
- * expecting.
- *
- * The invariant message will be stripped in production, but the invariant
- * will remain to ensure logic does not differ in production.
- */
-
-var validateFormat = function validateFormat(format) {};
-
-if (false) {}
-
-function invariant(condition, format, a, b, c, d, e, f) {
-  validateFormat(format);
-
-  if (!condition) {
-    var error;
-    if (format === undefined) {
-      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
-    } else {
-      var args = [a, b, c, d, e, f];
-      var argIndex = 0;
-      error = new Error(format.replace(/%s/g, function () {
-        return args[argIndex++];
-      }));
-      error.name = 'Invariant Violation';
-    }
-
-    error.framesToPop = 1; // we don't care about invariant's own frame
-    throw error;
-  }
-}
-
-module.exports = invariant;
 
 /***/ })
 
