@@ -1,0 +1,14 @@
+@inproceedings{weit:hal-02559444,
+  TITLE = {{A Methodology for Supersonic Commercial Market Estimation and Environmental Impact Evaluation}},
+  AUTHOR = {Weit, Colby J. and Wen , Jiajie (Terry)  and Anand, Akshay and Mayakonda, Madhukar P. and Zaidi, Turab A.  and Mavris, Dimitri N.},
+  URL = {https://hal.archives-ouvertes.fr/hal-02559444},
+  BOOKTITLE = {{AerospaceEurope Conference 2020}},
+  ADDRESS = {Bordeaux, France},
+  HAL_LOCAL_REFERENCE = {ROBOTICS},
+  YEAR = {2020},
+  MONTH = Feb,
+  KEYWORDS = {Commercial Supersonic Transport ; Fuel Burn ; CO2 ; Forecasting ; Market Estimation ; Environmental Impact},
+  HAL_ID = {hal-02559444},
+  HAL_VERSION = {v1},
+}
+
