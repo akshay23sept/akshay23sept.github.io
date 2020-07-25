@@ -1,0 +1,10 @@
+@inproceedings{Mayakonda2020,
+  doi = {10.2514/6.2020-3255},
+  url = {https://doi.org/10.2514/6.2020-3255},
+  year = {2020},
+  month = jun,
+  publisher = {American Institute of Aeronautics and Astronautics},
+  author = {Madhukar Mayakonda and Cedric Y. Justin and Akshay Anand and Colby J. Weit and Jiajie Wen and Turab Zaidi and Dimitri Mavris},
+  title = {A Top-Down Methodology for Global Urban Air Mobility Demand Estimation},
+  booktitle = {{AIAA} {AVIATION} 2020 {FORUM}}
+}
