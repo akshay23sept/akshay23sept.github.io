@@ -475,12 +475,32 @@
         <p align="right"><font size="2">
         <!  Last Modified: 25 July, 2020 <br>
           Template credits to <a href="https://github.com/aakash30jan"> this </a> and <a href="https://github.com/jonbarron/jonbarron_website">this</a>. 
-<br>
-
-          </font>
-        </p>
+ <br> 
+<script>
+   <-- var oldWrite = document.write; // Save original function. 
+    var myValue = "";
+    document.write = function(str) {myValue += str;}; // Overwrite function.
+</script>
+<script type="text/javascript" src="https://free-hit-counters.net/count/659v">  </script>
+<script>
+    document.write = oldWrite; // Restore old function.
+    // alert(myValue);
+    var res = myValue.replace('<a href="https://free-hit-counters.net/count/659v" style="text-decoration: none;">', " ");
+    var res = res.replace('</a>', " ");
+    var res = res.replace('Total', "Today");
+    document.write(" " , res);
+</script>
+    <br>
+    
+    <!---- <script type='text/javascript' src='https://whomania.com/ctr?id=421f95ae542429523e8327458b3c284d13968609'></script>   -->
+    
+  </p>
+      <p hidden>
+          <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=TMh0ff663yxNgayJTr29wqOcD4dxcNw3U3xvMZqpxT8&cl=ffffff&w=a"></script>
+   </p>
         </td>
       </tr>
+   
       </tbody></table>
 
     </td>
