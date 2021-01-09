@@ -1,0 +1,10 @@
+@inproceedings{Anand2021,
+  doi = {10.2514/6.2021-1516},
+  url = {https://doi.org/10.2514/6.2021-1516},
+  year = {2021},
+  month = Jan,
+  publisher = {American Institute of Aeronautics and Astronautics},
+  author = {Akshay Anand and Harleen Kaur and Cedric Y. Justin and Turab Zaidi and Dimitri Mavris},
+  title = {A Scenario-Based Evaluation of Global Urban Air Mobility Demand},
+  booktitle = {{AIAA} {Scitech} 2021 {FORUM}}
+}
