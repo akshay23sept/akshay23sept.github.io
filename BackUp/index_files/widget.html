@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0834)https://weather.codev.wixapps.net/widget?cacheKiller=1566757491974&compId=comp-jn3aicx9&currency=EUR&deviceType=desktop&height=272&instance=eJQ1903D21fqmnwPqE5Tw9x2OSX8BQ6RA4ym97NdVNM.eyJpbnN0YW5jZUlkIjoiNjgwMjU0ZTgtM2Y4Zi00NmRiLWIzMTAtY2MxOGUyMzM1YTQ3IiwiYXBwRGVmSWQiOiIxM2VlMTEyYy03YWNhLTg1MzAtOTA5Yi1jYTVmZDcwMzliZjgiLCJtZXRhU2l0ZUlkIjoiYTJmOTVmOTEtNDcxOS00NzYxLTgwNjMtZWYwMGE5MjQ2ZDhhIiwic2lnbkRhdGUiOiIyMDE5LTA4LTI1VDIxOjAyOjMyLjAyN1oiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6IjQ2LjE5My42Ny44Ny8zMzExNiIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiJjZDYyODBmYi04Y2RlLTQ2MGYtODA0My0xNzQ4ZTk5Y2IxMzAiLCJiaVRva2VuIjoiY2FmYjBiNzktNzg5Ni0wMWJhLTMzNzMtMjMxODRiMTczN2NkIiwic2l0ZU93bmVySWQiOiI0NGM5MDM2OS1mYjFiLTQ3YTgtODk1ZS01NWI4ZmE3NjcyYjAifQ&locale=en&pageId=c1dmp&siteRevision=361&tz=Europe%2FParis&viewMode=site&width=224#/ -->
+<!-- saved from url=(0770)https://weather.codev.wixapps.net/widget?cacheKiller=1594563847026&compId=comp-jn3aicx9&currency=EUR&deviceType=desktop&height=53&instance=QXI5NHihaQJNaKpttXrq7RbwWkqc5HTlgJah_Xx2khQ.eyJpbnN0YW5jZUlkIjoiNjgwMjU0ZTgtM2Y4Zi00NmRiLWIzMTAtY2MxOGUyMzM1YTQ3IiwiYXBwRGVmSWQiOiIxM2VlMTEyYy03YWNhLTg1MzAtOTA5Yi1jYTVmZDcwMzliZjgiLCJtZXRhU2l0ZUlkIjoiYTJmOTVmOTEtNDcxOS00NzYxLTgwNjMtZWYwMGE5MjQ2ZDhhIiwic2lnbkRhdGUiOiIyMDIwLTA3LTEyVDE0OjI1OjM5LjE4NVoiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6ImZmMTZhY2IwLWQ3MzItNGMyYS04OTZkLWI3ODY5NWNiNTI4NiIsImJpVG9rZW4iOiJjYWZiMGI3OS03ODk2LTAxYmEtMzM3My0yMzE4NGIxNzM3Y2QiLCJzaXRlT3duZXJJZCI6IjQ0YzkwMzY5LWZiMWItNDdhOC04OTVlLTU1YjhmYTc2NzJiMCJ9&locale=en&pageId=c1dmp&siteRevision=421&tz=Europe%2FParis&viewMode=site&viewerCompId=comp-jn3aicx9&width=184#/ -->
 <html class="no-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
 
     
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./style(1).css">
     <link rel="stylesheet" href="./style(2).css">
 
-    <link rel="stylesheet" href="./4f484499.main_widget.css">
+    <link rel="stylesheet" href="./53d2cf0d428025b3.main_widget.css">
 
     <!-- Wix Styles -->
     <style wix-style="">
@@ -26,7 +26,6 @@
         #widget_container .location .condition,
         #widget_container .forecast_list ul li,
         #widget_container .forecast_list ul li .day,
-        #premium_notification, #premium_notification_preview,
         .link a {
             color: rgba(255,255,255,1) !important;
             style.widgetFontFamily !important;
@@ -34,7 +33,7 @@
         }
         #widget_container .main-weather-icon svg path {
             /* color: rgba(255,255,255,1) !important; */
-            fill: rgba(255,255,255,1) !important;    
+            fill: rgba(255,255,255,1) !important;
         }
         #widget_container .details {
             font-size: 18px !important;
@@ -76,10 +75,6 @@
                 font-size: 18px !important;
             }
         }
-        #premium_notification, #premium_notification_preview {
-            font-size: 14px !important;
-            line-height: 18px !important;
-        }
         #widget_container .temp_toggle  {
             font-size: 14px !important;
         }
@@ -109,7 +104,7 @@
             /*background-color: red;*/
             color: white;
         }
-        
+
         .daily-layout {
             border-radius: style.dailyLayoutCornerRadiuspx !important;
             background-color: #5569DC !important;
@@ -119,13 +114,13 @@
         }
 
         .daily-layout .main-weather-icon svg path {
-            fill: #FFFFFF !important;            
+            fill: #FFFFFF !important;
         }
 
         .daily-layout .temp-wrapper span.daily-tmp {
             style.dailyWidgetDegrees !important;
         }
-        
+
         .daily-layout .ticker,
         .daily-layout .ticker .daily-condition,
         .daily-layout .ticker .daily-location {
@@ -135,7 +130,7 @@
         }
 
 
-        
+
 
 
     </style>
@@ -159,7 +154,7 @@
 </style><script src="./focus-visible.min.js" id="dynamic_script_FOCUS_VISIBLE"></script></head>
 <body id="widgetBody" ng-app="weatherApp.widget" wa-resize="" class="ng-scope js-focus-visible">
 
-<!-- uiView:  --><div class="app ng-scope" ui-view=""><!-- ngIf: LC.settingsModel.layout.type === 'weekly' --><div data-ng-if="LC.settingsModel.layout.type === &#39;weekly&#39;" id="widget_container" class="days_3 chrome no_details no_toggle night_gradient" data-ng-class="{&#39;russian&#39;                              : (LC.settingsModel.language == &#39;Ru&#39; || LC.settingsModel.language == &#39;Pl&#39;),
+<!-- uiView:  --><div class="app ng-scope" ui-view=""><!-- ngIf: LC.settingsModel.layout.type === 'weekly' --><div data-ng-if="LC.settingsModel.layout.type === &#39;weekly&#39;" id="widget_container" class="days_3 chrome no_details no_toggle" data-ng-class="{&#39;russian&#39;                              : (LC.settingsModel.language == &#39;Ru&#39; || LC.settingsModel.language == &#39;Pl&#39;),
                     &#39;no_details&#39;                            : !LC.settingsModel.showDetailedInformation,
                     &#39;no_icon&#39;                               : LC.settingsModel.design.iconSet == 0,
                     &#39;no_toggle&#39;                             : !LC.settingsModel.showTempUnitSelector,
@@ -168,7 +163,6 @@
                     &#39;remove_bg_color_gradient_only_none&#39;    : LC.opacity&lt;=0.04 &amp;&amp; LC.opacity&gt;=0 &amp;&amp; LC.settingsModel.design.backgroundSet==0,
                     &#39;remove_bg_color_forecast&#39;              : LC.settingsModel.design.backgroundSet&gt;0,
                     &#39;bg_image&#39;                              : LC.settingsModel.design.backgroundSet &gt; 0,
-                    &#39;premium_notification_on&#39;               : LC.showNotification,
                     &#39;beach_set&#39;                             : LC.settingsModel.design.backgroundSet == 1,
                     &#39;night_gradient&#39;                        : ( LC.settingsModel.design.backgroundSet == 0 &amp;&amp; LC.weatherData.dayTime == &#39;night&#39; &amp;&amp; LC.opacity &gt; 0.5),
                     &#39;night_middle_gradient&#39;                 : ( LC.settingsModel.design.backgroundSet == 0 &amp;&amp; LC.weatherData.dayTime == &#39;night&#39; &amp;&amp; LC.opacity &lt;= 0.5 ),
@@ -177,7 +171,7 @@
                             (LC.settingsModel.design.color.selection == 2 &amp;&amp; {&#39;background-image&#39;: LC.forecastBgValues[6]}))" wa-bg-image="" wa-weather-model="LC.weatherData" wa-assets="LC.assets.backgrounds" wa-data-model="LC.settingsModel.design.backgroundSet" style="background-color: rgb(85, 105, 220);">
 
     <!-- Animation section -->
-    <div id="animation_block" class="animation ng-isolate-scope" data-day-time="LC.weatherData.dayTime" data-config="LC.weatherData.mapping.animation" data-animation-set="LC.settingsModel.design.animation" data-apply-animation="!LC.isFallbackApplied">
+    <div id="animation_block" class="animation ng-isolate-scope sun_0" data-day-time="LC.weatherData.dayTime" data-config="LC.weatherData.mapping.animation" data-animation-set="LC.settingsModel.design.animation">
 
     <!-- Cloud animations -->
     <div data-ng-show="currentAnimation == &#39;cloud_1&#39;" class="ng-hide">
@@ -267,41 +261,38 @@
 
 </div>
 
-    <!-- ngIf: LC.viewMode==='editor' -->
-    <!-- ngIf: LC.viewMode==='preview' -->
-
-    <div class="widget_wrapper" aria-label="it’s 24 degrees celsius and Clear  in Toulouse">
+    <div class="widget_wrapper" aria-label="it’s 25 degrees celsius and Sunny  in Metz">
         <!-- location and data -->
         <div class="location">
             <h3 class="ng-binding">
                 <!-- {{ !LC.settingsModel.location.showLocation ? LC.settingsModel.location.fullAddress : LC.settingsModel.location.locationWidget }}<span data-ng-if="LC.settingsModel.location.locationWidget && LC.settingsModel.location.displayCountry">,</span>
                 {{ LC.settingsModel.location.showLocation ? LC.settingsModel.location.fullAddress : LC.settingsModel.location.displayCountry }}
                 <br> -->
-                Toulouse, France
+                Metz, France
                 <br>
-                Sun, Aug 26, 2019
+                Sun, Jul 12, 2020
             </h3>
              <span class="main_icon main-weather-icon ng-isolate-scope" assets="LC.assets.icons" model="LC.weatherData.mapping.icon" day-time="LC.weatherData.dayTime">
     <!-- ngInclude: iconUrl --><span ng-include="iconUrl" class="ng-scope"><!--?xml version="1.0" encoding="UTF-8"?-->
-<svg width="21px" height="43px" viewBox="0 0 21 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="ng-scope">
+<svg width="29px" height="43px" viewBox="0 0 29 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="ng-scope">
     <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-    <title>ClearSkyNightO </title>
+    <title>ClearSkyDayO </title>
     <desc>Created with Sketch.</desc>
-    <g id="ClearSkyNightO-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M8.13838814,12.1630216 C6.49605756,12.5911074 5.00975839,13.4412779 3.80151519,14.64852 C0.0667634385,18.3842693 0.0667634385,24.4624883 3.80151519,28.1982375 C7.53726715,31.9339868 13.6154906,31.9339868 17.3512426,28.1982375 C18.5594858,26.9909954 19.4096569,25.5036971 19.8367429,23.8613677 C16.5710855,24.5935146 13.1623994,23.6193192 10.7719182,21.2288398 C8.38043686,18.8373601 7.40824117,15.4286765 8.13838814,12.1630216 M10.576879,32 C7.86733358,32 5.15778819,30.9687932 3.09437285,28.9053794 C-1.03145762,24.7805521 -1.03145762,18.0672057 3.09437285,13.9413782 C4.6376835,12.3990689 6.59207689,11.3848655 8.74751075,11.0077899 C8.91954538,10.9767836 9.09458061,11.0397963 9.20960376,11.1708226 C9.32562712,11.302849 9.36363477,11.4838853 9.3106241,11.6509188 C8.32242519,14.7965497 9.15359249,18.1962316 11.4790606,20.5216979 C13.8045287,22.8471643 17.2032128,23.6763306 20.3498461,22.6891326 C20.5158796,22.6351218 20.6979162,22.6751298 20.8289426,22.7901529 C20.9599689,22.905176 21.0219814,23.0812113 20.9929756,23.2522456 C20.6158997,25.4076779 19.6016955,27.36307 18.0583849,28.9053794 C15.9949696,30.9687932 13.2854242,32 10.576879,32" id="Fill-2" fill="#000000"></path>
+    <g id="ClearSkyDayO-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M14.5205,28.0444 C18.1115,28.0444 21.0335,25.1224 21.0335,21.5314 C21.0335,17.9404 18.1115,15.0184 14.5205,15.0184 C10.9285,15.0184 8.0065,17.9404 8.0065,21.5314 C8.0065,25.1224 10.9285,28.0444 14.5205,28.0444 Z M14.5205,14.0184 C18.6635,14.0184 22.0335,17.3884 22.0335,21.5314 C22.0335,25.6734 18.6635,29.0444 14.5205,29.0444 C10.3775,29.0444 7.0065,25.6734 7.0065,21.5314 C7.0065,17.3884 10.3775,14.0184 14.5205,14.0184 Z M14.5,11 C14.226,11 14,10.775 14,10.5 L14,7.5 C14,7.225 14.226,7 14.5,7 C14.775,7 15,7.225 15,7.5 L15,10.5 C15,10.775 14.775,11 14.5,11 Z M14.5,32 C14.775,32 15,32.225 15,32.5 L15,35.5 C15,35.775 14.775,36 14.5,36 C14.226,36 14,35.775 14,35.5 L14,32.5 C14,32.225 14.226,32 14.5,32 Z M6.3691,14.0757 L4.2471,11.9537 C4.0531,11.7597 4.0531,11.4417 4.2471,11.2467 C4.4411,11.0527 4.7601,11.0527 4.9541,11.2467 L7.0761,13.3687 C7.2701,13.5627 7.2701,13.8817 7.0761,14.0757 C6.8811,14.2697 6.5631,14.2697 6.3691,14.0757 Z M22.6318,28.9248 L24.7538,31.0458 C24.9478,31.2408 24.9478,31.5588 24.7538,31.7538 C24.5588,31.9478 24.2408,31.9478 24.0458,31.7538 L21.9248,29.6318 C21.7308,29.4378 21.7308,29.1188 21.9248,28.9248 C22.1188,28.7308 22.4378,28.7308 22.6318,28.9248 Z M3.5,21 C3.775,21 4,21.225 4,21.5 C4,21.775 3.775,22 3.5,22 L0.5,22 C0.226,22 0,21.775 0,21.5 C0,21.225 0.226,21 0.5,21 L3.5,21 Z M28.5,21 C28.775,21 29,21.225 29,21.5 C29,21.775 28.775,22 28.5,22 L25.5,22 C25.226,22 25,21.775 25,21.5 C25,21.225 25.226,21 25.5,21 L28.5,21 Z M6.3691,28.9248 C6.5631,28.7308 6.8811,28.7308 7.0761,28.9248 C7.2701,29.1188 7.2701,29.4378 7.0761,29.6318 L4.9541,31.7538 C4.7601,31.9478 4.4411,31.9478 4.2471,31.7538 C4.0531,31.5588 4.0531,31.2408 4.2471,31.0458 L6.3691,28.9248 Z M24.0459,11.2471 C24.2409,11.0531 24.5589,11.0531 24.7539,11.2471 C24.9479,11.4411 24.9479,11.7601 24.7539,11.9541 L22.6319,14.0761 C22.4379,14.2701 22.1189,14.2701 21.9249,14.0761 C21.7309,13.8811 21.7309,13.5631 21.9249,13.3691 L24.0459,11.2471 Z" id="Combined-Shape" fill="#000000"></path>
     </g>
 </svg></span>
 </span>
 
             <!-- Temperature -->
             <span class="tmp ng-binding ng-isolate-scope" data-ng-show="LC.settingsModel.tempUnit === &#39;c&#39;" data-wa-fade="LC.weatherData.temp_c">
-                24<span>°C</span>
+                25<span>°C</span>
             </span>
             <span class="tmp ng-binding ng-isolate-scope ng-hide" data-ng-show="LC.settingsModel.tempUnit === &#39;f&#39;" data-wa-fade="LC.weatherData.temp_f">
-                76<span>°F</span>
+                77<span>°F</span>
             </span>
             <!-- Condition -->
-             <h1 class="condition ng-binding ng-isolate-scope" data-wa-fade="LC.weatherData.condition"> Clear </h1>
+             <h1 class="condition ng-binding ng-isolate-scope" data-wa-fade="LC.weatherData.condition"> Sunny </h1>
         </div>
 
         <!-- Additional weather data -->
@@ -310,30 +301,30 @@
                 <span class="ng-binding">Wind:</span>
                 <span class="details_value ng-binding">
                 N
-                    6.4
+                    14.5
                 kph</span>
             </div>
             <div data-ng-show="LC.settingsModel.tempUnit === &#39;f&#39;" class="ng-hide">
                 <span class="ng-binding">Wind:</span>
                 <span class="details_value ng-binding">
                     N
-                    4.0
+                    9.0
                 mph</span>
             </div>
             <div>
                 <span class="ng-binding">Humidity:</span>
-                <span class="details_value ng-binding">58%</span>
+                <span class="details_value ng-binding">30%</span>
             </div>
             <div data-ng-show="LC.settingsModel.tempUnit === &#39;c&#39;" class="">
                 <span class="ng-binding">Visibility:</span>
                 <span class="details_value ng-binding">
-                    12.9
+                    16.1
                 KM</span>
             </div>
             <div data-ng-show="LC.settingsModel.tempUnit === &#39;f&#39;" class="ng-hide">
                 <span class="ng-binding">Visibility:</span>
                 <span class="details_value ng-binding">
-                    8.0
+                    10.0
                 miles</span>
             </div>
         </div>
@@ -356,7 +347,7 @@
     <!-- Forecast list -->
     <div class="forecast_list">
         <ul aria-label="Forecast for the next days">
-            <!-- ngRepeat: forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast --><li data-ng-repeat="forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast" aria-label="Monday is Partly Cloudy, from 20 to 34 degrees celsius" class="forecast_website" data-ng-style="(LC.settingsModel.design.color.selection != 2 &amp;&amp; {&#39;background-color&#39;: LC.forecastBgValues[$index+1]}) ||
+            <!-- ngRepeat: forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast --><li data-ng-repeat="forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast" aria-label="Monday is Partly Cloudy, from 13 to 27 degrees celsius" class="forecast_website" data-ng-style="(LC.settingsModel.design.color.selection != 2 &amp;&amp; {&#39;background-color&#39;: LC.forecastBgValues[$index+1]}) ||
                                (LC.settingsModel.design.color.selection == 2 &amp;&amp; {&#39;background-image&#39;: LC.forecastBgValues[$index]})" style="background-color: rgb(89, 110, 231);">
 
                 <span class="day ng-binding">Mon</span>
@@ -376,16 +367,16 @@
                 <span class="tmp">
                     <!-- Temperature in celsius -->
                     <span data-ng-show="LC.settingsModel.tempUnit === &#39;c&#39;" class="">
-                        <span data-wa-fade="forecast.high.c" class="ng-binding ng-isolate-scope">34°</span>
-                        <span data-wa-fade="forecast.low.c" class="ng-binding ng-isolate-scope">20°</span>
+                        <span data-wa-fade="forecast.high.c" class="ng-binding ng-isolate-scope">27°</span>
+                        <span data-wa-fade="forecast.low.c" class="ng-binding ng-isolate-scope">13°</span>
                     </span>
                     <!-- Temperature in fahrenheit -->
                     <span data-ng-show="LC.settingsModel.tempUnit === &#39;f&#39;" class="ng-hide">
-                        <span data-wa-fade="forecast.high.f" class="ng-binding ng-isolate-scope">94°</span>
-                        <span data-wa-fade="forecast.low.f" class="ng-binding ng-isolate-scope">68°</span>
+                        <span data-wa-fade="forecast.high.f" class="ng-binding ng-isolate-scope">81°</span>
+                        <span data-wa-fade="forecast.low.f" class="ng-binding ng-isolate-scope">55°</span>
                     </span>
                 </span>
-            </li><!-- end ngRepeat: forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast --><li data-ng-repeat="forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast" aria-label="Tuesday is Cloudy, from 19 to 29 degrees celsius" class="forecast_website" data-ng-style="(LC.settingsModel.design.color.selection != 2 &amp;&amp; {&#39;background-color&#39;: LC.forecastBgValues[$index+1]}) ||
+            </li><!-- end ngRepeat: forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast --><li data-ng-repeat="forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast" aria-label="Tuesday is Mostly Cloudy, from 14 to 24 degrees celsius" class="forecast_website" data-ng-style="(LC.settingsModel.design.color.selection != 2 &amp;&amp; {&#39;background-color&#39;: LC.forecastBgValues[$index+1]}) ||
                                (LC.settingsModel.design.color.selection == 2 &amp;&amp; {&#39;background-image&#39;: LC.forecastBgValues[$index]})" style="background-color: rgb(94, 116, 242);">
 
                 <span class="day ng-binding">Tue</span>
@@ -405,28 +396,28 @@
                 <span class="tmp">
                     <!-- Temperature in celsius -->
                     <span data-ng-show="LC.settingsModel.tempUnit === &#39;c&#39;" class="">
-                        <span data-wa-fade="forecast.high.c" class="ng-binding ng-isolate-scope">29°</span>
-                        <span data-wa-fade="forecast.low.c" class="ng-binding ng-isolate-scope">19°</span>
+                        <span data-wa-fade="forecast.high.c" class="ng-binding ng-isolate-scope">24°</span>
+                        <span data-wa-fade="forecast.low.c" class="ng-binding ng-isolate-scope">14°</span>
                     </span>
                     <!-- Temperature in fahrenheit -->
                     <span data-ng-show="LC.settingsModel.tempUnit === &#39;f&#39;" class="ng-hide">
-                        <span data-wa-fade="forecast.high.f" class="ng-binding ng-isolate-scope">84°</span>
-                        <span data-wa-fade="forecast.low.f" class="ng-binding ng-isolate-scope">66°</span>
+                        <span data-wa-fade="forecast.high.f" class="ng-binding ng-isolate-scope">76°</span>
+                        <span data-wa-fade="forecast.low.f" class="ng-binding ng-isolate-scope">58°</span>
                     </span>
                 </span>
-            </li><!-- end ngRepeat: forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast --><li data-ng-repeat="forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast" aria-label="Wednesday is Mostly Sunny, from 19 to 31 degrees celsius" class="forecast_website" data-ng-style="(LC.settingsModel.design.color.selection != 2 &amp;&amp; {&#39;background-color&#39;: LC.forecastBgValues[$index+1]}) ||
+            </li><!-- end ngRepeat: forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast --><li data-ng-repeat="forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast" aria-label="Wednesday is AM Showers, from 13 to 21 degrees celsius" class="forecast_website" data-ng-style="(LC.settingsModel.design.color.selection != 2 &amp;&amp; {&#39;background-color&#39;: LC.forecastBgValues[$index+1]}) ||
                                (LC.settingsModel.design.color.selection == 2 &amp;&amp; {&#39;background-image&#39;: LC.forecastBgValues[$index]})" style="background-color: rgb(98, 121, 253);">
 
                 <span class="day ng-binding">Wed</span>
                 <!-- Forecast Icon -->
                 <span class="icon main-weather-icon ng-isolate-scope" assets="LC.assets.icons" model="forecast.icon" day-time="&#39;day&#39;">
     <!-- ngInclude: iconUrl --><span ng-include="iconUrl" class="ng-scope"><!--?xml version="1.0" encoding="UTF-8"?-->
-<svg width="30px" height="43px" viewBox="0 0 30 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="ng-scope">
+<svg width="29px" height="43px" viewBox="0 0 29 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="ng-scope">
     <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-    <title>PartlyCloudyDayO</title>
+    <title>RainO </title>
     <desc>Created with Sketch.</desc>
-    <g id="PartlyCloudyDayO" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M18.4993834,33.0000208 C20.9803007,33.0000208 22.9992334,30.9810629 22.9992334,28.5001146 C22.9992334,26.0191663 20.9803007,24.0002083 18.4993834,24.0002083 L18.4093864,24.0002083 C18.1653945,24.0002083 17.9574014,23.824212 17.9164028,23.583217 C17.4704177,20.9272723 15.1914936,19.0003125 12.4995833,19.0003125 C9.80767308,19.0003125 7.52874904,20.9272723 7.08376387,23.583217 C7.04276524,23.824212 6.83477217,24.0002083 6.59078031,24.0002083 L5.49981667,24.0002083 C3.01889937,24.0002083 0.999966668,26.0191663 0.999966668,28.5001146 C0.999966668,30.9810629 3.01889937,33.0000208 5.49981667,33.0000208 L18.4993834,33.0000208 Z M19.5173494,16.0053749 C17.7144095,16.0053749 16.1204627,17.0773526 15.4084864,18.7013187 C17.0914303,19.5443012 18.3723876,21.087269 18.8203727,23.009229 C20.0183327,23.0792275 21.1012966,23.5482177 21.9732676,24.2652028 C23.2372254,23.4372201 24.0171994,22.0292494 24.0171994,20.5052811 C24.0171994,18.0243328 21.9982667,16.0053749 19.5173494,16.0053749 Z M25.0171661,20.5052811 C25.0171661,22.2962438 24.1401953,23.9582092 22.6982434,24.9831879 C23.5002167,25.9391679 23.9992,27.1581425 23.9992,28.5001146 C23.9992,31.5330514 21.5322823,34 18.4993834,34 L5.49981667,34 C2.46791774,34 0,31.5330514 0,28.5001146 C0,25.4671778 2.46791774,23.0002292 5.49981667,23.0002292 L6.18179394,23.0002292 C6.86677111,20.07929 9.45968468,18.0003333 12.4995833,18.0003333 C13.1925602,18.0003333 13.8565381,18.1213308 14.4855171,18.3223266 C15.3514883,16.3243682 17.3054232,15.0053957 19.5173494,15.0053957 C22.5502483,15.0053957 25.0171661,17.4733443 25.0171661,20.5052811 Z M19.50035,11.9999583 C19.2253592,11.9999583 19.0003667,11.774963 19.0003667,11.4999688 L19.0003667,10.4999896 C19.0003667,10.2249953 19.2253592,10 19.50035,10 C19.7743409,10 20.0003333,10.2249953 20.0003333,10.4999896 L20.0003333,11.4999688 C20.0003333,11.774963 19.7743409,11.9999583 19.50035,11.9999583 Z M13.4897503,14.4896065 C13.2957568,14.6836024 12.9767674,14.6836024 12.7827739,14.4896065 L12.0757975,13.7826212 C11.8818039,13.5886252 11.8818039,13.2696319 12.0757975,13.0756359 C12.269791,12.88164 12.5887804,12.88164 12.7827739,13.0756359 L13.4897503,13.7826212 C13.6837439,13.9766172 13.6837439,14.2956105 13.4897503,14.4896065 Z M27.3828872,27.4659361 C27.1888937,27.6599321 26.8699043,27.6599321 26.6759108,27.4659361 L25.9689344,26.7589509 C25.7749408,26.5649549 25.7749408,26.2459615 25.9689344,26.0519656 C26.1629279,25.8579696 26.4819173,25.8579696 26.6759108,26.0519656 L27.3828872,26.7589509 C27.5768808,26.9529468 27.5768808,27.2719402 27.3828872,27.4659361 Z M30,20.4997813 C30,20.7747755 29.7740075,20.9997708 29.5000167,20.9997708 L28.50005,20.9997708 C28.2250592,20.9997708 28.0000667,20.7747755 28.0000667,20.4997813 C28.0000667,20.224787 28.2250592,19.9997917 28.50005,19.9997917 L29.5000167,19.9997917 C29.7740075,19.9997917 30,20.224787 30,20.4997813 Z M26.9239025,13.0756359 C27.118896,13.2696319 27.118896,13.5886252 26.9239025,13.7826212 L26.2169261,14.4896065 C26.0229326,14.6836024 25.7039432,14.6836024 25.5099497,14.4896065 C25.3159561,14.2956105 25.3159561,13.9766172 25.5099497,13.7826212 L26.2169261,13.0756359 C26.4109196,12.88164 26.729909,12.88164 26.9239025,13.0756359 Z" id="Combined-Shape" fill="#000000"></path>
+    <g id="RainO-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M24.167,20.9985609 C26.28,20.9985609 28,19.2787513 28,17.1659852 C28,15.0522192 26.28,13.3324096 24.167,13.3324096 C23.923,13.3324096 23.637,13.1564291 23.596,12.9164557 C23.214,10.646707 21.268,8.9998893 18.967,8.9998893 C16.874,8.9998893 15.088,10.3687377 14.493,12.3225214 C16.624,13.0064457 18.295,14.7502527 18.821,17.0080027 C21.189,17.1449875 23.138,18.7968046 23.767,20.9985609 L24.167,20.9985609 Z M18.5,26.9978967 C20.981,26.9978967 23,24.9791202 23,22.4983948 C23,20.0176695 20.981,17.998893 18.5,17.998893 L18.41,17.998893 C18.166,17.998893 17.958,17.8229125 17.917,17.5819391 C17.471,14.9262332 15.192,12.9994465 12.5,12.9994465 C9.808,12.9994465 7.529,14.9262332 7.083,17.5819391 C7.043,17.8229125 6.834,17.998893 6.59,17.998893 L5.5,17.998893 C3.019,17.998893 1,20.0176695 1,22.4983948 C1,24.9791202 3.019,26.9978967 5.5,26.9978967 L18.5,26.9978967 Z M24.5,12.3495184 C27.046,12.5534959 29,14.6352654 29,17.1659852 C29,19.8306902 26.832,21.9984502 24.167,21.9984502 L23.951,21.9984502 C23.967,22.1654317 24,22.3274138 24,22.4983948 C24,25.5310591 21.533,27.997786 18.5,27.997786 L5.5,27.997786 C2.468,27.997786 0,25.5310591 0,22.4983948 C0,19.4657306 2.468,16.9990037 5.5,16.9990037 L6.181,16.9990037 C6.867,14.078327 9.461,11.9995572 12.5,11.9995572 C12.85,11.9995572 13.19,12.0335534 13.525,12.0865476 C14.229,9.68681325 16.409,8 18.967,8 C21.62,8 23.886,9.80580007 24.5,12.3495184 Z M17.7578,31.0755452 C17.9908,31.2225289 18.0618,31.5324946 17.9128,31.7644689 L15.3808,35.7670258 C15.2858,35.9170092 15.1238,36 14.9578,36 C14.8668,36 14.7748,35.9750028 14.6918,35.9220086 C14.4578,35.7750249 14.3888,35.4660591 14.5358,35.2330849 L17.0688,31.230528 C17.2158,30.996554 17.5258,30.9265617 17.7578,31.0755452 Z M13.7578,31.0726455 C13.9908,31.2196293 14.0618,31.5295949 13.9128,31.7615693 L11.3808,35.7641261 C11.2858,35.9141095 11.1238,35.9971003 10.9578,35.9971003 C10.8668,35.9971003 10.7748,35.9721031 10.6918,35.919109 C10.4578,35.7721252 10.3888,35.4631594 10.5358,35.2301852 L13.0688,31.2276284 C13.2158,30.9936543 13.5258,30.923662 13.7578,31.0726455 Z M9.7578,31.0755452 C9.9908,31.2225289 10.0618,31.5324946 9.9128,31.7644689 L7.3808,35.7670258 C7.2858,35.9170092 7.1238,36 6.9578,36 C6.8668,36 6.7748,35.9750028 6.6918,35.9220086 C6.4578,35.7750249 6.3888,35.4660591 6.5358,35.2330849 L9.0688,31.230528 C9.2168,30.996554 9.5258,30.9265617 9.7578,31.0755452 Z M5.7578,31.0755452 C5.9908,31.2225289 6.0618,31.5324946 5.9128,31.7644689 L3.3808,35.7670258 C3.2858,35.9170092 3.1238,36 2.9578,36 C2.8668,36 2.7748,35.9750028 2.6918,35.9220086 C2.4578,35.7750249 2.3888,35.4660591 2.5358,35.2330849 L5.0688,31.230528 C5.2158,30.996554 5.5248,30.9265617 5.7578,31.0755452 Z" id="Combined-Shape" fill="#000000"></path>
     </g>
 </svg></span>
 </span>
@@ -434,13 +425,13 @@
                 <span class="tmp">
                     <!-- Temperature in celsius -->
                     <span data-ng-show="LC.settingsModel.tempUnit === &#39;c&#39;" class="">
-                        <span data-wa-fade="forecast.high.c" class="ng-binding ng-isolate-scope">31°</span>
-                        <span data-wa-fade="forecast.low.c" class="ng-binding ng-isolate-scope">19°</span>
+                        <span data-wa-fade="forecast.high.c" class="ng-binding ng-isolate-scope">21°</span>
+                        <span data-wa-fade="forecast.low.c" class="ng-binding ng-isolate-scope">13°</span>
                     </span>
                     <!-- Temperature in fahrenheit -->
                     <span data-ng-show="LC.settingsModel.tempUnit === &#39;f&#39;" class="ng-hide">
-                        <span data-wa-fade="forecast.high.f" class="ng-binding ng-isolate-scope">88°</span>
-                        <span data-wa-fade="forecast.low.f" class="ng-binding ng-isolate-scope">66°</span>
+                        <span data-wa-fade="forecast.high.f" class="ng-binding ng-isolate-scope">69°</span>
+                        <span data-wa-fade="forecast.low.f" class="ng-binding ng-isolate-scope">56°</span>
                     </span>
                 </span>
             </li><!-- end ngRepeat: forecast in LC.weatherData.forecast | limitTo: LC.settingsModel.daysForecast -->
@@ -469,7 +460,7 @@
 <!--<script src="//static.parastorage.com/services/js-sdk/1.79.0/js/wix.min.js"></script>-->
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
 <script src="./angular.min.js"></script>
-<!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-animate.min.js"></script> -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular-animate.min.js"></script> -->
 <script src="./angular-resource.min.js"></script>
 <script src="./angular-cookies.min.js"></script>
 <script src="./angular-sanitize.min.js"></script>
@@ -484,7 +475,7 @@
 
 <!--<script src="../../../bower_components/wix-ui-lib2/ui-lib.js"></script>-->
 
-<script src="./7604b9e5.widget.js"></script>
+<script src="./16942729b0dd34fa.widget.js"></script>
 
 
 </body></html>

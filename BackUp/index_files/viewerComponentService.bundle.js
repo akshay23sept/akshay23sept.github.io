@@ -7,7 +7,7 @@
 		exports["viewerComponentService"] = factory(require("react"), require("prop-types"), require("lodash"), require("santa-components"), require("react-dom"));
 	else
 		root["viewerComponentService"] = factory(root["React"], root["prop-types"], root["_"], root["santaComponents"], root["ReactDOM"]);
-})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__1__, __WEBPACK_EXTERNAL_MODULE__2__, __WEBPACK_EXTERNAL_MODULE__11__, __WEBPACK_EXTERNAL_MODULE__12__) {
+})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__1__, __WEBPACK_EXTERNAL_MODULE__3__, __WEBPACK_EXTERNAL_MODULE__4__, __WEBPACK_EXTERNAL_MODULE__28__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	function webpackJsonpCallback(data) {
@@ -20,7 +20,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 		var moduleId, chunkId, i = 0, resolves = [];
 /******/ 		for(;i < chunkIds.length; i++) {
 /******/ 			chunkId = chunkIds[i];
-/******/ 			if(installedChunks[chunkId]) {
+/******/ 			if(Object.prototype.hasOwnProperty.call(installedChunks, chunkId) && installedChunks[chunkId]) {
 /******/ 				resolves.push(installedChunks[chunkId][0]);
 /******/ 			}
 /******/ 			installedChunks[chunkId] = 0;
@@ -46,14 +46,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		36: 0
+/******/ 		42: 0,
+/******/ 		38: 0
 /******/ 	};
 /******/
 /******/
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"38":"wixui.AddressInput","39":"wixui.BarChart","40":"wixui.Captcha","41":"wixui.CustomElement","42":"wixui.FileUploaderNew","43":"wixui.LineShareButton","44":"wixui.MusicPlayer","45":"wixui.Pagination","46":"wixui.ProgressBar","47":"wixui.RatingsDisplay","48":"wixui.RatingsInput","49":"wixui.RichTextBox","50":"wixui.SearchBox","51":"wixui.SignatureInput","52":"wixui.Slider","53":"wixui.StylableButton","54":"wixui.StylableLine","55":"wixui.Tags","56":"wixui.TimePicker","57":"wixui.ToggleSwitch","58":"wixui.VideoPlayer"}[chunkId]||chunkId) + ".chunk.js"
+/******/ 		return __webpack_require__.p + "" + ({"41":"stylable-menu-scroller","44":"wixui.AddressInput","45":"wixui.BarChart","46":"wixui.BoltComponent","47":"wixui.Captcha","48":"wixui.CustomElement","49":"wixui.ImageX","50":"wixui.LineShareButton","51":"wixui.MusicPlayer","52":"wixui.Pagination","53":"wixui.ProgressBar","54":"wixui.RatingsDisplay","55":"wixui.RatingsInput","56":"wixui.RichTextBox","57":"wixui.SearchBox","58":"wixui.SelectionTagsList","59":"wixui.SignatureInput","60":"wixui.Slider","61":"wixui.StylableButton","62":"wixui.StylableHorizontalMenu","63":"wixui.StylableLine","64":"wixui.Tags","65":"wixui.TimePicker","66":"wixui.ToggleSwitch","67":"wixui.VideoPlayer"}[chunkId]||chunkId) + ".chunk.js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -112,6 +113,8 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 				}
 /******/ 				script.src = jsonpScriptSrc(chunkId);
 /******/
+/******/ 				// create error before stack unwound to get useful stacktrace later
+/******/ 				var error = new Error();
 /******/ 				onScriptComplete = function (event) {
 /******/ 					// avoid mem leaks in IE.
 /******/ 					script.onerror = script.onload = null;
@@ -121,7 +124,8 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 						if(chunk) {
 /******/ 							var errorType = event && (event.type === 'load' ? 'missing' : event.type);
 /******/ 							var realSrc = event && event.target && event.target.src;
-/******/ 							var error = new Error('Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')');
+/******/ 							error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
+/******/ 							error.name = 'ChunkLoadError';
 /******/ 							error.type = errorType;
 /******/ 							error.request = realSrc;
 /******/ 							chunk[1](error);
@@ -189,17 +193,18 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://static.parastorage.com/services/wix-ui-santa/1.291.0/";
+/******/ 	__webpack_require__.p = "https://static.parastorage.com/services/wix-ui-santa/1.1247.0/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
-/******/ 	/* runtime version: 1.0.4 */
+/******/ 	/* runtime version: 3.7.0 */
 /******/ 	function StylableRuntime(exports){
 /******/ 	exports = exports || {};
 /******/ 	function require(){return exports;};
 /******/
 /******/ 	(function(){/* source: cached-node-renderer.ts */
+/******/ 	exports.CacheStyleNodeRenderer = void 0;
 /******/ 	var CacheStyleNodeRenderer = /** @class */ (function () {
 /******/ 	    function CacheStyleNodeRenderer(options) {
 /******/ 	        var _this = this;
@@ -225,12 +230,11 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	exports.CacheStyleNodeRenderer = CacheStyleNodeRenderer;
 /******/ 	}());
 /******/ 	(function(){/* source: keyed-list-renderer.ts */
+/******/ 	exports.createDOMListRenderer = void 0;
 /******/ 	function createDOMListRenderer(nodeRenderer) {
 /******/ 	    var first;
 /******/ 	    var nodes = {};
-/******/ 	    var setNode = function (dataItem, node) {
-/******/ 	        return (nodes[nodeRenderer.renderKey(dataItem)] = node);
-/******/ 	    };
+/******/ 	    var setNode = function (dataItem, node) { return (nodes[nodeRenderer.renderKey(dataItem)] = node); };
 /******/ 	    var renderNode = function (dataItem) {
 /******/ 	        var key = nodeRenderer.renderKey(dataItem);
 /******/ 	        var node = nodes[key];
@@ -240,10 +244,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	    };
 /******/ 	    var render = function (container, data) {
 /******/ 	        if (data === void 0) { data = []; }
-/******/ 	        var node;
 /******/ 	        if (data.length) {
+/******/ 	            var node = void 0;
 /******/ 	            var next = first;
-/******/ 	            // tslint:disable-next-line:prefer-for-of
 /******/ 	            for (var i = 0; i < data.length; i++) {
 /******/ 	                node = renderNode(data[i]);
 /******/ 	                if (node !== next) {
@@ -276,6 +279,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	exports.createDOMListRenderer = createDOMListRenderer;
 /******/ 	}());
 /******/ 	(function(){/* source: css-runtime-renderer.ts */
+/******/ 	exports.$ = exports.RuntimeRenderer = void 0;
 /******/ 	var cached_node_renderer_1 = require("./cached-node-renderer");
 /******/ 	var keyed_list_renderer_1 = require("./keyed-list-renderer");
 /******/ 	var RuntimeRenderer = /** @class */ (function () {
@@ -302,7 +306,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	        this.window = _window;
 /******/ 	        this.renderer = keyed_list_renderer_1.createDOMListRenderer(new cached_node_renderer_1.CacheStyleNodeRenderer({
 /******/ 	            attrKey: 'st-id' + (this.id ? '-' + this.id : ''),
-/******/ 	            createElement: _window.document.createElement.bind(_window.document)
+/******/ 	            createElement: _window.document.createElement.bind(_window.document),
 /******/ 	        }));
 /******/ 	        this.update();
 /******/ 	    };
@@ -363,70 +367,92 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	exports.$ = new RuntimeRenderer();
 /******/ 	}());
 /******/ 	(function(){/* source: css-runtime-stylesheet.ts */
-/******/ 	function create(root, namespace, locals, css, depth, id) {
-/******/ 	    var dataNamespace = 'data-' + namespace.toLowerCase() + '-';
+/******/ 	exports.createRenderable = exports.create = void 0;
+/******/ 	var stateMiddleDelimiter = '-';
+/******/ 	var booleanStateDelimiter = '--';
+/******/ 	var stateWithParamDelimiter = '---';
+/******/ 	function create(namespace, exports, css, depth, id, renderer) {
+/******/ 	    var stylesheet = {
+/******/ 	        namespace: namespace,
+/******/ 	        classes: exports.classes,
+/******/ 	        keyframes: exports.keyframes,
+/******/ 	        vars: exports.vars,
+/******/ 	        stVars: exports.stVars,
+/******/ 	        cssStates: cssStates,
+/******/ 	        style: style,
+/******/ 	        st: style,
+/******/ 	        $id: id,
+/******/ 	        $depth: depth,
+/******/ 	        $css: css,
+/******/ 	    };
+/******/ 	    if (renderer) {
+/******/ 	        renderer.register(stylesheet);
+/******/ 	    }
 /******/ 	    function cssStates(stateMapping) {
-/******/ 	        return stateMapping
-/******/ 	            ? Object.keys(stateMapping).reduce(function (states, key) {
-/******/ 	                var stateValue = stateMapping[key];
-/******/ 	                if (stateValue === undefined ||
-/******/ 	                    stateValue === null ||
-/******/ 	                    stateValue === false) {
-/******/ 	                    return states;
-/******/ 	                }
-/******/ 	                states[dataNamespace + key.toLowerCase()] = stateValue;
-/******/ 	                return states;
-/******/ 	            }, {})
-/******/ 	            : {};
-/******/ 	    }
-/******/ 	    function get(localName) {
-/******/ 	        return locals[localName];
-/******/ 	    }
-/******/ 	    function mapClasses(className) {
-/******/ 	        return className
-/******/ 	            .split(/\s+/g)
-/******/ 	            .map(function (className) { return get(className) || className; })
-/******/ 	            .join(' ');
-/******/ 	    }
-/******/ 	    locals.$root = root;
-/******/ 	    locals.$namespace = namespace;
-/******/ 	    locals.$depth = depth;
-/******/ 	    locals.$id = id;
-/******/ 	    locals.$css = css;
-/******/ 	    locals.$get = get;
-/******/ 	    locals.$cssStates = cssStates;
-/******/ 	    function stylable_runtime_stylesheet(className, states, inheritedAttributes) {
-/******/ 	        className = className ? mapClasses(className) : '';
-/******/ 	        var base = cssStates(states);
-/******/ 	        if (inheritedAttributes) {
-/******/ 	            for (var k in inheritedAttributes) {
-/******/ 	                if (k.match(/^data-/)) {
-/******/ 	                    base[k] = inheritedAttributes[k];
-/******/ 	                }
-/******/ 	            }
-/******/ 	            if (inheritedAttributes.className) {
-/******/ 	                className += ' ' + inheritedAttributes.className;
+/******/ 	        var classNames = [];
+/******/ 	        for (var stateName in stateMapping) {
+/******/ 	            var stateValue = stateMapping[stateName];
+/******/ 	            var stateClass = createStateClass(stateName, stateValue);
+/******/ 	            if (stateClass) {
+/******/ 	                classNames.push(stateClass);
 /******/ 	            }
 /******/ 	        }
-/******/ 	        if (className) {
-/******/ 	            base.className = className;
-/******/ 	        }
-/******/ 	        return base;
+/******/ 	        return classNames.join(' ');
 /******/ 	    }
-/******/ 	    Object.setPrototypeOf(stylable_runtime_stylesheet, locals);
-/******/ 	    // EDGE CACHE BUG FIX
-/******/ 	    stylable_runtime_stylesheet[locals.$root] = locals[locals.$root];
-/******/ 	    return stylable_runtime_stylesheet;
+/******/ 	    function createBooleanStateClassName(stateName) {
+/******/ 	        return "" + namespace + booleanStateDelimiter + stateName;
+/******/ 	    }
+/******/ 	    function createStateWithParamClassName(stateName, param) {
+/******/ 	        return "" + namespace + stateWithParamDelimiter + stateName + stateMiddleDelimiter + param.length + stateMiddleDelimiter + param.replace(/\s/gm, '_');
+/******/ 	    }
+/******/ 	    function createStateClass(stateName, stateValue) {
+/******/ 	        if (stateValue === false ||
+/******/ 	            stateValue === undefined ||
+/******/ 	            stateValue === null ||
+/******/ 	            stateValue !== stateValue // check NaN
+/******/ 	        ) {
+/******/ 	            return '';
+/******/ 	        }
+/******/ 	        if (stateValue === true) {
+/******/ 	            // boolean state
+/******/ 	            return createBooleanStateClassName(stateName);
+/******/ 	        }
+/******/ 	        var valueAsString = stateValue.toString();
+/******/ 	        return createStateWithParamClassName(stateName, valueAsString);
+/******/ 	    }
+/******/ 	    function style() {
+/******/ 	        var classNames = [];
+/******/ 	        for (var i = 0; i < arguments.length; i++) {
+/******/ 	            // eslint-disable-next-line prefer-rest-params
+/******/ 	            var item = arguments[i];
+/******/ 	            if (item) {
+/******/ 	                if (typeof item === 'string') {
+/******/ 	                    classNames[classNames.length] = item;
+/******/ 	                }
+/******/ 	                else if (i === 1) {
+/******/ 	                    for (var stateName in item) {
+/******/ 	                        var stateValue = item[stateName];
+/******/ 	                        var stateClass = createStateClass(stateName, stateValue);
+/******/ 	                        if (stateClass) {
+/******/ 	                            classNames[classNames.length] = stateClass;
+/******/ 	                        }
+/******/ 	                    }
+/******/ 	                }
+/******/ 	            }
+/******/ 	        }
+/******/ 	        return classNames.join(' ');
+/******/ 	    }
+/******/ 	    return stylesheet;
 /******/ 	}
 /******/ 	exports.create = create;
-/******/ 	function createTheme(css, depth, id) {
+/******/ 	function createRenderable(css, depth, id) {
 /******/ 	    return { $css: css, $depth: depth, $id: id, $theme: true };
 /******/ 	}
-/******/ 	exports.createTheme = createTheme;
+/******/ 	exports.createRenderable = createRenderable;
 /******/ 	}());;
 /******/ 	return exports;
 /******/ 	};
-/******/ 	(typeof self !== 'undefined' ? self : this)["__stylable_yoshi__"] = __webpack_require__.stylable = (typeof self !== 'undefined' ? self : this)["__stylable_yoshi__"] || StylableRuntime();
+/******/ 	(typeof self !== 'undefined' ? self : this)["__stylable3_runtime__"] = __webpack_require__.stylable = (typeof self !== 'undefined' ? self : this)["__stylable3_runtime__"] || StylableRuntime();
 /******/ 	var jsonpArray = (typeof self !== 'undefined' ? self : this)["webpackJsonp_wix_ui_santa"] = (typeof self !== 'undefined' ? self : this)["webpackJsonp_wix_ui_santa"] || [];
 /******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
 /******/ 	jsonpArray.push = webpackJsonpCallback;
@@ -435,9 +461,8 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	var parentJsonpFunction = oldJsonpFunction;
 /******/
 /******/
-/******/ 	__webpack_require__.p = typeof window !== 'undefined' && window.__STATICS_BASE_URL__ || __webpack_require__.p;
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1168);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1402);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -448,7 +473,6 @@ return /******/ (function(modules) { // webpackBootstrap
   \**************************************************************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE__0__;
@@ -461,168 +485,188 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__0__;
   \**********************************************************************************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE__1__;
 
 /***/ }),
 
-/***/ 11:
-/*!*********************************************************************************************************************************!*\
-  !*** external {"amd":"santa-components","commonjs":"santa-components","commonjs2":"santa-components","root":"santaComponents"} ***!
-  \*********************************************************************************************************************************/
+/***/ 110:
+/*!**********************!*\
+  !*** ./overrides.js ***!
+  \**********************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__11__;
+var createOverrideMap = function createOverrideMap(requireFn) {
+  return requireFn.keys().map(requireFn).reduce(function (overridesMap, compOverrideMetadata) {
+    overridesMap[compOverrideMetadata.overrideViewerType] = compOverrideMetadata;
+    return overridesMap;
+  }, {});
+};
+
+var componentOverrides = createOverrideMap(__webpack_require__(111));
+
+function getOverrides() {
+  return componentOverrides;
+}
+
+module.exports = {
+  getOverrides: getOverrides
+};
 
 /***/ }),
 
-/***/ 1168:
+/***/ 111:
+/*!************************************************!*\
+  !*** ./components sync componentOverride\.js$ ***!
+  \************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	var e = new Error("Cannot find module '" + req + "'");
+	e.code = 'MODULE_NOT_FOUND';
+	throw e;
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = 111;
+
+/***/ }),
+
+/***/ 1402:
 /*!**************************************!*\
   !*** ./components-service/viewer.js ***!
   \**************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-var _baseService = __webpack_require__(/*! ./base-service */ 95);
-
-var _baseService2 = _interopRequireDefault(_baseService);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var BaseService = __webpack_require__(/*! ./base-service */ 150);
 
 var compsToPackages = {
   'wixui.RichTextBox': function wixuiRichTextBox() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.RichTextBox */ 49).then(__webpack_require__.t.bind(null, /*! ../legacy/components/RichTextBox */ 439, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.RichTextBox */ 56).then(__webpack_require__.bind(null, /*! ../legacy/components/RichTextBox */ 669))]);
   },
   'wixui.ToggleSwitch': function wixuiToggleSwitch() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.ToggleSwitch */ 57).then(__webpack_require__.t.bind(null, /*! ../legacy/components/ToggleSwitch */ 438, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.ToggleSwitch */ 66).then(__webpack_require__.bind(null, /*! ../legacy/components/ToggleSwitch */ 668))]);
   },
   'wixui.Slider': function wixuiSlider() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.Slider */ 52).then(__webpack_require__.t.bind(null, /*! ../components/Slider */ 468, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.Slider */ 60).then(__webpack_require__.bind(null, /*! ../components/Slider */ 718))]);
   },
   'wixui.SearchBox': function wixuiSearchBox() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.SearchBox */ 50).then(__webpack_require__.t.bind(null, /*! ../components/SearchBox */ 470, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.SearchBox */ 57).then(__webpack_require__.bind(null, /*! ../components/SearchBox */ 723))]);
   },
   'wixui.Captcha': function wixuiCaptcha() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.Captcha */ 40).then(__webpack_require__.t.bind(null, /*! ../components/Captcha */ 465, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.Captcha */ 47).then(__webpack_require__.bind(null, /*! ../components/Captcha */ 712))]);
   },
   'wixui.Pagination': function wixuiPagination() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.Pagination */ 45).then(__webpack_require__.t.bind(null, /*! ../components/Pagination */ 462, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.Pagination */ 52).then(__webpack_require__.bind(null, /*! ../components/Pagination */ 707))]);
   },
   'wixui.AddressInput': function wixuiAddressInput() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.AddressInput */ 38).then(__webpack_require__.t.bind(null, /*! ../components/AddressInput */ 471, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.AddressInput */ 44).then(__webpack_require__.bind(null, /*! ../components/AddressInput */ 726))]);
   },
   'wixui.StylableLine': function wixuiStylableLine() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.StylableLine */ 54).then(__webpack_require__.t.bind(null, /*! ../components/StylableLine */ 474, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.StylableLine */ 63).then(__webpack_require__.bind(null, /*! ../components/StylableLine */ 738))]);
   },
   'wixui.Tags': function wixuiTags() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.Tags */ 55).then(__webpack_require__.t.bind(null, /*! ../components/Tags */ 463, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.Tags */ 64).then(__webpack_require__.bind(null, /*! ../components/Tags */ 709))]);
   },
   'wixui.RatingsInput': function wixuiRatingsInput() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.RatingsInput */ 48).then(__webpack_require__.t.bind(null, /*! ../components/RatingsInput */ 464, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.RatingsInput */ 55).then(__webpack_require__.bind(null, /*! ../components/RatingsInput */ 710))]);
   },
   'wixui.TimePicker': function wixuiTimePicker() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.TimePicker */ 56).then(__webpack_require__.t.bind(null, /*! ../components/TimePicker */ 472, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.TimePicker */ 65).then(__webpack_require__.bind(null, /*! ../components/TimePicker */ 731))]);
   },
   'wixui.RatingsDisplay': function wixuiRatingsDisplay() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.RatingsDisplay */ 47).then(__webpack_require__.t.bind(null, /*! ../components/RatingsDisplay */ 466, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.RatingsDisplay */ 54).then(__webpack_require__.bind(null, /*! ../components/RatingsDisplay */ 713))]);
   },
   'wixui.VideoPlayer': function wixuiVideoPlayer() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.VideoPlayer */ 58).then(__webpack_require__.t.bind(null, /*! ../components/VideoPlayer */ 461, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.VideoPlayer */ 67).then(__webpack_require__.bind(null, /*! ../components/VideoPlayer */ 703))]);
   },
   'wixui.LineShareButton': function wixuiLineShareButton() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.LineShareButton */ 43).then(__webpack_require__.t.bind(null, /*! ../components/LineShareButton */ 473, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.LineShareButton */ 50).then(__webpack_require__.bind(null, /*! ../components/LineShareButton */ 735))]);
   },
   'wixui.MusicPlayer': function wixuiMusicPlayer() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.MusicPlayer */ 44).then(__webpack_require__.t.bind(null, /*! ../components/MusicPlayer */ 427, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.MusicPlayer */ 51).then(__webpack_require__.bind(null, /*! ../components/MusicPlayer */ 648))]);
   },
   'wixui.StylableButton': function wixuiStylableButton() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.StylableButton */ 53).then(__webpack_require__.t.bind(null, /*! ../components/StylableButton */ 475, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.StylableButton */ 61).then(__webpack_require__.bind(null, /*! ../components/StylableButton */ 740))]);
   },
   'wixui.ProgressBar': function wixuiProgressBar() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.ProgressBar */ 46).then(__webpack_require__.t.bind(null, /*! ../components/ProgressBar */ 469, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.ProgressBar */ 53).then(__webpack_require__.bind(null, /*! ../components/ProgressBar */ 720))]);
   },
   'wixui.BarChart': function wixuiBarChart() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.BarChart */ 39).then(__webpack_require__.t.bind(null, /*! ../components/BarChart */ 467, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.BarChart */ 45).then(__webpack_require__.bind(null, /*! ../components/BarChart */ 715))]);
   },
   'wixui.CustomElementComponent': function wixuiCustomElementComponent() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.CustomElement */ 41).then(__webpack_require__.t.bind(null, /*! ../components/CustomElement */ 478, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.CustomElement */ 48).then(__webpack_require__.bind(null, /*! ../components/CustomElement */ 779))]);
   },
   'wixui.SignatureInput': function wixuiSignatureInput() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.SignatureInput */ 51).then(__webpack_require__.t.bind(null, /*! ../components/SignatureInput */ 477, 7))]);
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.SignatureInput */ 59).then(__webpack_require__.bind(null, /*! ../components/SignatureInput */ 777))]);
   },
-  'wixui.FileUploaderNew': function wixuiFileUploaderNew() {
-    return Promise.all([__webpack_require__.e(/*! import() | wixui.FileUploaderNew */ 42).then(__webpack_require__.t.bind(null, /*! ../components/FileUploaderNew */ 479, 7))]);
+  'wixui.SelectionTagsList': function wixuiSelectionTagsList() {
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.SelectionTagsList */ 58).then(__webpack_require__.bind(null, /*! ../components/SelectionTagsList */ 782))]);
+  },
+  'wixui.StylableHorizontalMenu': function wixuiStylableHorizontalMenu() {
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.StylableHorizontalMenu */ 62).then(__webpack_require__.bind(null, /*! ../components/StylableHorizontalMenu */ 784))]);
+  },
+  'wixui.ImageX': function wixuiImageX() {
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.ImageX */ 49).then(__webpack_require__.bind(null, /*! ../components/ImageX */ 787))]);
+  },
+  'wixui.BoltComponent': function wixuiBoltComponent() {
+    return Promise.all([__webpack_require__.e(/*! import() | wixui.BoltComponent */ 46).then(__webpack_require__.bind(null, /*! ../components/BoltComponent */ 791))]);
   }
 };
-
-module.exports = new _baseService2.default(compsToPackages);
-
-/***/ }),
-
-/***/ 12:
-/*!****************************************************************************************************!*\
-  !*** external {"amd":"reactDOM","commonjs":"react-dom","commonjs2":"react-dom","root":"ReactDOM"} ***!
-  \****************************************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__12__;
+module.exports = new BaseService(compsToPackages);
 
 /***/ }),
 
-/***/ 2:
-/*!*************************************************************************************!*\
-  !*** external {"amd":"lodash","commonjs":"lodash","commonjs2":"lodash","root":"_"} ***!
-  \*************************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__2__;
-
-/***/ }),
-
-/***/ 95:
+/***/ 150:
 /*!********************************************!*\
   !*** ./components-service/base-service.js ***!
   \********************************************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
+var _require = __webpack_require__(/*! ../overrides */ 110),
+    getOverrides = _require.getOverrides;
 
 function BaseService(_compsToPackages) {
   var compsToPackages = _compsToPackages;
+  var overrides = getOverrides();
 
   function setWebpackPublicPath(baseUrl) {
-    __webpack_require__.p = baseUrl + '/'; // eslint-disable-line
+    /**
+     * NOTE: it could done without reg-exp, like this:
+     *
+     * const withEndSlash = baseUrl[baseUrl.length - 1] === '/';
+     * __webpack_public_path__ = withEndSlash ? baseUrl + '/' : `${baseUrl}/`;
+     *
+     * but it some cases `baseUrl` may come with /// or even //// slashes at the end
+     */
+    __webpack_require__.p = (baseUrl + "/").replace(/\/+$/g, '/'); // eslint-disable-line
   }
 
   function loadComponent(componentType) {
-    if (!exists(componentType)) {
-      return Promise.reject(new Error('no such component ' + componentType));
+    if (overrides[componentType]) {
+      componentType = overrides[componentType].newComponentViewerType;
     }
-    return compsToPackages[componentType]().catch(function (e) {
+
+    if (!exists(componentType)) {
+      return Promise.reject(new Error("no such component " + componentType));
+    }
+
+    return compsToPackages[componentType]()["catch"](function (e) {
       //fix for ie11, doesn't load components
       console.error('coudn\'t load ' + componentType, e);
       return [{
-        default: {
+        "default": {
           componentType: componentType,
           component: function component() {
             return null;
@@ -636,8 +680,8 @@ function BaseService(_compsToPackages) {
     });
   }
 
-  function exists(componentType) {
-    return !!compsToPackages[componentType];
+  function exists(componentType, runningExperiments) {
+    return !!compsToPackages[componentType] || overrides[componentType] && runningExperiments && runningExperiments[overrides[componentType].viewerExperimentKey] === 'new';
   }
 
   function loadAll(baseUrl) {
@@ -658,6 +702,42 @@ function BaseService(_compsToPackages) {
 }
 
 module.exports = BaseService;
+
+/***/ }),
+
+/***/ 28:
+/*!****************************************************************************************************!*\
+  !*** external {"amd":"reactDOM","commonjs":"react-dom","commonjs2":"react-dom","root":"ReactDOM"} ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__28__;
+
+/***/ }),
+
+/***/ 3:
+/*!*************************************************************************************!*\
+  !*** external {"amd":"lodash","commonjs":"lodash","commonjs2":"lodash","root":"_"} ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__3__;
+
+/***/ }),
+
+/***/ 4:
+/*!*********************************************************************************************************************************!*\
+  !*** external {"amd":"santa-components","commonjs":"santa-components","commonjs2":"santa-components","root":"santaComponents"} ***!
+  \*********************************************************************************************************************************/
+/*! no static exports found */
+/*! exports used: HOC, SantaComponentHelperMethods, constants, mixins, santaTypesDefinitions, utils */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__4__;
 
 /***/ })
 
