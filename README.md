@@ -19,9 +19,6 @@
 ├── LICENSE
 ├── README.md
 └── website
-    ├── images
-    │&nbsp;&nbsp; ├── favicon.ico
-    │&nbsp;&nbsp; ├── project1.png
-    │&nbsp;&nbsp; └── <span class="pl-k">&lt;</span>PUT ALL PROJECT IMAGES HERE<span class="pl-k">&gt;</span>
+    ├── <span class="pl-k">&lt;</span>PUT ALL PROJECT IMAGES HERE<span class="pl-k">&gt;</span>
     └── js
         └── scramble.js</pre></div>
