@@ -5,16 +5,10 @@
 
 <div class="highlight highlight-source-shell"><pre><span class="pl-c1">.</span>
 ├── CV
-│&nbsp;&nbsp; ├── LaTeX
-│&nbsp;&nbsp; │&nbsp;&nbsp; ├── main.tex
-│&nbsp;&nbsp; │&nbsp;&nbsp; ├── main.pdf
-│&nbsp;&nbsp; │&nbsp;&nbsp; ├── logo.png
+│&nbsp;&nbsp; ├── AkshayAnand.jpg
 │&nbsp;&nbsp; │&nbsp;&nbsp; └── [ALL moderncv documnetclass files]
-│&nbsp;&nbsp; └── myCV.pdf
 ├── index.html
 ├── LICENSE
-├── makeSite.sh
-├── putTex.py
 ├── README.md
 └── website
     ├── images
