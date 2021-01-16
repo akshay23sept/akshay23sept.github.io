@@ -1,7 +1,7 @@
 # Personal Website
 
-<p>Clone the repository with:<br>
-<code>$ git clone https://github.com/akshay23sept/akshay23sept.github.io</code></p>
+<p>A simple and elegant way of arranging your LaTeX CV data and your works to your personal webpage.
+This code makes use of Moderncv documentclass by Xavier Danaux (https://github.com/xdanaux/moderncv) and webpage style-sheet by Jon Barron's code (https://github.com/jonbarron/jonbarron_website) and Aakash Patil (https://github.com/aakash30jan/LatexToWebpage).<br></p>
 
 <div class="highlight highlight-source-shell"><pre><span class="pl-c1">.</span>
 ├── CV
